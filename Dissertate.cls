@@ -114,7 +114,7 @@
 
 
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
-\setmonofont[Scale=MatchLowercase]{Noto Mono} % Font substitution for Source Code Pro
+\setmonofont[Scale=MatchLowercase]{Iosevka Slab} % Font substitution for Source Code Pro
 
 \RequirePackage[labelfont={bf,sf,footnotesize,singlespacing},
 								textfont={sf,footnotesize,singlespacing},
