@@ -1,5 +1,5 @@
 thesis: clean frontmatter/images
-	latexmk -xelatex dissertation.tex
+	latexmk -xelatex -f dissertation.tex
 
 frontmatter/images:
 	$(MAKE) -C $@
