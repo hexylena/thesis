@@ -1,8 +1,13 @@
-thesis: clean frontmatter/images
+thesis: clean frontmatter/images references.bib
 	latexmk -xelatex -f dissertation.tex
 
 frontmatter/images:
 	$(MAKE) -C $@
+
+BIBS := $(wildcard chapters/*/*.bib)
+
+references.bib: $(BIBS)
+	cat ${BIBS} > references.bib
 
 view:
 	okular dissertation.pdf &
