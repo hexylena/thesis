@@ -21,6 +21,17 @@ check:
 clean:
 	@# Should do the same thing as below, but keeping both in case.
 	latexmk -c
+	rm -f references.bib
+	find . -name '*.bbl' -exec rm '{}' +
+	@#rm **/*.aux **/*.blg **/*.bbl *.aux *.log *.out *.toc
+
+reallyclean:
+	@# Should do the same thing as below, but keeping both in case.
+	latexmk -c
+	rm -f references.bib
+	find . -name '*.bbl' -exec rm '{}' +
+	find . -name '*.aux' -exec rm '{}' +
+	find . -name '*.blg' -exec rm '{}' +
 	@#rm **/*.aux **/*.blg **/*.bbl *.aux *.log *.out *.toc
 
 .PHONY: frontmatter/images
