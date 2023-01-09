@@ -49,44 +49,44 @@ automatically-generated sequence features and then providing expert
 researchers with interactive editing tools to examine these multiple
 sources of evidence and collaboratively refine the genomic annotations.
 The first version of Apollo was a standalone desktop application
-{[}1{]}. As software technologies advanced, each new generation of
+\cite{Lewis_2002}. As software technologies advanced, each new generation of
 Apollo took advantage of these to improve the user experience. The most
 fundamental change occurred circa 2010 when Apollo transitioned to
-running inside a web browser {[}2{]}. Once Apollo became a web-based
+running inside a web browser \cite{Lee_2013}. Once Apollo became a web-based
 application that permits real-time collaboration, the user base grew to
 include research and teaching environments studying a wide variety of
-species. Our most recent version of Apollo {[}3{]} offers a broad range
+species. Our most recent version of Apollo \cite{zenodo.1295754} offers a broad range
 of researchers an accessible way to improve the biological precision of
 their genomic feature descriptions.
 
-Organizations that use Apollo include Echinobase {[}4{]}, Hymenoptera
-Genome Database {[}5{]}, i5k Workspace {[}6{]}, PhytoPath {[}7{]},
-TreeGenes {[}8{]}, Vectorbase {[}9{]} and XenBase {[}10{]}. To date, the
+Organizations that use Apollo include Echinobase \cite{Kudtarkar_2017}, Hymenoptera
+Genome Database \cite{Elsik_2015}, i5k Workspace \cite{Poelchau_2014}, PhytoPath \cite{Pedro_2015},
+TreeGenes \cite{Neale_2014}, Vectorbase \cite{Giraldo_Calder_n_2014} and XenBase \cite{James_Zorn_2015}. To date, the
 i5K Workspace has supported publication of seven insect genomes that
-were manually curated with Apollo {[}11--17{]}. Other projects that have
-used Apollo include genomes of additional insects {[}18--20{]}, human
-parasites {[}21--23{]}, birds {[}24,25{]}, the sea lamprey {[}26{]},
-plants {[}27--29{]}, fungi {[}30--35{]} and a plant pathogenic nematode
-{[}36{]}. Projects such as the re-annotation of the whipworm genome by
+were manually curated with Apollo \cite{Poynton_2018,McKenna_2016,Linnen_2018,Schoville_2018,Papanicolaou_2016,Kanost_2016,Benoit_2016}. Other projects that have
+used Apollo include genomes of additional insects \cite{Fu_2018,Gouin_2017,Chen_2015}, human
+parasites \cite{Zhu_2017,Ifeonu_2016,Ifeonu_2016_2}, birds \cite{Colquitt_2018,Lee_2018}, the sea lamprey \cite{Smith_2018},
+plants \cite{Pilkington_2018,Li_2017,Xu_2016}, fungi \cite{Chen_2016,Frantzeskakis_2018,Jelen_2016,Nemri_2014,Schuelke_2016,Syme_2016} and a plant pathogenic nematode
+\cite{Eves_van_den_Akker_2016}. Projects such as the re-annotation of the whipworm genome by
 hundreds of high school students in the UK, supported by the Institute
-for Research in Schools (IRIS) {[}37{]}, and the curation of 33,044 gene
+for Research in Schools (IRIS) \cite{GenomeDecodersHumanWhipworm}, and the curation of 33,044 gene
 loci in the kiwifruit genome by 93 annotators, are evidence of Apollo's
 robust support for large dispersed projects.
 
 The ease of setting up Apollo makes it appealing to small projects as
 well as large. For example, one small group used Apollo to annotate 14
-genes of a fungal mitochondrial genome {[}32{]}. Other reported Apollo
+genes of a fungal mitochondrial genome \cite{Jelen_2016}. Other reported Apollo
 use cases include annotating gene loci that pose challenges in automated
 gene prediction, such as the MHC-B region in the genome of the Mikado
-pheasant {[}25{]} and the effector complement of the flax rust pathogen
-Melampsora lini {[}33{]}. Through the process of gene model curation,
+pheasant \cite{Lee_2018} and the effector complement of the flax rust pathogen
+Melampsora lini \cite{Nemri_2014}. Through the process of gene model curation,
 the use of Apollo can reveal species-specific genome characteristics
 that can be used to improve automated gene prediction. For example,
 curation of some gene models of the yellow potato cyst nematode,
 \emph{Globodera rostochiensis}, using RNAseq alignments as evidence,
 revealed a high frequency of non-canonical splice sites. Subsequent use
 of these manually curated genes as a training set markedly improved the
-automated gene predictions {[}36{]}.
+automated gene predictions \cite{Eves_van_den_Akker_2016}.
 
 Thanks to its ability to simplify and accelerate annotation efforts for
 both large and small projects, Apollo's user base continues to grow.
@@ -203,13 +203,13 @@ WebSockets.}\label{pcbi.1006790.g002}
 }
 \end{figure}
 
-Apollo's client interface is built as a JBrowse {[}38{]} plugin, a
+Apollo's client interface is built as a JBrowse \cite{Buels_2016} plugin, a
 popular genome browser written in JavaScript. It provides the ability to
 import and export standard genomic data formats, flexible display of
 multiple types of genomic features, and fast scrolling and zooming. The
 primary editing client is a single-page application that embeds JBrowse.
-The server is built using Grails {[}39{]}, an open source framework for
-developing web applications using Groovy {[}40{]} and other JVM
+The server is built using Grails \cite{Smith2014}, an open source framework for
+developing web applications using Groovy \cite{ApacheGroovyProgrammingLanguage} and other JVM
 languages. The Grails framework enables us to leverage well established
 technologies such as Spring
 (\href{https://spring.io/}{https://spring.io}) for event control, the
@@ -349,15 +349,15 @@ services documentation is automatically generated from annotations
 within the software. There are many workflow environments that Apollo
 has been integrated into, typically after multiple alignment, filtering,
 and automated genome annotation steps. These environments include Galaxy
-{[}41{]} via the G-OnRamp project {[}42{]}, GenSAS {[}43,44{]}, DNA
-Subway {[}45{]}, and the i5K workspace {[}6{]}. The i5K project
+\cite{Afgan_2018} via the G-OnRamp project \cite{GOnRamp}, GenSAS \cite{Lee_2011,Humann2018}, DNA
+Subway \cite{Hilgert_2014}, and the i5K workspace \cite{Poelchau_2014}. The i5K project
 leverages the user registration services, and the Galaxy Genome
-Annotation (GGA) project {[}46{]} automatically generates new projects
+Annotation (GGA) project \cite{Bretaudeau2018} automatically generates new projects
 in Apollo from data created via its biological workflow. The GGA project
 also provides a Python library for interacting with the Apollo API
-{[}47{]} and is used by projects such as BioInformatics Platform for
-Agroecosystem Arthropods (BIPAA) {[}48{]} and Texas A\&M University
-Center for Phage Technology (TAMU-CPT) {[}49{]}.
+\cite{Rasche2017} and is used by projects such as BioInformatics Platform for
+Agroecosystem Arthropods (BIPAA) \cite{Bretaudeau2017} and Texas A\&M University
+Center for Phage Technology (TAMU-CPT) \cite{Rasche2018}.
 
 \subsection*{Import and export}
 
@@ -366,7 +366,7 @@ revealing additional genomic insights. Likewise, exporting the curated
 annotations provides corrected information for downstream analysis, such
 as protein motif profiling. In either direction, a variety of standard
 genomic data formats, such as GFF3, BAM, GTF, GVF, GenBank, VCF, BED,
-BigWig, or the Chado database {[}50{]} are supported. These
+BigWig, or the Chado database \cite{Mungall_2007} are supported. These
 import/export capabilities are also available via a REST endpoint for
 direct programmatic use in other applications. Additionally, JBrowse has
 a large number of other input/output plugins, and associated
@@ -400,11 +400,11 @@ community. One recent example was the creation of the Genome Feature
 Widget (\url{https://www.npmjs.com/package/genomefeaturecomponent}) to
 provide a lightweight overview of genomic features in order to embed
 them within a web page. Working with external developers at the Human
-Phenotype Ontology {[}51{]} the Mouse Genome Database {[}52{]} and
-Wormbase {[}53{]}, we expanded the Apollo web services to serve pieces
+Phenotype Ontology \cite{K_hler_2016} the Mouse Genome Database \cite{Smith_2017} and
+Wormbase \cite{Lee_2017}, we expanded the Apollo web services to serve pieces
 of genomic evidence as JSON snippets that can be digested by the widget.
 The Genome Feature Widget is now being used by the Monarch Initiative
-{[}54{]} and the Alliance of Genome Resources (AGR) {[}55{]} in some of
+\cite{McMurry_2016} and the Alliance of Genome Resources (AGR) \cite{AllianceGenomeResources} in some of
 their web pages (\protect\hyperlink{pcbi.1006790.g005}{Fig 5A},
 \protect\hyperlink{pcbi.1006790.g005}{Fig 5B}), as well as to embed
 Apollo visualizations in other platforms such as Jupyter Notebooks
@@ -449,7 +449,7 @@ improvements submitted as GitHub pull requests by the community.
   A local \textbf{installation} of Apollo requires Java JDK 1.8+ and
   Node.js 6+. Installing, running, and testing are all accomplished
   using a provided bash script. We also provide a complete Docker
-  implementation {[}56{]}. Additionally, after every Apollo release, an
+  implementation \cite{zenodo.1296537}. Additionally, after every Apollo release, an
   Amazon Web Services EC2 public image is provided.
 \end{itemize}
 
@@ -480,7 +480,7 @@ Apollo relies on a traditional relational database, a well-established
 and performant technology that provides schema enforcement and
 transaction support, which are both requirements for a reliable curation
 tool. Genomic features are represented using a nested data model similar
-to Chado {[}50{]} and thus require multiple joins in order to retrieve
+to Chado \cite{Mungall_2007} and thus require multiple joins in order to retrieve
 them from the database, which is inherently inefficient, especially over
 larger sections of the genome. This is problematic if a user wants to
 promote an entire evidence track to the editing window, an operation
@@ -499,7 +499,7 @@ The plummeting price of sequencing is leading to an explosion of genomic
 sequencing. This in turn is producing a growing trove of information
 from which to gain insights into each new genome's encoded features.
 Projects such as the joint Wellcome Trust Sanger Centre and Beijing
-Genome Institute project to sequence every vertebrate genome {[}57{]}
+Genome Institute project to sequence every vertebrate genome \cite{Pennisi_2018}
 are the tip of the iceberg. While large genomic resource centers may
 have funding for staff members to maintain genome curation efforts for a
 handful of organisms, this will not scale to the annotation effort
@@ -515,7 +515,7 @@ process of genome annotation.
 Frequently, when a genome analysis project is completed, gene
 annotations and metadata generated during the life of the project become
 inaccessible to other researchers unless they are integrated into a
-stably supported central resource {[}58{]}. To overcome this,
+stably supported central resource \cite{Gibney_2013}. To overcome this,
 annotations could be saved to a central track hub registry (such as
 Ensembl or UCSC), as a read-only JBrowse snapshot of the annotations.
 This would not only preserve the data in a GFF3 file, but would also
@@ -551,3 +551,4 @@ the author list: Yating Liu, Luke Sargent, and Antony Bretaudeau.
 We also thank Chris Childers and Monica Poelchau at the National
 Agricultural Library for use cases, bug reports, feedback and
 stress-testing.
+
