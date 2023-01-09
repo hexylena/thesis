@@ -42,8 +42,7 @@ America.\label{phage-affil:3}
 \dag Deceased
 
 
-\hypertarget{sec001}{%
-\section*{Introduction}\label{sec001}}
+\section*{Introduction}
 
 Apollo's design is based on the premise that the best genomic
 descriptions (`annotations') can be produced by starting with
@@ -159,8 +158,7 @@ be added from this tab. The reference sequence tab provides a sortable
 and searchable list of every scaffold, including the length, name, and
 number of annotations on each, for navigation across the genome.
 
-\hypertarget{sec002}{%
-\section*{Design and implementation}\label{sec002}}
+\section*{Design and implementation}
 
 Apollo's design has always been driven by its users; their engagement in
 the development process has been a critical factor in Apollo's success.
@@ -179,8 +177,7 @@ history} is crucial, not only for undo/redo operations but also to
 review the changes that have been made over time by different
 individuals.
 
-\hypertarget{sec003}{%
-\subsection*{Real-time collaborative editing}\label{sec003}}
+\subsection*{Real-time collaborative editing}
 
 Apollo was designed with a standard client-server architecture
 (\protect\hyperlink{pcbi.1006790.g002}{Fig 2}) that can be run within a
@@ -241,8 +238,7 @@ and performant solution for pushing updates to multiple web clients that
 can fall back to a more traditional long-polling approach when client
 support is lacking as in older browsers.
 
-\hypertarget{sec004}{%
-\subsection*{Variants}\label{sec004}}
+\subsection*{Variants}
 
 In addition to allowing genomic features to be viewed and edited, Apollo
 provides the ability to annotate alterations in the underlying genomic
@@ -274,8 +270,7 @@ starred for clarity.}\label{pcbi.1006790.g003}
 }
 \end{figure}
 
-\hypertarget{sec005}{%
-\subsection*{Annotation history}\label{sec005}}
+\subsection*{Annotation history}
 
 As researchers progressively refine the sequence features on a genomic
 region, information is automatically recorded for every change they
@@ -301,8 +296,7 @@ sites.}\label{pcbi.1006790.g004}
 }
 \end{figure}
 
-\hypertarget{sec006}{%
-\section*{Results}\label{sec006}}
+\section*{Results}
 
 Apollo's wide appeal across research projects of various sizes that
 focus on various organisms owes much to the many years of engagement
@@ -317,8 +311,7 @@ of \textbf{customization} to accommodate different biological situations
 and project arrangements; and 4) direct engagement with users to
 encourage feedback and support \textbf{community contributions.}
 
-\hypertarget{sec007}{%
-\subsection*{Scalability}\label{sec007}}
+\subsection*{Scalability}
 
 One of the major objectives when designing the architecture of the
 current version of Apollo was the ability for a single server to handle
@@ -339,15 +332,13 @@ tool to simulate extraordinarily heavy read and write load over a
 sustained period. Additionally, we were able to scale up by modeling all
 organisms and users in a single database instance.
 
-\hypertarget{sec008}{%
-\subsection*{Ease of integration}\label{sec008}}
+\subsection*{Ease of integration}
 
 Biological data and tools do not exist in a vacuum. To enjoy wide use,
 bioinformatics environments such as Apollo need to be able to smoothly
 integrate with multiple analysis tools and user interfaces.
 
-\hypertarget{sec009}{%
-\subsection*{Web services}\label{sec009}}
+\subsection*{Web services}
 
 Documented and secure web services are key to integrating any software
 into different bioinformatics ecosystems. Apollo exposes the methods
@@ -369,8 +360,7 @@ also provides a Python library for interacting with the Apollo API
 Agroecosystem Arthropods (BIPAA) {[}48{]} and Texas A\&M University
 Center for Phage Technology (TAMU-CPT) {[}49{]}.
 
-\hypertarget{sec010}{%
-\subsection*{Import and export}\label{sec010}}
+\subsection*{Import and export}
 
 Importing new information as it becomes available is essential for
 revealing additional genomic insights. Likewise, exporting the curated
@@ -384,8 +374,7 @@ a large number of other input/output plugins, and associated
 visualization widgets, (\url{https://gmod.github.io/jbrowse-registry/}),
 which can be made available within Apollo.
 
-\hypertarget{sec011}{%
-\subsection*{Customization}\label{sec011}}
+\subsection*{Customization}
 
 Apollo's collection of configuration options enable it to meet the
 unique biological and organizational needs of individual projects.
@@ -401,8 +390,7 @@ may correspond, for example, to a laboratory or organism within a larger
 project. For more information about configuring Apollo, see
 \url{http://genomearchitect.org/users-guide/}.
 
-\hypertarget{sec012}{%
-\subsection*{Community contributions}\label{sec012}}
+\subsection*{Community contributions}
 
 As it has evolved, Apollo has greatly benefited from community
 contributions via bug reports, comments, feature suggestions, as well as
@@ -446,11 +434,9 @@ script.}\label{pcbi.1006790.g005}
 }
 \end{figure}
 
-\hypertarget{sec013}{%
-\section*{Availability and future directions}\label{sec013}}
+\section*{Availability and future directions}
 
-\hypertarget{sec014}{%
-\subsection*{Availability}\label{sec014}}
+\subsection*{Availability}
 
 Apollo is freely available (\url{https://github.com/GMOD/Apollo}) under
 the BSD-3 license. A User Guide and demo are provided at
@@ -468,8 +454,7 @@ improvements submitted as GitHub pull requests by the community.
   Amazon Web Services EC2 public image is provided.
 \end{itemize}
 
-\hypertarget{sec015}{%
-\subsection*{Future directions}\label{sec015}}
+\subsection*{Future directions}
 
 As we work to increase Apollo's repertoire of visual exploration and
 visual analytics tools, several major enhancements are currently under
@@ -489,9 +474,8 @@ evidence during initial installation and allowing all configuration to
 be done via the web interface. Finally, we are hoping to further improve
 Apollo's performance by using graph databases.
 
-\hypertarget{sec016}{%
 \subsubsection*{Graph databases for performance
-improvement}\label{sec016}}
+improvement}
 
 Apollo relies on a traditional relational database, a well-established
 and performant technology that provides schema enforcement and
@@ -510,8 +494,7 @@ suggested that they offer an order of magnitude speedup while still
 providing schema enforcement, transaction support, and a more adaptive
 schema.
 
-\hypertarget{sec017}{%
-\subsubsection*{Genome publication}\label{sec017}}
+\subsubsection*{Genome publication}
 
 The plummeting price of sequencing is leading to an explosion of genomic
 sequencing. This in turn is producing a growing trove of information
