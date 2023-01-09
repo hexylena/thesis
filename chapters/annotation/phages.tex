@@ -1,12 +1,12 @@
 %reset references counter
 \setcounter{NAT@ctr}{-1}
 \cleartorightpage
-\chapter*{}\label{chapter:gtn}
+\chapter*{}\label{chapter:phages}
 \phantomsection\addcontentsline{toc}{section}{Galaxy and Apollo as a biologist-friendly interface for high-quality cooperative phage genome annotation}
 
 \begin{figure}[t!]
 \centering
-\includegraphics[height=10em]{chapters/platform/gtn.png}
+\includegraphics[height=10em]{chapters/platform/phages.png}
 \end{figure}
 \vspace{-4cm}
 
@@ -46,22 +46,22 @@ America.\label{phage-affil:3}
 
 Bacteriophage, or phage, are the viruses of bacteria. Their study
 cracked open critical concepts in genetics, and allowed detailed gene
-mapping before genome maps could be generated with ease {[}1,2{]}. While
+mapping before genome maps could be generated with ease \cite{Ofir_2018,Salmond_2015}. While
 phage genomes were the first to be sequenced in their entirety, phage
 research declined considerably before sequencing technologies took off.
 Researchers from disparate fields in the modern age have come to a new
 appreciation for the potential that phage have to help solve current
 problems, as well as the commensurate challenges facing their
-application {[}3{]}. Scientists around the world are collecting phages
+application \cite{Young_2015}. Scientists around the world are collecting phages
 for a diverse panel of bacterial hosts that are relevant for the clinic,
 in industry, and as model organisms. One stated intent is to establish
 organized repositories, or phage banks, as a community resource for
-their distribution {[}4,5{]}. Coupling this with a surge in use of phage
+their distribution \cite{Pirnay_2018,Pouillot_2010}. Coupling this with a surge in use of phage
 for education and research training, an incredible boom of phage
 sequencing has also emerged, with great promise for extending our
-understanding of fundamental phage biology {[}6{]}.
+understanding of fundamental phage biology \cite{Hatfull_2011}.
 
-The great sequencing explosion has resulted in many new viral {[}7{]}
+The great sequencing explosion has resulted in many new viral \cite{Brister_2014}
 and phage genomes being deposited into online databases. Because these
 genomes are small, we can have high standards for complete, confirmed
 contigs, and high-quality structural and functional annotation.
@@ -71,8 +71,8 @@ command-line, they are not accessible to many biologists. Even if they
 are, the output is not visual, integrated, or contextualized, and
 requires much outside analysis. NCBI has released a suite of
 command-line interface tools for (eukaryotic) virus annotation recently
-{[}8{]}, and new phage-specific annotation pipelines are command-line
-based making teamwork less fluid {[}9{]}. While the capability to do the
+\cite{Shean_2019}, and new phage-specific annotation pipelines are command-line
+based making teamwork less fluid \cite{Ecale_Zhou_2019}. While the capability to do the
 needed analyses is there, it is still out of reach for many teams. A
 great need in the field is therefore to have easy-to-use, web-based
 tools with a graphical user interface for annotation and community
@@ -80,7 +80,7 @@ annotation platforms to improve quality and promote shared input on
 phage assessment for use in any given application. Because phages are
 being rushed into application in humans for phage therapy without
 measured and thorough safety checks put in place, many others agree that
-manual inspection for high-quality annotation is needed {[}10{]}. The
+manual inspection for high-quality annotation is needed \cite{Philipson_2018}. The
 Center for Phage Technology (CPT) at Texas A\&M University has harnessed
 two powerful online platforms to solve this problem.
 
@@ -89,14 +89,14 @@ two powerful online platforms to solve this problem.
 \subsection*{Galaxy \& Apollo at the CPT}
 
 The Galaxy Project is a web platform suitable for beginner and advanced
-biologists to perform analyses on biological sequence data {[}11{]}.
+biologists to perform analyses on biological sequence data \cite{Afgan_2018}.
 Apollo is a browser-based, evidence-driven, and community-focused genome
 annotation editor based on the popular JBrowse genome viewer
-{[}12,13{]}. The CPT created a Galaxy-Apollo bridge to link the powerful
+\cite{Lee_2013,Dunn_2019}. The CPT created a Galaxy-Apollo bridge to link the powerful
 sequence analysis capabilities of Galaxy with the evidence-based
 community annotation platform of Apollo to provide a complete
 environment for the analysis and annotation of phage genomes
-(\protect\hyperlink{pcbi.1008214.g001}{Fig 1}) {[}14{]}. To date, more
+(\protect\hyperlink{pcbi.1008214.g001}{Fig 1}) \cite{Skinner_2009}. To date, more
 than 120 phage genomes have been annotated using this platform and
 publicly deposited (see NCBI BioProject
 \href{https://www.ncbi.nlm.nih.gov/bioproject/?term=PRJNA222858}{PRJNA222858}).
@@ -108,7 +108,7 @@ tutorials added regularly.
 \begin{figure}
 \hypertarget{pcbi.1008214.g001}{%
 \centering
-\includegraphics{info:doi/10.1371/journal.pcbi.1008214.g001}
+	\includegraphics[width=\textwidth]{chapters/images/phages/1.png}
 \caption{The Galaxy and Web Apollo interface used for analyses and
 annotation.\\
 By coupling the Galaxy platform for analyses with the editing
@@ -136,7 +136,7 @@ update tools, and provide user support.
 
 Detailed descriptions of Galaxy functionality are provided by the
 developers, and here we give only a few highlights pertinent to our
-discussion on its use for phage annotation {[}11{]}. The user interface
+discussion on its use for phage annotation \cite{Afgan_2018}. The user interface
 in Galaxy revolves around three main panels where the work is ordered
 (\protect\hyperlink{pcbi.1008214.g001}{Fig 1}). Tools, or bioinformatic
 scripts, for data analysis are cataloged and searchable in the left
@@ -149,10 +149,10 @@ to a digital notebook, can be shared among users.
 The standard Galaxy installation comes with tool sets contributed by the
 scientific community, and can be expanded through tools available in the
 ToolShed, by adapting open-source tools for the Galaxy interface, or by
-writing new scripts to suit specialized analysis needs {[}15--17{]}. The
+writing new scripts to suit specialized analysis needs \cite{Blankenberg_2014,Cock_2013,Cock_2009}. The
 CPT Galaxy instance offers various phage-specific tools described below
 and a comprehensive selection of curated BLAST databases, including
-SwissProt, NCBI nt and nr, as well as certain custom databases {[}18{]}.
+SwissProt, NCBI nt and nr, as well as certain custom databases \cite{2018}.
 A common challenge in using a large collection of tools from different
 sources is the interoperability of the outputs. To facilitate moving
 data output from one tool into the next, we have also gathered, adapted
@@ -167,7 +167,7 @@ phage genome annotation}
 
 JBrowse is a widely-used, embeddable genome browser, capable of
 displaying genome annotations and features from the level of the entire
-chromosome down to the DNA sequence {[}19{]}. Apollo is a web-based
+chromosome down to the DNA sequence \cite{Buels_2016}. Apollo is a web-based
 genome editor that builds upon JBrowse to provide the ability to do
 persistent, manual genome annotation and curation inside an internet
 browser window. Multiple users can view and/or edit the same organism,
@@ -229,7 +229,7 @@ To promote widespread adoption by biologists, step-by-step tutorials
 with background for using Galaxy tools and the Apollo platform are
 freely available at the CPT website:
 \url{https://cpt.tamu.edu/training-material/}. Their format is based on
-resources provided by the Galaxy Training Network {[}20{]}. Tutorials
+resources provided by the Galaxy Training Network \cite{Batut_2018}. Tutorials
 are written at levels suitable for use by undergraduates learning how to
 annotate phage genomes. The topics covered make them useful for the
 scientist as well, including tutorials on phage genome assembly from
@@ -276,7 +276,7 @@ sequence (see full list in \protect\hyperlink{pcbi.1008214.s002}{S2
 Table}). By default, the longest match to the consensus is returned, but
 all the smaller matches can also be output. The returned S-D match is
 added to the GFF3 gene model as a child of the gene feature and named
-``Shine\_Dalgarno\_sequence'' (a sequence ontology term {[}21,22{]}),
+``Shine\_Dalgarno\_sequence'' (a sequence ontology term \cite{Mungall_2011,Eilbeck_2005}),
 and can then be displayed within Apollo. The consensus S-D sequence and
 recognized subset sequences can be swapped for an alternate sequence set
 by editing the Python script. GFF3 annotations that already contain S-D
@@ -292,20 +292,20 @@ sequence similarity. The spanin genes needed for outer membrane
 disruption during phage lysis of Gram-negative bacterial hosts are often
 missed or mis-annotated, largely due to their unique genetic
 architecture in which one gene is often embedded in an alternate reading
-frame within the sequence of another {[}23{]}. Spanins can function as a
+frame within the sequence of another \cite{Kongari_2018}. Spanins can function as a
 single or two-protein system, but the proteins share the same
 characteristics. The inner membrane spanin (i-spanin) contains a
 transmembrane domain, whereas the outer membrane spanin (o-spanin) will
 be cleaved and lipoylated by the bacterial lipoprotein processing system
-at a Cys residue at the end of a lipobox motif {[}24,25{]}. Their varied
+at a Cys residue at the end of a lipobox motif \cite{Babu_2006,von_Heijne_1989}. Their varied
 genetic architectures, particularly when the o-spanin gene is fully
 embedded within the i-spanin gene, and clear domain signatures are keys
-to the suite of tools that we have developed to find them {[}26{]}.
+to the suite of tools that we have developed to find them \cite{Cahill_2019}.
 
 To account for the fact that spanin genes are highly prone to be
 uncalled or called with incorrect start sites, spanin-finding begins
 with naïve ORF calling by the tool \textbf{Get open reading frames
-(ORFs) or coding sequences (CDSs)} {[}16,17{]} finding all possible ORFs
+(ORFs) or coding sequences (CDSs)} \cite{Cock_2013,Cock_2009} finding all possible ORFs
 (using the NCBI translation table 11 for Bacteria and a 30 aa minimum
 length cutoff), and generating an output in GFF3 format. The gene model
 within the GFF3 file is corrected by the addition of a gene parent
@@ -315,18 +315,18 @@ to add potential Shine-Dalgarno sites where they exist.
 
 From there, the naïve gene sequences are translated and analyzed in
 three ways. 1) Protein similarity to spanins in a curated database
-{[}23{]} is determined by BLASTp with a 0.001 expectation value cutoff.
+\cite{Kongari_2018} is determined by BLASTp with a 0.001 expectation value cutoff.
 2) Potential lipobox motifs expected for outer membrane spanins are
-identified using the tools \textbf{LipoP} {[}27{]} and \textbf{Identify
+identified using the tools \textbf{LipoP} \cite{Juncker_2003} and \textbf{Identify
 Lipoboxes}, a less stringent regex amino acid motif search for the
 four-residue motif {[}ILMFTV{]}-{[}any residue except
 REKD{]}-{[}GAS{]}-{[}C{]}, or {[}A{]}-{[}W{]}-{[}AGS{]}-{[}C{]}. 3)
 Inner-membrane spanin candidates are identified through \textbf{TMHMM},
-which predicts transmembrane regions {[}28{]}. Finally, to reduce noise,
+which predicts transmembrane regions \cite{Krogh_2001}. Finally, to reduce noise,
 the results from Lipobox/LipoP and TMHMM predictions are cross filtered
 to require putative inner- and outer-membrane spanin gene pairs occur
 within 50 nucleotides of each other and be located on the same strand,
-consistent with the architecture of known spanin genes {[}23{]}.
+consistent with the architecture of known spanin genes \cite{Kongari_2018}.
 Analysis using both explicit protein similarity by BLASTp and searching
 for more general spanin signatures allows for the identification of all
 spanin types and high-quality selection of likely start sites. This
@@ -341,7 +341,7 @@ false-positive results can typically be excluded upon cursory
 examination of the results due to their presence embedded within other,
 obviously non-spanin genes. Additionally, drawing connections within
 novel phages has allowed the computational identification of novel
-spanin genes {[}23{]}.
+spanin genes \cite{Kongari_2018}.
 
 \subsection*{Identifying interrupted genes}
 
@@ -386,9 +386,9 @@ essential genes, they share common secondary RNA structure but are not
 commonly predicted as part of annotation pipelines unless they contain a
 well-known intron-encoded protein. Studies have shown that
 \textasciitilde25\% of bacteria contain genes with group II introns,
-while phage regularly contain group I introns {[}29--31{]}. In the case
+while phage regularly contain group I introns \cite{Lambda,Candales_2011,Leclercq_2012}. In the case
 of T4 and T4-like phages, these mobile elements are seen to vary
-substantially {[}32--34{]}. The most reliable way to find the true
+substantially \cite{Edgell_2010,Petrov_2006,Petrov_2010}. The most reliable way to find the true
 boundaries is by manual inspection of high-quality alignments of the
 intron-disrupted phage protein segments against a non-interrupted
 homolog from the database, which is identified in the tool output in
@@ -399,7 +399,7 @@ cannot be accurately determined bioinformatically.
 There are several kinds of important proteins in phages that are
 produced via programmed translational frameshifting mechanisms, such as
 the capsid or tail proteins and the tail tape measure chaperones, of
-which λ is the best characterized example {[}35--40{]}. When the
+which λ is the best characterized example \cite{Baranov_2006,Atkins_2016,Xu_2004,Garci_a_2004,Auzat_2008,Condron_1991}. When the
 frameshifted downstream open reading frame of a protein has been called
 as a separate protein-coding gene (often without a strong SD), it can be
 detected by the interrupted genes tool. However, in cases where no
@@ -416,10 +416,10 @@ genomes.
 \subsection*{Custom BLAST databases and BLAST restriction by TaxID}
 
 The mainstay method for sequence comparison in genome annotation is
-BLAST {[}41{]}. While the number of sequenced phage genomes present in
+BLAST \cite{Camacho_2009}. While the number of sequenced phage genomes present in
 the NCBI database has increased rapidly since next-generation sequencing
-became widespread {[}42,43{]}, so have sequences of cellular organisms
-and eukaryotic viruses {[}44{]}. Sequences outside bacteria and phages
+became widespread \cite{Hatfull_2011,Merrill_2016}, so have sequences of cellular organisms
+and eukaryotic viruses \cite{O_Leary_2015}. Sequences outside bacteria and phages
 are usually not relevant to our analyses, drown out low similarity hits
 of interest, and significantly increase required processing time. The
 CPT Galaxy instance, with locally installed database copies updated
@@ -455,7 +455,7 @@ TaxID, as has long been available on the NCBI BLAST webserver. On the
 CPT Galaxy instance, we modified the BLAST wrapper to make this
 functionality available, with searching using non-species-level IDs
 available with the TaxonKit tool to retrieve all species-level TaxIDs
-that are required by BLAST 2.9 {[}45{]}. Using curated lists of TaxIDs
+that are required by BLAST 2.9 \cite{Shen_2019}. Using curated lists of TaxIDs
 that include all phages, bacteria, and/or canonical phages
 (\protect\hyperlink{pcbi.1008214.s003}{S3 Table}), we are able to
 drastically reduce the processing time while targeting searches more
@@ -465,10 +465,10 @@ effectively.
 
 In CPT Galaxy, there are also assembly tools, including \textbf{SPAdes}
 and \textbf{FastQC}. Since phage genomes are relatively small, typically
-\textless200 kb {[}46{]}, they usually assemble completely in a single
+\textless200 kb \cite{Dion_2020}, they usually assemble completely in a single
 contig that is opened randomly by the assembler. Biologically, phage
 genomes can have physical ends with or without terminal repeats, or be
-circular {[}43{]}. As with other genome browsers, wraparounds are not
+circular \cite{Merrill_2016}. As with other genome browsers, wraparounds are not
 supported at this time in Apollo. Therefore, the genome is displayed
 linearly and users must exercise careful judgement on interpretation of
 all features that border or span the boundary of unannotated genomes.
@@ -477,7 +477,7 @@ termini probed. Therefore, we rely on comparisons to phages with
 empirically verified ends and computational predictions, whose
 accessibility is limited by the specific sequencing technology used.
 \textbf{PhageTerm} is an end prediction program installed in CPT Galaxy
-{[}47{]}. These software assessments can be useful in determining the
+\cite{Garneau_2017}. These software assessments can be useful in determining the
 most logical place to re-open a genome, usually decided by convention in
 the field. \textbf{Genome Editor} is a tool that allows rearrangement of
 the genome, with or without associated annotations. There are also tools
@@ -534,7 +534,7 @@ taking \textless20 minutes to complete.
 \begin{figure}
 \hypertarget{pcbi.1008214.g002}{%
 \centering
-\includegraphics{info:doi/10.1371/journal.pcbi.1008214.g002}
+	\includegraphics[width=\textwidth]{chapters/images/phages/2.png}
 \caption{The structural workflow chains together tools in Galaxy for
 gene calling.\\
 The structural workflow accepts as input a nucleotide FASTA genome
@@ -553,30 +553,30 @@ From the naked input DNA sequence, five separate gene analysis tracks
 are initiated. Two gene callers, \textbf{GLIMMER} 3.0 and
 \textbf{MetaGeneAnnotator} v1.0 (MGA), both popular prokaryotic
 prediction programs, are used to predict the locations of protein-coding
-genes {[}48,49{]}. Their outputs are converted into GFF3 format and
+genes \cite{Delcher_1999,Noguchi_2008}. Their outputs are converted into GFF3 format and
 processed by ShineFind; RBS sequences assigned by MGA are discarded
 (feature filter step) in favor of the ShineFind algorithm. The outputs
 are then properly formatted with a gene model structure that follows
 gene-CDS and gene-Shine\_Dalgarno parent-child relationships for display
 as a feature track for JBrowse. The MGA gene calls are used to predict
 rho-independent transcriptional terminators using \textbf{TransTermHP}
-{[}50{]}. A third gene caller, \textbf{Get open reading frames (ORFs) or
+\cite{Kingsford_2007}. A third gene caller, \textbf{Get open reading frames (ORFs) or
 coding sequences (CDSs)}, uses the Sixpack framework from EMBL, preset
 to use the NCBI translation table 11, for minimum 30 aa long ORFs with
-both a start and stop codon {[}16,17{]}. The GetORFs output is further
+both a start and stop codon \cite{Cock_2013,Cock_2009}. The GetORFs output is further
 filtered to only genes with phage start codons (ATG, GTG, and TTG) along
 with reformatting the gene model before formatting for display as a
 feature track for JBrowse. tRNA and tmRNA genes are predicted by
 \textbf{ARAGORN} v2.36 and also formatted for display as a feature track
-in JBrowse {[}51{]}.
+in JBrowse \cite{Laslett_2004}.
 
 Phage genomes are highly compact due to packaging constraints imposed by
 the amount of genomic DNA or RNA that can fit into the capsid
-{[}52,53{]}. With a typical \textgreater90\% coding density,
+\cite{Miller_2003,Kang_2017}. With a typical \textgreater90\% coding density,
 protein-coding genes often overlap by several bases with adjacent coding
 sequences. Many overlapping genes are missed by gene calling algorithms
 trained on bacterial genomes which are not subjected to compaction
-{[}53--55{]}, which is why the CPT Galaxy pipeline is designed to allow
+\cite{Kang_2017,McNair_2019,Akhter_2012}, which is why the CPT Galaxy pipeline is designed to allow
 comparison of the results from three programs. MGA and GLIMMER results
 usually agree, and predict the majority of protein-coding genes in the
 genome. However, when gaps are present, they can often be filled by
@@ -604,7 +604,7 @@ complete, commensurate with the size of the input dataset.
 \begin{figure}
 \hypertarget{pcbi.1008214.g003}{%
 \centering
-\includegraphics{info:doi/10.1371/journal.pcbi.1008214.g003}
+	\includegraphics[width=\textwidth]{chapters/images/phages/3.png}
 \caption{The functional workflow links tools in Galaxy used for
 functional prediction.\\
 Inputs for the functional workflow are gene calls paired with their
@@ -648,21 +648,21 @@ mapped, back to the parent genome for display as an evidence track in
 JBrowse format.
 
 \emph{InterProScan} is a conserved domain search tool incorporating
-information from several other services {[}56--59{]}. In the CPT Galaxy
+information from several other services \cite{Quevillon_2005,Zdobnov_2001,Hunter_2009,Jones_2014}. In the CPT Galaxy
 workflow, the same translated CDS features used for BLASTp analysis are
 searched against conserved domain databases by InterProScan, which
 returns a GFF3-formatted result that is mapped (or `rebased') back onto
 the parent genome for JBrowse display.
 
 \emph{Transmembrane domains} are predicted from the translated features
-using TMHMM 2.0 {[}28{]}. The simple output is a GFF3 file, which, when
+using TMHMM 2.0 \cite{Krogh_2001}. The simple output is a GFF3 file, which, when
 displayed in Apollo shows the location of the probable TMD, and gives
 its predicted orientation in the feature name. Three additional outputs
 for inside, outside, and membrane probability are converted from wig to
-bigwig format for a plot format display {[}60{]}, and mapped back onto
+bigwig format for a plot format display \cite{Kent_2010}, and mapped back onto
 the parent GFF3 at the proper location. Additionally, transmembrane
 domains and signal peptides are predicted by Phobius, which is
-incorporated into the InterProScan software package {[}59,61{]}.
+incorporated into the InterProScan software package \cite{Jones_2014,Kent_2010,K_ll_2004}.
 
 The final output of the workflow is the direct Apollo link to the
 updated JBrowse instance for the organism. In Apollo, each evidence
@@ -687,7 +687,7 @@ workflow and it usually takes less than ten minutes to run
 \begin{figure}
 \hypertarget{pcbi.1008214.g004}{%
 \centering
-\includegraphics{info:doi/10.1371/journal.pcbi.1008214.g004}
+	\includegraphics[width=\textwidth]{chapters/images/phages/4.png}
 \caption{The comparative genomics workflow calculates nucleotide and
 protein similarity to other phages.\\
 The protein comparison branch starts with a BLASTp job against the nr
@@ -720,20 +720,20 @@ coefficient = (2 * \# identical matches)/((genome 1 length) + (genome 2
 length))). With this information, the full FASTA record for each top
 matching genome is retrieved via the NCBI \textbf{EFetch} utility. After
 concatenation, the related genomes are processed by \textbf{MIST} v3 to
-generate a dot plot; MIST builds upon Gepard {[}62{]} to generate a
+generate a dot plot; MIST builds upon Gepard \cite{Krumsiek_2007} to generate a
 matrix of multiple pairwise dot plots for a set of input sequences. The
 MIST Python script calls Gepard for each pairwise comparison and builds
 the combined image and image map. DNA sequences are also compared by
 \textbf{progressiveMauve} v2.4.0, with the aligned blocks extracted and
 output as a table with the \textbf{Convert XMFA to percent identity
 table} tool, which presents overall percent nucleotide identity as a
-Dice coefficient {[}62,63{]}.
+Dice coefficient \cite{Krumsiek_2007,Darling_2010}.
 
 The data in these tables can be directly used for publication, as
 reference for finding literature on the genome type, or as the basis for
 additional comparative genomics including the generation of synteny
 plots using tools in CPT Galaxy like \textbf{X-Vis}, \textbf{Genome
-Mapper}, or \textbf{EasyFig} {[}64{]}.
+Mapper}, or \textbf{EasyFig} \cite{Sullivan_2011}.
 
 \subsection*{More on workflows}
 
@@ -763,7 +763,7 @@ Track--UserDB} and its variation from a \emph{Local DB} allow running a
 BLASTp analysis against a user-generated local database. A specific use
 case is the \emph{BLAST antiCRISPRdb to Apollo Evidence Track} workflow,
 which searches against a local copy of the curated anti-CRISPRdb
-{[}65{]}. Another useful workflow set, \emph{X-vis from GFF3/Fasta},
+\cite{Dong_2017}. Another useful workflow set, \emph{X-vis from GFF3/Fasta},
 will generate a synteny map converting BLAST similarity into protein
 XMFA format for visualization across the entire genome. The direct links
 to current versions of the workflows mentioned here are listed in
@@ -779,27 +779,27 @@ workflows can be accessed at
 Various groups host annotation systems publicly accessible for phage
 annotation. DNAMaster is arguably the most widely used program for
 teaching phage annotation in the undergraduate education context
-{[}66{]}. Thousands of students have performed phage annotation through
+\cite{Jordan_2014}. Thousands of students have performed phage annotation through
 the SEA-PHAGES program in this stand-alone Windows program written
 originally by Jeffrey Lawrence. Recently, an independent research group
 released multiPhATE, a downloadable command-line bioinformatics pipeline
-for functional annotation of phage isolates {[}9{]} One unique aspect in
+for functional annotation of phage isolates \cite{Ecale_Zhou_2019} One unique aspect in
 multiPhATE is an accompanying tool designed specifically to detect phage
-genes called PHANOTATE {[}54{]}.
+genes called PHANOTATE \cite{McNair_2019}.
 
 Prior to these examples with adaptations tuned to phage annotation, most
 automated pipelines in wide use were developed around prokaryotic
 annotation needs. The service offered with deposit to Genbank, the
 Prokaryotic Genome Annotation Pipeline (PGAP), is now available as a
 stand-alone program for bacterial and archaeal genomes and used for all
-RefSeq sequences {[}67,68{]}. DFAST is a downloadable and web-based
+RefSeq sequences \cite{Tatusova_2016,Haft_2017}. DFAST is a downloadable and web-based
 prokaryotic genome annotation pipeline that boasts a 10-minute or less
-processing time for full bacterial genomes {[}69{]}. The RASTtk pipeline
+processing time for full bacterial genomes \cite{Tanizawa_2017}. The RASTtk pipeline
 is a downloadable and web-based prokaryotic genome annotation service,
 used in the microbiology community as the basis for PATRIC (PAThosystems
-Resource Integration Center) {[}70--72{]}. Their use of subsystems to
+Resource Integration Center) \cite{Aziz_2008,Overbeek_2013}. Their use of subsystems to
 perform quick and automatic annotations has also been applied to phage
-genome annotation, recently described in manual format {[}73{]}.
+genome annotation, recently described in manual format \cite{McNair_2017}.
 
 Given its widespread use, we compared the output of annotation with the
 tools in CPT Galaxy to RASTtk for five phages representing all the major
@@ -827,7 +827,7 @@ automated pipelines can be combined with the convenient browsing and
 editing tools available in the CPT Galaxy for polishing. Additionally,
 the annotation can be performed collaboratively across groups or
 institutions, making use of the ``Google Docs''-type functionality, as
-we have done in several instances {[}74--76{]}. Finally, the system's
+we have done in several instances \cite{Marc_2019,Culbertson_2019,Freeman_2019}. Finally, the system's
 application to a classroom setting is also immediately apparent, even a
 virtual classroom, where teams can work on the same genome, and all
 contributions are logged per user.
