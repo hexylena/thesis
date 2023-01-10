@@ -1,4 +1,5 @@
 thesis: clean frontmatter/images references.bib vars.tex
+	bash vars.sh
 	latexmk -xelatex -f dissertation.tex
 
 frontmatter/images:
