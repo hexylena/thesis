@@ -143,7 +143,7 @@ Tripal uses JSON-LD \cite{W3C_2014} (LD for linked data) to provide access to en
   "alternatename": null
 }
 \end{lstlisting}
-\caption{TODO}
+\caption{JSON Snippet}
 \end{figure}
 
 As with all JSON returned by RESTful web services, data are organized by key–value pairs. However, to support linked data, this JSON contains three special keys: @context, @id and @type. The meaning of the @id and @type correspond directly with the ID and type of a Tripal entity. However, with linked data, each @id must be a URL. Here the @id is the unique URL for the entity on the site’s web services and uniquely defines this data object. The @context key contains a URL providing JSON that defines the linked data information. The following is a snippet of the JSON from that URL:
@@ -163,7 +163,7 @@ As with all JSON returned by RESTful web services, data are organized by key–v
 "accession": "data:2091",
 "data:2091": "http://edamontology.org/data_2091",
 \end{lstlisting}
-\caption{TODO}
+\caption{JSON Extract}
 \end{figure}
 
 Using the JSON available via the @context link, the meaning of the keys used in the initial JSON is understood. For example, the meaning of the entity type "mRNA" can be found by following the provided link to the SO browser. The key "accession" resolves to the controlled vocabulary term "data:2091" that resolves to a URL for a term with the EDAM ontology. All keys in the JSON-LD data are found via the @context. Computer programs that support JSON-LD can use the context to reason about content.
