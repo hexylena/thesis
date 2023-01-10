@@ -1,4 +1,4 @@
-thesis: clean frontmatter/images references.bib
+thesis: clean frontmatter/images references.bib vars.tex
 	latexmk -xelatex -f dissertation.tex
 
 frontmatter/images:

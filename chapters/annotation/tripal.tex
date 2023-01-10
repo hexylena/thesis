@@ -106,51 +106,51 @@ RESTful web services are new to Tripal v3. A RESTful web service is one which us
 Tripal uses JSON-LD \cite{W3C_2014} (LD for linked data) to provide access to entities via its web services. JSON-LD is a data format for exchanging linked data using JSON that is a data-interchange format commonly used for RESTful web services. The following JSON provides an example for the orange1.1g015632m transcript. URLs have been shortened with an ellipsis for brevity (substitute \url{https://www.citrusgenomedb.org/web-services/content/v0.1} in place of the ellipses):
 
 
-%\begin{figure}[!ht]
-%\centering
-%\begin{lstlisting}[frame=single]  % Start your code-block
-%%{
-%%  "@context": ".../mrna.732219.json",
-%%  "@id": ".../mRNA/732219",
-%%  "@type": "mRNA",
-%%  "label": "orange1.1g015632m, PAC:18136217 (mRNA) Citrus sinensis",
-%%  "ItemPage": "https://www.citrusgenomedb.org/bio_data/732219",
-%%  "type": "mRNA",
-%%  "accession": "",
-%%  "organism": {
-%%    "label": "<i>Citrus sinensis</i>",
-%%    "genus": "Citrus",
-%%    "species": "sinensis"
-%%  },
-%%  "name": "orange1.1g015632m",
-%%  "identifier": "PAC:18136217",
-%%  "sequence": ".../mRNA/732219/Sequence",
-%%  "sequence_length": "2075",
-%%  "sequence_checksum": "6c75d1779e249a7f102e75c32 18b39ad",
-%%  "is_analysis": false,
-%%  "is_obsolete": false,
-%%  "time_accessioned": "2011-03-22 09:22:42.725247",
-%%  "time_last_modified": "2011-03-22 09:22:42.725247",
-%%  "protein_sequence": ".../mRNA/732219/Protein_sequen ce",
-%%  "cds": ".../mRNA/732219/CDS",
-%%  "contact": null,
-%%  "database_cross_reference": ".../mRNA/732219/databa se_cross_reference",
-%%  "sequence_coordinates": ".../mRNA/732219/Sequence_ coordinates",
-%%  "location_on_map": null,
-%%  "annotation": ".../mRNA/732219/annotation",
-%%  "publication": null,
-%%  "relationship": ".../mRNA/732219/relationship",
-%%  "alternatename": null
-%%}
-%\end{lstlisting}
-%\caption{TODO}
-%\end{figure}
+\begin{figure}[!ht]
+\centering
+\begin{lstlisting}
+{
+  "@context": ".../mrna.732219.json",
+  "@id": ".../mRNA/732219",
+  "@type": "mRNA",
+  "label": "orange1.1g015632m, PAC:18136217 (mRNA) Citrus sinensis",
+  "ItemPage": "https://www.citrusgenomedb.org/bio_data/732219",
+  "type": "mRNA",
+  "accession": "",
+  "organism": {
+    "label": "<i>Citrus sinensis</i>",
+    "genus": "Citrus",
+    "species": "sinensis"
+  },
+  "name": "orange1.1g015632m",
+  "identifier": "PAC:18136217",
+  "sequence": ".../mRNA/732219/Sequence",
+  "sequence_length": "2075",
+  "sequence_checksum": "6c75d1779e249a7f102e75c32 18b39ad",
+  "is_analysis": false,
+  "is_obsolete": false,
+  "time_accessioned": "2011-03-22 09:22:42.725247",
+  "time_last_modified": "2011-03-22 09:22:42.725247",
+  "protein_sequence": ".../mRNA/732219/Protein_sequen ce",
+  "cds": ".../mRNA/732219/CDS",
+  "contact": null,
+  "database_cross_reference": ".../mRNA/732219/databa se_cross_reference",
+  "sequence_coordinates": ".../mRNA/732219/Sequence_ coordinates",
+  "location_on_map": null,
+  "annotation": ".../mRNA/732219/annotation",
+  "publication": null,
+  "relationship": ".../mRNA/732219/relationship",
+  "alternatename": null
+}
+\end{lstlisting}
+\caption{TODO}
+\end{figure}
 
 As with all JSON returned by RESTful web services, data are organized by key–value pairs. However, to support linked data, this JSON contains three special keys: @context, @id and @type. The meaning of the @id and @type correspond directly with the ID and type of a Tripal entity. However, with linked data, each @id must be a URL. Here the @id is the unique URL for the entity on the site’s web services and uniquely defines this data object. The @context key contains a URL providing JSON that defines the linked data information. The following is a snippet of the JSON from that URL:
 
 \begin{figure}[!ht]
 \centering
-\begin{lstlisting}[frame=single]  % Start your code-block
+\begin{lstlisting}
 "mRNA":
 "http://www.sequenceontology.org/browser/current_svn/term/SO:0000234",
 "label": "rdfs:label",
