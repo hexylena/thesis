@@ -54,7 +54,8 @@ Stephen P. Ficklin \textsuperscript{\ref{tripal-affil:1}}
 Community biological databases provide an important online resource for both public and private data, analysis tools and community engagement. These sites house genomic, transcriptomic, genetic, breeding and ancillary data for specific species, families or clades. Due to the complexity and increasing quantities of these data, construction of online resources is increasingly difficult especially with limited funding and access to technical expertise. Furthermore, online repositories are expected to promote FAIR data principles (findable, accessible, interoperable and reusable) that presents additional challenges. The open-source Tripal database toolkit seeks to mitigate these challenges by creating both the software and an interactive community of developers for construction of online community databases. Additionally, through coordinated, distributed co-development, Tripal sites encourage community-wide sustainability. Here, we report the release of Tripal version 3 that improves data accessibility and data sharing through systematic use of controlled vocabularies (CVs). Tripal uses the community-developed Chado database as a default data store, but now provides tools to support other data stores, while ensuring that CVs remain the central organizational structure for the data. A new site developer can use Tripal to develop a basic site with little to no programming, with the ability to integrate other data types using extension modules and the Tripal application programming interface. A thorough online User’s Guide and Developer’s Handbook are available at http://tripal.info, providing download, installation and step-by-step setup instructions.
 
 
-Introduction
+\section*{Introduction}
+
 
 Online repositories for biological data serve as a valuable resource for researchers as they provide a home for public data and offer services such as tools for data analysis, web services, or content for scientific community engagement. In 1988, the National Center for Biotechnology Information (NCBI) was created with the goal to ‘design, develop, implement and manage automated systems for the collection, storage, retrieval, analysis and dissemination of knowledge concerning human molecular biology, biochemistry and genetics’ (1). NCBI has served as a global repository for genomic sequence data, gene transcriptome data, genetic variance data and more for both human and non-human species for three decades.
 
@@ -78,13 +79,13 @@ Here, we report on the most recent version of Tripal (version 3). This version r
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[]{chapters/images/tripal/1.jpeg}
-\caption{The entity–relationship (ER) diagram of the feature table of Chado and some of its linked tables (some table columns removed). The feature table stores genomic features and ancillary data is housed in linked tables.\label{fig:1}}
+\includegraphics[width=0.7\textwidth]{chapters/images/tripal/1.jpeg}
+\caption{The entity-relationship (ER) diagram of the feature table of Chado and some of its linked tables (some table columns removed). The feature table stores genomic features and ancillary data is housed in linked tables.\label{fig:1}}
 \end{figure}
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[]{chapters/images/tripal/2.jpeg}
+\includegraphics[width=0.7\textwidth]{chapters/images/tripal/2.jpeg}
 \caption{A diagram representing an entity model in Tripal v3. Each field consists of a key–value pair where the key must be defined using a controlled vocabulary term. The ID and type fields are required while all other are optional. Fields may have a single value or be a nested array of key–value pairs where keys must also use controlled vocabulary terms. This example includes real field data for the transcript named, orange1.1g015632m from the Citrus Genome Database.\label{fig:2}}
 \end{figure}
 
@@ -102,68 +103,68 @@ Rather than add support for semantic data exchange alongside the existing Chado-
 
 RESTful web services are new to Tripal v3. A RESTful web service is one which uses the HTTP protocol (the same used by web browsers to deliver content) to query and retrieve data in a format that is usable by a computer program, most commonly, JavaScript Object Notation (JSON) and eXtensible Markup Language (XML) formats. Tripal entities and their fields use CV terms. This supports data accessibility and exchange by reducing ambiguity about the meaning of an entity. It also supports the concept of accessibility through Linked Data (31, 32), a concept used with the Semantic Web (33) to improve accessibility for data exchange. Linked data utilizes CVs and web URIs (universal resource identifier) to reference data objects (i.e. entities and field keys). By qualifying all data with URIs, the meaning of data can be resolved. For example, Figure 2 indicates that the example entity is of type SO:0000234, a term from the SO meaning: mRNA. A URL maintained by the SO exists for this term and further details can be found there. Likewise, each of the field keys are also defined using CV terms. For example, the name field uses the term ‘name’ from the Schema vocabulary (\url{https://schema.org/}). A lookup of the term ‘schema:name’ will resolve its meaning.
 
-Tripal uses JSON-LD (34) (LD for linked data) to provide access to entities via its web services. JSON-LD is a data format for exchanging linked data using JSON that is a data-interchange format commonly used for RESTful web services. The following JSON provides an example for the orange1.1g015632m transcript. URLs have been shortened with an ellipsis for brevity (substitute ‘\url{https://www.citrusgenomedb.org/web-services/content/v0.1’} in place of the ellipses):
+Tripal uses JSON-LD (34) (LD for linked data) to provide access to entities via its web services. JSON-LD is a data format for exchanging linked data using JSON that is a data-interchange format commonly used for RESTful web services. The following JSON provides an example for the orange1.1g015632m transcript. URLs have been shortened with an ellipsis for brevity (substitute \url{https://www.citrusgenomedb.org/web-services/content/v0.1} in place of the ellipses):
 
-
-\begin{figure}[!ht]
-\centering
-\begin{lstlisting}[frame=single]  % Start your code-block
-%{
-%  "@context": ".../mrna.732219.json",
-%  "@id": ".../mRNA/732219",
-%  "@type": "mRNA",
-%  "label": "orange1.1g015632m, PAC:18136217 (mRNA) Citrus sinensis",
-%  "ItemPage": "https://www.citrusgenomedb.org/bio_data/732219",
-%  "type": "mRNA",
-%  "accession": "",
-%  "organism": {
-%    "label": "<i>Citrus sinensis</i>",
-%    "genus": "Citrus",
-%    "species": "sinensis"
-%  },
-%  "name": "orange1.1g015632m",
-%  "identifier": "PAC:18136217",
-%  "sequence": ".../mRNA/732219/Sequence",
-%  "sequence_length": "2075",
-%  "sequence_checksum": "6c75d1779e249a7f102e75c32 18b39ad",
-%  "is_analysis": false,
-%  "is_obsolete": false,
-%  "time_accessioned": "2011-03-22 09:22:42.725247",
-%  "time_last_modified": "2011-03-22 09:22:42.725247",
-%  "protein_sequence": ".../mRNA/732219/Protein_sequen ce",
-%  "cds": ".../mRNA/732219/CDS",
-%  "contact": null,
-%  "database_cross_reference": ".../mRNA/732219/databa se_cross_reference",
-%  "sequence_coordinates": ".../mRNA/732219/Sequence_ coordinates",
-%  "location_on_map": null,
-%  "annotation": ".../mRNA/732219/annotation",
-%  "publication": null,
-%  "relationship": ".../mRNA/732219/relationship",
-%  "alternatename": null
-%}
-\end{lstlisting}
-\caption{TODO}
-\end{figure}
-
-As with all JSON returned by RESTful web services, data are organized by key–value pairs. However, to support linked data, this JSON contains three special keys: @context, @id and @type. The meaning of the @id and @type correspond directly with the ID and type of a Tripal entity. However, with linked data, each @id must be a URL. Here the @id is the unique URL for the entity on the site’s web services and uniquely defines this data object. The @context key contains a URL providing JSON that defines the linked data information. The following is a snippet of the JSON from that URL:
 
 %\begin{figure}[!ht]
 %\centering
 %\begin{lstlisting}[frame=single]  % Start your code-block
-%"mRNA":
-%"http://www.sequenceontology.org/browser/current_svn/term/SO:0000234",
-%"label": "rdfs:label",
-%"rdfs:label": "http://www.w3.org/2000/01/rdf-schema#label",
-%"ItemPage": "schema: ItemPage",
-%"schema: ItemPage": "https://schema.org/ItemPage",
-%"type": "rdfs:type",
-%"rdfs:type": "http://www.w3.org/2000/01/rdf-schema#type",
-%"data": "http://edamontology.org/data_",
-%"accession": "data:2091",
-%"data:2091": "http://edamontology.org/data_2091",
+%%{
+%%  "@context": ".../mrna.732219.json",
+%%  "@id": ".../mRNA/732219",
+%%  "@type": "mRNA",
+%%  "label": "orange1.1g015632m, PAC:18136217 (mRNA) Citrus sinensis",
+%%  "ItemPage": "https://www.citrusgenomedb.org/bio_data/732219",
+%%  "type": "mRNA",
+%%  "accession": "",
+%%  "organism": {
+%%    "label": "<i>Citrus sinensis</i>",
+%%    "genus": "Citrus",
+%%    "species": "sinensis"
+%%  },
+%%  "name": "orange1.1g015632m",
+%%  "identifier": "PAC:18136217",
+%%  "sequence": ".../mRNA/732219/Sequence",
+%%  "sequence_length": "2075",
+%%  "sequence_checksum": "6c75d1779e249a7f102e75c32 18b39ad",
+%%  "is_analysis": false,
+%%  "is_obsolete": false,
+%%  "time_accessioned": "2011-03-22 09:22:42.725247",
+%%  "time_last_modified": "2011-03-22 09:22:42.725247",
+%%  "protein_sequence": ".../mRNA/732219/Protein_sequen ce",
+%%  "cds": ".../mRNA/732219/CDS",
+%%  "contact": null,
+%%  "database_cross_reference": ".../mRNA/732219/databa se_cross_reference",
+%%  "sequence_coordinates": ".../mRNA/732219/Sequence_ coordinates",
+%%  "location_on_map": null,
+%%  "annotation": ".../mRNA/732219/annotation",
+%%  "publication": null,
+%%  "relationship": ".../mRNA/732219/relationship",
+%%  "alternatename": null
+%%}
 %\end{lstlisting}
 %\caption{TODO}
 %\end{figure}
+
+As with all JSON returned by RESTful web services, data are organized by key–value pairs. However, to support linked data, this JSON contains three special keys: @context, @id and @type. The meaning of the @id and @type correspond directly with the ID and type of a Tripal entity. However, with linked data, each @id must be a URL. Here the @id is the unique URL for the entity on the site’s web services and uniquely defines this data object. The @context key contains a URL providing JSON that defines the linked data information. The following is a snippet of the JSON from that URL:
+
+\begin{figure}[!ht]
+\centering
+\begin{lstlisting}[frame=single]  % Start your code-block
+"mRNA":
+"http://www.sequenceontology.org/browser/current_svn/term/SO:0000234",
+"label": "rdfs:label",
+"rdfs:label": "http://www.w3.org/2000/01/rdf-schema#label",
+"ItemPage": "schema: ItemPage",
+"schema: ItemPage": "https://schema.org/ItemPage",
+"type": "rdfs:type",
+"rdfs:type": "http://www.w3.org/2000/01/rdf-schema#type",
+"data": "http://edamontology.org/data_",
+"accession": "data:2091",
+"data:2091": "http://edamontology.org/data_2091",
+\end{lstlisting}
+\caption{TODO}
+\end{figure}
 
 Using the JSON available via the @context link, the meaning of the keys used in the initial JSON is understood. For example, the meaning of the entity type "mRNA" can be found by following the provided link to the SO browser. The key "accession" resolves to the controlled vocabulary term "data:2091" that resolves to a URL for a term with the EDAM ontology. All keys in the JSON-LD data are found via the @context. Computer programs that support JSON-LD can use the context to reason about content.
 
@@ -179,7 +180,7 @@ Aside from the need to support data exchange, a long-term challenge for Tripal-b
 
 \begin{figure}[ht!]
 \centering
-\includegraphics[]{chapters/images/tripal/3.jpeg}
+\includegraphics[width=0.7\textwidth]{chapters/images/tripal/3.jpeg}
 \caption{A diagram representing the Tripal Storage API and its relationship to content on a Tripal website. The Storage API sits between the Tripal Entity data model and the storage back-ends, allowing data to be integrated from multiple storage locations into a single entity.\label{fig:3}}
 \end{figure}
 
@@ -194,58 +195,59 @@ Documentation for Tripal site creation, management and customization is availabl
 Using the Tripal API, a site developer can create reusable extension modules that expand the functionality of their Tripal sites and share those modules with the Tripal community. This sharing of extensions encourages co-development and reduces duplication of effort. A list of Tripal v3 compatible modules is listed in Table 1. The authors did not create all of the modules listed in Table 1. They may be published elsewhere and some may still be in development. An updated list of modules, as they become available is housed in the online Tripal documentation at \url{https://tripal.readthedocs.io/en/latest/extensions.html.} This listing helps serve as a gathering point for developers to collaborate on existing modules and as a resource for a site developer looking for additional functionality.
 
 
-%\begin{table}[!ht]
-%	\caption{Tripal v3 compatible extension modules, listed by category*}
-%	\begin{tabular}{ll}
-%		\multicolumn{2}{l}{\textbf{Administrative}} \\
-%		Tripal Alchemist  & Transforms entities from one data type to another.  \\
-%		Tripal Curator  & Splits properties and mass reassign property CV terms.  \\
-%		Tripal Headquarters  & Supports admin approval of user submitted data.  \\
-%		\multicolumn{2}{l}{\textbf{Functional annotation }} \\
-%		Tripal Analysis Expression  & Loads and visualizes NCBI Biomaterials and expression data.  \\
-%		Tripal Analysis Blast  & Loads and displays XML results from the NCBI blast program.  \\
-%		Tripal Analysis KEGG  & Loads and displays of KEGG ortholog assignments.  \\
-%		Tripal Analysis Interpro  & Loads and displays of XML results from the InterProScan program.  \\
-%		Tripal CV-Xray  & Maps content annotations onto browsable controlled vocabulary trees.  \\
-%		\multicolumn{2}{l}{\textbf{Other data loaders }} \\
-%		Genotype Loader  & Loads genotype data housed in VCF files.  \\
-%		Mainlab Chado Loader  & Provides various data loaders for Excel-based template files.  \\
-%		Raw Phenotypes  & Loads phenotype data via Excel with validation, charts and downloads.  \\
-%		Tripal BibTeX  & A BibTeX importer for publications.  \\
-%		Tripal Plant PopGen  & Provides import of genotype, phenotype, environmental, etc. data.  \\
-%		Migrate Chado  & Imports biological data to Drupal/Chado from other sources.  \\
-%		\multicolumn{2}{l}{\textbf{Developer Tools }} \\
-%		TripalDock  & Creates a development Tripal site using Docker.  \\
-%		Tripal Download API  & Provides an API for downloading Tripal/Chado data.  \\
-%		Tripal D3.js API  & Provides d3.js integration for Tripal.  \\
-%		Tripal Fields Generator  & Automates the generation of new Tripal fields.  \\
-%		Tripal Rapid Installer  & Provides rapid installation of a Tripal site.  \\
-%		Tripal Test Suite  & A framework for Unit Testing of Tripal modules.  \\
-%		\multicolumn{2}{l}{\textbf{Third-party Integration }} \\
-%		BrAPI  & Implements the Breeding API for Tripal.  \\
-%		Tripal Blast  & Provides a web interface for execution of BLAST.  \\
-%		Tripal Sequence Similarity  & Provides a web interface for execution of BLAST and Diamond.  \\
-%		Tripal Galaxy  & Integrates analytical workflows from Galaxy with Tripal.  \\
-%		Tripal JBrowse  & Integrates JBrowse with Tripal.  \\
-%		VCF Filter  & Provides custom filters for VCF files.  \\
-%		Tripal Apollo  & Manages user accounts for your JBrowse Apollo instances.  \\
-%		Tripal Multi-Chado  & Supports use of multiple Chado databases within a single Tripal site.  \\
-%		CartograTree  & Provides a webapp to identify and visualize geo-referenced data.  \\
-%		\multicolumn{2}{l}{\textbf{Searching }} \\
-%		Mainlab Chado Search  & Provides custom search forms for specific biological data.  \\
-%		Tripal ElasticSearch  & Provides fast site-wide and cross-site searching of Tripal sites.  \\
-%		\multicolumn{2}{l}{\textbf{Visualization/Display }} \\
-%		Analayzed Phenotypes  & Visualization for large scale phenotypic data.  \\
-%		TripalMap  & Visualization of genetic maps.  \\
-%		CvitEmbed  & Integrates CViTjs to provide whole-genome visualizations.  \\
-%		Mainlab Data Display  & Provides custom displays for many biological data types.  \\
-%		ND Genotypes  & Visualization of genotypic data.  \\
-%		Tripal Fancy Fields  & Provides charts (e.g. pie, donut, or bar chart) and tables for data.  \\
-%	\end{tabular}
-%\end{table}
+\begin{table}[!ht]
+	\caption{Tripal v3 compatible extension modules, listed by category. Listed modules are not necessarily created by the authors of this manuscript and may be published elsewhere. Please see \url{https://tripal.readthedocs.io/en/latest/extensions.html} for an updated listing and links to source code repositories.
+}
+	\footnotesize%
+	\begin{tabularx}{\linewidth}{ll}
+		\multicolumn{2}{l}{\textbf{Administrative}} \\
+		Tripal Alchemist  & Transforms entities from one data type to another.  \\
+		Tripal Curator  & Splits properties and mass reassign property CV terms.  \\
+		Tripal Headquarters  & Supports admin approval of user submitted data.  \\
+		\multicolumn{2}{l}{\textbf{Functional annotation }} \\
+		Tripal Analysis Expression  & Loads and visualizes NCBI Biomaterials and expression data.  \\
+		Tripal Analysis Blast  & Loads and displays XML results from the NCBI blast program.  \\
+		Tripal Analysis KEGG  & Loads and displays of KEGG ortholog assignments.  \\
+		Tripal Analysis Interpro  & Loads and displays of XML results from the InterProScan program.  \\
+		Tripal CV-Xray  & Maps content annotations onto browsable controlled vocabulary trees.  \\
+		\multicolumn{2}{l}{\textbf{Other data loaders }} \\
+		Genotype Loader  & Loads genotype data housed in VCF files.  \\
+		Mainlab Chado Loader  & Provides various data loaders for Excel-based template files.  \\
+		Raw Phenotypes  & Loads phenotype data via Excel with validation, charts and downloads.  \\
+		Tripal BibTeX  & A BibTeX importer for publications.  \\
+		Tripal Plant PopGen  & Provides import of genotype, phenotype, environmental, etc. data.  \\
+		Migrate Chado  & Imports biological data to Drupal/Chado from other sources.  \\
+		\multicolumn{2}{l}{\textbf{Developer Tools }} \\
+		TripalDock  & Creates a development Tripal site using Docker.  \\
+		Tripal Download API  & Provides an API for downloading Tripal/Chado data.  \\
+		Tripal D3.js API  & Provides d3.js integration for Tripal.  \\
+		Tripal Fields Generator  & Automates the generation of new Tripal fields.  \\
+		Tripal Rapid Installer  & Provides rapid installation of a Tripal site.  \\
+		Tripal Test Suite  & A framework for Unit Testing of Tripal modules.  \\
+		\multicolumn{2}{l}{\textbf{Third-party Integration }} \\
+		BrAPI  & Implements the Breeding API for Tripal.  \\
+		Tripal Blast  & Provides a web interface for execution of BLAST.  \\
+		Tripal Sequence Similarity  & Provides a web interface for execution of BLAST and Diamond.  \\
+		Tripal Galaxy  & Integrates analytical workflows from Galaxy with Tripal.  \\
+		Tripal JBrowse  & Integrates JBrowse with Tripal.  \\
+		VCF Filter  & Provides custom filters for VCF files.  \\
+		Tripal Apollo  & Manages user accounts for your JBrowse Apollo instances.  \\
+		Tripal Multi-Chado  & Supports use of multiple Chado databases within a single Tripal site.  \\
+		CartograTree  & Provides a webapp to identify and visualize geo-referenced data.  \\
+		\multicolumn{2}{l}{\textbf{Searching }} \\
+		Mainlab Chado Search  & Provides custom search forms for specific biological data.  \\
+		Tripal ElasticSearch  & Provides fast site-wide and cross-site searching of Tripal sites.  \\
+		\multicolumn{2}{l}{\textbf{Visualization/Display }} \\
+		Analayzed Phenotypes  & Visualization for large scale phenotypic data.  \\
+		TripalMap  & Visualization of genetic maps.  \\
+		CvitEmbed  & Integrates CViTjs to provide whole-genome visualizations.  \\
+		Mainlab Data Display  & Provides custom displays for many biological data types.  \\
+		ND Genotypes  & Visualization of genotypic data.  \\
+		Tripal Fancy Fields  & Provides charts (e.g. pie, donut, or bar chart) and tables for data.  \\
+	\end{tabularx}
+\end{table}
+\normalsize
 
-*Listed modules are not necessarily created by the authors of this manuscript and may be published elsewhere. Please see \url{https://tripal.readthedocs.io/en/latest/extensions.html} for an updated listing and links to source code repositories.
-Open in new tab
 
 Regarding data exchange, here we provide some additional details for the ElasticSearch extension module. Tripal v3 was developed to encourage data accessibility and sharing and the ElasticSearch module enhances this ability. ElasticSearch (37) is a free, open-source, highly customizable RESTful search engine. The Tripal ElasticSearch module (38) handles much of the customization necessary to enable indexing of Tripal entities. This module makes it easy for a site administrator to connect an ElasticSearch instance to their site and manage content indexing. In addition, Tripal ElasticSearch provides cross-site data exchange. Administrators need only opt-in to sharing their data to expose site indexes to other Tripal v3 sites to allow cross-site search on their own site. This greatly enhances interoperability between data and data re-use thus facilitating the FAIR data principles.
 
@@ -258,7 +260,7 @@ To ensure robustness of code, PHPUnit has become the testing framework of choice
 
 To ease development and deployment, a set of docker images were developed (\url{https://github.com/galaxy-genome-annotation/docker-tripal}). These images are based on an up-to-date PHP image and the latest Drupal 7 releases. The image is compatible with the other docker images built in the frame of the Galaxy Genome Annotation project (\url{https://galaxy-genome-annotation.github.io/}). The set of images can be instantiated using docker compose and include a service for Tripal and Drupal, another for PostgreSQL and Chado and a third containing ElasticSearch. Tripal docker is designed for production usage and is configured for advanced cache management to improve performances. It is used on various public resources including the insect genomic resources provided by the BIPAA platform (\url{https://bipaa.genouest.org}).
 
-While Tripal and Drupal are PHP applications, the Python-tripal package (\url{https://github.com/galaxy-genome-annotation/python-tripal}) provides access to Tripal via a Python interface. It provides command-line interface (CLI) access to Tripal using the web services provided by Tripal and the tripal_rest_api module (\url{https://github.com/abretaud/tripal_rest_api}). Python-tripal can import various data (e.g. annotations in GFF format, sequences in FASTA format, orthology or expression data) into a remote Tripal server. It also allows users to explore the content of a Tripal instance programmatically (e.g. entities export). The Python-tripal tool is used with the Galaxy Tools package (\url{https://github.com/galaxy-genome-annotation/galaxy-tools/tree/master/tools/tripal}). The Python-tripal library can be used to load data from Galaxy into a remote Tripal server.
+While Tripal and Drupal are PHP applications, the Python-tripal package (\url{https://github.com/galaxy-genome-annotation/python-tripal}) provides access to Tripal via a Python interface. It provides command-line interface (CLI) access to Tripal using the web services provided by Tripal and the tripal\_rest\_api module (\url{https://github.com/abretaud/tripal_rest_api}). Python-tripal can import various data (e.g. annotations in GFF format, sequences in FASTA format, orthology or expression data) into a remote Tripal server. It also allows users to explore the content of a Tripal instance programmatically (e.g. entities export). The Python-tripal tool is used with the Galaxy Tools package (\url{https://github.com/galaxy-genome-annotation/galaxy-tools/tree/master/tools/tripal}). The Python-tripal library can be used to load data from Galaxy into a remote Tripal server.
 
 
 \section*{Challenges}
@@ -281,6 +283,6 @@ Tripal is a powerful tool for non-model organism communities. Through Tripal, co
 
 \section*{Funding}
 
-Tripal is developed by an international group of researchers and programmers. Funded projects have contributed over $15M to the development of Tripal over the last 10 years. Tripal v3 development has been funded via the following sources: NSF DIBBs Award #1443040, NSF PGRP Award #1444573, USDA NIFA NRSP10, USDA NIFA SCRI Awards #2014-51181-2237 and 2009-51181-0603, Saskatchewan Pulse Growers BRE060, Genome Canada #8302, USDA-ARS, Cotton Incorporated, Washington Tree Fruit Research Commission, U.S. Dry Pea and Lentil Council, and Northern Pulse Growers.
+Tripal is developed by an international group of researchers and programmers. Funded projects have contributed over \$15M to the development of Tripal over the last 10 years. Tripal v3 development has been funded via the following sources: NSF DIBBs Award \#1443040, NSF PGRP Award \#1444573, USDA NIFA NRSP10, USDA NIFA SCRI Awards \#2014-51181-2237 and 2009-51181-0603, Saskatchewan Pulse Growers BRE060, Genome Canada \#8302, USDA-ARS, Cotton Incorporated, Washington Tree Fruit Research Commission, U.S. Dry Pea and Lentil Council, and Northern Pulse Growers.
 
 \textit{Conflict of interest.} None declared.
