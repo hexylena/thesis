@@ -114,6 +114,7 @@
 
 \newfontfamily{\fontVE}{Evergarden}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontLWA}{lwafontcustom}[Path=./fonts/Aesthetic/,UprightFont=*]
+\newfontfamily{\fontRedacted}{Redacted-Regular}[Path=./fonts/Aesthetic/,UprightFont=*]
 
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
 \setmonofont[Scale=MatchLowercase]{Iosevka Slab} % Font substitution for Source Code Pro

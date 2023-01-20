@@ -79,7 +79,7 @@ def important(text):
         return text
 
 
-for folder in glob.glob("*"):
+for folder in sorted(glob.glob("*")):
     if not os.path.isdir(folder):
         continue
     print(f"processing {folder}")
