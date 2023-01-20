@@ -13,7 +13,10 @@ out.write("""<!DOCTYPE HTML>
     </head>
     <body>
         <main class="container">
-        <h1>hexylena's Thesis Art</h1>
+        <h1>hexylena's thesis' art</h1>
+        <p>Helena's favourite reviews<br/>
+        <i>"Woah the style here is sexy as hell, in a kind of Arcane bloody, deadly, sharp kind of way"</i> -M<br/>
+        </p>
         <h2>Cover</h2>
         Model: MidJourney v4<br/><br/>
 
