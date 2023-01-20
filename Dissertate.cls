@@ -112,6 +112,8 @@
 \setmathsfont(Digits,Latin,Greek)[Path=./fonts/Garamond/, Numbers={Proportional},SizeFeatures={{Size=-8, OpticalSize=8},{Size= 8-, OpticalSize=12}},]{EBGaramond12-Regular.ttf}
 \setmathrm[Path=./fonts/Garamond/,]{EBGaramond12-Regular.ttf}
 
+\newfontfamily{\fontVE}{Evergarden}[Path=./fonts/Aesthetic/,UprightFont=*]
+\newfontfamily{\fontLWA}{lwafontcustom}[Path=./fonts/Aesthetic/,UprightFont=*]
 
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
 \setmonofont[Scale=MatchLowercase]{Iosevka Slab} % Font substitution for Source Code Pro
