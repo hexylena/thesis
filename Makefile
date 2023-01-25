@@ -1,9 +1,6 @@
-thesis: clean frontmatter/images references.bib vars.tex
+thesis: clean references.bib vars.tex
 	bash vars.sh
 	latexmk -xelatex -f dissertation.tex
-
-frontmatter/images:
-	$(MAKE) -C $@
 
 BIBS := $(wildcard chapters/*/*.bib)
 
@@ -34,5 +31,3 @@ reallyclean:
 	find . -name '*.aux' -exec rm '{}' +
 	find . -name '*.blg' -exec rm '{}' +
 	@#rm **/*.aux **/*.blg **/*.bbl *.aux *.log *.out *.toc
-
-.PHONY: frontmatter/images
