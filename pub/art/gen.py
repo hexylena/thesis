@@ -66,7 +66,7 @@ def imageTable(paths, final):
     return r
 
 def selectMatching(images, prompt):
-    p = prompt.replace(" ", "_").replace(",", "").replace("!", "").replace(":", "")
+    p = prompt.replace(" ", "_").replace(",", "").replace("!", "").replace(":", "").replace("(", "").replace(")", "")
     non_thumbs = [x for x in images if '_small.png' not in x]
     return [i for i in non_thumbs if i.split('/')[1][len('hexylena_'):-41] in p]
 
