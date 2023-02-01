@@ -10,6 +10,7 @@ out.write("""<!DOCTYPE HTML>
 <html>
     <head>
         <link rel="stylesheet" href="pico.min.css">
+        <link rel="icon" type="image/x-icon" href="../favicon.png">
     </head>
     <body>
         <main class="container">
