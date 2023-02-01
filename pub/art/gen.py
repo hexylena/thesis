@@ -68,7 +68,11 @@ def imageTable(paths, final):
 def selectMatching(images, prompt):
     p = prompt.replace(" ", "_").replace(",", "").replace("!", "").replace(":", "").replace("(", "").replace(")", "")
     non_thumbs = [x for x in images if '_small.png' not in x]
-    return [i for i in non_thumbs if i.split('/')[1][len('hexylena_'):-41] in p]
+    matches = [i for i in non_thumbs if i.split('/')[1][len('hexylena_'):-41] in p]
+    if len(matches) == 0:
+        print(f"no matches for {p}")
+
+    return matches
 
 
 def important(text):
