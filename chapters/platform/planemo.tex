@@ -77,7 +77,7 @@ The authors have declared no competing interest.
 The Galaxy project provides web browser access to command-line
 scientific software, together with the necessary compute resources, in a
 convenient, shareable and reproducible way, to researchers around the
-world {[}1{]}. Over eight thousand tools are available for installation
+world \cite{Afgan_2018}. Over eight thousand tools are available for installation
 onto any Galaxy server; users can run these individually, connect
 multiple tools together to form workflows, and finally perform complex
 analyses, without the need to access a command line. While Galaxy itself
@@ -89,12 +89,12 @@ both the command-line interface of the underlying software and the
 schema used by Galaxy to define tools, in order to be able to write a
 `Galaxy tool wrapper' mapping dataset inputs, parameter inputs and
 outputs between them. Once written, wrappers, as well as other Galaxy
-artifacts such as workflows or training material {[}2{]}, are amenable
+artifacts such as workflows or training material \cite{Batut_2018}, are amenable
 to routine processes such as testing, deployment and regular updates,
 all of which can be automated using continuous integration (CI) systems.
 Here we present Planemo, a versatile library and command line
 application which is used extensively as a software development kit by
-Galaxy or Common Workflow Language (CWL) {[}3{]} tool, workflow and
+Galaxy or Common Workflow Language (CWL) \cite{Crusoe_2022} tool, workflow and
 training material developers, and as a toolkit for Galaxy `power users'.
 Planemo provides a simple but powerful command-line interface for tool
 and workflow development and deployment, which encourages and enforces
@@ -121,21 +121,22 @@ example is the Planemo Training Development Kit project
 which provides Planemo's functionality for creating training material
 for Galaxy workflows via a webserver.
 
-\hypertarget{tbl1}{}
-biorxiv;2022.03.13.483965v1/TBL1
 
-T1
+\begin{table}[h!t]
+	\label{tbl1}
+	\centering
+	\caption{Overview of Planemo functionality and subcommands. Columns represent artifacts that can be created or manipulated with Planemo, rows represent different actions that can be performed on them. Italics represent actions which are performed without using Planemo: trainings are deployed using Jekyll and executed by users following the training material in the graphical interface.}
+	\begin{tabular}{|p{2cm}|p{2cm}p{2cm}p{2cm}p{2cm}}
+		Object → Function ↓       & Galaxy Tool                   & Galaxy Workflow               & CWL                 & Galaxy Training Material \\ \hline
+		Initial Template Creation & \texttt{tool\_init}           & \texttt{workflow\_test\_init} & \texttt{tool\_init} & \texttt{training\_init}, \texttt{training\_generate\_from\_workflow} \\
+		Development               & \texttt{test, lint, serve}    & \texttt{test, lint, serve}    & \texttt{test, lint} & \\
+		Deployment                & \texttt{test, ci\_*, shed\_*} & \texttt{test, ci\_*, shed\_*} &                     & GTN \\
+		Execution                 & \texttt{run}                  & \texttt{run}                  & \texttt{run}        & GTN \\
+		Automated Updates         & \texttt{autoupdate}           & \texttt{autoupdate}           &                     &
+	\end{tabular}
+\end{table}
 
-tbl1
 
-Overview of Planemo functionality and subcommands. Columns represent
-artifacts that can be created or manipulated with Planemo, rows
-represent different actions that can be performed on them. Italics
-represent actions which are performed without using Planemo: trainings
-are deployed using Jekyll and executed by users following the training
-material in the graphical interface.
-
-\includegraphics[width=0.5\textwidth]{chapters/images/planemo/T1.medium.png}
 
 \begin{figure}
 \hypertarget{fig1}{%
@@ -153,7 +154,7 @@ created artifacts.}\label{fig1}
 \subsection*{Software design}
 
 Planemo is implemented as a Python package and distributed via GitHub,
-PyPI and Bioconda {[}4{]}. As already described in the Introduction,
+PyPI and Bioconda \cite{gruning2018bioconda}. As already described in the Introduction,
 Planemo is a highly flexible, multifunctional software, which can be
 used for: 1) different types of artifacts (e.g. tools, workflows), 2)
 different workflow/tool languages and management systems (e.g. Galaxy,
@@ -166,9 +167,9 @@ Engine has various methods (e.g. run(), test()), which define a
 particular interaction with a Runnable.
 
 Engines are provided for both local and external Galaxy servers, as well
-as for cwltool {[}5{]} and Toil {[}6{]}. These interact with their
+as for cwltool \cite{CommonWorkflowLanguage} and Toil \cite{Vivian_2017}. These interact with their
 respective workflow management systems via the cwltool and Toil Python
-modules (for CWL), and via the BioBlend library {[}7{]}, which provides
+modules (for CWL), and via the BioBlend library \cite{Sloggett_2013}, which provides
 access to the Galaxy API through Python. Numerous lower-level functions
 and classes are provided to connect the Engines with the underlying
 functionality.
@@ -225,43 +226,43 @@ therefore first outline a few of these.
 
 \subsubsection*{IUC}
 
-The Intergalactic Utilities Commission {[}8{]} maintains a central
+The Intergalactic Utilities Commission \cite{Intergalactic_Utilities_Commission_2022} maintains a central
 repository of Galaxy tool wrappers, currently hosted on GitHub. New
 wrappers are added by means of a GitHub pull request, reviewed by IUC
 members, and are tested by automated CI. After approval, the tool is
 automatically deployed to the Galaxy ToolShed. Tools are subject to
 further automatic updates, as new versions of software dependencies are
 released. The IUC serves as a model for smaller communities developing
-wrappers for more specialized tools (for example, Galaxy-P {[}9{]} for
+wrappers for more specialized tools (for example, Galaxy-P \cite{blank2018disseminating} for
 proteomics) and has developed a set of guidelines for tool development.
 
 \subsubsection*{Bioconda/BioContainers}
 
 Each Galaxy tool has certain dependencies, which are typically installed
-either using the Conda package manager {[}10{]} or within a container
-(Docker {[}11{]} or Singularity {[}12{]}). Development and maintenance
+either using the Conda package manager \cite{conda_documentation_2022} or within a container
+(Docker \cite{docker} or Singularity \cite{Kurtzer_2017}). Development and maintenance
 of the necessary Conda packages or containers is performed by the
-Bioconda and Biocontainers {[}14{]} communities, which collaborate
+Bioconda and Biocontainers \cite{GalaxyProject2022} communities, which collaborate
 closely with the Galaxy project.
 
 \subsubsection*{ToolShed}
 
 A central `app store' for Galaxy tools Any user can upload to the
-ToolShed {[}13{]}, but most high-quality tools are developed
+ToolShed \cite{Blankenberg_2014}, but most high-quality tools are developed
 collaboratively on an open platform like GitHub (for example by the IUC)
 and deployed automatically.
 
 \subsubsection*{IWC}
 
-maintains a set of curated workflows {[}14{]}, consisting of multiple
+maintains a set of curated workflows \cite{GalaxyProject2022}, consisting of multiple
 component Galaxy tools, which are hosted on GitHub and deployed to
-Dockstore {[}15{]} and the Workflow Hub {[}16{]}, analogously to the
+Dockstore \cite{yuen2021dockstore} and the Workflow Hub \cite{goble2021implementing}, analogously to the
 development and deployment of Galaxy tools to the ToolShed by the IUC.
 
 \subsubsection*{Galaxy Training Network}
 
 A repository for tutorials, each describing a method for data analysis
-in Galaxy {[}1{]}. Each tutorial is made up of multiple steps and
+in Galaxy \cite{Afgan_2018}. Each tutorial is made up of multiple steps and
 therefore corresponds to a Galaxy workflow, which forms the skeleton
 around which the tutorial is built.
 
@@ -336,16 +337,16 @@ Writing Galaxy tool wrappers requires a thorough knowledge of the
 underlying software and also an understanding of the Galaxy tool schema
 which defines how Galaxy wrappers are written. The tool schema is
 defined in a simple manner, in order to make the process of wrapping
-software as accessible as possible {[}17{]}. Planemo provides several
+software as accessible as possible \cite{Galaxy_Tool_XML_File_Galaxy_Project_2022}. Planemo provides several
 helpful features which assist tool developers in creating high-quality
-wrappers that meet community-defined standards, such as those {[}18{]}
+wrappers that meet community-defined standards, such as those \cite{iuc_best_practices}
 developed by the Intergalactic Utility Commission (IUC). These features
 are implemented as subcommands, e.g. `\texttt{planemo\ test}'. Planemo
 also helps to enforce software development best practices such as
 writing tests for all tools and linting the wrapper definitions to avoid
 bugs and ensure a coherent and readable style. Further support for tool
 development standards is provided by the Galaxy Language Server
-{[}19{]}, an implementation of the Language Server Protocol {[}20{]} and
+\cite{galaxy_lsp}, an implementation of the Language Server Protocol \cite{Language_Server_Protocol_2022} and
 a Visual Studio Code extension for Galaxy tools, which can be used
 side-by-side with Planemo.
 
@@ -377,7 +378,7 @@ returned to the developer, by default using a report defined using JSON
 and HTML, although other format types are also supported (xUnit, jUnit,
 Markdown and Allure).
 
-Planemo encourages the use of test-driven development {[}21{]}, a
+Planemo encourages the use of test-driven development \cite{tdd}, a
 software development principle which states test cases should be written
 before a new feature is developed. Test-driven development is an
 industry-wide best practice. Defining extensive test cases at the start
@@ -411,7 +412,7 @@ that the input file is a CWL wrapper and process it accordingly. Tools
 are tested by executing with the CWL engine cwltool and comparing the
 result with test data or specified assertions, in the same way as for
 Galaxy tools. The completed wrapper can be run using any CWL engine,
-such as cwltool, Toil, Arvados {[}22{]} or Galaxy.
+such as cwltool, Toil, Arvados \cite{Arvados_2022} or Galaxy.
 
 \subsection*{Galaxy workflow development}
 
@@ -421,7 +422,7 @@ order to automate complex analyses. Unlike tools, workflows can be
 defined and edited in Galaxy's graphical workflow editor; often the
 starting point is an interactive analysis (a Galaxy history) from which
 a workflow can be extracted automatically. It is also possible to
-manually author workflows in the gxformat2 workflow language {[}23{]},
+manually author workflows in the gxformat2 workflow language \cite{gxformat2_2022},
 and the user can switch between manually writing workflows and editing
 in the graphical interface using the `\texttt{workflow\_edit}'
 subcommand, which spins up a Galaxy instance with the workflow under
@@ -554,17 +555,17 @@ automated deployment, ensures the creation of high-quality, trustworthy
 tools which can be safely installed and used. It requires several more
 specialized steps, which go beyond the simple Planemo subcommands that
 the developer runs on their local machine. To package these CI workflows
-into a single unit, a GitHub Action is provided {[}24{]} which can be
+into a single unit, a GitHub Action is provided \cite{planemo_ci_action} which can be
 reused in other tool repositories. New tool repositories with the same
 structure as the IUC repository can be conveniently created from a
-template repository created by the Galaxy community {[}25{]}.
+template repository created by the Galaxy community \cite{Galaxy_tool_repository_template_2022}.
 
 \subsection*{Automation of tool and workflow updates}
 
 Another feature offered by Planemo is automatic updates of Galaxy tool
 and workflow software dependencies, using the \texttt{‘autoupdate‘}
 subcommand. In combination with separate autoupdate features already
-developed by the Bioconda and conda-forge {[}26{]} communities, this
+developed by the Bioconda and conda-forge \cite{conda_forge_community_2015_4774217} communities, this
 forms a sequence of semi-automated software update procedures, which are
 triggered by an official release of new source code. After this new
 release appears, this chain ensures that new Conda packages, new Docker
@@ -592,7 +593,7 @@ package release a new version, the CI creates a PR to update the package
 recipe. Once the PR is reviewed and merged, newly built packages are
 uploaded to the Anaconda repository.
 
-In parallel, a bot {[}29{]} running the \texttt{‘autoupdate‘} subcommand
+In parallel, a bot \cite{planemo_ci_action} running the \texttt{‘autoupdate‘} subcommand
 monitors the Galaxy tool wrappers maintained by the IUC, as well as a
 few other smaller communities, checking the dependencies defined in the
 tool wrapper. Once an updated Bioconda or conda-forge package is
@@ -611,7 +612,7 @@ a CI job triggers the building of a Docker container for each new
 combination of packages, on publication of new Galaxy tool versions.
 Another CI job is responsible for generating Singularity containers from
 the new Docker containers, which are made available by the BioContainers
-and Galaxy communities via a CernVM file system (CVMFS) {[}27{]}. These
+and Galaxy communities via a CernVM file system (CVMFS) \cite{Blomer_2011}. These
 steps do not require manual review.
 
 The Planemo autoupdate bot also monitors the Galaxy workflows maintained
@@ -643,7 +644,7 @@ scenarios in which a user might need to run individual workflows
 hundreds or thousands of times, in which the data cannot be grouped into
 collections ahead of time---for example, for variant calling of
 SARS-CoV-2 genomic data, in which a huge amount of new data is published
-continuously {[}28{]}. As a convenient alternative to the graphical
+continuously \cite{maier2021ready}. As a convenient alternative to the graphical
 interface, Planemo allows workflow execution to be scheduled
 programmatically using the `\texttt{run}` subcommand, either on a local
 machine or a larger Galaxy server. `\texttt{planemo\ run}` can be
