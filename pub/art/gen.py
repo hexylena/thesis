@@ -9,8 +9,9 @@ out = open('index.html', 'w')
 out.write("""<!DOCTYPE HTML>
 <html>
     <head>
-        <link rel="stylesheet" href="pico.min.css">
+        <link rel="stylesheet" href="https://hexylena.galaxians.org/hexylena.css/hexylena-i.css">
         <link rel="icon" type="image/x-icon" href="../favicon.png">
+        <style>table img { max-width: 500px; }a img{width: 30%;}</style>
     </head>
     <body>
         <main class="container">
@@ -44,15 +45,15 @@ out.write("""<!DOCTYPE HTML>
         <h2>Chapters</h2>
 """)
 
-def imageTable(paths, final):
-    r = f"<figure><table><tr>"
+def imageTable(paths, final, caption):
+    r = f"<figure>"
     for image in paths:
         if '_small.png' in image:
             continue
 
         try:
             image.index(final)
-            extra = "style=\"border:10px solid red\""
+            extra = "style=\"outline:5px solid black; z-index: 3; position: relative;\""
         except (ValueError, TypeError):
             extra = ""
 
@@ -63,7 +64,7 @@ def imageTable(paths, final):
             print(f"Generating thumb: {image}")
             subprocess.check_call(['convert', '-resize', '220x', image, thumb])
 
-    r += f"</tr></figure></table>"
+    r += f"<figcaption>{caption}</figcaption></figure>"
     return r
 
 def selectMatching(images, prompt):
@@ -106,15 +107,13 @@ for folder in sorted(glob.glob("*")):
     out.write(f"Model: MidJourney v4<br/><br/>")
 
     if 'prompt' in data:
-        out.write(f"<i>{important(data['prompt'])}</i>")
         images = glob.glob(os.path.join(folder, '*.png'))
-        out.write(imageTable(images, data['final']))
+        out.write(imageTable(images, data['final'], important(prompt)))
     else:
         images = glob.glob(os.path.join(folder, '*.png'))
         for prompt in data['prompts']:
-            out.write(f"<i>{important(prompt)}</i>")
             selected = selectMatching(images, prompt)
-            out.write(imageTable(selected, data['final']))
+            out.write(imageTable(selected, data['final'], important(prompt)))
 
 
 out.write("</main></body></html>")
