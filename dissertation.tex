@@ -183,6 +183,23 @@
     tabsize=2
 }
 
+\newcommand\interstitial[1]{%
+\cleardoublepage%
+{\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] at (current page.center){%
+    \includegraphics[width=\paperwidth,height=\paperheight]{chapters/#1-front.png}%
+};
+\end{tikzpicture}
+}
+\clearpage
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] at (current page.center){%
+    \includegraphics[width=\paperwidth,height=\paperheight]{chapters/#1-back.png}%
+};
+\end{tikzpicture}
+}
+
 \lstset{style=mystyle}
 %% Custom
 
@@ -240,6 +257,7 @@
 \setcounter{chapter}{-1}
 \include{chapters/introduction}
 
+\interstitial{platform}
 \include{chapters/platform/intro}
 	\include{chapters/platform/galaxy}
 	\include{chapters/platform/planemo}
