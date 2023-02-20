@@ -8,8 +8,8 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="platform.svg"
-   inkscape:export-filename="platform-front.png"
+   sodipodi:docname="training-front.svg"
+   inkscape:export-filename="teaching-front.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -29,39 +29,16 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.79909512"
-     inkscape:cx="242.7746"
-     inkscape:cy="586.28815"
+     inkscape:cx="382.30743"
+     inkscape:cy="285.94844"
      inkscape:window-width="1912"
      inkscape:window-height="1032"
      inkscape:window-x="4"
      inkscape:window-y="44"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer2" />
   <defs
-     id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient1240">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop1236" />
-      <stop
-         style="stop-color:#000000;stop-opacity:0;"
-         offset="1"
-         id="stop1238" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient1240"
-       id="linearGradient1242"
-       x1="60.905025"
-       y1="289.0535"
-       x2="139.09497"
-       y2="289.0535"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.59347785,0,0,1,-145.63848,-2.6488294)" />
-  </defs>
+     id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -73,301 +50,46 @@
        height="300"
        x="0"
        y="-1.5321078e-14" />
-    <circle
-       style="fill:none;stroke:#c90000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-       id="path1300"
-       cx="100.02146"
-       cy="149.9975"
-       r="88.71315" />
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-       id="circle1320"
-       cx="100.02146"
-       cy="149.9975"
-       r="76.604179"
-       inkscape:label="circle1320" />
-    <text
-       xml:space="preserve"
-       style="font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:none;stroke:#c90000;stroke-width:0.499999;stroke-dasharray:none;stroke-opacity:1"
-       id="text1376"
-       transform="translate(-0.02146556,0.00250075)"><textPath
-         xlink:href="#circle1320"
-         id="textPath1428"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:#ff0000;fill-opacity:1;stroke:none">doy'allthinkIcangetawaywithincludingfanficinmythesis?Diakko</textPath></text>
-    <circle
-       style="fill:none;stroke:#c90000;stroke-width:1.694;stroke-dasharray:none;stroke-opacity:1"
-       id="circle1535"
-       cx="100.02146"
-       cy="149.9975"
-       r="75.152855" />
-    <path
-       sodipodi:type="star"
-       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:1.54589;stroke-dasharray:none;stroke-opacity:1"
-       id="path2049"
-       inkscape:flatsided="true"
-       sodipodi:sides="6"
-       sodipodi:cx="101.37641"
-       sodipodi:cy="149.9975"
-       sodipodi:r1="46.259235"
-       sodipodi:r2="40.061672"
-       sodipodi:arg1="-0.52359878"
-       sodipodi:arg2="0"
-       inkscape:rounded="0"
-       inkscape:randomized="0"
-       d="m 141.43808,126.86788 0,46.25924 -40.06167,23.12961 -40.061671,-23.12961 -1e-6,-46.25924 40.061672,-23.12962 z"
-       inkscape:transform-center-x="4.7290683e-06"
-       inkscape:transform-center-y="-6.9831466e-06"
-       transform="matrix(1.2937505,0,0,1.2937505,-31.134321,-44.061836)" />
-    <circle
-       style="fill:none;stroke:#c90000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-       id="circle1537"
-       cx="100.02146"
-       cy="149.9975"
-       r="45.030804" />
-    <g
-       id="g2076">
-      <g
-         id="g1863"
-         transform="translate(-133.32386,-26.978126)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           x="228.01376"
-           y="127.83128"
-           id="text1563-6"><tspan
-             sodipodi:role="line"
-             id="tspan1561-7"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJI;-inkscape-font-specification:QIJI;stroke:none;stroke-width:2"
-             x="228.01376"
-             y="127.83128">火</tspan></text>
-        <circle
-           style="fill:none;fill-opacity:1;stroke:#fbfbfb;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           id="path1617"
-           cx="233.34532"
-           cy="124.90887"
-           r="7.035953" />
-      </g>
-      <g
-         id="g1878"
-         transform="rotate(-60,129.599,285.79987)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           x="226.55782"
-           y="143.66859"
-           id="text1563-6-6"><tspan
-             sodipodi:role="line"
-             id="tspan1561-7-2"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJI;-inkscape-font-specification:QIJI;stroke:none;stroke-width:2"
-             x="226.55782"
-             y="143.66859">电</tspan></text>
-        <circle
-           style="fill:none;fill-opacity:1;stroke:#fbfbfb;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           id="path1617-9"
-           cx="232.41853"
-           cy="140.21703"
-           r="7.035953" />
-      </g>
-      <g
-         id="g1873"
-         transform="rotate(120,189.5128,126.01134)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           x="249.69952"
-           y="142.90486"
-           id="text1563-6-5-1"><tspan
-             sodipodi:role="line"
-             id="tspan1561-7-3-2"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJI;-inkscape-font-specification:QIJI;stroke:none;stroke-width:2"
-             x="249.69952"
-             y="142.90486">脑</tspan></text>
-        <circle
-           style="fill:none;fill-opacity:1;stroke:#fbfbfb;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           id="path1617-5-7"
-           cx="255.03108"
-           cy="139.45328"
-           r="7.035953" />
-      </g>
-      <g
-         id="g1883"
-         transform="rotate(60,216.75967,64.517362)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           x="226.80795"
-           y="159.45123"
-           id="text1563-6-0"><tspan
-             sodipodi:role="line"
-             id="tspan1561-7-9"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJI;-inkscape-font-specification:QIJI;stroke:none;stroke-width:2"
-             x="226.80795"
-             y="159.45123">人</tspan></text>
-        <circle
-           style="fill:none;fill-opacity:1;stroke:#fbfbfb;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           id="path1617-3"
-           cx="232.41853"
-           cy="156.28893"
-           r="7.035953" />
-      </g>
-      <g
-         id="g1888"
-         transform="rotate(180,177.52626,178.79472)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           x="249.64061"
-           y="158.89868"
-           id="text1563-6-5-6"><tspan
-             sodipodi:role="line"
-             id="tspan1561-7-3-0"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJI;-inkscape-font-specification:QIJI;stroke:none;stroke-width:2"
-             x="249.64061"
-             y="158.89868">水</tspan></text>
-        <circle
-           style="fill:none;fill-opacity:1;stroke:#fbfbfb;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           id="path1617-5-6"
-           cx="255.03107"
-           cy="155.52518"
-           r="7.035953" />
-      </g>
-      <path
-         sodipodi:type="star"
-         style="fill:none;fill-opacity:1;stroke:#fbfbfb;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-         id="path1994"
-         inkscape:flatsided="true"
-         sodipodi:sides="6"
-         sodipodi:cx="101.37641"
-         sodipodi:cy="149.9975"
-         sodipodi:r1="46.259235"
-         sodipodi:r2="40.061672"
-         sodipodi:arg1="-0.52359878"
-         sodipodi:arg2="0"
-         inkscape:rounded="0"
-         inkscape:randomized="0"
-         d="m 141.43808,126.86788 0,46.25924 -40.06167,23.12961 -40.061671,-23.12961 -1e-6,-46.25924 40.061672,-23.12962 z"
-         inkscape:transform-center-x="1.0059552e-06"
-         inkscape:transform-center-y="-1.5364498e-06"
-         transform="matrix(0.97344462,0,0,0.97344462,1.3371394,3.9832409)" />
-      <g
-         id="g1868"
-         transform="rotate(-120,170.42222,208.11965)">
-        <text
-           xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:11.2889px;font-family:'LWA Moonrunes Punctuated';-inkscape-font-specification:'LWA Moonrunes Punctuated';fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           x="250.09715"
-           y="127.5967"
-           id="text1563-6-5"><tspan
-             sodipodi:role="line"
-             id="tspan1561-7-3"
-             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJI;-inkscape-font-specification:QIJI;stroke:none;stroke-width:2"
-             x="250.09715"
-             y="127.5967">血</tspan></text>
-        <circle
-           style="fill:none;fill-opacity:1;stroke:#fbfbfb;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-           id="path1617-5"
-           cx="255.95787"
-           cy="124.14513"
-           r="7.035953" />
-      </g>
-    </g>
-    <circle
-       style="fill:none;stroke:#c90000;stroke-width:2.04353;stroke-dasharray:none;stroke-opacity:1"
-       id="circle2078"
-       cx="100.02146"
-       cy="149.9975"
-       r="61.150555" />
-    <circle
-       style="fill:none;stroke:#c90000;stroke-width:2.22107;stroke-dasharray:none;stroke-opacity:0.0810277"
-       id="circle2241"
-       cx="100.02146"
-       cy="149.9975"
-       r="66.46331" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
-       id="text2245"
-       transform="matrix(0.98708974,0,0,0.98708974,1.297369,1.9232772)"><textPath
-         xlink:href="#circle2241"
-         id="textPath2247"
-         style="font-size:8.46667px">Violet evergarden is a relatable portrayal of trauma and CPTSD. I am glad it exists thx</textPath></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Witch"
      style="display:inline">
-    <g
-       id="g1246"
-       transform="translate(-0.08277592,-0.64212036)">
-      <image
-         width="132.61548"
-         height="198.92322"
-         preserveAspectRatio="none"
-         xlink:href="../misc/witch-with-clipboard2.png"
-         id="image459"
-         x="-27.395834"
-         y="101.07678" />
-      <rect
-         style="fill:url(#linearGradient1242);fill-opacity:1;stroke-width:0.770373"
-         id="rect656"
-         width="46.404007"
-         height="28.474915"
-         x="-109.49271"
-         y="272.16721"
-         transform="scale(-1,1)" />
-    </g>
+    <image
+       width="257.95651"
+       height="257.95651"
+       preserveAspectRatio="none"
+       xlink:href="../misc/heptylena_classroom_education_in_occult_computer_science_teachi_75a8d81c-d2c5-41ea-82e8-15a17ca78fe3-upscale-poem.png"
+       id="image440"
+       x="-28.978252"
+       y="44.685596" />
+    <text
+       xml:space="preserve"
+       style="font-size:31.2658px;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';text-align:center;text-anchor:middle;fill:#ffffff;stroke:none;stroke-width:1.47712;stroke-linecap:round;stroke-linejoin:bevel;fill-opacity:0.18962076"
+       x="99.859314"
+       y="55.722424"
+       id="text644"><tspan
+         sodipodi:role="line"
+         id="tspan642"
+         style="stroke:none;stroke-width:1.47712;fill:#ffffff;fill-opacity:0.18962076"
+         x="99.859314"
+         y="55.722424">Indoctrination</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:31.2658px;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.47712;stroke-linecap:round;stroke-linejoin:bevel"
+       x="99.859314"
+       y="55.722424"
+       id="text1253"><tspan
+         sodipodi:role="line"
+         id="tspan1251"
+         style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.47712"
+         x="99.859314"
+         y="55.722424">Teaching</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Text"
-     style="display:inline">
-    <text
-       xml:space="preserve"
-       style="font-size:34.2993px;line-height:0.75;font-family:Atk;-inkscape-font-specification:Atk;text-align:center;text-anchor:middle;fill:#c90000;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
-       x="170.58632"
-       y="42.793396"
-       id="text968"
-       transform="scale(0.88881992,1.1250873)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#c90000;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
-         x="170.58632"
-         y="42.793396"
-         id="tspan966">M</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:34.2993px;line-height:0.75;font-family:Atk;-inkscape-font-specification:Atk;text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
-       x="17.749424"
-       y="40.020237"
-       id="text483"
-       transform="scale(0.88881992,1.1250873)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
-         x="17.749424"
-         y="40.020237"
-         id="tspan1219">PLATFORM</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
-         x="17.749424"
-         y="66.508018"
-         id="tspan394">:1.0</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:19.7923px;line-height:0.75;font-family:Atk;-inkscape-font-specification:Atk;text-align:center;text-anchor:middle;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.876618;stroke-dasharray:none;stroke-opacity:1"
-       x="114.17963"
-       y="240.55588"
-       id="text483-2"
-       transform="scale(0.88881992,1.1250873)"><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.876618;stroke-dasharray:none;stroke-opacity:1"
-         x="114.17963"
-         y="240.55588"
-         id="tspan394-1">You can (not)</tspan><tspan
-         sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.876618;stroke-dasharray:none;stroke-opacity:1"
-         x="114.17963"
-         y="255.84053"
-         id="tspan2442">re-deploy </tspan></text>
-  </g>
+     style="display:inline" />
 </svg>
