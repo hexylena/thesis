@@ -117,6 +117,7 @@
 \newfontfamily{\fontRedacted}{Redacted-Regular}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontCistercian}{FRBCistercian}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontQiji}{qiji}[Path=./fonts/Aesthetic/,UprightFont=*]
+\newfontfamily{\fontEBGaramondInitials}{EBGaramond-Initials}[Path=./fonts/Aesthetic/,UprightFont=*]
 
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
 \setmonofont[Scale=MatchLowercase]{Iosevka Slab} % Font substitution for Source Code Pro
