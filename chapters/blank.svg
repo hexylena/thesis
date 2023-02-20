@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="200mm"
+   height="300mm"
+   viewBox="0 0 200 300"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   sodipodi:docname="blank.svg"
+   inkscape:export-filename="platform-front.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.79909512"
+     inkscape:cx="188.96374"
+     inkscape:cy="443.62679"
+     inkscape:window-width="1912"
+     inkscape:window-height="1032"
+     inkscape:window-x="4"
+     inkscape:window-y="44"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer3" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Text"
+     style="display:inline">
+    <text
+       xml:space="preserve"
+       style="font-size:12.3998px;line-height:0.7;font-family:Silver;-inkscape-font-specification:Silver;text-align:center;text-anchor:middle;fill:#000000;stroke-width:2.58329;stroke-linejoin:bevel"
+       x="116.24162"
+       y="134.64333"
+       id="text396"
+       transform="scale(0.85616716,1.1679962)"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:2.58329"
+         x="116.24162"
+         y="134.64333"
+         id="tspan454">THIS SPACE</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:2.58329"
+         x="116.24162"
+         y="145.06624"
+         id="tspan456">INTENTIONALLY</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:2.58329"
+         x="116.24162"
+         y="155.48917"
+         id="tspan458">LEFT BLANK.</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:2.58329"
+         x="116.24162"
+         y="164.16902"
+         id="tspan460" /></text>
+    <g
+       id="g567"
+       transform="translate(-4.4557683,35.94467)">
+      <text
+         xml:space="preserve"
+         style="font-size:81.6172px;font-family:Silver;-inkscape-font-specification:Silver;text-align:center;text-anchor:middle;display:inline;fill:#000000;stroke-width:17.0036;stroke-linejoin:bevel"
+         x="95.402054"
+         y="91.595787"
+         id="text396-3"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;stroke-width:17.0036"
+           x="95.402054"
+           y="91.595787"
+           id="tspan460-2">零</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.8735px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;text-anchor:middle;fill:#000000;stroke-width:11.6403;stroke-linejoin:bevel"
+         x="78.322609"
+         y="77.205284"
+         id="text551"
+         transform="scale(0.87162141,1.1472871)"><tspan
+           sodipodi:role="line"
+           id="tspan549"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:11.6403"
+           x="78.322609"
+           y="77.205284">{</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.8735px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;text-anchor:middle;fill:#000000;stroke-width:11.6403;stroke-linejoin:bevel"
+         x="-161.3589"
+         y="-43.122452"
+         id="text559"
+         transform="scale(-0.87162141,-1.1472871)"><tspan
+           sodipodi:role="line"
+           id="tspan557"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:11.6403"
+           x="-161.3589"
+           y="-43.122452">{</tspan></text>
+    </g>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.5;stroke-linejoin:bevel;stroke-opacity:1;stroke-dasharray:none"
+       id="path1176"
+       cx="100"
+       cy="56.622116"
+       r="8.1120405" />
+  </g>
+</svg>
