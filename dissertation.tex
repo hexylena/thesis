@@ -200,6 +200,16 @@
 \end{tikzpicture}
 }
 
+\newcommand\intentionallyBlank[1]{%
+{\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] at (current page.center){%
+    \includegraphics[width=\paperwidth,height=\paperheight]{chapters/blank.png}%
+};
+\end{tikzpicture}
+}\clearpage
+}
+
 \lstset{style=mystyle}
 %% Custom
 
@@ -224,6 +234,8 @@
 
 %\setcounter{page}{1}
 
+\cleartoleftpage
+\intentionallyBlank\clearpage
 \include{frontmatter/foreword}
 %\include{frontmatter/stellingen}
 

@@ -14,6 +14,7 @@
    inkscape:export-ydpi="200"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
@@ -27,9 +28,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.58142371"
-     inkscape:cx="644.96854"
-     inkscape:cy="515.11487"
+     inkscape:zoom="1.1628474"
+     inkscape:cx="275.18658"
+     inkscape:cy="566.28238"
      inkscape:window-width="1912"
      inkscape:window-height="1032"
      inkscape:window-x="4"
@@ -37,7 +38,50 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs2503" />
+     id="defs2503">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1526">
+      <stop
+         style="stop-color:#b7b7b7;stop-opacity:1;"
+         offset="0"
+         id="stop1522" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop1524" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient1516">
+      <stop
+         style="stop-color:#000000;stop-opacity:1;"
+         offset="0"
+         id="stop1512" />
+      <stop
+         style="stop-color:#000000;stop-opacity:0;"
+         offset="1"
+         id="stop1514" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1516"
+       id="linearGradient1518"
+       x1="35.325157"
+       y1="132.38045"
+       x2="45.803128"
+       y2="132.38045"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1526"
+       id="linearGradient1520"
+       x1="35.325157"
+       y1="132.38045"
+       x2="45.803128"
+       y2="132.38045"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
@@ -51,19 +95,6 @@
        y="-1.3877788e-17" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.7611px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;writing-mode:tb-rl;fill:#fff7f7;fill-opacity:0.434783;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
-       x="16.003895"
-       y="82.143318"
-       id="text3406"><tspan
-         sodipodi:role="line"
-         id="tspan3404"
-         style="font-size:22.7611px;writing-mode:lr-tb;fill:#fff7f7;fill-opacity:0.434783;stroke-width:1.79221"
-         x="16.003895"
-         y="82.143318"><tspan
-   style="fill:#ffffff;fill-opacity:1;stroke-width:1.79221"
-   id="tspan4109">敵</tspan>戰計</tspan></text>
-    <text
-       xml:space="preserve"
        style="font-size:7.58703px;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';fill:#ff0000;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
        x="32.27309"
        y="57.007107"
@@ -72,173 +103,141 @@
          id="tspan2768"
          style="stroke-width:1.79221"
          x="32.27309"
-         y="57.007107"></tspan></text>
+         y="57.007107" /></text>
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:0.8;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';white-space:pre;inline-size:93.3322;display:inline;fill:#ff0000;stroke:#c90000;stroke-width:2;stroke-opacity:0.0810277"
-       x="-137.42847"
-       y="67.349045"
-       id="text2774-8"
-       transform="matrix(1.4940201,0,0,1.8456833,247.19286,-74.378116)"><tspan
-         x="-137.42847"
-         y="67.349045"
-         id="tspan4386"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4384">瞞天過海 圍魏救趙 借刀殺人</tspan></tspan><tspan
-         x="-137.42847"
-         y="74.926585"
-         id="tspan4390"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4388">以逸待勞 趁火打劫 聲東擊西</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.7611px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;writing-mode:lr-tb;fill:#fff7f7;fill-opacity:0.434783;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
-       x="16.019747"
-       y="119.37876"
-       id="text3410"><tspan
+       style="font-size:74.3498px;line-height:0.8;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:1.46358;stroke-linejoin:bevel"
+       x="89.075157"
+       y="71.53019"
+       id="text392"><tspan
          sodipodi:role="line"
-         id="tspan3408"
-         style="font-size:22.7611px;fill:#fff7f7;fill-opacity:0.434783;stroke-width:1.79221"
-         x="16.019747"
-         y="119.37876"><tspan
-   style="fill:#ffffff;fill-opacity:1;stroke-width:1.79221"
-   id="tspan4115">攻</tspan>戰計</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8.46667px;line-height:0.8;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';white-space:pre;inline-size:93.3322;display:inline;fill:#ff0000;stroke:#c90000;stroke-width:2;stroke-opacity:0.0810277"
-       x="-137.42847"
-       y="67.349045"
-       id="text2774-8-7"
-       transform="matrix(1.4940201,0,0,1.8456833,247.19286,-37.467775)"><tspan
-         x="-137.42847"
-         y="67.349045"
-         id="tspan4394"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4392">瞞天過海 圍魏救趙 借刀殺人</tspan></tspan><tspan
-         x="-137.42847"
-         y="74.926585"
-         id="tspan4398"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4396">以逸待勞 趁火打劫 聲東擊西</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.7611px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;writing-mode:lr-tb;fill:#fff7f7;fill-opacity:0.434783;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
-       x="16.05534"
-       y="156.6142"
-       id="text3414"><tspan
+         id="tspan390"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;fill:#f20000;fill-opacity:0.936128;stroke:none;stroke-width:1.46358"
+         x="89.075157"
+         y="71.53019">借</tspan><tspan
          sodipodi:role="line"
-         id="tspan3412"
-         style="font-size:22.7611px;fill:#fff7f7;fill-opacity:0.434783;stroke-width:1.79221"
-         x="16.05534"
-         y="156.6142"><tspan
-   style="fill:#ffffff;fill-opacity:1;stroke-width:1.79221"
-   id="tspan4117">混</tspan>戰計</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8.46667px;line-height:0.8;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';white-space:pre;inline-size:93.3322;display:inline;fill:#ff0000;stroke:#c90000;stroke-width:2;stroke-opacity:0.0810277"
-       x="-137.42847"
-       y="67.349045"
-       id="text2774-8-9"
-       transform="matrix(1.4940201,0,0,1.8456833,247.19286,-0.55742966)"><tspan
-         x="-137.42847"
-         y="67.349045"
-         id="tspan4402"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4400">瞞天過海 圍魏救趙 借刀殺人</tspan></tspan><tspan
-         x="-137.42847"
-         y="74.926585"
-         id="tspan4406"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4404">以逸待勞 趁火打劫 聲東擊西</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.7611px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;writing-mode:lr-tb;fill:#fff7f7;fill-opacity:0.434783;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
-       x="16.004808"
-       y="193.84964"
-       id="text3418"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;fill:#f20000;fill-opacity:0.936128;stroke:none;stroke-width:1.46358"
+         x="89.075157"
+         y="137.55284"
+         id="tspan1100">屍</tspan><tspan
          sodipodi:role="line"
-         id="tspan3416"
-         style="font-size:22.7611px;fill:#fff7f7;fill-opacity:0.434783;stroke-width:1.79221"
-         x="16.004808"
-         y="193.84964"><tspan
-   style="fill:#ffffff;fill-opacity:1;stroke-width:1.79221"
-   id="tspan4119">並</tspan>戰計</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-size:8.46667px;line-height:0.8;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';white-space:pre;inline-size:93.3322;display:inline;fill:#ff0000;stroke:#c90000;stroke-width:2;stroke-opacity:0.0810277"
-       x="-137.42847"
-       y="67.349045"
-       id="text2774-8-2"
-       transform="matrix(1.4940201,0,0,1.8456833,247.19286,36.352917)"><tspan
-         x="-137.42847"
-         y="67.349045"
-         id="tspan4410"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4408">瞞天過海 圍魏救趙 借刀殺人</tspan></tspan><tspan
-         x="-137.42847"
-         y="74.926585"
-         id="tspan4414"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4412">以逸待勞 趁火打劫 聲東擊西</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.7611px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;writing-mode:lr-tb;fill:#fff7f7;fill-opacity:0.434783;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
-       x="16.019747"
-       y="231.08508"
-       id="text3422"><tspan
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;fill:#f20000;fill-opacity:0.936128;stroke:none;stroke-width:1.46358"
+         x="89.075157"
+         y="203.57549"
+         id="tspan1102">還</tspan><tspan
          sodipodi:role="line"
-         id="tspan3420"
-         style="font-size:22.7611px;fill:#fff7f7;fill-opacity:0.434783;stroke-width:1.79221"
-         x="16.019747"
-         y="231.08508"><tspan
-   style="fill:#ffffff;fill-opacity:1"
-   id="tspan4220">敗</tspan>戰計</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;fill:#f20000;fill-opacity:0.936128;stroke:none;stroke-width:1.46358"
+         x="89.075157"
+         y="269.59814"
+         id="tspan1104">魂</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:0.8;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';white-space:pre;inline-size:93.3322;display:inline;fill:#ff0000;stroke:#c90000;stroke-width:2;stroke-opacity:0.0810277"
-       x="-137.42847"
-       y="67.349045"
-       id="text2774-8-0"
-       transform="matrix(1.4940201,0,0,1.8456833,247.19286,73.263263)"><tspan
-         x="-137.42847"
-         y="67.349045"
-         id="tspan4418"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4416">瞞天過海 圍魏救趙 借刀殺人</tspan></tspan><tspan
-         x="-137.42847"
-         y="74.926585"
-         id="tspan4422"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4420">以逸待勞 趁火打劫 聲東擊西</tspan></tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.7611px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;writing-mode:lr-tb;fill:#fff7f7;fill-opacity:0.434783;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
-       x="16.019747"
-       y="44.907879"
-       id="text3426"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:57.8573px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:none;fill-opacity:1;stroke:#b80000;stroke-width:2;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       x="81.765137"
+       y="288.93356"
+       id="text1298"><tspan
          sodipodi:role="line"
-         id="tspan3424"
-         style="font-size:22.7611px;fill:#fff7f7;fill-opacity:0.434783;stroke-width:1.79221"
-         x="16.019747"
-         y="44.907879"><tspan
-   style="fill:#ffffff;fill-opacity:1;stroke-width:1.79221"
-   id="tspan3995">勝</tspan>戰計</tspan></text>
+         id="tspan1296"
+         style="stroke-width:2;stroke:#b80000;stroke-opacity:1;fill:none;stroke-dasharray:none;stroke-linejoin:miter"
+         x="81.765137"
+         y="288.93356">」</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:0.8;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';white-space:pre;inline-size:93.3322;display:inline;fill:#ff0000;stroke:#c90000;stroke-width:2;stroke-opacity:0.0810277"
-       x="-137.42847"
-       y="67.349045"
-       id="text2774-8-23"
-       transform="matrix(1.4940201,0,0,1.8456833,247.19286,110.17361)"><tspan
-         x="-137.42847"
-         y="67.349045"
-         id="tspan4426"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4424">瞞天過海 圍魏救趙 借刀殺人</tspan></tspan><tspan
-         x="-137.42847"
-         y="74.926585"
-         id="tspan4430"><tspan
-           style="font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK"
-           id="tspan4428">以逸待勞 趁火打劫 聲東擊西</tspan></tspan></text>
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:57.8573px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:none;fill-opacity:1;stroke:#b80000;stroke-width:2;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
+       x="108.33179"
+       y="11.066396"
+       id="text1298-5"><tspan
+         sodipodi:role="line"
+         id="tspan1296-6"
+         style="stroke-width:2;stroke:#b80000;stroke-opacity:1;fill:none;stroke-dasharray:none;stroke-linejoin:miter"
+         x="108.33179"
+         y="11.066396">「</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.3163px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#f20000;fill-opacity:1;stroke:none;stroke-width:8.06885;stroke-linejoin:bevel"
+       x="-63.094807"
+       y="-76.208405"
+       id="text1329"><tspan
+         sodipodi:role="line"
+         id="tspan1327"
+         style="stroke-width:8.06886"
+         x="-63.094807"
+         y="-76.208405" /></text>
+    <g
+       id="g1473"
+       transform="translate(0,17.619555)"
+       style="stroke:#000000;stroke-opacity:1;fill:#ff0000;fill-opacity:1">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         x="39.089329"
+         y="60.502441"
+         id="text1407"><tspan
+           sodipodi:role="line"
+           id="tspan1405"
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-opacity:1"
+           x="39.089329"
+           y="60.502441">+</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         x="39.089329"
+         y="132.4021"
+         id="text1461"><tspan
+           sodipodi:role="line"
+           id="tspan1459"
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-opacity:1"
+           x="39.089329"
+           y="132.4021">+</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         x="39.089329"
+         y="204.30176"
+         id="text1465"><tspan
+           sodipodi:role="line"
+           id="tspan1463"
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-opacity:1"
+           x="39.089329"
+           y="204.30176">+</tspan></text>
+    </g>
+    <g
+       id="g1487"
+       transform="translate(114.13462,17.619555)"
+       style="stroke:#000000;stroke-opacity:1;fill:#ff0000;fill-opacity:1">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         x="39.089329"
+         y="60.502441"
+         id="text1477"><tspan
+           sodipodi:role="line"
+           id="tspan1475"
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-opacity:1"
+           x="39.089329"
+           y="60.502441">+</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         x="39.089329"
+         y="132.4021"
+         id="text1481"><tspan
+           sodipodi:role="line"
+           id="tspan1479"
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-opacity:1"
+           x="39.089329"
+           y="132.4021">+</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+         x="39.089329"
+         y="204.30176"
+         id="text1485"><tspan
+           sodipodi:role="line"
+           id="tspan1483"
+           style="fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-opacity:1"
+           x="39.089329"
+           y="204.30176">+</tspan></text>
+    </g>
   </g>
 </svg>
