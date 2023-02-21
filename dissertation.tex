@@ -202,7 +202,7 @@
 \end{tikzpicture}
 }
 
-\newcommand\intentionallyBlank[1]{%
+\newcommand\intentionallyBlank{%
 {\thispagestyle{empty}%
 \begin{tikzpicture}[remember picture,overlay]
 \node[inner sep=0pt] at (current page.center){%
@@ -211,6 +211,17 @@
 \end{tikzpicture}
 }\clearpage
 }
+
+\newcommand\includePdf[1]{%
+{\thispagestyle{empty}%
+\begin{tikzpicture}[remember picture,overlay]
+\node[inner sep=0pt] at (current page.center){%
+    \includegraphics[width=\paperwidth,height=\paperheight]{#1}%
+};
+\end{tikzpicture}
+}\clearpage
+}
+
 
 \lstset{style=mystyle}
 %% Custom
@@ -273,31 +284,31 @@
 
 \interstitial{platform}
 \include{chapters/platform/intro}
-	\include{chapters/platform/galaxy}
-	\include{chapters/platform/planemo}
-	\include{chapters/platform/gtn}
-	\include{chapters/platform/tiaas}
+	%\include{chapters/platform/galaxy}
+	%\include{chapters/platform/planemo}
+	%\include{chapters/platform/gtn}
+	%\include{chapters/platform/tiaas}
 
 \interstitial{training}
 \include{chapters/training/intro}
 	%\include{chapters/training/fanciful} - WRITE
 	%\include{chapters/training/solstice} - WRITE
-	\include{chapters/training/e-learning}
+	%\include{chapters/training/e-learning}
 
 \interstitial{cancer}
 \include{chapters/cancer/intro}
-	\include{chapters/cancer/circos}
+	%\include{chapters/cancer/circos}
 	%\include{chapters/cancer/cancergalaxy} - WRITE
-	\include{chapters/cancer/htsget} - WRITE
+	%\include{chapters/cancer/htsget} - WRITE
 	%\include{chapters/cancer/SCIENCE} - MUST
 	%\include{chapters/cancer/pathways}% MAYBE
 
 \interstitial{annotation}
 \include{chapters/annotation/intro}
-	\include{chapters/annotation/apollo}
-	\include{chapters/annotation/tripal}
+	%\include{chapters/annotation/apollo}
+	%\include{chapters/annotation/tripal}
 	%\include{chapters/annotation/gga}
-	\include{chapters/annotation/phages}
+	%\include{chapters/annotation/phages}
 
 %\include{chapters/discussion}
 \RemoveLabels %stop thumb index
@@ -310,6 +321,7 @@
   \include{endmatter/publications}
   \include{endmatter/cv}
   \include{endmatter/portfolio}
+  \include{endmatter/code}
 \end{appendices}
 
 \cleartorightpage

@@ -1,0 +1,22 @@
+\chapter{Code Archive}
+\label{AppendixF}
+It is extremely common in Bioinformatics to not include code. Either it's
+hidden away on a graduate student's hard drive, subject to bit rot and loss. Or
+it's uploaded to GitHub and (theoretically) safe. Assuming the repository is
+open, and GitHub doesn't go down.
+
+As someone who believes in software preservation, I am taking the probably
+unique step of including an archive of my code as an appendix to my thesis.
+
+This focuses on including most relevant or important contributions I had, while
+balancing the need to keep the resulting archive a manageable size to be
+included. \texttt{xz} is a fantastic compression algorithm and achieved nearly
+90\% compression on this dataset.
+
+Recovering code from this format requires multiple utilities (\texttt{optar},
+\texttt{tar}, \texttt{xz}). I considered multiple archival methods, and
+selecting this one due to compression. This comes with the risk of being
+unrecoverable if a computer with those tools is not available. However, in that
+case this code wouldn't be worth much anyway.
+\clearpage
+\includePdf{optar/optar_out_0001.pgm.pdf}
