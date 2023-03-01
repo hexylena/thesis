@@ -187,7 +187,7 @@ command-line interface written using the Click package to provide a
 straightforward way to access the components described above. Multiple
 subcommands expose some of the most important tasks a user might want to
 perform. For example, a user could run
-\texttt{‘planemo\ test\ tool.xml’} to test a Galaxy tool wrapper.
+\texttt{'planemo\ test\ tool.xml`} to test a Galaxy tool wrapper.
 Planemo will detect the type of Runnable (Galaxy tool) represented by
 the filepath and start the appropriate Engine (temporary local Galaxy
 instance), execute the Runnable on it, collect the results, and compare
@@ -205,10 +205,10 @@ approach to testing, a GitHub CI action is provided. The CI workflow
 consists of the following components:
 
 1. Identifying modified tools and repositories using
-\texttt{‘planemo\ ci\_find\_repos’} and
-\texttt{‘planemo\ ci\_find\_tools‘}.
+\texttt{'planemo\ ci\_find\_repos`} and
+\texttt{'planemo\ ci\_find\_tools'}.
 
-2. Linting of Galaxy tools using \texttt{‘planemo\ lint’}.
+2. Linting of Galaxy tools using \texttt{'planemo\ lint`}.
 
 3. Testing the tools -- as this is the most time-consuming step, the
 tools found are chunked and multiple jobs run in parallel.
@@ -563,7 +563,7 @@ template repository created by the Galaxy community \cite{Galaxy_tool_repository
 \subsection*{Automation of tool and workflow updates}
 
 Another feature offered by Planemo is automatic updates of Galaxy tool
-and workflow software dependencies, using the \texttt{‘autoupdate‘}
+and workflow software dependencies, using the \texttt{'autoupdate'}
 subcommand. In combination with separate autoupdate features already
 developed by the Bioconda and conda-forge \cite{conda_forge_community_2015_4774217} communities, this
 forms a sequence of semi-automated software update procedures, which are
@@ -593,7 +593,7 @@ package release a new version, the CI creates a PR to update the package
 recipe. Once the PR is reviewed and merged, newly built packages are
 uploaded to the Anaconda repository.
 
-In parallel, a bot \cite{planemo_ci_action} running the \texttt{‘autoupdate‘} subcommand
+In parallel, a bot \cite{planemo_ci_action} running the \texttt{'autoupdate'} subcommand
 monitors the Galaxy tool wrappers maintained by the IUC, as well as a
 few other smaller communities, checking the dependencies defined in the
 tool wrapper. Once an updated Bioconda or conda-forge package is
@@ -714,8 +714,8 @@ when running a Galaxy tool. Most tutorials instruct the trainees to run
 several Galaxy tools in sequence, and thus correspond to a Galaxy
 workflow.
 
-Planemo provides two subcommands, \texttt{‘training\_init‘} and
-\texttt{‘training\_generate\_from\_wf‘}, which generate a directory
+Planemo provides two subcommands, \texttt{'training\_init'} and
+\texttt{'training\_generate\_from\_wf'}, which generate a directory
 structure for a new tutorial, containing skeleton Markdown files
 defining the tutorials. These files already contain sections and
 hands-on boxes for each tool, with the tool inputs and parameters
@@ -726,7 +726,7 @@ diagrams and citations to produce the completed training. They also need
 to provide input datasets, which are usually stored on Zenodo. To
 populate a Galaxy server with these datasets, the training developer
 should also provide a data library file, which can be generated using
-the \texttt{‘training\_fill\_data\_library‘} subcommand, including the
+the \texttt{'training\_fill\_data\_library'} subcommand, including the
 Zenodo links and file formats of the datasets.
 
 A major aim of the Galaxy Training Network project is improving
