@@ -29,8 +29,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.1628474"
-     inkscape:cx="119.96415"
-     inkscape:cy="567.14234"
+     inkscape:cx="407.19014"
+     inkscape:cy="372.79182"
      inkscape:window-width="1912"
      inkscape:window-height="1032"
      inkscape:window-x="4"
@@ -39,6 +39,12 @@
      inkscape:current-layer="layer1" />
   <defs
      id="defs2503">
+    <rect
+       x="0"
+       y="0"
+       width="257.98742"
+       height="1014.7505"
+       id="rect1537" />
     <linearGradient
        inkscape:collect="always"
        id="linearGradient1526">
@@ -95,17 +101,6 @@
        y="-1.3877788e-17" />
     <text
        xml:space="preserve"
-       style="font-size:7.58703px;font-family:'Violet Evergarden';-inkscape-font-specification:'Violet Evergarden';fill:#ff0000;stroke:#c90000;stroke-width:1.79221;stroke-opacity:0.0810277"
-       x="32.27309"
-       y="57.007107"
-       id="text2770"><tspan
-         sodipodi:role="line"
-         id="tspan2768"
-         style="stroke-width:1.79221"
-         x="32.27309"
-         y="57.007107" /></text>
-    <text
-       xml:space="preserve"
        style="font-size:74.3498px;line-height:0.8;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:1.46358;stroke-linejoin:bevel"
        x="89.075157"
        y="71.53019"
@@ -132,6 +127,17 @@
          id="tspan1104">魂</tspan></text>
     <text
        xml:space="preserve"
+       style="font-size:74.3498px;line-height:0.8;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';text-align:center;text-anchor:middle;fill:none;stroke:#000000;stroke-width:1.46358;stroke-linejoin:bevel"
+       x="209.41798"
+       y="101.73443"
+       id="text392-5"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;fill:#f20000;fill-opacity:0.936128;stroke:none;stroke-width:1.46358"
+         x="209.41798"
+         y="101.73443"
+         id="tspan1104-2" /></text>
+    <text
+       xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:57.8573px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:none;fill-opacity:1;stroke:#b80000;stroke-width:2;stroke-linejoin:miter;stroke-opacity:1;stroke-dasharray:none"
        x="81.765137"
        y="288.93356"
@@ -152,21 +158,10 @@
          style="stroke-width:2;stroke:#b80000;stroke-opacity:1;fill:none;stroke-dasharray:none;stroke-linejoin:miter"
          x="108.33179"
          y="11.066396">「</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:68.3163px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#f20000;fill-opacity:1;stroke:none;stroke-width:8.06885;stroke-linejoin:bevel"
-       x="-63.094807"
-       y="-76.208405"
-       id="text1329"><tspan
-         sodipodi:role="line"
-         id="tspan1327"
-         style="stroke-width:8.06886"
-         x="-63.094807"
-         y="-76.208405" /></text>
     <g
        id="g1473"
        transform="translate(0,17.619555)"
-       style="stroke:#000000;stroke-opacity:1;fill:#ff0000;fill-opacity:1">
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-opacity:1">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
@@ -204,7 +199,7 @@
     <g
        id="g1487"
        transform="translate(114.13462,17.619555)"
-       style="stroke:#000000;stroke-opacity:1;fill:#ff0000;fill-opacity:1">
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-opacity:1">
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:21.6487px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;writing-mode:tb-rl;text-anchor:middle;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.02277;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"

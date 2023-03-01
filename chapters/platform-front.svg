@@ -8,7 +8,7 @@
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="platform.svg"
+   sodipodi:docname="platform-front.svg"
    inkscape:export-filename="platform-front.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
@@ -28,9 +28,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.79909512"
-     inkscape:cx="242.7746"
-     inkscape:cy="586.28815"
+     inkscape:zoom="0.5"
+     inkscape:cx="411"
+     inkscape:cy="461"
      inkscape:window-width="1912"
      inkscape:window-height="1032"
      inkscape:window-x="4"
@@ -325,13 +325,13 @@
      style="display:inline">
     <text
        xml:space="preserve"
-       style="font-size:34.2993px;line-height:0.75;font-family:Atk;-inkscape-font-specification:Atk;text-align:center;text-anchor:middle;fill:#c90000;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
+       style="font-size:34.2993px;line-height:0.75;font-family:Atk;-inkscape-font-specification:Atk;text-align:center;text-anchor:middle;fill:#d52d00;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
        x="170.58632"
        y="42.793396"
        id="text968"
        transform="scale(0.88881992,1.1250873)"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#c90000;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#d52d00;fill-opacity:1;stroke:none;stroke-width:1.51915;stroke-dasharray:none;stroke-opacity:1"
          x="170.58632"
          y="42.793396"
          id="tspan966">M</tspan></text>
@@ -360,14 +360,14 @@
        id="text483-2"
        transform="scale(0.88881992,1.1250873)"><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.876618;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#fff9f9;fill-opacity:1;stroke:none;stroke-width:0.876618;stroke-dasharray:none;stroke-opacity:1"
          x="114.17963"
          y="240.55588"
          id="tspan394-1">You can (not)</tspan><tspan
          sodipodi:role="line"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.876618;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Times New Roman';-inkscape-font-specification:'Times New Roman, ';text-align:start;text-anchor:start;fill:#fff9f9;fill-opacity:1;stroke:none;stroke-width:0.876618;stroke-dasharray:none;stroke-opacity:1"
          x="114.17963"
-         y="255.84053"
+         y="255.84056"
          id="tspan2442">re-deploy </tspan></text>
   </g>
 </svg>
