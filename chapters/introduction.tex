@@ -35,7 +35,7 @@ bioinformatics, and bioinformaticians, more scalable.
 
 Naturally we look at this problem as a systems problem: what levers are available to us which can change the inputs or
 outputs of the system to match our desired goal? We can turn the compute lever, making compute resources more available
-to researchers via efforts like the #EuroHPC JU. Or maybe we should place pressure on making tooling more cost
+to researchers via efforts like the \#EuroHPC JU. Or maybe we should place pressure on making tooling more cost
 efficient. Can we increase the supply of students coming in to bioinformatics programs?
 
 It is the last point where we have focused a number of our efforts: increasing and helping to accelerate the supply of
@@ -79,8 +79,27 @@ impairments.
 - (maybe) Tripal puts genomes in front of scientists
 - Phages have some health applications, here we talk about annotating + teaching.
 
-\section{Scope of this Thesis}
+\section{Aim of the Thesis}
+A lot of our esteemed colleagues have focused on the bioinformatics of cancer
+itself as well as clinical solutions to the problem.
+We instead aim to focus on the platform, infrastructure, and training aspects of cancer genomics.
+This presents a unique opportunity to act as a force multiplier for the field, by making the tools and training
+more accessible to the world. With our platform we can scale the important work
+of our colleagues reaching tens of thousands of researchers.
 
+While this is not a traditional focus for bioinformatics at a medical
+university, it remains an important one. What use are the tools if no one has
+heard of them?
+
+\section{Scope of this Thesis}
+In chapter \cref{chapter:platform} we present three highly integrated components as a necessary basis for the rest of the thesis. First a platform on which to scale one's research, from learning and courses to full fledge research. Into this platform a scalable and FAIR training platform has been integrated leveraging the connections to optimise the learning experience of students. And lastly, we address the needs of trainers using these two platform components by providing training infrastructure, as a service, reaching 24.000 researchers over the 5 years reported on as of the publication date.
+% TODO: maybe I should move the GTN paper to chapter 2?
+
+As the SARS-CoV-2 pandemic isolated the world, we were able to leverage the platform and training infrastructure to rapidly respond to the needs of the community, namely providing an e-learning platform. In chapter \cref{chapter:training} we show that the training platform, alongside Galaxy and TIaaS is scalable and functional even in the face of a sharp transition from in-person to e-learning. We show the platform scales to teach ~7.000 registrants over three years of online courses.
+
+With a truly scalable, FAIR platform in place we next look at the connection to the medical research world, specifically cancer genomics in chapter \cref{chapter:cancer}. We demonstrate this by deploying a number of bioinformatics tools import for Cancer on our platform and making them available globally. This only left us with a problem of where to obtain data, thus necessitating the integration of the European Genome Archive (EGA) in a secure manner, allowing for end-to-end analysis of sensitive clinical data. Lastly we present a clinical application of this platform with the analysis of EC-PC data.
+
+Lastly chapter \cref{chapter:annotation} we look at the annotation of genomes, a necessary step in the analysis of any genome, especially in medical contexts. We start by presenting a platform for scalable, real-time genome annotation, and then demonstrate the use of this platform in the annotation of phages, a topic of growing interest in the medical community. We also present the work of an ontology based toolkit for FAIR community databases, and summarise all of this infrastructure work by making our genome annotation infrastructure easily re-deployable by other groups via the GGA docker containers.
 
 \footnotesize
 \bibliographystyle{ieeetr}
