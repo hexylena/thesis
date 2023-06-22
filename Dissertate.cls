@@ -54,6 +54,7 @@
 \RequirePackage{packages/\Dissertate@School/style}
 
 \RequirePackage{graphicx}
+\usepackage[acronym]{glossaries}
 \RequirePackage{amssymb}
 \RequirePackage{lettrine}
 \RequirePackage[sectionbib]{chapterbib}
