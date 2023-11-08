@@ -14,7 +14,7 @@ view:
 	okular dissertation.pdf &
 
 watch:
-	while inotifywait -r -e modify --exclude  '(frontmatter/images/.*|\.git/.*|cronout.txt|.*(\.swp|\.swo|\.swn|\.fdb_latexmk|~))'  . ; do $(MAKE) thesis; done
+	find -name '*.tex' -not -name 'vars.tex' | entr -r $(MAKE)
 
 check:
 	lacheck dissertation.tex

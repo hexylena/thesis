@@ -1,0 +1,172 @@
+flowchart TB
+    subgraph Computation
+        direction TB
+
+        s[Schedulers]
+        deps[Dependency Management]
+        dist[Software Distribution]
+        os[Operating Systems]
+        code[Code Repositories]
+        dataz[Data Repositories]
+        job[A single computation]
+
+
+        os --> s --> deps --> dist --> job
+        
+        code --> dist
+        dist --> deps
+
+        deps --> job
+        dataz --> job
+
+
+    end
+    subgraph Analysis
+        direction TB
+
+        subgraph Databases
+            data-genome[NCBI Genomes/EGA]
+            data-seq-dna[NCBI SRA: DNA]
+            data-seq-rna[NCBI SRA: RNA]
+            data-ass[NCBI Genomes/Assemblies]
+        end
+
+        subgraph DNA Sequencing
+            direction TB
+            d-hyp[Hypothesis]
+            d-expdesign[Experimental Design]
+            d-purification[Purification]
+            d-libprep[Library Preparation]
+            d-sequencing[Sequencing]
+
+            d-hyp --> d-expdesign --> d-purification --> d-libprep --> d-sequencing --> data-seq-dna
+        end
+
+        subgraph RNA Sequencing
+            direction TB
+            r-hyp[Hypothesis]
+            r-expdesign[Experimental Design]
+            r-purification[Purification]
+            r-libprep[Library Preparation]
+            r-sequencing[Sequencing]
+
+            r-hyp --> r-expdesign --> r-purification --> r-libprep --> r-sequencing --> data-seq-rna
+        end
+
+
+        subgraph Assembly
+            direction TB
+
+            qca[Quality Control]
+            ass[Assemble]
+            filt[Filter]
+            qca2[Assembly QC]
+
+            data-seq-dna --> qca
+            d-sequencing --> qca --> filt --> ass --> qca2 --> data-ass
+            filt --> qca
+            ass --> ass
+        end
+        subgraph Annotation
+            direction TB
+
+            ref[Lcal Reference Genome]
+            struc[Structural Annotation]
+            sqc[QC]
+            func[Functional Annotation]
+            fqc[QC]
+            onto[Enrich with ontology terms]
+            ogs[Official Gene Set]
+
+            data-ass --> struc
+            data-genome --> func
+            dna-seq-rna --> func
+            ref --> struc --> sqc --> func --> fqc --> onto --> ogs --> data-genome
+            sqc --> struc
+            fqc --> func 
+        end
+        subgraph Mapping
+            direction TB
+            ngs-filt[Filter]
+            ngs-qc[Quality Control]
+            ngs-align[Alignment]
+            ngs-qc2[QC again]
+
+            data-seq-dna --> ngs-qc
+            sequencing-d -->ngs-qc -->  ngs-filt -->  ngs-align --> ngs-qc2 --> data-seq-dna
+            ngs-filt --> ngs-qc
+            ngs-align --> ngs-align
+        end
+
+
+        subgraph "Differential Expression"
+            direction TB
+            de-mapping[Splice Aware Mapper]
+            de-counting[Counting]
+            deseq[Differential Expression Analysis]
+            de-viz[Visualisation]
+            de-go[GO Term Enrichment]
+            de-path[Pathway Analysis]
+
+            r-sequencing --> de-mapping
+            data-genome --> de-mapping
+            data-seq-rna --> de-mapping
+            de-mapping --> de-counting --> deseq --> de-viz
+            de-viz --> de-path
+            de-viz --> de-go
+
+        end
+
+    end
+
+    subgraph Ethics
+        direction LR
+
+        Consent
+        GDPR
+        Privacy
+    end
+    subgraph FAIR
+        Findable
+        Accessible
+        Interoperable
+        Reproducible
+    end
+    subgraph RDM
+        direction LR
+        ds[Data Storage]
+        dmp[Data Management Plan]
+        dmp --> ds
+    end
+    subgraph Education
+        edbloom[Bloom's Taxonomy]
+        edmeth[Didactic Methods]
+        edact[Activities]
+        edlos[Learning Objectives]
+        edeval[Evauation]
+        edass[Assessment]
+        edtgt[Target Audience]
+        edbkg[Background Knowledge]
+        %% edqc[Quality Control]
+
+        resource[A Single Learning Resource]
+
+        edmeth --> resource
+        edbloom --> resource
+        edact --> resource
+        edlos  --> resource
+        edeval  --> resource
+        edass  --> resource
+        edtgt --> resource
+        edbkg --> resource
+        %% edqc --> resource 
+        %% resource --> edqc
+    end
+
+    %% resource --> Mapping
+    %% resource --> Databases
+    %% resource --> Assembly
+    %% resource --> Annotation
+    %% resource --> RDM
+    %% dmp --> Sequencing
+    %% dmp --> Annotation
