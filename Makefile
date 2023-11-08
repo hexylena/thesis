@@ -34,3 +34,7 @@ reallyclean:
 	find . -name '*.aux' -exec rm '{}' +
 	find . -name '*.blg' -exec rm '{}' +
 	@#rm **/*.aux **/*.blg **/*.bbl *.aux *.log *.out *.toc
+
+
+mermaid/diag.mmd.png: mermaid/diag.mmd
+	TEMP=~/tmp/ TMPDIR=~/tmp/ TMP=~/tmp/ apptainer run --mount type=bind,source=`pwd`/mermaid/,destination=/data docker://ghcr.io/mermaid-js/mermaid-cli/mermaid-cli -i /data/diag.mmd -e png -s 4

@@ -1,26 +1,4 @@
 flowchart TB
-    subgraph Computation
-        direction TB
-
-        s[Schedulers]
-        deps[Dependency Management]
-        dist[Software Distribution]
-        os[Operating Systems]
-        code[Code Repositories]
-        dataz[Data Repositories]
-        job[A single computation]
-
-
-        os --> s --> deps --> dist --> job
-        
-        code --> dist
-        dist --> deps
-
-        deps --> job
-        dataz --> job
-
-
-    end
     subgraph Analysis
         direction TB
 
@@ -93,7 +71,7 @@ flowchart TB
             ngs-qc2[QC again]
 
             data-seq-dna --> ngs-qc
-            sequencing-d -->ngs-qc -->  ngs-filt -->  ngs-align --> ngs-qc2 --> data-seq-dna
+            d-sequencing -->ngs-qc -->  ngs-filt -->  ngs-align --> ngs-qc2 --> data-seq-dna
             ngs-filt --> ngs-qc
             ngs-align --> ngs-align
         end
@@ -119,26 +97,52 @@ flowchart TB
 
     end
 
+    subgraph Prerequisites
+    direction LR
+    subgraph Computation
+        direction TB
+
+        s[Schedulers]
+        deps[Dependency Management]
+        dist[Software Distribution]
+        os[Operating Systems]
+        code[Code Repositories]
+        dataz[Data Repositories]
+        job[A single computation]
+
+
+        os --> s --> deps --> dist --> job
+        
+        code --> dist
+        dist --> deps
+
+        deps --> job
+        dataz --> job
+
+
+    end
     subgraph Ethics
         direction LR
 
-        Consent
-        GDPR
-        Privacy
+        e-c[Consent]
+        e-g[GDPR]
+        e-p[Privacy]
+        e-c --- e-g --- e-p
     end
     subgraph FAIR
-        Findable
-        Accessible
-        Interoperable
-        Reproducible
+        direction LR
+        Findable --- Accessible --- Interoperable --- Reproducible
     end
     subgraph RDM
         direction LR
         ds[Data Storage]
         dmp[Data Management Plan]
         dmp --> ds
+        dmplegal[Legal Requirements] --> ds
     end
     subgraph Education
+        direction LR
+
         edbloom[Bloom's Taxonomy]
         edmeth[Didactic Methods]
         edact[Activities]
@@ -162,11 +166,4 @@ flowchart TB
         %% edqc --> resource 
         %% resource --> edqc
     end
-
-    %% resource --> Mapping
-    %% resource --> Databases
-    %% resource --> Assembly
-    %% resource --> Annotation
-    %% resource --> RDM
-    %% dmp --> Sequencing
-    %% dmp --> Annotation
+    end
