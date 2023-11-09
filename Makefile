@@ -7,8 +7,12 @@ thesis-auto: clean references.bib vars.tex
 
 BIBS := $(wildcard chapters/*/*.bib)
 
-references.bib: $(BIBS)
-	cat ${BIBS} > references.bib
+references: $(BIBS)
+	echo "" > references.bib
+	for bib in ${BIBS}; do \
+		echo "%%%% $$bib" >> references.bib; \
+		cat $$bib >> references.bib; \
+	done;
 
 view:
 	okular dissertation.pdf &

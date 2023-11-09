@@ -14,7 +14,7 @@ If you don't know where you're going, you might not get there.
 
 \setlength\parindent{0pt}
 
-\section{Bioinformatics and Health}
+\section{Bioinformatics: A Solitary Pursuit}
 
 When one thinks of bioinformatics, they often think of the specific silo of
 bioinformatics that is interesting to them, perhaps a specific analysis, or a
@@ -78,9 +78,14 @@ before the applications of annotated genomes in treating cancer. This adventure
 is then concluded with a discussion of training, how we can disseminate the
 tools and analyses (spells and rituals, if you prefer) to a wider audience.
 
-% \section{Paying the Bioinformatics TARRIF[sic]}
-% FAIR has been a key concept in bioinformatics since some years. It is a vital component in making sure our research does
-% not go to waste. By requiring FAIR data funders help ensure that datasets are:
+After all, what use is a tool that falls in a forest, or is released online
+without proper documentation and learning materials?
+
+% \section{Paying the Bioinformatics TARRIF}
+%
+% FAIR has been a key concept in bioinformatics since some years. It is a vital
+% component in making sure our research does not go to waste. By requiring FAIR
+% data funders help ensure that datasets are:
 %
 % \begin{enumerate}
 % 	\item Findable
@@ -89,45 +94,32 @@ tools and analyses (spells and rituals, if you prefer) to a wider audience.
 % 	\item Reusable
 % \end{enumerate}
 %
-% Additionally some have added a second R: Reproducibility. This aims to highlight and address the reproducibility crisis
-% within science. If we have truly FAIR datasets, we should be able to easily reproduce the research.
+% Additionally some have added a second R: Reproducibility. This aims to
+% highlight and address the reproducibility crisis within science. If we have
+% truly FAIR datasets, we should be able to easily reproduce the research.
 %
-% I propose the addition of a T: Teaching (or training). It is insufficient to ``throw data over the wall''\footnote{a term often used
-% to describe software releases of pseudo open source software. The authors are maintaining some source of internal
-% development and only occasionally sharing their work, when it suits them, resulting in potentially long gaps between
-% what is released, and what services they offer on their website, impairing reproducibility.}, one must also put forth
-% the effort of documenting or teaching others how to use these datasets in such a way that can be useful.
+% I believe the addition of a T for Teaching (or training) is necessary. It is
+% insufficient to ``throw data over the wall''\footnote{a term often used to
+% describe software releases of pseudo open source software. The authors are
+% maintaining some source of internal development and only occasionally sharing
+% their work, when it suits them, resulting in potentially long gaps between what
+% is released, and what services they offer on their website, impairing
+% reproducibility.}, one must also put forth the effort of documenting or
+% teaching others how to use these datasets in such a way that can be useful.
 %
-% What should be made of a dataset for an uncommon research project that cannot leverage community standards and
-% resources. It might be FAIR, even FAIRR if there is a pipeline generating it, but without documentation and training
-% materials associated with the resource describing the generation process it becomes prohibitively costly to engage with
-% an unknown dataset.
-%
-% \subsection{Teaching/Training}
-% To make a FAIR resource functional we must train others to access this resource. This dovetails with the requirement for
-% Reusable semantically, however the requirements for reusable data are quite low: dataset metadata is described, using
-% common standards (when possible), and with an acceptable license. While those are all useful aspects, we should go
-% further and document how to make use of our resources.
-% It can save researchers time when they want to make use of our data.
-%
-% \subsection{Accessible}
-% ugh
-% \subsection{Reusable}
-% ugh
-% \subsection{Reproducible}
-% Reproducibility is a new addition to some uses of the FAIR acronym.
-%
-% \subsection{Interoperable}
-% ugh
-% \subsection{Findable}
-% ugh
+% What should be made of a dataset for an uncommon research project that cannot
+% leverage community standards and resources. It might be FAIR, even FAIRR if
+% there is a pipeline generating it, but without documentation and training
+% materials associated with the resource describing the generation process it
+% becomes prohibitively costly to engage with an unknown dataset.
 %
 % \section{Beyond FAIR}
 %
-% FAIR (or TARRIF if you will), set a baseline for the resources we produce as part of our scientific efforts. It it the
-% minimum, not the maximum. There are areas where we can choose to go above any beyond the minimum requirements for good
-% science. In some of those areas we can see sufficiently impressive ROIs that make the extra effort expended worth the
-% cost.
+% FAIR (or TARRIF if you will), set a baseline for the resources we produce as
+% part of our scientific efforts. It it the minimum, not the maximum. There are
+% areas where we can choose to go above any beyond the minimum requirements for
+% good science. In some of those areas we can see sufficiently impressive ROIs
+% that make the extra effort expended worth the cost.
 %
 % \subsection{Accessibility}
 %
@@ -213,14 +205,17 @@ tools and analyses (spells and rituals, if you prefer) to a wider audience.
 % heard of them?
 
 \section{Scope of this Thesis}
-In chapter \ref{chapter:platform} we present three highly integrated components as a necessary basis for the rest of the thesis. First a platform on which to scale one's research, from learning and courses to full fledge research. Into this platform a scalable and FAIR training platform has been integrated leveraging the connections to optimise the learning experience of students. And lastly, we address the needs of trainers using these two platform components by providing training infrastructure, as a service, reaching 24.000 researchers over the 5 years reported on as of the publication date.
-% TODO: maybe I should move the GTN paper to chapter 2?
+In chapter \ref{chapter:platform} we present three highly integrated components as a necessary basis for the rest of the thesis. Galaxy, a platform on which to scale one's research, from learning and small courses to full fledged research projects. This is complemented by Planemo, a toolkit for developing reproducible workflows and tooling with which to use in Galaxy. And finally we scale the TIaaS platform, which we use to address the needs of trainers by providing infrastructure as-a-service, reaching 24.000 researchers over the past 5 years.
 
-As the SARS-CoV-2 pandemic isolated the world, we were able to leverage the platform and training infrastructure to rapidly respond to the needs of the community, namely providing an e-learning platform. In chapter \ref{chapter:training} we show that the training platform, alongside Galaxy and TIaaS is scalable and functional even in the face of a sharp transition from in-person to e-learning. We show the platform scales to teach ~7.000 registrants over three years of online courses.
+Next in \ref{chapter:annotation} we look at the annotation of genomes, a necessary pre-requisite step in any and every downstream analysis, especially in medical contexts. We harken back to the first chapter by presenting a platform for scalable, real-time genome annotation, and then demonstrate the use of this platform in the annotation of phages, a topic of growing interest in the medical community. We also present the work of an ontology based toolkit for FAIR community databases, ensuring high quality computationally analysable annotations are recorded and distributed. % Finally we summarise all of this infrastructure work by making our genome annotation infrastructure easily re-deployable by other groups via the GGA docker containers.
 
-With a truly scalable, FAIR platform in place we next look at the connection to the medical research world, specifically cancer genomics in chapter \ref{chapter:cancer}. We demonstrate this by deploying a number of bioinformatics tools import for Cancer on our platform and making them available globally. This only left us with a problem of where to obtain data, thus necessitating the integration of the European Genome Archive (EGA) in a secure manner, allowing for end-to-end analysis of sensitive clinical data. Lastly we present a clinical application of this platform with the analysis of EC-PC data.
+With a truly scalable, FAIR platform in place we next look at the connection to the medical research world, specifically translational research in chapter \ref{chapter:cancer}.
+%We demonstrate this by deploying a number of bioinformatics tools import for Cancer on our platform and making them available globally.
+We open on the problem of where to obtain data, necessitating the integration of the European Genome Archive (EGA) in a secure manner, allowing for end-to-end analysis of sensitive clinical data.
+Next presenting a clinical application of Galaxy with the analysis of EC-PC data.
+Finally we visualise our results, showcasing a commonly used visualisation tool within cancer genomics; Circos.
 
-Lastly chapter \ref{chapter:annotation} we look at the annotation of genomes, a necessary step in the analysis of any genome, especially in medical contexts. We start by presenting a platform for scalable, real-time genome annotation, and then demonstrate the use of this platform in the annotation of phages, a topic of growing interest in the medical community. We also present the work of an ontology based toolkit for FAIR community databases, and summarise all of this infrastructure work by making our genome annotation infrastructure easily re-deployable by other groups via the GGA docker containers.
+With three chapters of reproducible, scalable analyses the only remaining question is how to ensure they reach their audience. As we benefit at every step from the existing learning materials produced by educators around the world, we give back by building a scalable training platform. Thus we share the updates to our scalable, FAIR, and accessible training platform which has been improved over the last two years in chapter \ref{chapter:training}. These improvements would prove key as the SARS-CoV-2 pandemic isolated the world, we were able to leverage the platform and training infrastructure to rapidly respond to the needs of the community, namely providing an e-learning platform.
 
 \footnotesize
 \bibliographystyle{ieeetr}

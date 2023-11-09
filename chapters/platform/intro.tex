@@ -3,7 +3,7 @@ The key to success in research? It's all about the computational platform - it's
 \qauthor{GPT3 text-davinci-003}
 \end{savequote}
 
-\chapter{Accessible Bioinformatics}\label{chapter:platform}
+\chapter{Infrastructure}\label{chapter:platform}
 \setcounter{figure}{-1}
 \setcounter{table}{-1}
 \setcounter{section}{-1}
@@ -17,9 +17,9 @@ The key to success in research? It's all about the computational platform - it's
 \setcounter{table}{-1}
 \setcounter{section}{-1}
 
-Infrastructure powers everything we do. While it is mostly invisible to the end user, the implementation and work that was done to provide this infrastructure--for education and research--is the single most critical pre-requisite for everything that comes after.
+Infrastructure powers everything we do. While it is mostly overlooked, the implementation and work that was done to provide this infrastructure--for education and research--is the single most critical pre-requisite for everything that comes after.
 
-We improved the Galaxy platform to add significant new features like improved Interactive Tools enabling full spectrum research on Galaxy and a new reporting framework and administrative tool suite. Planemo was developed which provides a suite of development tools to help accelerate Galaxy tool development and integration, as well as supporting educational material development. The Galaxy Training Network has been expanded to become one of the easiest, most FAIR (Findable, Accessible, Interoperable, Reusable) training platforms in bioinformatics with significant improvements to accessibility. To support this expanded training initiative, we developed TIaaS (Training Infrastructure as a Service) allowing one-click, hassle-free training infrastructure for educators around the globe.
+We improved the Galaxy platform to add significant new features like improved Interactive Tools enabling full spectrum research on Galaxy and a new reporting framework and administrative tool suite. Planemo was developed which provides a suite of development tools to help accelerate Galaxy tool development and integration, as well as supporting educational material development. To support this expanded training initiative, we developed TIaaS (Training Infrastructure as a Service) allowing one-click, hassle-free training infrastructure for educators around the globe.
 
 This chapter contains the following sub-chapters:
 
@@ -27,15 +27,11 @@ This chapter contains the following sub-chapters:
 \itemsep-0.5em
 \setcounter{enumi}{-1}
 \item \textbf{The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2022 update.} In this work, we discuss the latest improvements to the Galaxy platform and surrounding ecosystem. While the entire Galaxy team shared responsibilities of development across the platform, I was involved in testing and quality assurance of the new reporting interface ensuring it met the needs of our existing research community. I was deeply involved in the UseGalaxy.* project, working towards a unified set of public Galaxy servers, all offering similar toolboxes to enable research to move freely between the ``big three'' servers. As part of the training outreach I developed the TIaaS service and coordinated its deployment across all UseGalaxy.* instances. During this time I developed and maintained the \texttt{gxadmin} admin toolkit providing common administration utilities to Galaxy system administrators across the world. Together with Saskia Hiltemann we built the Galaxy Video Library to support outreach and education initiatives within our communities and provide free access to high quality recordings of instructors teaching their materials. All of these results are freely available around the web, under OSI licenses.
-\item \textbf{Planemo (CONSIDERING TO DROP)} We developed a toolkit for developers and teachers to quickly scaffold tools, training materials, and test their tools and workflows to make sure they meet all best practices. Coding of the application was initiated by John Chilton (Python), and improved over the years by dozens of other contributors including myself. I worked on numerous portions of this tool over the years including improving tool linting, tutorial scaffold generation, XUnit reporting output for tests enabling increased automation, and automation around toolshed integration which has been in constant use since 2015.
-\item \textbf{Galaxy Training: A Powerful Framework for Teaching!} Here we discuss updates to the Galaxy Training Network project which has seen significant changes since it's initial publication. The work was started by Saskia Hiltemann (Jekyll, Ruby, Markdown, HTML, Bash) and Bérénice Batut (ibid), and development continued with the addition of myself (ibid). I worked to enhance the accessibility of the application--as a partial screenreader user I was familiar with common failure modes--improving the WCAG compliance as well as use of ARIA roles throughout. Additionally I implemented new plugins for the GTN Jekyll deployment improving build efficiency and reducing necessary computation time and hopefully energy and emission usage. I implemented a slide deck to video converter directly in the GTN allowing trainers to annotate slide decks and produce 33 (as of this writing) constantly updated videos that are automatically generated whenever slides change. Additionally I contributed a number of coding tutorials teaching students introductory Python and R. I rewrote our JSON-LD implementation, a system by which machines can read and understand the content represented on a webpage, and coordinated the integration with BioSchemas's release of a Training schema, and the automatic ingestion of our materials into TeSS (Training eSupport System, an ELIXIR funded project).
-\item \textbf{Training Infrastructure as a Service (DRAFT)} I developed TIaaS, a web-based application to enable educators to request access to dedicated computation resources for their courses in connection with Galaxy. I subsequently coordinated the deployment of this service across all UseGalaxy.* instances, which provided computation power for the Smörgåsbord series of events which recorded 1600 and 3300 registrations respectively. Together with Simon Gladman, Nate Coraor, Björn Grüning, Cameron Hyde, Jen Hillman-Jackson, Bea Serrano-Solano, and John Davis I worked to validate this new tool and ensure it fit the diverse needs of our individual communities across Europe, Asia, and the Americas.
+\item \textbf{Planemo} We developed a toolkit for developers and teachers to quickly scaffold tools, training materials, and test their tools and workflows to make sure they meet all best practices. Coding of the application was initiated by John Chilton (Python), and improved over the years by dozens of other contributors including myself. I worked on numerous portions of this tool over the years including improving tool linting, tutorial scaffold generation, XUnit reporting output for tests enabling increased automation, and automation around toolshed integration which has been in constant use since 2015.
+\item \textbf{Training Infrastructure as a Service (DRAFT)} I developed TIaaS, a web-based application to enable educators to request access to dedicated computation resources for their courses in connection with Galaxy. I subsequently coordinated the deployment of this service across all UseGalaxy.* instances, which provided computation power for the Smörgåsbord series of events which recorded 7,5k registrations over three years. Together with Simon Gladman, Nate Coraor, Björn Grüning, Cameron Hyde, Jen Hillman-Jackson, Bea Serrano-Solano, and John Davis I worked to validate this new tool and ensure it fit the diverse needs of our individual communities across Europe, Asia, and the Americas.
+\end{enumerate}
 
 
-%Structural variations (SVs) are large-scale rearrangements of the genome. When these alterations occur within genes, novel hybrid genes called \emph{fusion genes} may be formed. Accurate detection of these SVs and resulting fusion genes are informative for e.g. diagnostics in cancer analysis.
-%
-%We created iFUSE, a web-based application to visualize and explore structural variants, and identify and prioritize potential fusion genes within a sample. We subsequently used this tool to detect multiple fusions in the VCaP cell line. Furthermore, we discovered the presence of chromothripsis on chromosome 5q of this sample, and used the Circos tool to visualize this in a single plot.
-%
 %This chapter contains the following sub-chapters:
 %
 %\begin{enumerate}[label=\ref{chapter:fusiongenes}.\arabic*]
@@ -46,6 +42,3 @@ This chapter contains the following sub-chapters:
 %
 %\item \textbf{Gene fusions by chromothripsis of chromosome 5q in the VCaP prostate cancer cell line.}
 %In this work, we used the iFUSE application to identify and validate fusion gene candidates. I led the bioinformatics analysis while Ines Teles Alves led the experimental validation. While we analyzed many samples, we came across a surprise in the VCaP sample, it seemed to display chromothripsis on the q arm of chromosome 5. We were able to confirm this through a combination of bioinformatic analysis and experimental validation.
-
-
-\end{enumerate}

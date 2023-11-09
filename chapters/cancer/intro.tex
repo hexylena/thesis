@@ -3,7 +3,7 @@ Cancer is no laughing matter, but with the help of bioinformatics research, we h
 \qauthor{GPT3 text-davinci-003}
 \end{savequote}
 
-\chapter{Cancer}\label{chapter:cancer}
+\chapter{Translational Research}\label{chapter:cancer}
 \setcounter{figure}{-1}
 \setcounter{table}{-1}
 \setcounter{section}{-1}
@@ -18,16 +18,20 @@ Cancer is no laughing matter, but with the help of bioinformatics research, we h
 \setcounter{table}{-1}
 \setcounter{section}{-1}
 
-Cancer is an extremely complex topic, but this chapter focuses on automation of analysis and moving towards translational medicine. This chapter describes the tools and pipelines we built which will enable ourselves and other bioinformaticians to put these tools and results more easily in front of Clinicians.
-
-Circos is a tool that makes visualisation of complex and high dimensional data easy, by utilising circular plots. Circos has a very steep learning curve and significant complexity, but at the cost of extremely flexible attractive outputs.. We developed \textbf{Galactic Circos}, wrapping Circos inside of Galaxy, to increase accessibility for non-bioinformaticians, and to improve interoperability with standard analysis pipelines.
+In the foreword it was stated that there are no simple solutions; in this chapter we do our best to implement simple solutions for clinicians. To execute an end-to-end analysis required first integrating a manner of sensitive data retrieval within Galaxy, at which point a classical RNA-Seq analysis could be run, and subsequently a visualisation component integrated with Circos.
+%
+% A key requirement in clinical and translational research is data privacy, necessitating the implementation of tooling for retrieving sensitive data before analysis, providing a simplified interface into shared clinical databases likes the European Genome Archive.
+% we will focus on first the tooling and automation of analysis and moving towards translational medicine, before looking at a real world example of . This chapter describes the tools and pipelines we built which will enable ourselves and other bioinformaticians to put these tools and results more easily in front of Clinicians.
+% Finally, Circos is a tool that makes visualisation of complex and high dimensional data easy, by utilising circular plots. Circos has a very steep learning curve and significant complexity, but at the cost of extremely flexible attractive outputs. We developed \textbf{Galactic Circos}, wrapping Circos inside of Galaxy, to increase accessibility for non-bioinformaticians, and to improve interoperability with standard analysis pipelines.
 
 \begin{enumerate}[label=\ref{chapter:cancer}.\arabic*]
 \itemsep-0.5em
 \setcounter{enumi}{-1}
-\item \textbf{Galactic Circos: User-friendly creation of Circos Plots within the Galaxy platform.}
-Circos is an extremely popular tool for visualisation of high dimension and genome scale data, especially in publications and posters. But this generally requires an experienced bioinformatician to design, hand-code, and then hard-code the plot making it rather inflexible without experienced help. Saskia Hiltemann and I created a Galaxy port of Circos, allowing it to be essentially completely configurable via browser. Due to Circos' inherent complexity, this became probably the single most complex Galaxy tool wrapper. However, at these costs, it had additional positive interactions with Galaxy, as users could take their analysis results essentially directly into Circos, simplifying their workflows. We additionally wrote extensive training materials as part of the publication, in order to improve accessibility.
-\item \textbf{Cancer Galaxy (UNWRITTEN)} In this work we discuss the development of a Cancer Galaxy analysis platform which provides an integrated end-to-end platform for Cancer research from collection to publication quality plots and clinician ready reports.
 \item \textbf{FAIR Data Retrieval for Sensitive Clinical Analysis in Galaxy (DRAFT)} Here we discuss improvements in the connection between Galaxy and EGA, the European Genome Archive, and the development of a wrapper that more easily integrates the two data stores. I contributed to the draft implementation of the Galaxy integration of the authentication system.
-\item \textbf{EC-PC || CREPT || Arlene (UNWRITTEN)} TODO
+
+% \item \textbf{Cancer Galaxy (UNWRITTEN)} In this work we discuss the development of a Cancer Galaxy analysis platform which provides an integrated end-to-end platform for Cancer research from collection to publication quality plots and clinician ready reports.
+
+\item \textbf{EC-PC} TODO. I completed the analysis of the RNA Sequencing data and associated visualisations confirming the regulation patterns of involved pathways.
+
+\item \textbf{Galactic Circos: User-friendly creation of Circos Plots within the Galaxy platform.} Circos is an extremely popular tool for visualisation of high dimension and genome scale data, especially in publications and posters. But this generally requires an experienced bioinformatician to design, hand-code, and then hard-code the plot making it rather inflexible without experienced help. Saskia Hiltemann and I created a Galaxy port of Circos, allowing it to be essentially completely configurable via browser. Due to Circos' inherent complexity, this became probably the single most complex Galaxy tool wrapper. However, at these costs, it had additional positive interactions with Galaxy, as users could take their analysis results essentially directly into Circos, simplifying their workflows. We additionally wrote extensive training materials as part of the publication, in order to improve accessibility.
 \end{enumerate}
