@@ -15,18 +15,62 @@ If you don't know where you're going, you might not get there.
 \setlength\parindent{0pt}
 
 \section{Bioinformatics and Health}
+
 When one thinks of bioinformatics, they often think of the specific silo of
 bioinformatics that is interesting to them, perhaps a specific analysis, or a
 specific field. This focus on a single node in the network of bioinformatics
 hides a lot of the complexity and cross-domain interactions that are not only
-possible but also beneficial.
+possible but required.
 
-Linear pathways can be drawn in bioinformatics, from data to analysed product, or from sequencing to differential expression analysis, but these obscure the networks of topics and fields and analyses that exist outside of those yellow brick roads, those happy paths. The reality is that the field of bioinformatics, most fields of science in fact, look more like the most complicated biosynthesis pathway one can imagine.
+Linear pathways can be drawn in bioinformatics, from data to analysed product,
+or from sequencing to differential expression analysis, but these obscure the
+networks of topics and fields and analyses that exist outside of those yellow
+brick roads, those happy paths. The reality is that the field of
+bioinformatics\footnote{most fields of science in fact, but this is a biomedical programme after all}
+look more like the most complicated biosynthesis pathway one can imagine.
 
+Take for instance a typical RNA-Seq analysis, generally this is summarised with a very simple flowchart like Fig~\ref{rnaSeqSimple}.
 
+\begin{figure}[!h]
+\hypertarget{rnaSeqSimple}{%
+\centering
+\begin{tikzpicture}[node distance = 2cm, auto] 
+    \node [block] (map) {Splice Aware Mapping}; 
+    \node [block, right=1em of map] (count) {Counting}; 
+    \node [block, right=1em of count] (diffex) {Differential Expression}; 
+    \node [block, right=1em of diffex] (viz) {Visualisation}; 
+    \node [block, right=1em of viz] (go) {GO Enrichment}; 
+    \node [block, right=1em of go,below=1em of go] (path) {Pathway Analysis}; 
+    \path [line] (map) -- (count);
+    \path [line] (count) -- (diffex); 
+    \path [line] (diffex) -- (viz); 
+    \path [line] (viz) -- (go); 
+    \path [line] (viz) -- (path); 
+\end{tikzpicture}
+\caption{A simplified RNA Seq workflow. TODO: fix graphic.}\label{rnaSeqSimple}
+}
+\end{figure}
 
-This thesis instead will cover a wide range of topics, a sweeping look across
-the topic. We'll begin with the computational aspects, the oft-ignored
+ But this simplified view hides a lot of very important aspects of Good Science™ such as where is one running these computations? Is it reproducible? Where did they learn to do it? What's the data management plant? Is it ethical?
+All of these topics are part and parcel of the scientific process, especially in biomedical sciences, but too often ignored for a focus on translational research and clinical applications. So let's look at the ``real'' flow chart of doing a simple differential expression analysis instead.
+
+\begin{figure}[!h]
+\hypertarget{rnaSeqNotSoSimple}{%
+\centering
+	\includegraphics[width=\textwidth]{./mermaid/diag.mmd.png}
+	\caption{A ``simplified'' RNA Seq workflow. TODO: fix graphic, colours.}\label{rnaSeqNotSoSimple}
+}
+\end{figure}
+
+Figure~\ref{rnaSeqNotSoSimple} shows a more accurate view of the simple analysis.
+Every single aspect of the process, from start to end, builds on learning materials and resources. When created by professionals, their creation is an involved and complicated process to produce a high quality learning resource.
+Someone, somewhere, needed to learn the requisite skills to complete their subset of the workflow.
+Additionally many of the steps are computational in nature, which requires we ask questions regarding the computations such as which Operating System (OS), Distributed Resource Manager (DRM), and dependency management system were used?
+These are all important for the reproducibility of the analysis, and are as important as the research results in order to avoid situations like the Polderman affair by providing a traceable chain of analyses that is reproducible at a later date.
+
+This thesis touches on most of these topics, identifying and implementing solutions to support and improve the quality of science done by bioinformaticians who are more focused on clinical outcomes.
+
+We'll begin with the computational aspects, the oft-ignored
 foundation of bioinformatics analyses is the compute platforms on which they
 happen. With that in hand we'll move into the bioinformatics itself, focusing
 first on genome annotation, the again oft-ignored foundation of all analyses,
@@ -34,127 +78,127 @@ before the applications of annotated genomes in treating cancer. This adventure
 is then concluded with a discussion of training, how we can disseminate the
 tools and analyses (spells and rituals, if you prefer) to a wider audience.
 
-\section{Paying the Bioinformatics TARRIF[sic]}
-FAIR has been a key concept in bioinformatics since some years. It is a vital component in making sure our research does
-not go to waste. By requiring FAIR data funders help ensure that datasets are:
-
-\begin{enumerate}
-	\item Findable
-	\item Accessible
-	\item Interoperable
-	\item Reusable
-\end{enumerate}
-
-Additionally some have added a second R: Reproducibility. This aims to highlight and address the reproducibility crisis
-within science. If we have truly FAIR datasets, we should be able to easily reproduce the research.
-
-I propose the addition of a T: Teaching (or training). It is insufficient to ``throw data over the wall''\footnote{a term often used
-to describe software releases of pseudo open source software. The authors are maintaining some source of internal
-development and only occasionally sharing their work, when it suits them, resulting in potentially long gaps between
-what is released, and what services they offer on their website, impairing reproducibility.}, one must also put forth
-the effort of documenting or teaching others how to use these datasets in such a way that can be useful.
-
-What should be made of a dataset for an uncommon research project that cannot leverage community standards and
-resources. It might be FAIR, even FAIRR if there is a pipeline generating it, but without documentation and training
-materials associated with the resource describing the generation process it becomes prohibitively costly to engage with
-an unknown dataset.
-
-\subsection{Teaching/Training}
-To make a FAIR resource functional we must train others to access this resource. This dovetails with the requirement for
-Reusable semantically, however the requirements for reusable data are quite low: dataset metadata is described, using
-common standards (when possible), and with an acceptable license. While those are all useful aspects, we should go
-further and document how to make use of our resources.
-It can save researchers time when they want to make use of our data.
-
-\subsection{Accessible}
-ugh
-\subsection{Reusable}
-ugh
-\subsection{Reproducible}
-Reproducibility is a new addition to some uses of the FAIR acronym.
-
-\subsection{Interoperable}
-ugh
-\subsection{Findable}
-ugh
-
-\section{Beyond FAIR}
-
-FAIR (or TARRIF if you will), set a baseline for the resources we produce as part of our scientific efforts. It it the
-minimum, not the maximum. There are areas where we can choose to go above any beyond the minimum requirements for good
-science. In some of those areas we can see sufficiently impressive ROIs that make the extra effort expended worth the
-cost.
-
-\subsection{Accessibility}
-
-% Not just accessible but easily!
-% - even when tools exist, accessibility issues are abound
-% - two kinds: disability access + availability
-% - does a given tool work for a blind user?
-% - can it be accessed around the world? in non-LMICs?
-
-When one talks about accessibility, there are multiple understandings which are often conflated; access to a resource, and
-access for those with disabilities. Making bioinformatics accessible, in both senses, should be our goal. How can we
-make resources we maintain, available to the entire world, barrier free.
-
-Can we make the compute resources available in High Income Countries (HICs), generally the ex-colonial powers, available
-to those in Low and Middle Income Countries (LMICs)? Can we make our carefully guarded knowledge available around the
-world, for a reasonable price point? When these resources are available, are we actively excluding this with one or more
-disabilities from engaging with the materials and tools?
-
-The answer presented in this thesis is a resounding ``yes, we can do it''. We show the possibility to disseminate
-resources in global training events reaching around 7.000 students over the 3 years of my PhD employment. Additionally
-it is shown to be possible to cost effectively make these resources accessible to those with visual or auditory
-impairments.
-
-
-\section{Teaching}
-
-\section{404: Help Not Found}
-% - bioinformatics is difficult
-% - bioinformaticians and not really scalable
-% - people need our resources, we need to make them available
-% - And we need to make training available
-Bioinformatics is a rapidly growing field, but the growth in data is far outpacing the growth in researchers.
-Advancements in sequencing mean that we generate NUMBER PB of data every TIME PERIOD which must be analysed.
-Unfortunately researchers are not scaling at the same rate as the data.
-
-It is a classic economics problem, the supply of humans to accomplish research is significantly lower than the demand.
-The demand continues to grow putting pressure on the supply chain for bioinformaticians, pushing us to find ways to make
-bioinformatics, and bioinformaticians, more scalable.
-
-Naturally we look at this problem as a systems problem: what levers are available to us which can change the inputs or
-outputs of the system to match our desired goal? We can turn the compute lever, making compute resources more available
-to researchers via efforts like the \#EuroHPC JU. Or maybe we should place pressure on making tooling more cost
-efficient. Can we increase the supply of students coming in to bioinformatics programs?
-
-It is the last point where we have focused a number of our efforts: increasing and helping to accelerate the supply of
-bioinformaticians that are needed around the world. We have made numerous training resources available, and then looked
-at how to optimally scale these resources to reach the world.
-
-
-\section{Automating Bioinformatics}
-- When it is available, does it scale?
-- Can parts be automated, to reduce demands on humans?
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.8\linewidth]{chapters/images/introduction/is_it_worth_the_time.png}
-\caption{Figure reproduced from XKCD \#1205. This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License.}
-\end{figure}
-
-\section{Use case 1: Cancer}
-- circos makes nice plots that are useful for cancer
-- it's available in CancerGalaxy™®, which collects other useful tools + training
-- (maybe) here's a more science-y example: htsget for analysis
-- (maybe) here's another science-y reproduction: pathways
-- and finally real life translational medicine: (EC-PC/Arlene/Etc, whatever works out.)
-
-\section{Use case 2: Annotation}
-- Galaxy Genome Annotation project makes scalable genomics easy, plus teaching.
-- Apollo brings collaborative annotation, for teaching + science
-- (maybe) Tripal puts genomes in front of scientists
-- Phages have some health applications, here we talk about annotating + teaching.
+% \section{Paying the Bioinformatics TARRIF[sic]}
+% FAIR has been a key concept in bioinformatics since some years. It is a vital component in making sure our research does
+% not go to waste. By requiring FAIR data funders help ensure that datasets are:
+%
+% \begin{enumerate}
+% 	\item Findable
+% 	\item Accessible
+% 	\item Interoperable
+% 	\item Reusable
+% \end{enumerate}
+%
+% Additionally some have added a second R: Reproducibility. This aims to highlight and address the reproducibility crisis
+% within science. If we have truly FAIR datasets, we should be able to easily reproduce the research.
+%
+% I propose the addition of a T: Teaching (or training). It is insufficient to ``throw data over the wall''\footnote{a term often used
+% to describe software releases of pseudo open source software. The authors are maintaining some source of internal
+% development and only occasionally sharing their work, when it suits them, resulting in potentially long gaps between
+% what is released, and what services they offer on their website, impairing reproducibility.}, one must also put forth
+% the effort of documenting or teaching others how to use these datasets in such a way that can be useful.
+%
+% What should be made of a dataset for an uncommon research project that cannot leverage community standards and
+% resources. It might be FAIR, even FAIRR if there is a pipeline generating it, but without documentation and training
+% materials associated with the resource describing the generation process it becomes prohibitively costly to engage with
+% an unknown dataset.
+%
+% \subsection{Teaching/Training}
+% To make a FAIR resource functional we must train others to access this resource. This dovetails with the requirement for
+% Reusable semantically, however the requirements for reusable data are quite low: dataset metadata is described, using
+% common standards (when possible), and with an acceptable license. While those are all useful aspects, we should go
+% further and document how to make use of our resources.
+% It can save researchers time when they want to make use of our data.
+%
+% \subsection{Accessible}
+% ugh
+% \subsection{Reusable}
+% ugh
+% \subsection{Reproducible}
+% Reproducibility is a new addition to some uses of the FAIR acronym.
+%
+% \subsection{Interoperable}
+% ugh
+% \subsection{Findable}
+% ugh
+%
+% \section{Beyond FAIR}
+%
+% FAIR (or TARRIF if you will), set a baseline for the resources we produce as part of our scientific efforts. It it the
+% minimum, not the maximum. There are areas where we can choose to go above any beyond the minimum requirements for good
+% science. In some of those areas we can see sufficiently impressive ROIs that make the extra effort expended worth the
+% cost.
+%
+% \subsection{Accessibility}
+%
+% % Not just accessible but easily!
+% % - even when tools exist, accessibility issues are abound
+% % - two kinds: disability access + availability
+% % - does a given tool work for a blind user?
+% % - can it be accessed around the world? in non-LMICs?
+%
+% When one talks about accessibility, there are multiple understandings which are often conflated; access to a resource, and
+% access for those with disabilities. Making bioinformatics accessible, in both senses, should be our goal. How can we
+% make resources we maintain, available to the entire world, barrier free.
+%
+% Can we make the compute resources available in High Income Countries (HICs), generally the ex-colonial powers, available
+% to those in Low and Middle Income Countries (LMICs)? Can we make our carefully guarded knowledge available around the
+% world, for a reasonable price point? When these resources are available, are we actively excluding this with one or more
+% disabilities from engaging with the materials and tools?
+%
+% The answer presented in this thesis is a resounding ``yes, we can do it''. We show the possibility to disseminate
+% resources in global training events reaching around 7.000 students over the 3 years of my PhD employment. Additionally
+% it is shown to be possible to cost effectively make these resources accessible to those with visual or auditory
+% impairments.
+%
+%
+% \section{Teaching}
+%
+% \section{404: Help Not Found}
+% % - bioinformatics is difficult
+% % - bioinformaticians and not really scalable
+% % - people need our resources, we need to make them available
+% % - And we need to make training available
+% Bioinformatics is a rapidly growing field, but the growth in data is far outpacing the growth in researchers.
+% Advancements in sequencing mean that we generate NUMBER PB of data every TIME PERIOD which must be analysed.
+% Unfortunately researchers are not scaling at the same rate as the data.
+%
+% It is a classic economics problem, the supply of humans to accomplish research is significantly lower than the demand.
+% The demand continues to grow putting pressure on the supply chain for bioinformaticians, pushing us to find ways to make
+% bioinformatics, and bioinformaticians, more scalable.
+%
+% Naturally we look at this problem as a systems problem: what levers are available to us which can change the inputs or
+% outputs of the system to match our desired goal? We can turn the compute lever, making compute resources more available
+% to researchers via efforts like the \#EuroHPC JU. Or maybe we should place pressure on making tooling more cost
+% efficient. Can we increase the supply of students coming in to bioinformatics programs?
+%
+% It is the last point where we have focused a number of our efforts: increasing and helping to accelerate the supply of
+% bioinformaticians that are needed around the world. We have made numerous training resources available, and then looked
+% at how to optimally scale these resources to reach the world.
+%
+%
+% \section{Automating Bioinformatics}
+% - When it is available, does it scale?
+% - Can parts be automated, to reduce demands on humans?
+%
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[width=0.8\linewidth]{chapters/images/introduction/is_it_worth_the_time.png}
+% \caption{Figure reproduced from XKCD \#1205. This work is licensed under a Creative Commons Attribution-NonCommercial 2.5 License.}
+% \end{figure}
+%
+% \section{Use case 1: Cancer}
+% - circos makes nice plots that are useful for cancer
+% - it's available in CancerGalaxy™®, which collects other useful tools + training
+% - (maybe) here's a more science-y example: htsget for analysis
+% - (maybe) here's another science-y reproduction: pathways
+% - and finally real life translational medicine: (EC-PC/Arlene/Etc, whatever works out.)
+%
+% \section{Use case 2: Annotation}
+% - Galaxy Genome Annotation project makes scalable genomics easy, plus teaching.
+% - Apollo brings collaborative annotation, for teaching + science
+% - (maybe) Tripal puts genomes in front of scientists
+% - Phages have some health applications, here we talk about annotating + teaching.
 
 % \section{Aim of the Thesis}
 % A lot of our esteemed colleagues have focused on the bioinformatics of cancer

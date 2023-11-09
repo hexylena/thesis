@@ -3,6 +3,13 @@
 
 \documentclass[School=EMC,draft]{Dissertate}
 \usepackage{tikz}
+\usetikzlibrary{arrows.meta, positioning}
+\tikzset{%
+    block/.style = {draw=red,rectangle,thick,
+        minimum height=2em, text width=5em, align=center},
+    line/.style = {draw=black, line width=2pt, 
+        -{Triangle[length=5pt, width=5pt]}, shorten >=2pt, shorten <=2pt},
+}
 \usepackage[sectionbib]{chapterbib}
 \usepackage{tabularx}
 \usepackage{enumitem}
@@ -290,17 +297,17 @@
 	%\include{chapters/platform/galaxy}
 	%\include{chapters/platform/planemo}
 	\include{chapters/platform/gtn}
-	%\include{chapters/platform/tiaas}
+	\include{chapters/platform/tiaas}
 
 % \interstitial{training}
 \include{chapters/training/intro}
 	%\include{chapters/training/fanciful} - WRITE
 	%\include{chapters/training/solstice} - WRITE
-	%\include{chapters/training/e-learning}
+	\include{chapters/training/e-learning}
 
 % \interstitial{cancer}
 \include{chapters/cancer/intro}
-	%\include{chapters/cancer/circos}
+	\include{chapters/cancer/circos}
 	%\include{chapters/cancer/cancergalaxy} - WRITE
 	%\include{chapters/cancer/htsget} - WRITE
 	%\include{chapters/cancer/SCIENCE} - MUST
@@ -311,7 +318,7 @@
 	%\include{chapters/annotation/apollo}
 	%\include{chapters/annotation/tripal}
 	%\include{chapters/annotation/gga}
-	%\include{chapters/annotation/phages}
+	\include{chapters/annotation/phages}
 
 %\include{chapters/discussion}
 \RemoveLabels %stop thumb index
