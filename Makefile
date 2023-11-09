@@ -7,7 +7,7 @@ thesis-auto: clean references.bib vars.tex
 
 BIBS := $(wildcard chapters/*/*.bib)
 
-references: $(BIBS)
+references.bib: $(BIBS)
 	echo "" > references.bib
 	for bib in ${BIBS}; do \
 		echo "%%%% $$bib" >> references.bib; \
