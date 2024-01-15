@@ -17,7 +17,118 @@ If you don't know where you're going, you might not get there.
 
 % "too technical", "not enough biology"
 
-\section{Why we Bioinformatics}
+\section{A Brief History}
+
+With the advent of DNA sequencing in the 1970s, the ``source code of life'' could finally begin to be unravelled for organisms.
+The first organism sequenced was bacteriophage $\phi$X174 (5386 nucleotides long) in 1976, which marked the start of the sequencing arms race.
+By 1990, the Human Genome Project had been launched, resulting in a complete copy of the Human genome being publicly available by 2003.
+This paved the way for the era of bioinformatics in translational research, and in the clinic; something that would transform the field.
+
+Soon began the era of \emph{next-generation sequencing} or \emph{high throughput sequencing} and the rapid development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
+The astronomical cost of $\approx$450MM USD in 2000 to sequence the single human---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD. It took until 2019 for costs to be consistently below the threshold, but it has been achieved.
+
+\subsection{Limiting Reagents}
+
+In the pathway from data to results, however, there are several potentially limiting resources:% Data, Compute, and Bioinformaticiasn.
+
+\begin{itemize}
+	\itemsep0em
+	\item Data
+	\item Compute time/space
+	\item Bioinformaticians
+\end{itemize}
+
+With the economic barrier to data availability solved, the first limit on throughput was removed.
+Currently SRA stores nearly 0.75 Exabasepairs of sequencing data alone\footnote{\url{https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/}}, which represents only a fraction of the total sequencing completed.
+
+% While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate 
+
+Compute resources have similarly grown over time, three major cloud providers offer compute resources in a cost efficient manner, something that could only be dreamed of in the past.
+Universities have likewise continued to compete over supercomputers which have grown continuously at an exponential rate.
+Additionally projects like EuroHPC aim to provide these resources at an international level.
+
+Unfortunately that leaves us with the final resource: our human bioinformaticians. These have decidedly not scaled at a similar rate as the data, for a variety of reasons.
+Recent studies indicate a need to increase bioinformatics staff by half, both in academia and the pharmaceutical industry.
+% In light of advancing genomics research, a BBSRC review suggested a need to increase bioinformatics staff by 60% in academia and by 45% in pharmaceutical companies https://academic.oup.com/bib/article/20/2/398/4096809
+This is further confirmed in a 2017 study of NSF-BIO-funded investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis. The store, the compute, the data availability is all comparatively solved, unlike the human problem.
+ % A survey of 704 NSF-BIO-funded investigators revealed that training topi    cs were the top 3 of 13 most unmet data analysis needs, above HPC/cloud facilities, workflows/pipelines analysis or storage facilities needs \cite{Barone2017}.
+
+% - Bioinformatics is driving clinical, translational research
+% - Large amounts of data are generated, at low cost
+% - Ever more data
+% - graph, line goes up, cost line goes down
+
+\subsection{Clinical Impacts}
+
+This gap increasingly matters for clinical outcomes---there need to be enough skilled bioinformaticians to analyse the clinical data.
+Precision medicine, especially in oncology, present us with ever more opportunities to improve clinical outcomes, if the person-power is available.
+However that requires bioinformaticians to establish the pipelines, optimise, and validate them, in collaboration with larger teams of clinicians.
+Unfortunately the PhDs creating these clinical outcomes tend to come from the medical side and often lack necessary computer science education.
+
+% - Patients come in, and expect to have their genomes sequenced, a cure tailored for them
+% - turning 1s and 0s and ACTGs into clinical outcomes, that is where the challenge lies.
+% - The PhDs creating these bioinformatics and clinical practices tend to come from the medical side
+% - Lacking training in computers and computer science, a skills gap we need to meet.
+
+\section{Challenges}
+
+The skills gap is not the only-challenge, but it is one of the main issues facing us when we wish to scale our bioinformaticians to meet the greater data availability.
+``Bioinformaticians'' in fact tend to be jacks-of-all-trades; often they have a background in biology, computer science, software engineering, statistics, medicine, and more.
+This should be looked upon as a boon towards solving the skills gap---very few students have this sort of background, but many students have existing background in one or more of those fields, which gives us opportunities to up-skill them in areas they are lacking.
+
+\subsection{Computational}
+
+All of these developed workflows need to run somewhere, either in-house in the hospital, or in the cloud. These \textbf{infrastructure} resources are commonly experienced as difficult to access, requiring a completely different set of skills to ensure code runs efficiently on highly parallel distributed resource managers (DRMs).
+
+General Data Protection Regular (GDPR)'s passage has further frustrated this, requiring researchers be more careful about data locality, access control, and developing an understanding of the \textbf{legalities} of processing clinical data in different situations. Alternatively many hospitals mandate use of a prescribed platform for data analysis which often comes with additional barriers to access\footnote{The author notes a nearby platform which turns off VMs after work hours, frustrating analysts.}.
+
+On top of this infrastructure, \textbf{tools} are run, often in a wide variety of languages, each with different requirements, different programming languages, and different databases. To run an individual tool and generate a clinically acceptable output requires the bioinformatician to understand deeply the process of each tool, the methods by which it functions, data types it can accept, and more.
+% tools: on top of this infrastructure run all of the various tools, written in 100 different languages, with different requirements and shapes and databases, all need to be understood at a low level.
+
+Computers are notoriously user unfriendly themselves, so much so we have an entire field of research dedicated to user experience and human computer interaction. All of the infrastructure, tools, and data put in front of a busy doctor, or a researcher, needs to be clear, accessible, and \textbf{user-friendly}. This requires an investment of time and space in the development cycle to ensure all sharp edges are polished, and the software and research products are optimised for their clinical settings.
+
+And all of the above challenges are compounded by the need to provide \textbf{training} materials. No matter how user friendly the systems are, they must still be documented in a variety of ways that a busy clinician can run and interpret the results in an efficient manner. The end users must be trained on system operation, and barriers eliminated in service of clinical outcomes.
+% training: all of the above require training, no matter how user friendly, they require significant training investments.
+
+An underlying theme in the above, while remaining a separate issue, is the \textbf{accessibility} of those resources. The learning materials, the infrastructure, the tooling, the legal knowledge; all of this must be accessible to the motivated bioinformatician attempting to resolve their skill issues. There are two forms of barriers that can be experienced here, inaccessibility due to content in restricted and screenreader unfriendly formats impacting those with disabilities, and resources simply locked behind firewalls or paywalls and thus unavailable.
+
+\subsection{Data}
+
+Clinical pipelines are exceptional in their data requirements: where \textbf{genome annotation} is often a dataset used for a pretty graph, in the clinical world accurately annotated genomes are of paramount importance. This can be seen especially as we look towards reviving old practices such as bacteriophages to fight infections, those phages must have completely correct annotations before they are exposed to humans. Unlike small mRNA-based vaccines where the entire sequence is quite short, bacteriophages are significantly larger with significantly more unknown regions. In these cases, one wants to ensure annotations are human-reviewed for accuracy, as well.
+% annotation: (idk where to put this) but a lot of these analyses require well annotated genomes, especially when looking at phage therapy in the clinic. It is paramount to have high quality human curated annotations.
+
+With a well annotated genome, analysis can begin. In the precision medicine use case this means increasingly working with \textbf{sensitive} human datasets, the challenge becomes how to handle these datasets safely and securely. Long term data storage becomes an important question to answer to ensure documented traceable clinical analysis.
+% sensitive data: bench lab scientists need fool-proof ways to access sensitive, secure data to reduce potential for negative outcomes.
+% federated data: these researchers also want to look at cohorts from other institutions, other countries in a GDPR safe manner, so we need to enable that.
+
+For population level studies common in oncological research, these datasets are no longer in-house, and instead must be obtained from \textbf{federated} sensitive data repositories. Given the context of the technical and legal problems mentioned above, these problems become significantly more difficult as we look to transferring human data across national boundaries.
+For the bioinformatician wishing to analyse those datasets, it might additionally mean using federated compute resources to bring their computations directly to the data.
+
+And all of this, naturally, \emph{should} be \textbf{reproducible}. The data, tools, infrastructure, and environments must be able to reproduce results over time to ensure defensible and accurate scientific research. Bioinformaticians from earlier eras were used to doing analysis on their own computers, but ``works on my laptop'' is not sufficient for the clinic, the datasets are larger and more sensitive and the results need to be reproducible.
+% reproducibility: at the end of the day, with the data and tools and infra, analyses must be reproducible. "Works on my computer" is not sufficient for the clinic. (andrew doing analysis in excel / on his laptop)
+
+\section{Solutions}
+
+All hope is not lost, there are solutions we can investigate to each and every of the aforementioned problems, some solutions even address multiple problems.
+
+Fundamental to every other solution, and to most of the problems enumerated, is \textbf{education}. Bioinformaticians coming from clinical backgrounds need to up-skill across computer science and software engineering domains to produce reproducible science. This can be approached from many directions but most commonly via the addition of more short courses covering focused topics. These can be an incredibly successful approach for early career researchers looking to fill some gaps in their training, or later career researchers attempting to update their knowledge. Training can help us address infrastructure, tooling, data legality, sensitive and federated data issues.
+
+Additionally they also need to become teachers themselves as a key component of their job; any tools or software they produce for the clinic will require training for their colleagues. They may indeed also wish to publish their tools and will want to produce training materials to ensure dissemination to the correct audiences. \textbf{Didactics} is a large field, but a useful subset can be learned to significantly improve the quality of training materials. Learning to teach and produce quality training materials can help bioinformaticians make their results more user-friendly and accessible.
+
+% teaching - foundation of every subsequent solution. they need to learn, the knowledge needs to be communicated, disseminated to the correct audience, when they're ready and in in the correct time to receive it. It needs to be understandable, in a good format, with didactically proven techniques (e.g. spaced repetition/etc)
+
+
+
+FAIR - when data is available, making it FAIR ensures [acronym], improving the science
+(also rolled into this: data sharing / open science)
+
+accessible science - for many tasks there are tools existing and methodologies, we need to make them accessible to our own, and other researchers that want them. it's important for science, methods need to be open and testable so they can be improved upon.
+
+(real-time) collaboration - science isn't a sprint, it isn't a marathon, it's a RELAY RACE. collaboration is required, none of us would be here without collaborating and optimising the use of everyone's skills for the best outcome.
+
+ontologies - as part of collaboration, finding shared standardised vocabulary to ensure we are referring to the same thing is incredibly important, and ontologies solve this problem in nice ways.
+
+
 
 % why do we need this, but from a biomedical viewpoint.
 % we need to do bioinfo for these biomedical applications, where are challenges, what are solutions
@@ -29,32 +140,26 @@ If you don't know where you're going, you might not get there.
 % bkgs, problem => outline challenges => cover solution.
 
 
-background:
+% problems:
+%
+% - sensitive data
+% - federated data
+% - infrastructure
+% - reproducible
+% - user friendly
+% - annotation
+% - toolkits
+% - tools
+% - "andrew doing analysis in excel / on his laptop"
 
-- bioinformatics is needed
-- biomedical angle
-- lack of training / skills gap, both making + using tools and need training.
-
-problems:
-
-- sensitive data
-- federated data
-- infrastructure
-- reproducible
-- user friendly
-- annotation
-- toolkits
-- tools
-- "andrew doing analysis in excel / on his laptop"
-
-solutions:
-
-- FAIR
-- accessible science
-- ontologies
-- teaching
-- (real-time) collaboration
-- data sharing / open science
+% solutions:
+%
+% - FAIR
+% - accessible science
+% - ontologies
+% - teaching
+% - (real-time) collaboration
+% - data sharing / open science
 
 
 \section{Scope of this Thesis}
