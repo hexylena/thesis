@@ -108,8 +108,8 @@
 %%{EB Garamond}
 
 %\setromanfont[Numbers=OldStyle, Ligatures={Common, TeX}, Scale=1.0, BoldFont = {Adobe Garamond Pro Bold}]{EB Garamond}
-\setromanfont[Path=./fonts/Garamond/, Numbers=OldStyle, Ligatures={Common, TeX}, Scale=1.0, BoldFont=AdobeGaramondProBold.ttf, ItalicFont=EBGaramond12-Italic.ttf]{EBGaramond12-Regular.ttf}
-\newfontfamily{\smallcaps}[Path=./fonts/Garamond/, RawFeature={+c2sc,+scmp}]{EBGaramond12-Regular.ttf}
+\setromanfont[Path=./fonts/Garamond/, Numbers=OldStyle, Ligatures={Common, TeX}, Scale=1.0, BoldFont=EBGaramond-Bold.ttf, ItalicFont=EBGaramond-Italic.ttf]{EBGaramond-Regular.ttf}
+% \newfontfamily{\smallcaps}[Path=./fonts/Garamond/, RawFeature={+c2sc,+scmp}]{EBGaramond12-Regular.ttf}
 \setmathsfont(Digits,Latin,Greek)[Path=./fonts/Garamond/, Numbers={Proportional},SizeFeatures={{Size=-8, OpticalSize=8},{Size= 8-, OpticalSize=12}},]{EBGaramond12-Regular.ttf}
 \setmathrm[Path=./fonts/Garamond/,]{EBGaramond12-Regular.ttf}
 
