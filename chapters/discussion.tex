@@ -60,9 +60,13 @@
 
 
 \cleartorightpage\begin{savequote}[75mm]
-Science isn't a sprint, isn't a marathon, it's a relay race.
+% Science isn't a sprint, isn't a marathon, it's a relay race.
 % ``Humans are allergic to change. They love to say, `We've always done it this way'. I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.''
 % \qauthor{Grace Hopper}
+
+Every hardware component (and most humans) can be made to ``break'' or fail given some set of conditions or a long enough time
+\qauthor{Nancy G. Leveson}
+
 \end{savequote}
 
 \chapter{Discussion}\label{discussion}
@@ -90,34 +94,21 @@ Science isn't a sprint, isn't a marathon, it's a relay race.
 
 
 
-A lot of our esteemed colleagues have focused on the bioinformatics of cancer
-itself as well as clinical solutions to the problem. We instead aim to focus on
-the platform, infrastructure, and training aspects of clinical research. This
-presents a unique opportunity to act as a force multiplier for the field, by
-making the tools and training more accessible to the world. With our platform we
-can scale the equally important work of our colleagues, reaching tens of
-thousands of researchers.
+% A lot of our esteemed colleagues have focused on the bioinformatics of cancer
+% itself as well as clinical solutions to the problem. We instead aim to focus on
+% the platform, infrastructure, and training aspects of clinical research. This
+% presents a unique opportunity to act as a force multiplier for the field, by
+% making the tools and training more accessible to the world. With our platform we
+% can scale the equally important work of our colleagues, reaching tens of
+% thousands of researchers.
+%
+% After all, what use is a tool that falls in a forest? (or is released online
+% without proper documentation, dependencies, and learning materials?)
 
-After all, what use is a tool that falls in a forest? (or is released online
-without proper documentation, dependencies, and learning materials?)
-
-
-
-
-
-
-
-
-
-
-\section{Bioinformatics: A Systems Lens}
-
-% More of the 'challenges'
-% solutions is tarriff.
 
 As an individual that spent many, many years responsible for large amounts of
 infrastructure, and likewise as a bioinformatician, I approach a lot of
-problems with a ``systems thinking'' view, informed by systems theory.
+problems with a ``systems thinking'' view, informed by systems theory, and systems safety.
 
 In infrastructure management this view was useful as it gave me new ways to
 solve infrastructure problems. Is a system overloaded? We could add more
@@ -125,14 +116,33 @@ resources, but we could also look at other changes like queueing, rate-limiting
 requests, changing how the software interacts with the system, changing the
 software itself! All of these, \emph{and more}, are valid approaches that may
 produce the desired result.
+I additionally brought a systems safety viewpoint to my work;
+\emph{when}, not if, a system will fail, how can we ensure it does so with the least amount of damage?
 
-In bioinformatics, this gives me a new lens through which to analyse the sum
+In the context of bioinformatics, this gives me a new lens through which to analyse the sum
 total of what we produce, and how we produce it. In the complex, interdependent,
 networked system of ``research'' we have many levers we can pull, flow rates we
-can change, we just need to identify which are the correct ones, and which can
+can change, but we need to identify which are the correct ones, and which can
 be adjusted with minimal effort to produce outsized results.
 
-\subsection{Interdependencies}
+Simultaneously we need to keep in mind the safety aspect. When our pipelines
+or components fail, can they fail safely and in ways that do not negatively
+affect patient outcomes.
+
+\section{Bioinformatics: A Systems Lens}
+
+When we look to clinical bioinformatics we find a system incredibly focused on
+producing new software, methods, algorithms, and models.
+The incremental progress we make towards better clinical outcomes benefits us
+all, of course, but maintaining the focus we have is globally suboptimal.
+In the system of bioinformatics, we have far too little focus on the machinery
+of this progress; how do these resources get created in the first place, and
+what happens after they are created?
+
+What use is it when a resource is created in the forest and no one hears it fall
+(or is released online without proper documentation and learning materials?)
+
+\subsection{System Interdependencies}
 
 When one thinks of bioinformatics, one often thinks of the specific silo of
 bioinformatics that is interesting to them, perhaps a specific analysis, tool,
@@ -149,7 +159,7 @@ full of interconnections between the traditionally included bioinformatics, and 
 laboratory science\cite{Pucker_2019}, but also to education and didactic theory, data
 management planning, bioethics, software engineering practices\cite{Lawlor_2015},
 publishing. It is these secondary set of connections that aren't often considered,
-but are a prerequisite for functional science.
+but are a prerequisite for functional science and positive outcomes.
 
 Take for instance a typical RNA-Seq analysis, generally this is summarised with
 a very simple flowchart like \cref{rnaSeqSimple}. Ask a bioinformatician,
@@ -177,8 +187,8 @@ you'd probably get this answer which, while correct, is not complete.
 
 This simplified view hides a lot of very important aspects of responsible
 science\cite{NAS1992} such as where is one running these computations? Is it
-reproducible? Where did they learn to do it? What's the data management plant?
-Is it ethical?
+reproducible? Where did they learn to do it? Is that resource up to date?
+What's the data management plant? Is it ethical?
 
 All of these topics are part and parcel of the scientific process, especially in
 biomedical sciences, but too often ignored for a focus on translational research
