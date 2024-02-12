@@ -1,9 +1,9 @@
+% vim: set fdm=marker fmr=%<<<,%>>>:
 \cleartorightpage
 \begin{savequote}[75mm]
 If you don't know where you're going, you might not get there.
 \qauthor{Yogi Berra}
 \end{savequote}
-
 
 \chapter{Introduction and Outline}\label{introduction}
  % start numberings at 0 because (computer) science
@@ -14,23 +14,22 @@ If you don't know where you're going, you might not get there.
 
 \setlength\parindent{0pt}
 
-
 % "too technical", "not enough biology"
 
-\section{A Brief History}
+\section{A Brief History} %<<<
 
 The ``source code of life'' could finally begin to be unravelled for organisms, with the advent of DNA sequencing in the 1970s.
 The first organism sequenced was bacteriophage $\phi$X174 (5386 nucleotides long) in 1976, which marked the start of the sequencing race.
 The Human Genome Project had been launched in 1990, resulting in a complete copy of the Human genome being publicly available by 2003.
 These scientific and technological developments  paved the way for the era of bioinformatics and for its subsequent application to translational research and clinical diagnostics
 
-A new field combining informatics\footnote{For non-European audiences, informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability,. Computers and algorithms were essential to the field by the 1980s,which resulted in a period of rapid developments across the field of genomics.  These included comparative genomics with pairwise and multiple sequence alignment and initial phylogenetics algorithms, structural genome annotation methods, and the first genomic repositories (genbank, embl).
+A new field combining informatics\footnote{For non-European audiences, informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability. Computers and algorithms were essential to the field by the 1980s,which resulted in a period of rapid developments across the field of genomics.  These included comparative genomics with pairwise and multiple sequence alignment and initial phylogenetics algorithms, structural genome annotation methods, and the first genomic repositories (genbank, embl).
 % (citations from DOI: 10.1093/bioinformatics/btg309)
 
 Only a decade later in 1992, public sequence databases and the searching thereof became a reality with BLAST.
-Thus began the era of \emph{next-generation sequencing} or \emph{high throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
+Thus began the era of \emph{next-generation-} or \emph{high-throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
 
-The astronomical\footnote{These genomes cost approximately $\frac{1}{3}$ as much as an individual shuttle flight. \url{https://en.wikipedia.org/wiki/Space_Shuttle_program}} cost of $\approx$450MM USD in 2000 to sequence the first human genomes---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD.
+The astronomical\footnote{The sequencing of these initial genomes cost approximately $\text{⅓}^{\text{rd}}$ as much as an average NASA shuttle mission. todo: fix this to a proper citation: \url{https://en.wikipedia.org/wiki/Space_Shuttle_program}} cost of $\approx$450MM USD in 2000 to sequence the first human genomes---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD.
 It took until 2019 for costs to be consistently below the threshold, but it has been achieved.
 
 Technological advancements and a complete human genome resulted in both sequencing and bioinformatics in general, becoming prevalent in clinical research.
@@ -46,18 +45,25 @@ First in basic research with genetics and GWAS studies, before becoming pervasiv
 
 While bioinformatics continues to be increasingly available as a technique within medicine, enabling us to help more patients than ever before, the picture is not entirely optimistic.
 
-\subsection{Limiting Reagents}
+%>>>
+\section{Limiting Reagents} %<<<
+
+The skills gap is not the only-challenge, but it is one of the main components facing us when we wish to scale our bioinformaticians to meet the greater data availability.
+``Bioinformaticians'' in fact tend to be generalists; often having a background in biology, computer science, software engineering, statistics, sometimes medicine, or another discipline.
+This should be looked upon as a boon towards solving the skills gap---very few students have this sort of background, but many students have existing background in one or more of those fields, which gives us opportunities to up-skill them in areas they are lacking.
+
+% \subsection{Limiting Reagents}
 
 In the pathway from data to cure, there are several potentially limiting resources:% Data, Compute, and Bioinformaticians.
 
 \begin{itemize}
 	\itemsep0em
 	\item Data Availability % originally just 'data', YUNLEI: Data generation? Data quality? Data availability? Data storage? Data…?
-	\item Compute time/space
+	\item Compute Availability
 	\item Bioinformaticians
 \end{itemize}
 
-With the economic barrier to data availability solved, the first limit on throughput was removed.
+With the economic barrier to data availability solved, the first limit on system throughput was removed.
 Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\footnote{\url{https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/}}, which represents only a fraction of the total sequencing completed, and only grows year after year.
 
 % While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate 
@@ -79,9 +85,10 @@ The storage, the compute, the data availability is all comparatively solved, unl
 % - Ever more data
 % - graph, line goes up, cost line goes down
 
-\subsection{Clinical Impacts}
+%>>>
+\subsection{Clinical Impacts} %<<<
 
-This gap increasingly matters for clinical outcomes---there need to be enough skilled bioinformaticians to analyse the clinical data.
+This human gap increasingly matters for clinical outcomes---there need to be enough skilled bioinformaticians to analyse the clinical data.
 Precision medicine, especially in oncology, presents us with ever more opportunities to improve clinical outcomes, if the person-power is available.
 However that requires bioinformaticians to establish the pipelines, optimise, and validate them, in collaboration with teams of clinicians.
 The PhDs creating these clinical outcomes tend to come from the medical side and often, unfortunately, lack necessary computer education.
@@ -91,13 +98,16 @@ The PhDs creating these clinical outcomes tend to come from the medical side and
 % - The PhDs creating these bioinformatics and clinical practices tend to come from the medical side
 % - Lacking training in computers and computer science, a skills gap we need to meet.
 
-\section{Challenges}
+%>>>
+\section{Bioinformatician Availability} %<<<
 
-The skills gap is not the only-challenge, but it is one of the main components facing us when we wish to scale our bioinformaticians to meet the greater data availability.
-``Bioinformaticians'' in fact tend to be generalists; often having a background in biology, computer science, software engineering, statistics, sometimes medicine, or another discipline.
-This should be looked upon as a boon towards solving the skills gap---very few students have this sort of background, but many students have existing background in one or more of those fields, which gives us opportunities to up-skill them in areas they are lacking.
+The problems which result from this lack of availability of bioinformaticians are myriad and more complex than the overly simplistic ``not enough staff''.
+Most of these can be broadly classified as either skills or data gaps.
+To the skills gaps we can allocate more learning resources and time in order to up-skill existing staff into meeting the requirements of the role.
+The data gaps however require more person-hours dedicated to data analysis and engineering.
 
-\subsection{Computational Challenges}
+%>>>
+\subsection{Skill Gaps} %<<<
 
 When bioinformaticians develop workflows, they need to run somewhere, either locally in the hospital, or in the cloud. These \textbf{infrastructure} resources are commonly experienced as difficult to access, requiring a completely different set of skills to ensure code runs efficiently on highly parallel distributed resource managers (DRMs), beyond typical programming-type tasks, moving into the field of software engineering.
 
@@ -113,11 +123,12 @@ And all of the above challenges are compounded by the need to provide \textbf{tr
 
 An underlying theme in the above, while remaining a separate issue, is the \textbf{accessibility} of those resources. The learning materials, the infrastructure, the tooling, the legal knowledge; all of this must be accessible to the motivated bioinformatician attempting to resolve their skill issues. There are two forms of barriers that can be experienced here, inaccessibility due to content in restricted and screenreader unfriendly formats impacting those with disabilities, and resources simply locked behind firewalls or paywalls and thus unavailable.
 
-\subsection{Data Challenges}
+%>>>
+\subsection{Data Gaps} %<<<
 
 On the data side we experience similar challenges related to insufficient time and resources allocated. Notably while we have a wealth of primary data products (e.g. DNA, RNA sequencing), the secondary, downstream data products are presenting a new limit.
 
-Clinical pipelines are exceptional in their data requirements: where \textbf{genome annotation} is often a dataset used for a pretty graph, in the clinical world accurately annotated genomes are of paramount importance. This can be seen especially as we look towards reviving old practices such as bacteriophages to fight infections, those phages must have completely correct annotations before they are exposed to humans. Unlike small mRNA-based vaccines where the entire sequence is readable, bacteriophages are significantly larger with significantly more unknown regions. Many healthcare providers are cautious about introducing organisms with unknown genes into a patient, one wants to ensure annotations are human-reviewed for accuracy.
+Clinical pipelines are exceptional in their data requirements: in the clinical world accurate \textbf{genome annotation} is of paramount importance. This can be seen especially as we look towards reviving old practices such as bacteriophages to fight infections, those phages must have completely correct annotations before they are exposed to humans. Unlike small mRNA-based vaccines where the entire sequence is readable, bacteriophages are significantly larger with significantly more unknown regions. Many healthcare providers are cautious about introducing organisms with unknown genes into a patient, one wants to ensure annotations are human-reviewed for accuracy.
 % annotation: (idk where to put this) but a lot of these analyses require well annotated genomes, especially when looking at phage therapy in the clinic. It is paramount to have high quality human curated annotations.
 
 The same applies for human data as well: before we fully understand the genetic underpinnings of a disease or condition, we need to have a well \emph{annotated} genome, the sequencing alone is of course insufficient. With a well annotated genome, analysis can begin. In the precision medicine use case this means increasingly working with \textbf{sensitive} human datasets, the challenge becomes how to handle these datasets safely and securely. Long term data storage becomes an important question to answer to ensure documented traceable clinical analysis.
@@ -127,10 +138,12 @@ The same applies for human data as well: before we fully understand the genetic 
 For population level studies common in oncological research, these datasets are also often no longer in-house, and instead must be obtained from \textbf{federated} sensitive data repositories. Given the context of the technical and legal problems mentioned above, these problems become significantly more difficult as we look to transferring human data across national boundaries.
 For the bioinformatician wishing to analyse those datasets, it might additionally mean using federated compute resources to bring their computations directly to the data.
 
-And all of this, naturally, \emph{should} be \textbf{reproducible}. The data, tools, infrastructure, and environments must be able to reproduce results over time to ensure defensible and accurate scientific research. Bioinformaticians from earlier eras were used to doing analysis on their own computers, but ``works on my laptop'' is not sufficient for the clinic, the datasets are larger and more sensitive and the results need to be reproducible.
+And all of these data analysis and generation pipelines, naturally, \emph{should} be \textbf{reproducible}. Other researchers must be able to reproduce results over time to ensure defensible and accurate scientific research.
+Bioinformaticians from earlier eras were used to doing analysis on their own computers; ``works on my laptop'' is not sufficient for the clinic, the datasets are larger and more sensitive, and must be reproducible across research environments.
 % reproducibility: at the end of the day, with the data and tools and infra, analyses must be reproducible. "Works on my computer" is not sufficient for the clinic. (doing analysis in excel / on your laptop)
 
-\section{Solutions}
+%>>>
+\section{Solutions} %<<<
 
 All hope is not lost, there are solutions we can investigate to each and every of the aforementioned problems, some solutions even address multiple problems.
 
@@ -191,7 +204,8 @@ With the proposed scientific world full of diversity of ideas and skills, comes 
 % - data sharing / open science
 
 
-\section{Scope of this Thesis}
+%>>>
+\section{Scope of this Thesis} %<<<
 In \cref{chapter:platform} we present three highly integrated components as a necessary basis for the rest of the thesis. Galaxy, a platform on which to scale one's research, from learning and small courses to full fledged research projects. This is complemented by Planemo, a toolkit for developing reproducible workflows and tooling with which to use in Galaxy. And finally we scale the TIaaS platform, which we use to address the needs of trainers by providing infrastructure as-a-service, reaching 24.000 researchers over the past 5 years. These projects all seek to address usability, accessibility, and user-friendliness of complex platforms.
 
 Next in \cref{chapter:annotation} we look at the annotation of genomes, a necessary pre-requisite step in any and every downstream analysis, especially in medical contexts. We harken back to the first chapter by presenting a platform for scalable, real-time genome annotation, and then demonstrate the use of this platform in the annotation of phages, a topic of growing interest in the medical community. We also present the work of an ontology based toolkit for FAIR community databases, ensuring high quality computationally analysable annotations are recorded and distributed. % Finally we summarise all of this infrastructure work by making our genome annotation infrastructure easily re-deployable by other groups via the GGA docker containers.
@@ -217,3 +231,4 @@ needs of the community, namely providing an e-learning platform.
 \bibliographystyle{ieeetr}
 \bibliography{references}
 \normalsize
+%>>>
