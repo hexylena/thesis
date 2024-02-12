@@ -41,6 +41,8 @@
 \fancyhead[CO,CE]{DRAFT:\texttt{\gitRev}}
 \fancyfoot[CO,CE]{DRAFT:\texttt{\gitRev}}
 \fancyfoot[LE,RO]{\thepage}
+\input{frontmatter/cistercian.tex}
+\fancyfoot[RE,LO]{\cistercian{\thepage}}
 
 
 
@@ -308,10 +310,10 @@
 
 % \interstitial{cancer}
 \include{chapters/cancer/intro}
+	\include{chapters/cancer/circos}
 	\include{chapters/cancer/htsget}
 	%\include{chapters/cancer/cancergalaxy} - DROP?
 	%\include{chapters/cancer/EC-PC} - MUST
-	\include{chapters/cancer/circos}
 	%\include{chapters/cancer/pathways}% MAYBE
 
 % \interstitial{training}

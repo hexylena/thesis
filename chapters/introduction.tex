@@ -19,22 +19,21 @@ If you don't know where you're going, you might not get there.
 
 \section{A Brief History}
 
-With the advent of DNA sequencing in the 1970s, the ``source code of life'' could finally begin to be unravelled for organisms.
+The ``source code of life'' could finally begin to be unravelled for organisms, with the advent of DNA sequencing in the 1970s.
 The first organism sequenced was bacteriophage $\phi$X174 (5386 nucleotides long) in 1976, which marked the start of the sequencing race.
-By 1990, the Human Genome Project had been launched, resulting in a complete copy of the Human genome being publicly available by 2003.
-This paved the way for the era of bioinformatics in translational research, and in the clinic; something that would transform the field.
+The Human Genome Project had been launched in 1990, resulting in a complete copy of the Human genome being publicly available by 2003.
+These scientific and technological developments  paved the way for the era of bioinformatics and for its subsequent application to translational research and clinical diagnostics
 
-With the data availability, a new field started to form; Bioinformatics, combining informatics\footnote{For non-European audiences, informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.}  with biological research.
-By the 80s, computers and algorithms were recognised to be essential to the field, and resulted in a burst of developments across the field of genomics: comparative genomics with pairwise and multiple sequence alignment and initial phylogenetics algorithms, structural genome annotation methods (), and the first genomic repositories (genbank, embl).
-(citations from DOI: 10.1093/bioinformatics/btg309)
+A new field combining informatics\footnote{For non-European audiences, informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability,. Computers and algorithms were essential to the field by the 1980s,which resulted in a period of rapid developments across the field of genomics.  These included comparative genomics with pairwise and multiple sequence alignment and initial phylogenetics algorithms, structural genome annotation methods, and the first genomic repositories (genbank, embl).
+% (citations from DOI: 10.1093/bioinformatics/btg309)
 
 Only a decade later in 1992, public sequence databases and the searching thereof became a reality with BLAST.
-Soon began the era of \emph{next-generation sequencing} or \emph{high throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
+Thus began the era of \emph{next-generation sequencing} or \emph{high throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
 
-The astronomical cost of $\approx$450MM USD in 2000 to sequence the single human---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD.
+The astronomical\footnote{These genomes cost approximately $\frac{1}{3}$ as much as an individual shuttle flight. \url{https://en.wikipedia.org/wiki/Space_Shuttle_program}} cost of $\approx$450MM USD in 2000 to sequence the first human genomes---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD.
 It took until 2019 for costs to be consistently below the threshold, but it has been achieved.
 
-With technological advancements and a complete human genome, sequencing, and bioinformatics in general, began to enter the clinic.
+Technological advancements and a complete human genome resulted in both sequencing and bioinformatics in general, becoming prevalent in clinical research.
 % https://www.nature.com/articles/gim200290
 First in basic research with genetics and GWAS studies, before becoming pervasive and moving to translational solutions, leading to the advent of the precision medicine era with individually tailored solutions.
 % The need for both basic and translational research has not changed, if anything given our new tools and abilities, the demand has only grown.
@@ -59,18 +58,19 @@ In the pathway from data to cure, there are several potentially limiting resourc
 \end{itemize}
 
 With the economic barrier to data availability solved, the first limit on throughput was removed.
-Currently SRA stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapnies} sequencing data.} of sequencing data alone\footnote{\url{https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/}}, which represents only a fraction of the total sequencing completed, and only grows year after year.
+Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\footnote{\url{https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/}}, which represents only a fraction of the total sequencing completed, and only grows year after year.
 
 % While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate 
 
-Compute resources have similarly grown over time, three major cloud providers offer compute resources in a time and cost efficient manner.
+Compute resources have similarly grown over time, three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time and cost efficient manner.
 Universities have continually competed for the top supercomputer spot, the total computation power available growing exponentially.
 Furthermore, projects like EuroHPC aim to provide amalgamations of these resources at an international level, making it easier than ever for researchers to access previously unthinkable amounts of computational power.
 
 Unfortunately that leaves us with the final resource: our human bioinformaticians. These have decidedly not scaled at a similar rate to the data;
 recent studies indicate a need to increase bioinformatics staff by half, both in academia and the pharmaceutical industry.
 % In light of advancing genomics research, a BBSRC review suggested a need to increase bioinformatics staff by 60% in academia and by 45% in pharmaceutical companies https://academic.oup.com/bib/article/20/2/398/4096809
-This is further confirmed in a 2017 study of NSF-BIO-funded investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis.
+This is further confirmed in a 2017 study of NSF-BIO-funded % expand name or cite nsf-bio
+investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis.
  % A survey of 704 NSF-BIO-funded investigators revealed that training topi    cs were the top 3 of 13 most unmet data analysis needs, above HPC/cloud facilities, workflows/pipelines analysis or storage facilities needs \cite{Barone2017}.
 The storage, the compute, the data availability is all comparatively solved, unlike the human problem.
 
@@ -94,16 +94,16 @@ The PhDs creating these clinical outcomes tend to come from the medical side and
 \section{Challenges}
 
 The skills gap is not the only-challenge, but it is one of the main components facing us when we wish to scale our bioinformaticians to meet the greater data availability.
-``Bioinformaticians'' in fact tend to be jacks-of-all-trades; often they have a background in biology, computer science, software engineering, statistics, sometimes medicine, or other disciplines.
+``Bioinformaticians'' in fact tend to be generalists; often having a background in biology, computer science, software engineering, statistics, sometimes medicine, or another discipline.
 This should be looked upon as a boon towards solving the skills gap---very few students have this sort of background, but many students have existing background in one or more of those fields, which gives us opportunities to up-skill them in areas they are lacking.
 
 \subsection{Computational Challenges}
 
-When bioinformaticians develop workflows, they need to run somewhere, either in-house in the hospital, or in the cloud. These \textbf{infrastructure} resources are commonly experienced as difficult to access, requiring a completely different set of skills to ensure code runs efficiently on highly parallel distributed resource managers (DRMs), beyond typical programming-type tasks, moving into the field of software engineering.
+When bioinformaticians develop workflows, they need to run somewhere, either locally in the hospital, or in the cloud. These \textbf{infrastructure} resources are commonly experienced as difficult to access, requiring a completely different set of skills to ensure code runs efficiently on highly parallel distributed resource managers (DRMs), beyond typical programming-type tasks, moving into the field of software engineering.
 
 General Data Protection Regular (GDPR)'s passage has further frustrated this, requiring researchers be more careful about data locality, access control, and developing an understanding of the \textbf{legalities} of processing clinical data in different situations. Thus, many hospitals mandate use of a prescribed platform for data analysis which often comes with additional barriers or costs to access\footnote{The author notes a nearby platform which turns off VMs in the secure environment after work hours, frustrating analysts.}.
 
-Atop this infrastructure, \textbf{tools} are run, often in a wide variety of languages, each with different requirements, different programming languages, and different databases. To run an individual tool and generate a clinically acceptable output requires the bioinformatician to understand deeply the process of each tool, the methods by which it functions, data types it can accept, and more. Occasionally the researcher will want to modify the tool to add a new feature, or support for a new organism, which requires the ability to write code in any of those various languages that might be employed. Finding pipelines which include software in each of Python, Perl, R, and C/C++, is not uncommon.
+In addition to infrastructure challenges, \textbf{programs} or ``tools'' are run, often in a wide variety of languages, each with different requirements, different programming languages, and different databases. To run an individual tool and generate a clinically acceptable output requires the bioinformatician to understand deeply the process of each tool, the methods by which it functions, data types it can accept, and more. Occasionally the researcher will want to modify the tool to add a new feature, or support for a new organism, which requires the ability to write code in any of those various languages that might be employed. Finding pipelines which include software in each of Python, Perl, R, and C/C++, is not uncommon.
 % tools: on top of this infrastructure run all of the various tools, written in 100 different languages, with different requirements and shapes and databases, all need to be understood at a low level.
 
 Computers themselves are notoriously user unfriendly themselves, so much so we have an entire field of research dedicated to user experience and human computer interaction. All of the infrastructure, tools, and data put in front of a busy doctor, or a researcher, needs to be clear, accessible, and \textbf{user-friendly}. This requires an investment of time and space in the development cycle to ensure all sharp edges are polished, and the software and research products are optimised for their clinical settings.
