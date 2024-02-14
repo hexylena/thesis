@@ -20,34 +20,47 @@ If you don't know where you're going, you might not get there.
 
 The ``source code of life'' could finally begin to be unravelled for organisms, with the advent of DNA sequencing in the 1970s.
 The first organism sequenced was bacteriophage $\phi$X174 (5386 nucleotides long) in 1976, which marked the start of the sequencing race.
-The Human Genome Project (HGP) had been launched in 1990, resulting in a complete copy of the Human genome being made available by HGP and Celera Genomics by 2003.
-These scientific and technological developments  paved the way for the era of bioinformatics and for its subsequent application to translational research and clinical diagnostics
+The Human Genome Project (HGP) was launched in 1990, resulting in a complete copy of the Human genome being made available by HGP and Celera Genomics by 2003.
+These scientific and technological developments paved the way for the era of bioinformatics, and for its subsequent application to translational research and clinical diagnostics.
 
 A new field combining informatics\footnote{For non-European audiences, informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability.
-This new interdisciplinary field would be built upon biology, computer science, chemistry, statistics, and more, leveraging knowledge from all of those fields to analyse human data.
+This new interdisciplinary field would be built upon biology, computer science, chemistry, statistics, and more, leveraging knowledge from all of those fields to analyse (non-)human data.
 Computers and algorithms were essential to the field by the 1980s,which resulted in a period of rapid developments across the field of genomics.
-These included comparative genomics to enable cross-genome analysis, phylogenetics to identify the history of organisms, genome annotation methods to determine what DNA does, and the first genomic repositories providing worldwide access to genomic and sequencing data (genbank, embl)!
+These included comparative genomics to enable multi-genome analysis, phylogenetics to identify the history of organisms, genome annotation methods to determine what DNA does, and the first genomic repositories providing worldwide access to genomic and sequencing data (genbank, embl)!
+By a decade later in 1992, these public sequence repositories enabled the development of Basic Local Alignment Search Tool (BLAST) which let researchers search for DNA sequences across ever-growing databases of genomes.
 % (citations from DOI: 10.1093/bioinformatics/btg309)
-
-By a decade later in 1992, these public sequence repositories enabled the development of Basic Local Alignment Search Tool (BLAST) which let researchers search for DNA sequences across thousands of genomes.
-Thus began the era of \emph{next-generation-} or \emph{high-throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
+% YUNLEI: The story is being built up very well! Here (or in the previous paragraph) you can introduce “bioinformatics” a bit more, since it links the development of sequencing with the clinical impact. You can explain what it is and give some examples of its important applications/roles. 
 
 The astronomical\footnote{The sequencing of these initial genomes cost approximately $\text{⅓}^{\text{rd}}$ as much as an average NASA shuttle mission. todo: fix this to a proper citation: \url{https://en.wikipedia.org/wiki/Space_Shuttle_program}} cost of $\approx$450MM USD in 2000 to sequence the first human genomes---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD.
+Thus began the era of \emph{next-generation-} or \emph{high-throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
 It took until 2019 for costs to be consistently below the threshold, but it has been achieved.
 
-These advancements together resulted in both sequencing and bioinformatics in general, becoming prevalent in clinical research.
-% https://www.nature.com/articles/gim200290
-% TODO: TLMtH How? Why? This is quite the core of your work.
-In recent years bioinformatics in medicine has moved towards precision medicine, whereby bioinformatics is used to tailor treatments to a specific patient, based on their genetics.
-
-% First in basic research with genetics and GWAS studies, before becoming pervasive and moving to translational solutions, leading to the advent of the precision medicine era with individually tailored solutions.
-% The need for both basic and translational research has not changed, if anything given our new tools and abilities, the demand has only grown.
-
+These advancements and availability enabled both computational methods and bioinformatics, to become prevalent in clinical research.
+The adoption of computational methods in the clinic started with Medical Informatics (MI), a field which grew out of the increased availability of the computer in the clinic. 
+This began with electronic health records (EHRs), an early adopter of which was the Veterans Administration (VA) in the US in the 1970s.
+The VA would then push forward Open Source Software with the release of their EHR database ``MUMPS'' in the 1980s, which they renamed ``VistA'' at the time. % https://pubmed.ncbi.nlm.nih.gov/12810119/
+The adoption of EHR databases like VistA enabled researchers to analyse human health in bulk, reaching over 1700 active analysis projects by 2014. % PMC10071958
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC264428/
+
+This dovetails with the adoption of Clinical Bioinformatics whereby computational analyses on genomic information joined MI in clinical research.
+By the mid 1990s sequence analysis within Bioinformatics had entered basic clinical research, collecting databases of p53 mutations in tumour cell lines based on sequencing analyses dating back to 1989, which the authors hoped could provide markers of relapse as well as a potential tool for patient diagnosis. % PMC146396
+In recent years bioinformatics in medicine has moved towards precision medicine, whereby bioinformatics is used to tailor treatments to a specific patient, based on their genetics.
+% https://www.nature.com/articles/gim200290
+
+% https://www.ncbi.nlm.nih.gov/pmc/articles/PMC146396/
+%$ curl --silent ftp://ftp.ebi.ac.uk/pub/databases/p53/datar4.txt | xsv select -d '\t' 34- | xsv stats
+% field,type,sum,min,max,min_length,max_length,mean,stddev
+% Year,Integer,28041464,1989,2000,0,4,1996.1178815489795,2.5284371854968666
+
+% TODO: TLMtH How? Why? This is quite the core of your work.
+
+
+% The need for both basic and translational research has not changed, if
+% anything given our new tools and abilities, the demand has only grown.
+
 
 % https://doi.org/10.1093%2Fbioinformatics%2Fbtg309
 
-% YUNLEI: The story is being built up very well! Here (or in the previous paragraph) you can introduce “bioinformatics” a bit more, since it links the development of sequencing with the clinical impact. You can explain what it is and give some examples of its important applications/roles. 
 
 While bioinformatics continues to be increasingly available as a technique within medicine, enabling us to help more patients than ever before, the picture is not entirely optimistic.
 
@@ -70,7 +83,7 @@ Currently the Sequence Read Archive (SRA) maintained by the National Center for 
 
 % While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate
 
-% TLMtH: Same here. In full and explained.  If you could put numbers in perspective and relate to total numbers or numbers in coming years the message becomes more relevant and interesting.
+% TLMtH: Same here. In full and explained. If you could put numbers in perspective and relate to total numbers or numbers in coming years the message becomes more relevant and interesting.
 Compute resources have similarly grown over time, three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time and cost efficient manner.
 Universities have continually competed for the top supercomputer spot, the total computation power available growing exponentially.
 % TLMtH: How? Combining alone doesn’t, you know. Rather the opposite. What was done here?
@@ -83,7 +96,7 @@ recent studies indicate a need to increase bioinformatics staff by half, both in
 % In light of advancing genomics research, a BBSRC review suggested a need to increase bioinformatics staff by 60% in academia and by 45% in pharmaceutical companies https://academic.oup.com/bib/article/20/2/398/4096809
 This is further confirmed in a 2017 study of NSF-BIO-funded % expand name or cite nsf-bio
 investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis.
- % A survey of 704 NSF-BIO-funded investigators revealed that training topi    cs were the top 3 of 13 most unmet data analysis needs, above HPC/cloud facilities, workflows/pipelines analysis or storage facilities needs \cite{Barone2017}.
+ % A survey of 704 NSF-BIO-funded investigators revealed that training topics were the top 3 of 13 most unmet data analysis needs, above HPC/cloud facilities, workflows/pipelines analysis or storage facilities needs \cite{Barone2017}.
 The storage, the compute, the data availability is all comparatively solved, unlike the human problem.
 
 
@@ -178,7 +191,7 @@ from the existing learning materials produced by educators around the world, we
 give back by building a scalable training platform. We share the updates to
 our scalable, FAIR, and accessible training platform which has been improved
 over the last two years in \cref{chapter:training}. These improvements would
-prove key as the SARS-CoV-2 pandemic isolated the world, we were able to
+:c
 leverage the platform and training infrastructure to rapidly respond to the
 needs of the community, namely providing an e-learning platform.
 
