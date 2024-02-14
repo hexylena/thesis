@@ -1,12 +1,7 @@
-\cleartorightpage\begin{savequote}[75mm]
-Without phages, we'd all be screwed. But with them, we're just screwed
-\qauthor{ChatGPT}
-\end{savequote}
-
-\cleartorightpage\begin{savequote}[75mm]
-Genome annotation is like the CliffsNotes for the DNA manual of life. Without it, we're just flipping through the pages cluelessly. But with it, we can finally understand what the heck is going on inside our cells.
-\qauthor{ChatGPT}
-\end{savequote}
+% \cleartorightpage\begin{savequote}[75mm]
+% Genome annotation is like the CliffsNotes for the DNA manual of life. Without it, we're just flipping through the pages cluelessly. But with it, we can finally understand what the heck is going on inside our cells.
+% \qauthor{ChatGPT}
+% \end{savequote}
 
 
 \chapter{Genome Annotation}\label{chapter:annotation}
@@ -39,12 +34,9 @@ This chapter contains the following sub-chapters:
 \begin{enumerate}[label=\ref{chapter:annotation}.\arabic*]
 \itemsep-0.5em
 \setcounter{enumi}{-1}
-\item \textbf{Apollo: Democratizing genome annotation.} In this work we present the new Apollo platform, rewritten from the ground to provide a scalable web interface which enables novice to expert annotators to work together and collaborative annotate genomes with a ``Google Docs'' like experience. I contributed to Apollo over the years in my role as a Phage annotator and Apollo deployer, as well as in the interconnection with Galaxy and enabling new high-throughput annotation techniques.
-
-\item \textbf{Tripal v3: an ontology-based toolkit for construction of FAIR biological community databases.} In this work we discuss the Tripal platform which extends Chado into a fully featured FAIR analysis frontend leveraging JSON-LD for machine interoperability. Here I worked on the deployment of Tripal via Docker containers which allow for easy re-usable deployments that interoperate with other GMOD projects.
-
-% \item \textbf{Galaxy Genome Annotation Platform.} I conceived of the galaxy genome annotation project and imported a lot of my Galaxy tools that I'd written (Python, XML.) Together with Anthony Bretaudeau (INRAE) we further developed this framework and added numerous Docker containers which allow for small laboratories to setup their own Galaxy-Genome Annotation deployment, and start annotating a genome straight away.
-
 \item \textbf{Galaxy and Apollo as a biologist-friendly interface for high-quality cooperative phage genome annotation.} In this work we discuss the development of Galaxy and Apollo together to form a highly reproducible and interoperable annotation workbench that's accessible even to undergraduate students. I started the work (Python, XML, Docker) to make Galaxy and Apollo interoperable by developing numerous tools and bridges between the two services, before working together with other members of the Center for Phage Technology to scale this up into a production service beyond the needs of their phage annotation course.
+
+\item \textbf{Galactic Circos: User-friendly creation of Circos Plots within the Galaxy platform.} Circos is an extremely popular tool for visualisation of high dimension and genome scale data, especially in publications and posters. But this generally requires an experienced bioinformatician to design, hand-code, and then hard-code the plot making it rather inflexible without experienced help. Saskia Hiltemann and I created a Galaxy port of Circos, allowing it to be essentially completely configurable via browser. Due to Circos' inherent complexity, this became probably the single most complex Galaxy tool wrapper. However, at these costs, it had additional positive interactions with Galaxy, as users could take their analysis results essentially directly into Circos, simplifying their workflows. We additionally wrote extensive training materials as part of the publication, in order to improve accessibility.
+
 
 \end{enumerate}
