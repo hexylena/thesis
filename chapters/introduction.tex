@@ -139,7 +139,8 @@ This should be looked upon as a boon towards solving the skills gap---very few c
 Workflows are a key product for a lot of bioinformaticians, where a scientist has combined a set of programs and their parameters into a reproducible and re-runnable unit of work. 
 When bioinformaticians develop workflows, they need to run somewhere, either locally in the hospital, or in the cloud. These \textbf{infrastructure} resources are commonly experienced as difficult to access, requiring a completely different set of skills to ensure code runs efficiently on highly parallel distributed resource managers (DRMs), beyond typical programming-type tasks, moving into the field of software engineering.
 
-General Data Protection Regular (GDPR)'s passage has further frustrated this, requiring researchers be more careful about data locality, access control, and developing an understanding of the \textbf{legalities} of processing clinical data in different situations. Thus, many hospitals mandate use of a prescribed platform for data analysis which often comes with additional barriers or costs to access\footnote{The author notes a nearby platform which turns off machines running in the secure environment after work hours, frustrating analysts.}.
+General Data Protection Regular (GDPR)'s passage has further frustrated this, requiring researchers be more careful about data locality, access control, and developing an understanding of the \textbf{legalities} of processing clinical data in different situations. Both accidental exposures, and breaches of patient data due to hacking, have made hospitals wary about the security of the data they are responsible for maintaining. Thus, many hospitals mandate use of a prescribed platform for data analysis which often comes with additional barriers or costs to access. Researchers may need to be physically within the hospital to access the data, or forbidden from analysing it on large external clusters to which they might have access out of legal concerns. If they cannot analyse their data locally, they potentially need to find additional budget to pay for access to their employer's secure computation environment.
+% \footnote{The author notes a nearby platform which turns off machines running in the secure environment after work hours, frustrating analysts.}
 % TLMtH: Give examples or make applicable. Talk for instance about patient data and hackers or breaches. Explain issues of accessibility from hard ware site (cables, capacity, PC power), legal (restrictions, fire walls), cost (software, access codes).
 
 In addition to infrastructure challenges, \textbf{programs} or ``tools'' are run, often in a wide variety of languages, each with different requirements, different programming languages, and different databases. To run an individual tool and generate a clinically acceptable output requires the bioinformatician to understand deeply the process of each tool, the methods by which it functions, data types it can accept, and more. Occasionally the researcher will want to modify the tool to add a new feature, or support for a new organism, which requires the ability to write code in any of those various languages that might be employed. Using pipelines which includes software written multiple languages is not uncommon, requiring the researcher to know how to build and install and configure software from all of those ecosystems.
@@ -147,11 +148,11 @@ In addition to infrastructure challenges, \textbf{programs} or ``tools'' are run
 Computers themselves are notoriously user unfriendly themselves, so much so we have an entire field of research dedicated to user experience and human computer interaction. All of the infrastructure, tools, and data put in front of a busy doctor, or a researcher, needs to be clear, accessible, and \textbf{user-friendly}. This requires an investment of time and space in the development cycle to ensure all sharp edges are polished, and the software and research products are optimised for their clinical settings.
 
 And all of the above challenges are compounded by the need to provide \textbf{training} materials. No matter how user friendly the systems are, they must still be documented in a variety of ways that everyone interacting with the system will require: documentation for developers, training for clinicians, reference manuals for failure modes. Also such that busy biologists or technicians can run and share the results with clinicians who must interpret the results in an efficient manner. The end users must be trained on system operation, and barriers eliminated in service of clinical outcomes. In the same vein, the short and long courses required to up-skill the aforementioned bioinformaticians must be developed, taught, and maintained.
-% TLMtH: You understand that often it is a biologist, or maybe a technician with enough skills, doing the anlysis.
-% The platform must be easy enough for a clinician to understand, accessible enough for a biologist to do the analysis on patient data, and make sharing straight forward.
 
-An underlying theme in the above, while remaining a separate issue, is the \textbf{accessibility} of those resources. The learning materials, the infrastructure, the tooling, the legal knowledge; all of this must be accessible to the motivated bioinformatician attempting to resolve their skill issues. There are multiple forms of ``accessibility'' barriers that can be experienced; inaccessibility due to content in restricted and screenreader unfriendly formats impacting those with disabilities, and resources not existing or locked behind firewalls or paywalls and thus unavailable.
-% TLMtH: These are different entities. Isn’t lack of a (good) infrastructure a barrier? And, data can be difficult to handle because of improper storage and annotation. 
+An underlying theme in the above, while remaining a separate issue, is the \textbf{accessibility} of those resources. The learning materials, the infrastructure, the tooling, the legal knowledge; all of this must be accessible to the motivated bioinformatician attempting to resolve their skill issues. There are multiple forms of ``accessibility'' barriers that can be experienced, often conflated under the same word; inaccessibility due to lack of effort to make content and resources accessible to those with disabilities, inaccessibility due access restrictions like firewalls or paywalls, inaccessibility due missing metadata or (meta)data not using a standard protocol.
+% TLMtH: These are different entities. 
+% H: YES THATS THE POINT.
+% TLMtH: Isn’t lack of a (good) infrastructure a barrier? And, data can be difficult to handle because of improper storage and annotation. 
 
 %>>>
 \subsection{Data Gaps} %<<<
@@ -174,26 +175,16 @@ Bioinformaticians from earlier eras were used to doing analysis on their own com
 
 %>>>
 \section{Scope of this Thesis} %<<<
-In \cref{chapter:platform} we present three highly integrated components as a necessary basis for the rest of the thesis. Galaxy, a platform on which to scale one's research, from learning and small courses to full fledged research projects. This is complemented by Planemo, a toolkit for developing reproducible workflows and tooling with which to use in Galaxy. And finally we scale the TIaaS platform, which we use to address the needs of trainers by providing infrastructure as-a-service, reaching 24.000 researchers over the past 5 years. These projects all seek to address usability, accessibility, and user-friendliness of complex platforms.
+In \cref{chapter:annotation} we examine the question of bacteriophages; for education they present an interesting opportunity to improve bioinformatics and genome annotation education, for healthcare they offer an interesting target for phage therapy. We present a suite of tooling which builds on open source software from the Generic Model Organism Database (GMOD) community to develop a comprehensive platform supporting genome annotation of bacteriophages from education through to production. Additionally we discuss visualisation of genomes leveraging Circos for complex multi-dimensional data visualisation. All of the produced results are made available on the FAIR data analysis platform that is Galaxy.
 
-Next in \cref{chapter:annotation} we look at the annotation of genomes, a necessary pre-requisite step in any and every downstream analysis, especially in medical contexts. We harken back to the first chapter by presenting a platform for scalable, real-time genome annotation, and then demonstrate the use of this platform in the annotation of phages, a topic of growing interest in the medical community. We also present the work of an ontology based toolkit for FAIR community databases, ensuring high quality computationally analysable annotations are recorded and distributed. % Finally we summarise all of this infrastructure work by making our genome annotation infrastructure easily re-deployable by other groups via the GGA docker containers.
+Next in \cref{chapter:cancer} we look towards clinical applications investigating sequencing data collected from Endothelial cells and Pericytes to investigate their response to Tumour Necrosis Factor (TNF), paving the way to future implications for treating cancers involving those two cell lines.
+This work is complemented by the development of a FAIR data retrieval pipeline enabling researchers to more seamlessly access sensitive data for their research projects and analyses.
 
-With a truly scalable, FAIR platform in place we next look at the connection to
-the medical research world, specifically translational research in \cref{chapter:cancer}.
-%We demonstrate this by deploying a number of bioinformatics tools import for Cancer on our platform and making them available globally.
-We open on the problem of where to obtain data, necessitating the integration of the European Genome Archive (EGA) in a secure manner, allowing for end-to-end analysis of sensitive clinical data.
-Next presenting a clinical use of bioinformatics with the analysis of Endothelial Cells and Pericytes.
-Finally we visualise our results, showcasing a commonly used visualisation tool within cancer genomics; Circos.
+Finally, with a lot of interesting results in the first two themes, we look at how to disseminate this work to a wider audience through training.
+As we benefit at every step from the existing learning materials produced by educators around the world, we give back by building a scalable and FAIR training platform which has seen significant developments over the last two years in \cref{chapter:training}.
+This is paired with the investigation of a significant problem facing trainers: obtaining and configuring infrastructure for training events or courses.
+We examine potential options and discuss the implementation of a platform which enables access to training infrastructure and it's use by 24,000 students over the last 5 years.
 
-With three chapters of reproducible, scalable analyses the only remaining
-question is how to ensure they reach their audience. As we benefit at every step
-from the existing learning materials produced by educators around the world, we
-give back by building a scalable training platform. We share the updates to
-our scalable, FAIR, and accessible training platform which has been improved
-over the last two years in \cref{chapter:training}. These improvements would
-:c
-leverage the platform and training infrastructure to rapidly respond to the
-needs of the community, namely providing an e-learning platform.
 
 \footnotesize
 \bibliographystyle{ieeetr}
