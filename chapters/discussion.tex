@@ -60,12 +60,8 @@
 
 
 \cleartorightpage\begin{savequote}[75mm]
-% Science isn't a sprint, isn't a marathon, it's a relay race.
-% ``Humans are allergic to change. They love to say, `We've always done it this way'. I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.''
-% \qauthor{Grace Hopper}
-
-Every hardware component (and most humans) can be made to ``break'' or fail given some set of conditions or a long enough time
-\qauthor{Nancy G. Leveson}
+``Humans are allergic to change. They love to say, `We've always done it this way'. I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.''
+\qauthor{Grace Hopper}
 
 \end{savequote}
 
@@ -162,8 +158,8 @@ publishing. It is these secondary set of connections that aren't often considere
 but are a prerequisite for functional science and positive outcomes.
 
 Take for instance a typical RNA-Seq analysis, generally this is summarised with
-a very simple flowchart like \cref{rnaSeqSimple}. Ask a bioinformatician,
-you'd probably get this answer which, while correct, is not complete.
+a very simple flowchart like \cref{rnaSeqSimple}. Ask ten bioinformaticians,
+you'd probably get this answer every time which, while correct, is not complete.
 
 \begin{figure}[!h]
 \hypertarget{rnaSeqSimple}{%
@@ -216,6 +212,21 @@ the analysis, and are as important as the research results in order to avoid
 potential fraud by being able to provide a traceable chain of analyses
 that is reproducible now, \emph{and} at a later date.
 
+\section{In the Cell}
+
+recap
+
+\section{In the Clinic}
+
+recap
+
+\section{Out in the World}
+
+recap
+
+\section{Future Work}
+
+
 % This thesis touches on these topics, identifying and implementing
 % solutions to support and improve the quality of science done by
 % bioinformaticians who are more focused on clinical outcomes.
@@ -231,114 +242,114 @@ that is reproducible now, \emph{and} at a later date.
 % After all, what use is a tool that falls in a forest, or is released online
 % without proper documentation and learning materials?
 
-\section{Paying the Bioinformatics TARRIIF}
-% need to introduce the acronym.
-
-FAIR has been a key concept in bioinformatics since 2016. It is a vital
-component in making sure our research does not go to waste. By requiring FAIR
-data funders help ensure that datasets are: Findable, Accessible, Interoperable,
-and Reusable.
-
-Additionally some have added a second R: Reproducibility. This aims to
-highlight and address the reproducibility crisis within science. If we have
-truly FAIR datasets, we should be able to easily reproduce the research.
-
-This updated acronym falls short on two fronts: \emph{Teaching}, and
-\emph{Infrastructure}.
-
-Bioinformatics is a rapidly growing field, but the growth in data is far
-outpacing the growth in researchers. Advancements in sequencing mean that we
-generate NUMBER PB of data every TIME PERIOD which must be analysed.
-Unfortunately researchers do not scaling at the same rate as the data.
-
-It is a classic macro-economics problem, the supply of humans to accomplish
-research is significantly lower than the demand. The demand continues to grow
-putting pressure on the supply chain for bioinformaticians, pushing us to find
-ways to make bioinformatics, and bioinformaticians, more scalable.
-
-Naturally we examine this through a systems-thinking lens: what levers are
-available to us which can change the inputs or outputs of the system to match
-our desired goal? We can turn the compute lever, making compute resources more
-available to researchers via efforts like the EuroHPC JU. Or maybe we should
-place pressure on making tooling more cost efficient. Can we increase the supply
-of students coming in to bioinformatics programs?
-
-As others focus on the availability of tooling and workflows, what if we instead
-considered focusing on these points? Improving the availability and
-accessibility of infrastructure, and decreasing barriers in order to accelerate
-the supply of required bioinformaticians?
-
-% What should be made of a dataset for an uncommon research project that cannot
-% leverage community standards and resources. It might be FAIR, even FAIRR if
-% there is a pipeline generating it, but without documentation and training
-% materials associated with the resource describing the generation process it
-% becomes prohibitively costly to engage with an unknown dataset. Without
-% infrastructure on which to analyse the data, it will sit unanalysed.
-
-
-\section{Boldly going where FAIR hasn't gone before}
-
-If we've paid the TARRIIF, we've set a baseline for the resources we produce
-as part of our scientific efforts. It it the \emph{bare} minimum, nowhere near
-the maximum. There are areas where we can choose to go above any beyond the
-minimum requirements for good science.
-
-\subsection{Accessibility}
-
-% Not just accessible but easily!
-% - even when tools exist, accessibility issues are abound
-% - two kinds: disability access + availability
-% - does a given tool work for a blind user?
-% - can it be accessed around the world? in non-LMICs?
-
-The term accessibility is overloaded, there are multiple understandings which
-are often conflated; access to a resource (is it online?), and access for those with
-disabilities. Making bioinformatics accessible, in both senses, must be our
-goal. How can we make resources we maintain, available to the entire world,
-and without barriers?
-
-Can we make the compute resources available in High Income Countries (HICs),
-generally the ex-colonial powers, available to those in Low and Middle Income
-Countries (LMICs)? Can we make our carefully guarded knowledge available around
-the world? Can we optimise the computations to require less energy and compute
-time? When these resources are available, are we actively excluding this with
-one or more disabilities from engaging with the materials and tools?
-
-The answer presented in this thesis is a resounding ``yes, we can''. Not
-only are the tools and workflows and infrastructure made freely available, both
-free-as-in-beer\footnote{I.e. the recipe is available, you can make it
-yourself}, and free-as-in-grant-funded research infrastructure for many of the resources we put online.
-Resources discussed in this thesis were disseminated globally to around 7.500
-students over the last 3 years of my PhD employment. All of these resources were
-made available barrier-free with extra consideration for their accessibility in
-the cases of visual or auditory impairments. It's possible, even easy, one just
-needs to put in the effort and value those community members.
-
-\subsection{Automation}
-
-No discussion of scaling resources is complete without consideration for
-opportunities to automate existing processes; depending on the frequency and
-time costs of a task, one can examine the return on investment for automating it
-(\cref{xkcdautomate}).
-
-\begin{figure}[!h]
-\centering
-\includegraphics[width=0.8\linewidth]{chapters/images/introduction/is_it_worth_the_time.png}
-\caption{Figure reproduced from XKCD \#1205. This work is licensed and
-	reproduced under a Creative Commons Attribution-NonCommercial 2.5
-	License.\label{xkcdautomate}}
-\end{figure}
-
-Return on investment is a rather capitalistic lens through which to discuss the
-topic, but a logical one in medicine. Not every task is easy to automate and
-thus worth a large time investment, nor every task worth automating if the
-savings are marginal.
-
-This analysis dovetails with our systems view; which levers do we have access
-to, and where can we have effects. Every chapter of this thesis attempts to
-automate or improve the existing automation of processes: infrastructure
-management and administration, annotation of genomes, translational research
-and clinical reporting, and finally teaching.
+% \section{Paying the Bioinformatics TARRIIF}
+% % need to introduce the acronym.
+%
+% FAIR has been a key concept in bioinformatics since 2016. It is a vital
+% component in making sure our research does not go to waste. By requiring FAIR
+% data funders help ensure that datasets are: Findable, Accessible, Interoperable,
+% and Reusable.
+%
+% Additionally some have added a second R: Reproducibility. This aims to
+% highlight and address the reproducibility crisis within science. If we have
+% truly FAIR datasets, we should be able to easily reproduce the research.
+%
+% This updated acronym falls short on two fronts: \emph{Teaching}, and
+% \emph{Infrastructure}.
+%
+% Bioinformatics is a rapidly growing field, but the growth in data is far
+% outpacing the growth in researchers. Advancements in sequencing mean that we
+% generate NUMBER PB of data every TIME PERIOD which must be analysed.
+% Unfortunately researchers do not scaling at the same rate as the data.
+%
+% It is a classic macro-economics problem, the supply of humans to accomplish
+% research is significantly lower than the demand. The demand continues to grow
+% putting pressure on the supply chain for bioinformaticians, pushing us to find
+% ways to make bioinformatics, and bioinformaticians, more scalable.
+%
+% Naturally we examine this through a systems-thinking lens: what levers are
+% available to us which can change the inputs or outputs of the system to match
+% our desired goal? We can turn the compute lever, making compute resources more
+% available to researchers via efforts like the EuroHPC JU. Or maybe we should
+% place pressure on making tooling more cost efficient. Can we increase the supply
+% of students coming in to bioinformatics programs?
+%
+% As others focus on the availability of tooling and workflows, what if we instead
+% considered focusing on these points? Improving the availability and
+% accessibility of infrastructure, and decreasing barriers in order to accelerate
+% the supply of required bioinformaticians?
+%
+% % What should be made of a dataset for an uncommon research project that cannot
+% % leverage community standards and resources. It might be FAIR, even FAIRR if
+% % there is a pipeline generating it, but without documentation and training
+% % materials associated with the resource describing the generation process it
+% % becomes prohibitively costly to engage with an unknown dataset. Without
+% % infrastructure on which to analyse the data, it will sit unanalysed.
+%
+%
+% \section{Boldly going where FAIR hasn't gone before}
+%
+% If we've paid the TARRIIF, we've set a baseline for the resources we produce
+% as part of our scientific efforts. It it the \emph{bare} minimum, nowhere near
+% the maximum. There are areas where we can choose to go above any beyond the
+% minimum requirements for good science.
+%
+% \subsection{Accessibility}
+%
+% % Not just accessible but easily!
+% % - even when tools exist, accessibility issues are abound
+% % - two kinds: disability access + availability
+% % - does a given tool work for a blind user?
+% % - can it be accessed around the world? in non-LMICs?
+%
+% The term accessibility is overloaded, there are multiple understandings which
+% are often conflated; access to a resource (is it online?), and access for those with
+% disabilities. Making bioinformatics accessible, in both senses, must be our
+% goal. How can we make resources we maintain, available to the entire world,
+% and without barriers?
+%
+% Can we make the compute resources available in High Income Countries (HICs),
+% generally the ex-colonial powers, available to those in Low and Middle Income
+% Countries (LMICs)? Can we make our carefully guarded knowledge available around
+% the world? Can we optimise the computations to require less energy and compute
+% time? When these resources are available, are we actively excluding this with
+% one or more disabilities from engaging with the materials and tools?
+%
+% The answer presented in this thesis is a resounding ``yes, we can''. Not
+% only are the tools and workflows and infrastructure made freely available, both
+% free-as-in-beer\footnote{I.e. the recipe is available, you can make it
+% yourself}, and free-as-in-grant-funded research infrastructure for many of the resources we put online.
+% Resources discussed in this thesis were disseminated globally to around 7.500
+% students over the last 3 years of my PhD employment. All of these resources were
+% made available barrier-free with extra consideration for their accessibility in
+% the cases of visual or auditory impairments. It's possible, even easy, one just
+% needs to put in the effort and value those community members.
+%
+% \subsection{Automation}
+%
+% No discussion of scaling resources is complete without consideration for
+% opportunities to automate existing processes; depending on the frequency and
+% time costs of a task, one can examine the return on investment for automating it
+% (\cref{xkcdautomate}).
+%
+% \begin{figure}[!h]
+% \centering
+% \includegraphics[width=0.8\linewidth]{chapters/images/introduction/is_it_worth_the_time.png}
+% \caption{Figure reproduced from XKCD \#1205. This work is licensed and
+% 	reproduced under a Creative Commons Attribution-NonCommercial 2.5
+% 	License.\label{xkcdautomate}}
+% \end{figure}
+%
+% Return on investment is a rather capitalistic lens through which to discuss the
+% topic, but a logical one in medicine. Not every task is easy to automate and
+% thus worth a large time investment, nor every task worth automating if the
+% savings are marginal.
+%
+% This analysis dovetails with our systems view; which levers do we have access
+% to, and where can we have effects. Every chapter of this thesis attempts to
+% automate or improve the existing automation of processes: infrastructure
+% management and administration, annotation of genomes, translational research
+% and clinical reporting, and finally teaching.
 
 
 
@@ -414,7 +425,8 @@ and clinical reporting, and finally teaching.
 
 
 \begin{center}
-\emph{``The future ain't what it used to be.''} -- Yogi Berra
+% \emph{``The future ain't what it used to be.''} -- Yogi Berra
+Every hardware component (and most humans) can be made to ``break'' or fail given some set of conditions or a long enough time -- Nancy G. Leveson
 \end{center}
 
 % \begin{center}
