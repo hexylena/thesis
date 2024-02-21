@@ -79,355 +79,51 @@
 \setcounter{section}{-1}
 
 
-% \emph{``Bioinformatics has become too central to biology to be left to specialist bioinformaticians''} notes Lincoln Stein in 2008~\cite{stein2008bioinformatics}.
-% And indeed, bioinformatics now plays a vital role in almost every biological and biomedical research project.
-% Data is being generated at an exponential rate, but bioinformaticians are not,  and it is not scalable to leave the analysis of all this data to specialist bioinformaticians.
-% Much of the discussion around the challenge of scaling to meet the needs of this data deluge tends to focus on the need for scaling up compute resources and data storage.
-% And while these are both very important factors, the much greater challenge lies in scaling not just the analysis itself, but the interpretation of all this data.
-% And nobody is better suited for this task than the research scientists themselves. So the question now becomes: \emph{How can we scale the researcher?}
-
-
-
-
-
-% A lot of our esteemed colleagues have focused on the bioinformatics of cancer
-% itself as well as clinical solutions to the problem. We instead aim to focus on
-% the platform, infrastructure, and training aspects of clinical research. This
-% presents a unique opportunity to act as a force multiplier for the field, by
-% making the tools and training more accessible to the world. With our platform we
-% can scale the equally important work of our colleagues, reaching tens of
-% thousands of researchers.
-%
-% After all, what use is a tool that falls in a forest? (or is released online
-% without proper documentation, dependencies, and learning materials?)
-
-
-As an individual that spent many, many years responsible for large amounts of
-infrastructure, and likewise as a bioinformatician, I approach a lot of
-problems with a ``systems thinking'' view, informed by systems theory, and systems safety.
-
-In infrastructure management this view was useful as it gave me new ways to
-solve infrastructure problems. Is a system overloaded? We could add more
-resources, but we could also look at other changes like queueing, rate-limiting
-requests, changing how the software interacts with the system, changing the
-software itself! All of these, \emph{and more}, are valid approaches that may
-produce the desired result.
-I additionally brought a systems safety viewpoint to my work;
-\emph{when}, not if, a system will fail, how can we ensure it does so with the least amount of damage?
-
-In the context of bioinformatics, this gives me a new lens through which to analyse the sum
-total of what we produce, and how we produce it. In the complex, interdependent,
-networked system of ``research'' we have many levers we can pull, flow rates we
-can change, but we need to identify which are the correct ones, and which can
-be adjusted with minimal effort to produce outsized results.
-
-Simultaneously we need to keep in mind the safety aspect. When our pipelines
-or components fail, can they fail safely and in ways that do not negatively
-affect patient outcomes.
-
-\section{Bioinformatics: A Systems Lens}
-
-When we look to clinical bioinformatics we find a system incredibly focused on
-producing new software, methods, algorithms, and models.
-The incremental progress we make towards better clinical outcomes benefits us
-all, of course, but maintaining the focus we have is globally suboptimal.
-In the system of bioinformatics, we have far too little focus on the machinery
-of this progress; how do these resources get created in the first place, and
-what happens after they are created?
-
-What use is it when a resource is created in the forest and no one hears it fall
-(or is released online without proper documentation and learning materials?)
-
-\subsection{System Interdependencies}
-
-When one thinks of bioinformatics, one often thinks of the specific silo of
-bioinformatics that is interesting to them, perhaps a specific analysis, tool,
-service, or method. This focus on a single node in the network of
-bioinformatics hides a lot of the complexity and cross-domain interactions that
-are not only possible\cite{Gannon_2005} but required\cite{adams2010cross,Doom_2003}.
-
-Linear pathways can be drawn in bioinformatics, from data to analysed product,
-or from sequencing to differential expression analysis, but these obscure the
-networks of topics and fields and analyses that exist outside of those yellow
-brick roads, those happy paths. The reality is that the field of bioinformatics
-look more like the most complicated biosynthesis pathway one can imagine. It's
-full of interconnections between the traditionally included bioinformatics, and sometimes present
-laboratory science\cite{Pucker_2019}, but also to education and didactic theory, data
-management planning, bioethics, software engineering practices\cite{Lawlor_2015},
-publishing. It is these secondary set of connections that aren't often considered,
-but are a prerequisite for functional science and positive outcomes.
-
-Take for instance a typical RNA-Seq analysis, generally this is summarised with
-a very simple flowchart like \cref{rnaSeqSimple}. Ask ten bioinformaticians,
-you'd probably get this answer every time which, while correct, is not complete.
-
-\begin{figure}[!h]
-\hypertarget{rnaSeqSimple}{%
-\centering
-\begin{tikzpicture}[node distance = 2cm, auto]
-    \node [block] (map) {Splice Aware Mapping};
-    \node [block, right=1em of map] (count) {Counting};
-    \node [block, right=1em of count] (diffex) {Differential Expression};
-    \node [block, right=1em of diffex] (viz) {Visualisation};
-    \node [block, right=1em of viz] (go) {GO Enrichment};
-    \node [block, right=1em of go,below=1em of go] (path) {Pathway Analysis};
-    \path [line] (map) -- (count);
-    \path [line] (count) -- (diffex);
-    \path [line] (diffex) -- (viz);
-    \path [line] (viz) -- (go);
-    \path [line] (viz) -- (path);
-\end{tikzpicture}
-\caption{A simplified RNA Seq workflow. TODO: fix graphic.\label{rnaSeqSimple}}
-}
-\end{figure}
-
-This simplified view hides a lot of very important aspects of responsible
-science\cite{NAS1992} such as where is one running these computations? Is it
-reproducible? Where did they learn to do it? Is that resource up to date?
-What's the data management plant? Is it ethical?
-
-All of these topics are part and parcel of the scientific process, especially in
-biomedical sciences, but too often ignored for a focus on translational research
-and clinical applications. So let's look at the ``real'' flow chart of doing a
-simple differential expression analysis instead.
-
-\begin{figure}[!h]
-\hypertarget{rnaSeqNotSoSimple}{%
-\centering
-	\includegraphics[width=\textwidth]{./mermaid/diag.mmd.png}
-	\caption{A ``simplified'' RNA Seq workflow. TODO: fix graphic, colours.}\label{rnaSeqNotSoSimple}
-}
-\end{figure}
-
-\Cref{rnaSeqNotSoSimple} shows a more accurate view of the simple analysis.
-Every single aspect of the process, from start to end, builds on learning
-materials and resources. When created by professionals, their creation is an
-involved and complicated process to produce a high quality learning resource.
-Someone, somewhere, needed to learn the requisite skills to complete their
-subset of the workflow. Additionally many of the steps are computational in
-nature, which requires we ask questions such as which
-Operating System (OS), Distributed Resource Manager (DRM), and dependency
-management system were used? These are all important for the reproducibility of
-the analysis, and are as important as the research results in order to avoid
-potential fraud by being able to provide a traceable chain of analyses
-that is reproducible now, \emph{and} at a later date.
 
 \section{In the Cell}
 
-recap
+In this thesis a scalable, real-time collaborative, FAIR platform for genome annotation was presented that meets the needs of both educational as well as research contexts.
+\cref{chapter:phages} leveraged existing, open source, community maintained software components (Apollo, Galaxy) which both exist under the Generic Model Organism Database (GMOD) umbrella and provided a series of tools which enhances their integration and interoperability.
+This was examined through the lens of phage annotation and education; a suite of tools was produced via novel developments and integration of existing open source bioinformatics tools, and workflows constructed which aggregated all of those tools to enable the structural and functional annotation of bacteriophages.
+This unified interface to annotation enabled the publication of over 160%\footnote{\url{https://scholar.google.com/scholar?start=40&q=\%7Bhttps://cpt.tamu.edu/galaxy-pub/+complete+genome+sequence}}
+complete, annotated genome sequences of phages since going into operation, supporting all steps of the process from sequencing to GenBank submission preparation.
+
+Additionally we investigated making the production of publication quality plots more accessible via the development of the Galactic Circos wrapper in \cref{chapter:circos} which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
+Circos presented an accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
 
 \section{In the Clinic}
 
-recap
+Something About EC-PC Goes Here.
+% \include{chapters/EC-PC}
+% \include{chapters/htsget}
+
+In order to simplify the analysis of restricted human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, we developed a transparent and simplified manner in \cref{chapter:htsget} which enables access federated, sensitive data stored in the European Genome Archive (EGA) via GA4GH compliant access.
 
 \section{Out in the World}
 
-recap
+\Cref{chapter:gtn} shows the multi-year set of improvements to the Galaxy Training Network, a well used FAIR training platform to ensure that it meets accessibility best practices to ensure content distributed via this channel is accessible to those with visual or hearing impairments, that provides a framework for educators to collaboratively manage peer-reviewed learning materials.
+During this development cycle the platform added coding interactive tutorials available as automatically generated Jupyter notebooks, automatic video generation, a comprehensive linting framework, and more.
+All features which aim to reduce the barriers to entry and burden of maintenance on educators and those wishing to disseminate their results.
+Simultaneously this framework explored improvements the accessibility of the content, in all senses, for learners by providing a freely accessible, learning platform that integrates well with Galaxy.
+The application thereof was explored via the implementation of an open source training infrastructure sharing platform \cref{chapter:tiaas} which provided a method for system administrators to offer training infrastructure for educators. This saw 24k learners use the platform over its 5 years of existence, approximately 75\% of which used materials hosted on the aforementioned GTN. The reduction of barriers in educators providing courses was deeply felt based on the feedback received, the complexity of managing infrastructure was previously one of the most painful points of organising an event, completely removed leveraging the combination of Galaxy and TIaaS and the GTN.
 
-\section{Future Work}
+% \include{chapters/gtn}
+% \include{chapters/tiaas}
 
+\section{Future Perspectives}
 
-% This thesis touches on these topics, identifying and implementing
-% solutions to support and improve the quality of science done by
-% bioinformaticians who are more focused on clinical outcomes.
+\section{Conclusion}
 
-% We'll begin with the computational infrastructure, the oft-ignored foundation of
-% bioinformatics in medicine. With that in hand we'll move into the bioinformatics
-% itself, focusing first on genome annotation, the again oft-ignored foundation of
-% all analyses. This provides the basis for discussing scientific applications and
-% work to improve translational research. This grimoire is then concluded with a
-% discussion of training, how we can disseminate the spells and rituals (tools and
-% analyses, if you prefer) to a wider audience.
-%
-% After all, what use is a tool that falls in a forest, or is released online
-% without proper documentation and learning materials?
+In this thesis multiple themes in the world of Bioinformatics were explored, from the annotation of a single organism, through their exploration in the clinic, and finally to the dissemination of the knowledge obtained throughout the first two arcs. We applied the FAIR and Open Source Software and Open Science principles throughout the development process to ensure the quality and interoperability of our results.
 
-% \section{Paying the Bioinformatics TARRIIF}
-% % need to introduce the acronym.
-%
-% FAIR has been a key concept in bioinformatics since 2016. It is a vital
-% component in making sure our research does not go to waste. By requiring FAIR
-% data funders help ensure that datasets are: Findable, Accessible, Interoperable,
-% and Reusable.
-%
-% Additionally some have added a second R: Reproducibility. This aims to
-% highlight and address the reproducibility crisis within science. If we have
-% truly FAIR datasets, we should be able to easily reproduce the research.
-%
-% This updated acronym falls short on two fronts: \emph{Teaching}, and
-% \emph{Infrastructure}.
-%
-% Bioinformatics is a rapidly growing field, but the growth in data is far
-% outpacing the growth in researchers. Advancements in sequencing mean that we
-% generate NUMBER PB of data every TIME PERIOD which must be analysed.
-% Unfortunately researchers do not scaling at the same rate as the data.
-%
-% It is a classic macro-economics problem, the supply of humans to accomplish
-% research is significantly lower than the demand. The demand continues to grow
-% putting pressure on the supply chain for bioinformaticians, pushing us to find
-% ways to make bioinformatics, and bioinformaticians, more scalable.
-%
-% Naturally we examine this through a systems-thinking lens: what levers are
-% available to us which can change the inputs or outputs of the system to match
-% our desired goal? We can turn the compute lever, making compute resources more
-% available to researchers via efforts like the EuroHPC JU. Or maybe we should
-% place pressure on making tooling more cost efficient. Can we increase the supply
-% of students coming in to bioinformatics programs?
-%
-% As others focus on the availability of tooling and workflows, what if we instead
-% considered focusing on these points? Improving the availability and
-% accessibility of infrastructure, and decreasing barriers in order to accelerate
-% the supply of required bioinformaticians?
-%
-% % What should be made of a dataset for an uncommon research project that cannot
-% % leverage community standards and resources. It might be FAIR, even FAIRR if
-% % there is a pipeline generating it, but without documentation and training
-% % materials associated with the resource describing the generation process it
-% % becomes prohibitively costly to engage with an unknown dataset. Without
-% % infrastructure on which to analyse the data, it will sit unanalysed.
-%
-%
-% \section{Boldly going where FAIR hasn't gone before}
-%
-% If we've paid the TARRIIF, we've set a baseline for the resources we produce
-% as part of our scientific efforts. It it the \emph{bare} minimum, nowhere near
-% the maximum. There are areas where we can choose to go above any beyond the
-% minimum requirements for good science.
-%
-% \subsection{Accessibility}
-%
-% % Not just accessible but easily!
-% % - even when tools exist, accessibility issues are abound
-% % - two kinds: disability access + availability
-% % - does a given tool work for a blind user?
-% % - can it be accessed around the world? in non-LMICs?
-%
-% The term accessibility is overloaded, there are multiple understandings which
-% are often conflated; access to a resource (is it online?), and access for those with
-% disabilities. Making bioinformatics accessible, in both senses, must be our
-% goal. How can we make resources we maintain, available to the entire world,
-% and without barriers?
-%
-% Can we make the compute resources available in High Income Countries (HICs),
-% generally the ex-colonial powers, available to those in Low and Middle Income
-% Countries (LMICs)? Can we make our carefully guarded knowledge available around
-% the world? Can we optimise the computations to require less energy and compute
-% time? When these resources are available, are we actively excluding this with
-% one or more disabilities from engaging with the materials and tools?
-%
-% The answer presented in this thesis is a resounding ``yes, we can''. Not
-% only are the tools and workflows and infrastructure made freely available, both
-% free-as-in-beer\footnote{I.e. the recipe is available, you can make it
-% yourself}, and free-as-in-grant-funded research infrastructure for many of the resources we put online.
-% Resources discussed in this thesis were disseminated globally to around 7.500
-% students over the last 3 years of my PhD employment. All of these resources were
-% made available barrier-free with extra consideration for their accessibility in
-% the cases of visual or auditory impairments. It's possible, even easy, one just
-% needs to put in the effort and value those community members.
-%
-% \subsection{Automation}
-%
-% No discussion of scaling resources is complete without consideration for
-% opportunities to automate existing processes; depending on the frequency and
-% time costs of a task, one can examine the return on investment for automating it
-% (\cref{xkcdautomate}).
-%
-% \begin{figure}[!h]
-% \centering
-% \includegraphics[width=0.8\linewidth]{chapters/images/introduction/is_it_worth_the_time.png}
-% \caption{Figure reproduced from XKCD \#1205. This work is licensed and
-% 	reproduced under a Creative Commons Attribution-NonCommercial 2.5
-% 	License.\label{xkcdautomate}}
-% \end{figure}
-%
-% Return on investment is a rather capitalistic lens through which to discuss the
-% topic, but a logical one in medicine. Not every task is easy to automate and
-% thus worth a large time investment, nor every task worth automating if the
-% savings are marginal.
-%
-% This analysis dovetails with our systems view; which levers do we have access
-% to, and where can we have effects. Every chapter of this thesis attempts to
-% automate or improve the existing automation of processes: infrastructure
-% management and administration, annotation of genomes, translational research
-% and clinical reporting, and finally teaching.
+This work has already impacted an incredibly large number of individuals around the world, multiple orders of magnitude more than the typical bioinformatics software release. More focus should be given to these surrounding aspects of the bioinformatics process, rather than simply tool development, as they can provide a force multiplier for the tool development itself. Building a dissemination and training platform, and providing training infrastructure, has ensured that tools and software that would be otherwise unknown, are not only available to, but intelligible and usable to a global audience.
 
 
-
-
-
-
-
-%>>>
-% \section{Solutions} %<<<
-%
-% % All hope is not lost, there are solutions we can investigate to each and every of the aforementioned problems, some solutions even address multiple problems.
-%
-% Fundamental to every other solution, and to most of the problems enumerated, is \textbf{education}. Bioinformaticians coming from clinical backgrounds need to up-skill across computer science and software engineering domains to produce reproducible science. This can be approached from many directions but most commonly via the addition of more short courses covering focused topics. These can be an incredibly successful approach for early career researchers looking to fill some gaps in their training, or later career researchers attempting to update their knowledge. Training can help us address infrastructure, tooling, data legality, sensitive and federated data issues.
-%
-% % teaching - foundation of every subsequent solution. they need to learn, the knowledge needs to be communicated, disseminated to the correct audience, when they're ready and in in the correct time to receive it. It needs to be understandable, in a good format, with didactically proven techniques (e.g. spaced repetition/etc)
-%
-% Trained bioinformaticians also need to become teachers themselves as a key component of their job; any tools or software they produce for the clinic will require training for their colleagues. They may indeed also wish to publish their tools and will want to produce training materials to ensure dissemination to the correct audiences. \textbf{Didactics} is a large field, but a useful subset can be learned to significantly improve the quality of training materials. Learning to teach and produce quality training materials can help bioinformaticians make their results more user-friendly and accessible. This should be a core part of every bioinformatics education; it is insufficient to produce results, one must also communicate them.
-%
-% Working towards making data more \textbf{FAIR}: Findable, Accessible, Interoperable, and Reusable is a key step when working towards improving the accessibility situation by enabling reuse of data that already exists; there is no need to conduct a study if the data exists and is findable and accessible. Complementing the data sharing is \textbf{Open Science} which advocates for transparent and accessible research, advocating for open access, open research, open data, and open code.
-%
-% % FAIR - when data is available, making it FAIR ensures [acronym], improving the science
-% % (also rolled into this: data sharing / open science)
-% %
-% % accessible science - for many tasks there are tools existing and methodologies, we need to make them accessible to our own, and other researchers that want them. it's important for science, methods need to be open and testable so they can be improved upon.
-%
-% FAIR data and open science is foundational for good, reproducible science where researchers of the world can unite, to collectively to advance human knowledge.
-% Collaboration is the central guiding principle of scientific research, and must be considered at every step of the research process, tasks distributed based on collaborators abilities, while working together to understand the results.
-% A large number of useful techniques and technologies exist in the modern bioinformatics world to support collaboration; distributed version control systems enable working together on code or papers, conflict-free replicated datatypes (CRDTs) enabling real-time collaboration software enables even more collaborative work for time-sensitive collaboration, preprint archives and new journals opening up that require open access, code, and peer review.
-%
-% % (real-time) collaboration - science isn't a sprint, it isn't a marathon, it's a RELAY RACE. collaboration is required, none of us would be here without collaborating and optimising the use of everyone's skills for the best outcome.
-%
-% With the proposed scientific world full of diversity of ideas and skills, comes an associated semantic diversity, requiring a common vocabulary to discuss our results and exchange meaning. In academia that tends to be so called ``international english'' but for scientific topics human language is insufficient, so we need to develop controlled vocabularies, \textbf{ontologies}, that let us describe topics and aspects of our work in much greater detail with more hierarchical information. This enables us to describe the limits of our knowledge, and specify features in ways humans and machines can reason about.
-%
-% % ontologies - as part of collaboration, finding shared standardised vocabulary to ensure we are referring to the same thing is incredibly important, and ontologies solve this problem in nice ways.
-
-
-
-% why do we need this, but from a biomedical viewpoint.
-% we need to do bioinfo for these biomedical applications, where are challenges, what are solutions
-% phds are asked to do things are biologists, not bioinformatics, how we're helping to fix the skills gap. researchers without training, that's what we're addressing.
-% problem statement.
-% skills gap
-% we want to help patients but it's hard
-
-% bkgs, problem => outline challenges => cover solution.
-
-
-% problems:
-%
-% - sensitive data
-% - federated data
-% - infrastructure
-% - reproducible
-% - user friendly
-% - annotation
-% - toolkits
-% - tools
-% - "andrew doing analysis in excel / on his laptop"
-
-% solutions:
-%
-% - FAIR
-% - accessible science
-% - ontologies
-% - teaching
-% - (real-time) collaboration
-% - data sharing / open science
-
-
-
-
-
-
-
-\begin{center}
-% \emph{``The future ain't what it used to be.''} -- Yogi Berra
-Every hardware component (and most humans) can be made to ``break'' or fail given some set of conditions or a long enough time -- Nancy G. Leveson
-\end{center}
+% \vspace{4em}
+% \begin{center}
+% % \emph{``The future ain't what it used to be.''} -- Yogi Berra
+% Every hardware component (and most humans) can be made to ``break'' or fail given some set of conditions or a long enough time -- Nancy G. Leveson
+% \end{center}
 
 % \begin{center}
 % \emph{``No man is an island, entire of itself; every man is a piece of the continent, a part of the main.''} -~John Donne
