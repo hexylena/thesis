@@ -78,9 +78,47 @@
 \setcounter{table}{-1}
 \setcounter{section}{-1}
 
+As an individual that has spent many, many years responsible for large amounts of
+infrastructure, and likewise as a bioinformatician, I approach a lot of
+problems with a ``systems thinking'' view, informed by systems theory, and systems safety.
 
+In systems administration and infrastructure management this view was useful as
+it gave me new ways to solve problems. Is a system overloaded? We \emph{could} throw
+more resources at the problem, but we could also look at other changes like
+queueing, rate-limiting requests, changing how the software interacts with the
+system, changing the software itself! All of these, \emph{and more}, are valid
+approaches that may produce the desired result. I additionally brought a
+systems safety viewpoint to my work; \emph{when}, not if, a system will fail,
+how can we ensure it does so with the least amount of damage?
 
-\section{In the Cell}
+In the context of bioinformatics, this gives me a new lens through which to
+analyse the sum total of what we produce, and how we produce it. In the
+complex, interdependent, networked system of ``research'' that I have
+participated in for the past years,  we have many levers we can pull, reactant
+flow rates we can change. But, we need to identify which are the correct ones,
+and which can be adjusted with minimal effort to produce outsized results.
+Simultaneously we need to keep in mind the safety aspect. When our pipelines or
+tools fail, can they fail safely and in ways that do not negatively affect
+patient outcomes.
+
+When we look to bioinformatics in a hospital we find a system incredibly focused on
+producing new software, methods, algorithms, and models, to the exclusion of everything else.
+The incremental progress we make towards better clinical outcomes benefits us
+all, of course, but maintaining the focus we have is globally suboptimal.
+Our results could benefit a far larger portion of the world if we were to consider the aspects \emph{surrounding} our core mission. How can we make the knowledge, the learning we have uncovered accessible? How can we reduce barriers to its access? How can we share it with others?
+
+% In the system of bioinformatics, we have far too little focus on the machinery
+% of this progress; how do these resources get created in the first place, and
+% what happens after they are created?
+
+What use is it, when a tool is created in the forest and no one hears it fall?
+(or is released online without proper documentation and learning materials?)
+
+\section{Themes}
+
+This thesis explored three pairs of scientific and technical application papers; we developed new methods or investigated something interesting, and, in a related piece of work, we make part of that process more findable, accessible, interoperable, reusable, and reproducible.
+
+\subsection{In the Cell}
 
 In this thesis a scalable, real-time collaborative, FAIR platform for genome annotation was presented that meets the needs of both educational as well as research contexts.
 \cref{chapter:phages} leveraged existing, open source, community maintained software components (Apollo, Galaxy) which both exist under the Generic Model Organism Database (GMOD) umbrella and provided a series of tools which enhances their integration and interoperability.
@@ -91,7 +129,7 @@ complete, annotated genome sequences of phages since going into operation, suppo
 Additionally we investigated making the production of publication quality plots more accessible via the development of the Galactic Circos wrapper in \cref{chapter:circos} which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
 Circos presented an accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
 
-\section{In the Clinic}
+\subsection{In the Hospital}
 
 Something About EC-PC Goes Here.
 % \include{chapters/EC-PC}
@@ -99,7 +137,7 @@ Something About EC-PC Goes Here.
 
 In order to simplify the analysis of restricted human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, we developed a transparent and simplified manner in \cref{chapter:htsget} which enables access federated, sensitive data stored in the European Genome Archive (EGA) via GA4GH compliant access.
 
-\section{Out in the World}
+\subsection{Out in the World}
 
 \Cref{chapter:gtn} shows the multi-year set of improvements to the Galaxy Training Network, a well used FAIR training platform to ensure that it meets accessibility best practices to ensure content distributed via this channel is accessible to those with visual or hearing impairments, that provides a framework for educators to collaboratively manage peer-reviewed learning materials.
 During this development cycle the platform added coding interactive tutorials available as automatically generated Jupyter notebooks, automatic video generation, a comprehensive linting framework, and more.
@@ -112,11 +150,12 @@ The application thereof was explored via the implementation of an open source tr
 
 \section{Future Perspectives}
 
+
 \section{Conclusion}
 
 In this thesis multiple themes in the world of Bioinformatics were explored, from the annotation of a single organism, through their exploration in the clinic, and finally to the dissemination of the knowledge obtained throughout the first two arcs. We applied the FAIR and Open Source Software and Open Science principles throughout the development process to ensure the quality and interoperability of our results.
 
-This work has already impacted an incredibly large number of individuals around the world, multiple orders of magnitude more than the typical bioinformatics software release. More focus should be given to these surrounding aspects of the bioinformatics process, rather than simply tool development, as they can provide a force multiplier for the tool development itself. Building a dissemination and training platform, and providing training infrastructure, has ensured that tools and software that would be otherwise unknown, are not only available to, but intelligible and usable to a global audience.
+This work has already impacted an incredibly large number of individuals around the world, multiple orders of magnitude more than the typical bioinformatics software release. More focus should be given to these surrounding aspects of the bioinformatics process, rather than simply tool development, as they can provide a force multiplier for the tool development itself. Building a dissemination and training platform, and providing training infrastructure, has ensured that tools and software that would be otherwise unknown, are not only findable, but also accessible, (re)usable, and reproducible for a global audience.
 
 
 % \vspace{4em}

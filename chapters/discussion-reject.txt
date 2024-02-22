@@ -21,42 +21,6 @@
 % without proper documentation, dependencies, and learning materials?)
 
 
-% As an individual that spent many, many years responsible for large amounts of
-% infrastructure, and likewise as a bioinformatician, I approach a lot of
-% problems with a ``systems thinking'' view, informed by systems theory, and systems safety.
-%
-% In infrastructure management this view was useful as it gave me new ways to
-% solve infrastructure problems. Is a system overloaded? We could add more
-% resources, but we could also look at other changes like queueing, rate-limiting
-% requests, changing how the software interacts with the system, changing the
-% software itself! All of these, \emph{and more}, are valid approaches that may
-% produce the desired result.
-% I additionally brought a systems safety viewpoint to my work;
-% \emph{when}, not if, a system will fail, how can we ensure it does so with the least amount of damage?
-%
-% In the context of bioinformatics, this gives me a new lens through which to analyse the sum
-% total of what we produce, and how we produce it. In the complex, interdependent,
-% networked system of ``research'' we have many levers we can pull, flow rates we
-% can change, but we need to identify which are the correct ones, and which can
-% be adjusted with minimal effort to produce outsized results.
-%
-% Simultaneously we need to keep in mind the safety aspect. When our pipelines
-% or components fail, can they fail safely and in ways that do not negatively
-% affect patient outcomes.
-%
-% \section{Bioinformatics: A Systems Lens}
-%
-% When we look to clinical bioinformatics we find a system incredibly focused on
-% producing new software, methods, algorithms, and models.
-% The incremental progress we make towards better clinical outcomes benefits us
-% all, of course, but maintaining the focus we have is globally suboptimal.
-% In the system of bioinformatics, we have far too little focus on the machinery
-% of this progress; how do these resources get created in the first place, and
-% what happens after they are created?
-%
-% What use is it when a resource is created in the forest and no one hears it fall
-% (or is released online without proper documentation and learning materials?)
-%
 % \subsection{System Interdependencies}
 %
 % When one thinks of bioinformatics, one often thinks of the specific silo of
