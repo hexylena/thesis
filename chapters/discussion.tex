@@ -77,40 +77,37 @@
 \setcounter{table}{-1}
 \setcounter{section}{-1}
 
-As an individual that has spent many, many years responsible for large amounts of
-infrastructure, and likewise as a bioinformatician, I approach a lot of
-problems with a ``systems thinking'' view, informed by systems theory, and systems safety.
+Many system administrators who are responsible for large amounts of infrastructure,
+are informed by systems theory and systems safety.
 
-In infrastructure management this view was useful as
-it gives one new ways to solve problems. Is a system overloaded? We \emph{could} throw
-more resources at the problem, but we could also look at other changes like
+In infrastructure management this view is useful as
+it gives one new ways to solve problems. Is a system overloaded? One \emph{could} throw
+more resources at the problem, but one could also look at other changes like
 queueing, rate-limiting requests, changing how the software interacts with the
 system, changing the software itself! All of these, \emph{and more}, are valid
 approaches that may produce the desired result and possibly more efficiently.
-I additionally brought a systems safety viewpoint to my work; \emph{when}, not
-if, a system will fail, how can we ensure it does so with the least amount of
-collateral damage?
+Being responsible for critical, or even non-critical systems, that people depend one,
+also forces one to consider systems safety; \emph{when}, not if, a system will
+fail, how can it be ensured that it does so with the least amount of collateral
+damage?
 
-In the context of bioinformatics, this gives me a new lens through which to
-analyse the sum total of what we produce, and how we produce it.
-For the past years I have participated in the complex, interdependent, networked system known as \emph{research}.
-Within this system we depend on each other, our colleagues; some are producing data, some analysing it, and others implementing changes based on the results.
-In this system we have many opportunities for making changes which have downstream effects;
-flow rates we can adjust that change the overall process.
-But, we need to identify which are the correct ones,
-and which small changes can have outsized results, to most efficiently implement changes.
-Simultaneously we need to keep in mind the safety aspect. When our pipelines or
+In the context of bioinformatics, this provides a new lens through which to
+analyse the sum total of what is produced, and how it is produced.
+% For the past years I have participated in the complex, interdependent, networked system known as \emph{research}.
+Within this complex, interdependent, networked system known as research, there are many human interdependencies; colleagues are producing data, some analysing it, and others implementing changes based on the results.
+In this system there are many opportunities for making changes which have downstream effects;
+flow rates that can adjust that change the overall process.
+But the correct ones must be identified, the small changes that will have outsized  results, to most efficiently improve the system.
+Simultaneously systems safety cannot be forgotten. When pipelines or
 tools fail, can they fail safely and in ways that do not negatively affect
-patient outcomes.
+patient outcomes?
 
-When we look to bioinformatics in a hospital we find a system incredibly focused on
+Looking to bioinformatics in a hospital, one finds a system incredibly focused on
 producing new clinical applications, occasionally to the exclusion of everything else.
-The incremental progress we make towards better clinical outcomes benefits us
-all, but maintaining the focus we have is globally suboptimal.
-Our results could benefit a far larger portion of the world if we were to consider the aspects \emph{surrounding} our core mission.
-Our work could, potentially, be more impactful if we also consider all of the additional impacted pathways, on the road from data to clinic.
+The incremental progress made towards better clinical outcomes benefits humanity,
+but maintaining the current focus is potentially globally suboptimal.
+The same results could benefit a far larger portion of the world if aspects \emph{surrounding} our core mission were considered.
 
-How can we make the knowledge, the learning we have uncovered accessible? How can we reduce barriers to its access? How can we share it with others? How can we make our internal processes more efficient? How can we improve the reproducibility and knowledge sharing amongst colleagues? Why do we come from a point of competition and not collaboration?
 
 % In the system of bioinformatics, we have far too little focus on the machinery
 % of this progress; how do these resources get created in the first place, and
@@ -125,6 +122,8 @@ This thesis explored pairs of scientific and technical application papers; we de
 
 This process was then repeated across three themes, starting from the genome of a single cell or organism, moving to complex and clinically relevant organisms, before finally reflecting on dissemination and sustainability of this knowledge.
 
+Throughout this thesis topics of ensuring accessibility, reducing access barriers, ensuring FAIRness, and increasing efficiencies through both automation and process changes have been explored.
+
 \subsection{In the Cell}
 
 In this work a scalable, real-time collaborative, FAIR platform for genome annotation was presented that meets the needs of both educational as well as research contexts.
@@ -133,16 +132,16 @@ This was examined through the lens of phage annotation and education; a suite of
 This unified interface to annotation enabled the publication of over 160%\footnote{\url{https://scholar.google.com/scholar?start=40&q=\%7Bhttps://cpt.tamu.edu/galaxy-pub/+complete+genome+sequence}}
 complete, annotated genome sequences of phages since going into operation, supporting all steps of the process from sequencing to GenBank submission preparation.
 
-Subsequently we investigated making the production of publication quality plots more accessible via the development of the Galactic Circos wrapper in \cref{chapter:circos} which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
+Subsequently making the production of publication quality plots more accessible was investigated via the development of the Galactic Circos wrapper in \cref{chapter:circos} which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
 Circos presented a significant accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
 
 \subsection{In the Hospital}
 
-Looking next to more complicated organisms than bacteriophages and other prokaryotes, we move
+Looking next to more complicated organisms than bacteriophages and other prokaryotes,
 to an RNA-Seq analysis of two experiments with Endothelial cells and Pericytes,
-exploring their interactions with Tumor Necrosis Factor. We observed significant upregulation of CXCL\* genes as well as Interferon signaling pathways. [TODO: write some more here once the paper is done.]
+the interactions of these two cells with Tumor Necrosis Factor was investigated. Significant upregulation of CXCL\* genes as well as Interferon signaling pathways was observed. [TODO: write some more here once the paper is done.]
 
-In order to simplify the analysis of sensitive human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, we developed a transparent and simplified manner in \cref{chapter:htsget} which enables federated access to data stored in the European Genome Archive (EGA) via a GA4GH compliant method. This new method significantly reduces barriers for researchers when working with such sensitive data.
+In order to simplify the analysis of sensitive human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, a transparent and simplified manner was developed in \cref{chapter:htsget} which enables federated access to data stored in the European Genome Archive (EGA) via a GA4GH compliant method. This new method significantly reduces barriers for researchers when working with such sensitive data.
 
 % \include{chapters/EC-PC}
 % \include{chapters/htsget}
