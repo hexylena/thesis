@@ -59,11 +59,10 @@
 % \cleartorightpage
 
 
-\cleartorightpage\begin{savequote}[75mm]
-``Humans are allergic to change. They love to say, `We've always done it this way'. I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.''
-\qauthor{Grace Hopper}
-
-\end{savequote}
+% \cleartorightpage\begin{savequote}[75mm]
+% ``Humans are allergic to change. They love to say, `We've always done it this way'. I try to fight that. That's why I have a clock on my wall that runs counter-clockwise.''
+% \qauthor{Grace Hopper}
+% \end{savequote}
 
 \chapter{Discussion}\label{discussion}
 \setcounter{figure}{-1}
@@ -82,67 +81,79 @@ As an individual that has spent many, many years responsible for large amounts o
 infrastructure, and likewise as a bioinformatician, I approach a lot of
 problems with a ``systems thinking'' view, informed by systems theory, and systems safety.
 
-In systems administration and infrastructure management this view was useful as
-it gave me new ways to solve problems. Is a system overloaded? We \emph{could} throw
+In infrastructure management this view was useful as
+it gives one new ways to solve problems. Is a system overloaded? We \emph{could} throw
 more resources at the problem, but we could also look at other changes like
 queueing, rate-limiting requests, changing how the software interacts with the
 system, changing the software itself! All of these, \emph{and more}, are valid
-approaches that may produce the desired result. I additionally brought a
-systems safety viewpoint to my work; \emph{when}, not if, a system will fail,
-how can we ensure it does so with the least amount of damage?
+approaches that may produce the desired result and possibly more efficiently.
+I additionally brought a systems safety viewpoint to my work; \emph{when}, not
+if, a system will fail, how can we ensure it does so with the least amount of
+collateral damage?
 
 In the context of bioinformatics, this gives me a new lens through which to
-analyse the sum total of what we produce, and how we produce it. In the
-complex, interdependent, networked system of ``research'' that I have
-participated in for the past years,  we have many levers we can pull, reactant
-flow rates we can change. But, we need to identify which are the correct ones,
-and which can be adjusted with minimal effort to produce outsized results.
+analyse the sum total of what we produce, and how we produce it.
+For the past years I have participated in the complex, interdependent, networked system known as \emph{research}.
+Within this system we depend on each other, our colleagues; some are producing data, some analysing it, and others implementing changes based on the results.
+In this system we have many opportunities for making changes which have downstream effects;
+flow rates we can adjust that change the overall process.
+But, we need to identify which are the correct ones,
+and which small changes can have outsized results, to most efficiently implement changes.
 Simultaneously we need to keep in mind the safety aspect. When our pipelines or
 tools fail, can they fail safely and in ways that do not negatively affect
 patient outcomes.
 
 When we look to bioinformatics in a hospital we find a system incredibly focused on
-producing new software, methods, algorithms, and models, to the exclusion of everything else.
+producing new clinical applications, occasionally to the exclusion of everything else.
 The incremental progress we make towards better clinical outcomes benefits us
-all, of course, but maintaining the focus we have is globally suboptimal.
-Our results could benefit a far larger portion of the world if we were to consider the aspects \emph{surrounding} our core mission. How can we make the knowledge, the learning we have uncovered accessible? How can we reduce barriers to its access? How can we share it with others?
+all, but maintaining the focus we have is globally suboptimal.
+Our results could benefit a far larger portion of the world if we were to consider the aspects \emph{surrounding} our core mission.
+Our work could, potentially, be more impactful if we also consider all of the additional impacted pathways, on the road from data to clinic.
+
+How can we make the knowledge, the learning we have uncovered accessible? How can we reduce barriers to its access? How can we share it with others? How can we make our internal processes more efficient? How can we improve the reproducibility and knowledge sharing amongst colleagues? Why do we come from a point of competition and not collaboration?
 
 % In the system of bioinformatics, we have far too little focus on the machinery
 % of this progress; how do these resources get created in the first place, and
 % what happens after they are created?
 
 What use is it, when a tool is created in the forest and no one hears it fall?
-(or is released online without proper documentation and learning materials?)
+(or is released without proper engineering, documentation and learning materials?)
 
 \section{Themes}
 
-This thesis explored three pairs of scientific and technical application papers; we developed new methods or investigated something interesting, and, in a related piece of work, we make part of that process more findable, accessible, interoperable, reusable, and reproducible.
+This thesis explored pairs of scientific and technical application papers; we developed new methods or investigated something interesting, and, in a related piece of work, we make part of that process more findable, accessible, interoperable, reusable, and reproducible.
+
+This process was then repeated across three themes, starting from the genome of a single cell or organism, moving to complex and clinically relevant organisms, before finally reflecting on dissemination and sustainability of this knowledge.
 
 \subsection{In the Cell}
 
-In this thesis a scalable, real-time collaborative, FAIR platform for genome annotation was presented that meets the needs of both educational as well as research contexts.
+In this work a scalable, real-time collaborative, FAIR platform for genome annotation was presented that meets the needs of both educational as well as research contexts.
 \cref{chapter:phages} leveraged existing, open source, community maintained software components (Apollo, Galaxy) which both exist under the Generic Model Organism Database (GMOD) umbrella and provided a series of tools which enhances their integration and interoperability.
 This was examined through the lens of phage annotation and education; a suite of tools was produced via novel developments and integration of existing open source bioinformatics tools, and workflows constructed which aggregated all of those tools to enable the structural and functional annotation of bacteriophages.
 This unified interface to annotation enabled the publication of over 160%\footnote{\url{https://scholar.google.com/scholar?start=40&q=\%7Bhttps://cpt.tamu.edu/galaxy-pub/+complete+genome+sequence}}
 complete, annotated genome sequences of phages since going into operation, supporting all steps of the process from sequencing to GenBank submission preparation.
 
-Additionally we investigated making the production of publication quality plots more accessible via the development of the Galactic Circos wrapper in \cref{chapter:circos} which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
-Circos presented an accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
+Subsequently we investigated making the production of publication quality plots more accessible via the development of the Galactic Circos wrapper in \cref{chapter:circos} which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
+Circos presented a significant accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
 
 \subsection{In the Hospital}
 
-Something About EC-PC Goes Here.
+Looking next to more complicated organisms than bacteriophages and other prokaryotes, we move
+to an RNA-Seq analysis of two experiments with Endothelial cells and Pericytes,
+exploring their interactions with Tumor Necrosis Factor. We observed significant upregulation of CXCL\* genes as well as Interferon signaling pathways. [TODO: write some more here once the paper is done.]
+
+In order to simplify the analysis of sensitive human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, we developed a transparent and simplified manner in \cref{chapter:htsget} which enables federated access to data stored in the European Genome Archive (EGA) via a GA4GH compliant method. This new method significantly reduces barriers for researchers when working with such sensitive data.
+
 % \include{chapters/EC-PC}
 % \include{chapters/htsget}
 
-In order to simplify the analysis of restricted human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, we developed a transparent and simplified manner in \cref{chapter:htsget} which enables access federated, sensitive data stored in the European Genome Archive (EGA) via GA4GH compliant access.
-
 \subsection{Out in the World}
 
-\Cref{chapter:gtn} shows the multi-year set of improvements to the Galaxy Training Network, a well used FAIR training platform to ensure that it meets accessibility best practices to ensure content distributed via this channel is accessible to those with visual or hearing impairments, that provides a framework for educators to collaboratively manage peer-reviewed learning materials.
-During this development cycle the platform added coding interactive tutorials available as automatically generated Jupyter notebooks, automatic video generation, a comprehensive linting framework, and more.
-All features which aim to reduce the barriers to entry and burden of maintenance on educators and those wishing to disseminate their results.
-Simultaneously this framework explored improvements the accessibility of the content, in all senses, for learners by providing a freely accessible, learning platform that integrates well with Galaxy.
+\Cref{chapter:gtn} shows the multi-year set of improvements to the Galaxy Training Network, a well used FAIR training platform. % to ensure that it meets accessibility best practices to ensure content distributed via this channel is accessible to those with visual or hearing impairments, that provides a framework for educators to collaboratively manage peer-reviewed learning materials.
+During this development cycle the platform added coding interactive tutorials available as automatically generated Jupyter notebooks, automatic video generation, a comprehensive linting framework, and explored the potential for future automatic generation of videos from learning materials.
+All of the implemented features which aim to reduce the burden of maintenance on educators and those wishing to disseminate their results, while increasing the FAIRness of the results.
+Simultaneously this framework explored improvements the accessibility of the content, in all senses, for learners by providing a freely accessible, learning platform that integrates well with Galaxy, and is accessible for those using a screenreader, e.g. due to a visual impairment.
+
 The application thereof was explored via the implementation of an open source training infrastructure sharing platform \cref{chapter:tiaas} which provided a method for system administrators to offer training infrastructure for educators. This saw 24k learners use the platform over its 5 years of existence, approximately 75\% of which used materials hosted on the aforementioned GTN. The reduction of barriers in educators providing courses was deeply felt based on the feedback received, the complexity of managing infrastructure was previously one of the most painful points of organising an event, completely removed leveraging the combination of Galaxy and TIaaS and the GTN.
 
 % \include{chapters/gtn}
@@ -150,10 +161,24 @@ The application thereof was explored via the implementation of an open source tr
 
 \section{Future Perspectives}
 
+\subsection{Reproducibility}
+FAIR data has been a wonderful achievement, where it has been achieved. FAIR non-data resources (code, documents, learning materials) likewise. However, FAIR, in fact, does not require the permanent accessibility of data, only the \emph{meta}data. Reproducibility is also not part of the acronym, though ``FAIRR` is becoming slowly more popular.
+
+Instead we need a stronger standard for both data and computational methods that requires not just metadata preservation, but \emph{data} preservation. Likewise the software executed in order to determine some result must be likewise preserved. We are current in a Reproducibility Crisis in the scientific world, our best defense against this is sunlight; placing our results in the open, and making them easier to reproduce. This also means they will be easier to re-analyse and re-review, ensuring that inconsistencies can be rooted out, and incorrect calculations corrected.
+
+Of my informally surveyed colleagues only a handful are able to reproduce methods that were run 5 much less 20 years ago. A few have tools which have survived that long, but those reports were only single tools, not entire pipelines. We need to explore containerisation technologies like Singularity and Docker containers to preserve historic operating systems, we need to ensure the software we use is open source, and optimally hosted on an archival site like via the Software Heritage program. We need to campaign with software developers to ensure their tools can be seeded, if any random number generation is used.
+
+The most disheartening aspect is that many of these practices are feasible today, but due to a lack of software development education for researchers, coupled with the capitalistic Publish or Perish ecosystem focused only on papers, and the funding ecosystem which does not enable long term maintenance, ensuring that we hold ourselves to a sufficient standard is left unchecked. We must wait for regulators to catch up, for journals to implement minimum standards and mandates, generally only after years of tireless campaigning by motivated researchers.
+
+\subsection{Ontologies}
+
+
+\subsection{Machine Learning}
+
 
 \section{Conclusion}
 
-In this thesis multiple themes in the world of Bioinformatics were explored, from the annotation of a single organism, through their exploration in the clinic, and finally to the dissemination of the knowledge obtained throughout the first two arcs. We applied the FAIR and Open Source Software and Open Science principles throughout the development process to ensure the quality and interoperability of our results.
+In this thesis multiple themes in the world of Bioinformatics were explored, from the annotation of a single organism, through their exploration in the clinic, and finally to the dissemination of the knowledge obtained throughout the first two arcs. FAIR and Open Source Software and Open Science principles were applied throughout the development process to ensure the quality and interoperability of our results.
 
 This work has already impacted an incredibly large number of individuals around the world, multiple orders of magnitude more than the typical bioinformatics software release. More focus should be given to these surrounding aspects of the bioinformatics process, rather than simply tool development, as they can provide a force multiplier for the tool development itself. Building a dissemination and training platform, and providing training infrastructure, has ensured that tools and software that would be otherwise unknown, are not only findable, but also accessible, (re)usable, and reproducible for a global audience.
 
