@@ -92,22 +92,19 @@ also forces one to consider systems safety; \emph{when}, not if, a system will
 fail, how can it be ensured that it does so with the least amount of collateral
 damage? The least amount of fallout for users? 
 
-In the context of bioinformatics, this provides a new lens through which to
-analyse the sum total of what is produced, and how it is produced.
-% For the past years I have participated in the complex, interdependent, networked system known as \emph{research}.
-Within this complex, interdependent, networked system known as research, there are many human interdependencies; colleagues are producing data, some analysing it, and others implementing changes based on the results. Additionally there are the relationships between humans and software, software and hardware, all interconnected and interdependent.
-In this system there are many opportunities for making changes which have downstream effects;
-flow rates that can be adjusted to change the overall process or efficiency.
-But the correct ones must be identified, the small changes that will have outsized  results, to most efficiently improve the system.
-Simultaneously systems safety cannot be forgotten. When steps in the process fail, such as pipelines or
-tools, can they fail safely and in ways that do not negatively affect
-patient outcomes?
+In the context of bioinformatics, this provides a new lens through which to analyse the sum total of what is produced, and how it is produced.
+Within this complex, interdependent, networked system known as research, there are many human interdependencies; colleagues are producing data, some analysing it, and others implementing changes based on the results. 
+Additionally there are the relationships between humans and software, software and hardware, all interconnected and interdependent.
+In this system there are many opportunities for making changes which have downstream effects; flow rates that can be adjusted to change the overall process or efficiency.
+But the correct ones must be identified, the small changes that will have outsized results, to most efficiently improve the system.
+Simultaneously systems safety cannot be forgotten. 
+When steps in a process inevitably fail, such as pipelines or tools, can they fail safely and in ways that minimise negative effects?
 
 Looking to bioinformatics in a hospital, one finds a system incredibly focused on
 producing new clinical applications, occasionally to the exclusion of everything else.
 The incremental progress made towards better clinical impacts benefits humanity,
-but maintaining the current focus is potentially globally suboptimal,
-if the same results could benefit a far larger group, if we only expanded our core mission to include ancillary aspects of the process.
+but maintaining the current focus is potentially globally suboptimal;
+the same results could benefit a far larger group, if only the core mission was expanded to include elevating ancillary aspects of the process.
 %, as
 % aspects \emph{surrounding} our core mission were included in that mission.
 ``The purpose of a system is what it does''; a hospital heals patients, it doesn't develop software.
@@ -123,28 +120,28 @@ if the same results could benefit a far larger group, if we only expanded our co
 
 This thesis explored pairs of scientific and technical application papers; we developed new methods or investigated something interesting, and, in a related piece of work, we make part of that process more findable, accessible, interoperable, reusable, and reproducible.
 
-This process was then repeated across two major themes---the genome of a single organism, and a more complex and clinically relevant cell line---before finally reflecting on dissemination and sustainability of this knowledge.
+This process was repeated across two major themes---the genome of a single organism, and a more complex and clinically relevant cell types---before finally reflecting on dissemination and sustainability of this knowledge.
 
-Throughout this thesis topics of ensuring accessibility, reducing access barriers, ensuring FAIRness, improving user-friendliness, mandating reproducibility, and increasing efficiencies through both automation and process changes have been explored.
+Throughout this thesis topics of ensuring accessibility, reducing barriers, ensuring FAIRness, improving user-friendliness, mandating reproducibility, and increasing efficiencies through both automation and process changes have been explored.
 
 \subsection{In the Cell}
 
-In the first theme of genome annotation (\Cref{chapter:annotation}), a scalable, real-time collaborative, FAIR platform for annotation was presented that meets the needs of both educational as well as research contexts.
-leveraged existing, open source, community maintained software components (Apollo, Galaxy) which both exist under the Generic Model Organism Database (GMOD) umbrella and provided a series of tools which enhances their integration and interoperability.
-This was examined through the lens of phage annotation and education; a suite of tools was produced via novel developments and integration of existing open source bioinformatics tools, and workflows constructed which aggregated all of those tools to enable the structural and functional annotation of bacteriophages.
+In the first theme of genome annotation (\Cref{chapter:annotation}), a scalable, real-time collaborative, FAIR platform for annotation was presented that meets the needs of both educational and research contexts.
+This work leveraged existing, open source, community maintained software components (Apollo, Galaxy) both of which exist under the Generic Model Organism Database (GMOD) umbrella, in order to deliver a series of tools and workflows which enhance their integration and interoperability.
+This framework was examined through the lens of phage annotation and education; a suite of tools was produced via novel developments and integration of existing open source bioinformatics tools, and workflows constructed which aggregated all of those tools to enable the structural and functional annotation of bacteriophages.
 This unified interface to annotation enabled the publication of over 160 %\footnote{\url{https://scholar.google.com/scholar?start=40&q=\%7Bhttps://cpt.tamu.edu/galaxy-pub/+complete+genome+sequence}}
 complete, annotated genome sequences of phages since going into operation, supporting all steps of the process from sequencing to GenBank submission preparation.
 
-Subsequently the process of making the production of publication quality plots more accessible was investigated via the development of the Galactic Circos wrapper which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
+Subsequently the process of making the production of publication quality plots, such as one would make for an annotated genome, more accessible was investigated via the development of the Galactic Circos wrapper which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
 Circos presented a significant accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
 
 \subsection{In the Hospital}
 
-Looking next to more complicated organisms than bacteriophages and other prokaryotes,
+Moving from less complicated organisms like bacteriophages and prokaryotes,
 to an RNA-Seq analysis of two experiments with Endothelial cells and Pericytes in \cref{chapter:cancer},
-the interactions of these two cells with Tumor Necrosis Factor was investigated. Significant upregulation of CXCL\* genes as well as Interferon signaling pathways was observed. [TODO: write some more here once the paper is done.]
+the interactions of these two cells with Tumor Necrosis Factor was investigated. Significant upregulation of both CXCL and CCL family of cytokines experienced significant upregulation under the experimentatl condition of TNF. This was reflected in the upregulation of Interferon signaling and other inflammatory pathways was observed. 
 
-In order to simplify the analysis of sensitive human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, a transparent and simplified manner was developed which enables federated access to data stored in the European Genome Archive (EGA) via a GA4GH compliant method. This new method significantly reduces barriers for researchers when working with such sensitive data.
+In order to simplify the analysis of sensitive human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, a transparent and simplified manner was developed which enables federated access to data stored in the European Genome Archive (EGA) via a GA4GH compliant method. This new method significantly reduces barriers for researchers when working with such sensitive data, by answering the GDPR question for a number of relevant facets for the researcher, enabling them spend less time focused on ensuring compliance and more on their analysis.
 
 % \include{chapters/EC-PC}
 % \include{chapters/htsget}
@@ -157,6 +154,7 @@ The first paper shows the multi-year set of improvements to the Galaxy Training 
 During this development cycle the platform added coding interactive tutorials available as automatically generated Jupyter notebooks, automatic video generation, a comprehensive linting framework, and explored the potential for future automatic generation of videos from learning materials.
 All of the implemented features which aim to reduce the burden of maintenance on educators and those wishing to disseminate their results, while increasing the FAIRness of the results.
 Simultaneously this framework explored improvements the accessibility of the content, in all senses, for learners by providing a freely accessible, learning platform that integrates well with Galaxy, and is accessible for those using a screenreader, e.g. due to a visual impairment.
+These explorations showed that it is not only possible but even easy to implement a FAIR and truly accessible platform for learning materials.
 
 The application thereof was explored via the implementation of an open source training infrastructure sharing platform, Training Infrastructure as a Service (TIaaS), which provided a method for system administrators to more easily offer training infrastructure for educators. This saw 24k learners use the platform over its 5 years of existence, approximately 75\% of which used materials hosted on the aforementioned GTN. The reduction of barriers in educators providing courses was deeply felt based on the feedback received, the complexity of managing infrastructure was previously one of the most painful points of organising an event, completely removed leveraging the combination of Galaxy and TIaaS and the GTN.
 
@@ -174,13 +172,20 @@ Instead stronger standards are necessary for both data and computational methods
 % Ensuring that software is reproducible 
 % Of my informally surveyed colleagues only a handful are able to reproduce methods that were run 5 much less 20 years ago. A few have tools which have survived that long, but those reports were only single tools, not entire pipelines. We need to explore containerisation technologies like Singularity and Docker containers to preserve historic operating systems, we need to ensure the software we use is open source, and optimally hosted on an archival site like via the Software Heritage program. We need to campaign with software developers to ensure their tools can be seeded, if any random number generation is used.
 
-Many of these practices are completely feasible today, but due to a lack of software development education for researchers, coupled with the capitalistic ``Publish or Perish'' ecosystem focused only on publishable results, and the funding ecosystem which actively harms long term maintenance of projects, leaves only voluntary compliance to ensure that we hold ourselves to a sufficient standard.
+Many of these practices are completely feasible today, but due to a lack of software development education for researchers, coupled with the capitalistic ``Publish or Perish'' ecosystem focused only on publishable results, and the funding ecosystem which actively harms long term maintenance of projects, leaves only voluntary compliance to ensure that we hold ourselves to a sufficient standard. 
+``[T]he problem with voluntary programs is that not everybody volunteers''
+% \footnote{ CSB Chairperson Carolyn Merritt stated} 
+% U.S. House of Representatives, 110th Congress, Committee on Education and Labor, "Hearing on the BP Texas
+% City Disaster and Worker Safety," 22 March 2007. [Online]. Available:
+% https://www.govinfo.gov/content/pkg/CHRG-110hhrg33902/html/CHRG-110hhrg33902.htm. [Accessed 30
+% October 2019].
 We must push for regulators, journals, and funding agencies to implement minimum standards and mandates.
 A relatively small change such as a journal requirement has the potential for a significant impact on the reproducibility crisis.
 
 \subsection{Software Development Best Practices}
 
-While no one expects a biologist or bench scientist coming from a non-software engineering background to know all of the field's best practices, it needs to be considered a core responsibility if they are writing scripts or tools or building pipelines, especially in a clinical setting. Software development best practices as defined here implies topics such as peer-review of code, version control systems, testing and correctness, performance analysis, language typing, ``parse don't validate'', Postel's Law, software licensing, etc.
+While no one expects a biologist or bench scientist coming from a non-software engineering background to know all of the field's best practices, it needs to be considered a core responsibility if they are writing scripts or tools or building pipelines, especially in a clinical setting.
+Software development best practices as defined here implies topics such as peer-review of code, version control systems, testing and correctness, performance analysis, language typing, ``parse don't validate'', Postel's Law, software licensing, etc.
 
 Some of the onus is on the developers of Scientific Workflow Management Systems (SciWMSs) to guide the user in meeting those best practices, Galaxy is a good example here with both UI and CLI based linting of workflows to help researchers implement best practices.
 An additional part of the onus should be on journals and funding agencies, to place intentional barriers in the way of researchers requiring that the software they develop is published, licensed correctly, using a reproducible dependency management system.
@@ -190,11 +195,13 @@ The developer must consider the reproducibility guarantees; perfect reproducibil
 Many software dependency systems are vulnerable to so called ``left-pad incidents'', where a single dependency, when revoked, has significant ramifications throughout the dependency tree, and software will fail to execute because that dependency no longer exists on the internet.
 % There is a balance to be struck with GDPR and the right to be forgotten, it should be permitted for software developers to remove their code from the internet, but 
 
-A plausible concern is whether these barriers will prevent access and decrease contributions, more data is required but it is certainly no worse than ``code available upon request'' emails sent to the graduate student that left a decade ago.
+It might seem strange to argue for the intentional placement of barriers, after spending so much effort to reduce them. 
+This is in fact completely coherent; barriers that inhibit quality science should be removed, barriers that ensure that level of quality should be reinforced.
+A plausible result is that these barriers will decrease scientific software availability, more data is required but it is certainly no worse of a situation than ``code available upon request'' emails sent to the graduate student that left a decade ago.
 
 \subsection{Accessibility}
 
-Accessibility for those with impairments or disabilities is an issue close to the author's heart, but much of the work we do falls sadly short of accessibility.
+Accessibility for those with impairments or disabilities is an issue close to the author's heart, but much of the work done falls sadly short of accessibility.
 The author subscribes to the Social Model of disability; disability is is not something necessarily to be fixed or changed, rather it is on society to change in ways that accommodate everyone.
 The classic example is a ``dropped kerb''\footnote{AmEng: Curb Cut, AusEng: Kerb Ramp}, whereby a change made in infrastructure to provide continuous access from street to sidewalk for someone making use of a wheelchair has potentially not previously considered benefits for others such as a parent with a pram.
 The parent no longer needs to move the pram the 10-15cm up and down on every street crossing, nor are expensive powered wheelchairs which could navigate high curbs.
@@ -210,11 +217,11 @@ Publication figure alt text would enable authors to explicitly communicate the m
 In a similar manner as the dropped kerb, the world of cognitive impairments has related issues and easily implemented solutions.
 Both in permanent manners (e.g. due to ageing), or temporary ones (a poor night's sleep due to a baby crying), ranging from mild distractedness to severe comprehension or memory issues, many people experience cognitive impairments throughout their life.
 The software development world offers many solutions and ameliorations that can be applied, such as thoroughly documenting code, writing architecture documents, or developing tutorials to ensure others can easily become proficient in its use.
-Sufficient documentation not only helps one easily restart work on a project after an absence, but also helps other users of the software to know it exists and learn how to use it.
+Sufficient documentation not only helps one easily restart work on a project after a temporary distraction (say a grant that needed to be submitted), but also helps other users of the software to know it exists and learn how to use it.
 It might be the best tool in the world, but if a potential user cannot operate it, what was the point in writing it?
-Within the documentation as well, this can take the form of providing tips on how to do operations.
-Whilst writing documentation, an author often experiences a bias around their own knowledge, such that when someone else reads the documentation or tutorial they can get stuck at many places.
-Here both peer review, and providing tips and links to recap material for topics that one would expect the reader to be familiar with, can be beneficial to a range of audience; those with temporary or permanent impairments, or those just new to a topic.
+% Within the documentation as well, this can take the form of providing tips on how to do operations.
+% Whilst writing documentation, an author often experiences a bias around their own knowledge, such that when someone else reads the documentation or tutorial they can get stuck at many places.
+% Here both peer review, and providing tips and links to recap material for topics that one would expect the reader to be familiar with, can be beneficial to a range of audience; those with temporary or permanent impairments, or those just new to a topic.
 
 
 % The author investigated making this PDF accessible but the current methods for doing so are \emph{extremely} labour intensive.
@@ -222,10 +229,10 @@ Here both peer review, and providing tips and links to recap material for topics
 
 \section{Conclusion}
 
-In this thesis multiple themes in the world of Bioinformatics were explored, from the annotation of a single organism, through their exploration in the clinic, and finally to the dissemination of the knowledge obtained throughout the first two arcs. FAIR and Open Source Software and Open Science principles were applied throughout the development process to ensure the quality and interoperability of our results.
+In this thesis multiple themes in the world of Bioinformatics were explored, from the annotation of a single organism, through their exploration in the clinic, and finally to the dissemination of the knowledge obtained throughout the first two arcs. FAIR and Open Source Software and Open Science principles were applied throughout the development process to ensure the quality and interoperability and accessibility of our results.
 
 This work has already impacted an incredibly large number of individuals around the world, multiple orders of magnitude more than the typical bioinformatics software release. 
-More focus should be given to these surrounding aspects of the bioinformatics process, rather than simply tool development, as they can provide a force multiplier for the tool development itself.
+More focus should be given to these surrounding aspects of the bioinformatics process, rather than simply tool development, as they can provide a force multiplier for the tool development and developers they work with collaboratively.
 Building a dissemination and training platform, and providing training infrastructure, has ensured that tools and software that would be otherwise unknown, are not only findable, but also accessible, (re)usable, and reproducible for a global audience.
 Ensuring that the work that was done, was accessible for all, has guaranteed that a diverse community can make use of what was produced for years to come.
 
