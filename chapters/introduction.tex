@@ -44,23 +44,20 @@ Researchers could begin to sequence small portions of their patients' genomes mo
 By the 2010s the genetics of individual tumour cell lines was regularly used to discover new cancer treatment drugs, thanks to more affordable sequencing and the existence of a sequenced and annotated reference human genome. %https://hdsr.mitpress.mit.edu/pub/y7r65r4k/release/4 https://web.stanford.edu/class/gene210/files/readings/hamburg_collins.pdf
 % [and the human genome] YL: What do you mean here? The increasing amount of sequenced human genomes? Or the knowledge about human genome (i.e. annotations)
 In more recent years clinical bioinformatics has been working towards precision medicine, whereby bioinformatic methods are used to tailor treatments to a specific patient, based on their genetics.
-These practices open up interesting new avenues for research but come with associated challenges. 
+Bioinformatics becoming prevalent in medicine work opens up interesting new avenues for research, but comes with familiar and new challenges. 
 With the influx of individual patient genomes sequenced a wide variety of issues surrounding these datasets becomes necessary to investigate such as the long term storage of this data, the necessary development of new software to analyse the data, and non-informatics concerns such as the legalities and ethicalities of data use, storage, and sharing with other researchers.
 % https://www.sciencedirect.com/science/article/abs/pii/B978012809523200011X
 
 % NOT MINE: The NIH, for example, launched its All of Us research program in May 2018 (following similar efforts such as the UK Biobank and the China Kadoorie Biobank) with an aim to understand “the relationships between circulating biomarkers or genetic variation as they relate to disease prevention.” The crucial component was developing a data set large and diverse enough that “patterns will emerge that wouldn’t be visible at a smaller scale,” enabling researchers to have the “statistical power to make fine-grained predictions about how a given treatment will affect a given individual.”3 (The emphasis on diversity is not just for statistical reasons; it is also explicitly an effort to correct for decades of bias in medical research [Manolio, 2019]
 
-
 % https://www.nature.com/articles/gim200290
 % TODO: TLMtH How? Why? This is quite the core of your work.
-
+% It's decidedly NOT the core of my work. I might be part of PRMiO but none of my work is about precision medicine. None of my methods are about that.
 
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC146396/
 %$ curl --silent ftp://ftp.ebi.ac.uk/pub/databases/p53/datar4.txt | xsv select -d '\t' 34- | xsv stats
 % field,type,sum,min,max,min_length,max_length,mean,stddev
 % Year,Integer,28041464,1989,2000,0,4,1996.1178815489795,2.5284371854968666
-
-
 
 % The need for both basic and translational research has not changed, if
 % anything given our new tools and abilities, the demand has only grown.
@@ -68,14 +65,12 @@ With the influx of individual patient genomes sequenced a wide variety of issues
 
 % https://doi.org/10.1093%2Fbioinformatics%2Fbtg309
 
-While bioinformatics continues to be increasingly available as a technique within medicine, enabling us to help more patients than ever before, the picture is not entirely optimistic.
+While bioinformatics continues to be increasingly available as a technique within medicine, enabling the hospital to help more patients than ever before, the picture is not entirely optimistic.
 
 %>>>
 \section{Limiting Reagents} %<<<
 
 In the pathway to synthesise clinical solutions from reactants such as sequencing data and bioinformaticians, there are a number of key limiting reagents:
-% \subsection{Limiting Reagents}
-% In the pathway from data to cure, there are several potentially limiting resources:% Data, Compute, and Bioinformaticians.
 
 \begin{itemize}
 	\itemsep0em
@@ -84,17 +79,16 @@ In the pathway to synthesise clinical solutions from reactants such as sequencin
 	\item Bioinformaticians
 \end{itemize}
 
-With the economic barrier to data availability solved, the first limit on system throughput was removed.
-Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\footnote{\url{https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/}}, which represents only a fraction of the total sequencing completed, and only grows year after year.
+With the data availability solved by eliminating the economic barrier, the first limit on system throughput was removed.
+Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\footnote{\url{https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/}}, which represents only a fraction of the total sequencing completed, and has been growing 15\% year-over-year. This amount is equivalent to the full genome sequence of 4M individuals, added each year.
 
 % While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate
 
 % TLMtH: Same here. In full and explained. If you could put numbers in perspective and relate to total numbers or numbers in coming years the message becomes more relevant and interesting.
-Compute resources have similarly grown over time, three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time and cost efficient manner.
+WHile Compute resources have similarly grown over time, three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time and cost efficient manner.
 Universities have continually competed for the top supercomputer spot, the total computation power available growing exponentially.
-It is easier than ever before to access massive computational resources.
+It is easier and cheaper than ever before to access massive computational resources.
 % TLMtH: How? Combining alone doesn’t, you know. Rather the opposite. What was done here?
-% Furthermore, projects like EuroHPC aim to provide amalgamations of these resources at an international level, making it easier than ever for researchers to access previously unthinkable amounts of computational power.
 
 % TLMtH: You may here introduce a first hint, cliffhanger, if you want. Make colleagues bioinformatics. 
 Unfortunately that leaves us with the final resource bottleneck: the human bioinformaticians.
