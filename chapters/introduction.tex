@@ -29,35 +29,22 @@ Computers and algorithms were essential to the field by the 1980s, which resulte
 These included comparative genomics to enable multi-genome analysis, phylogenetics to identify the history of organisms, genome annotation methods to determine what each fragment of DNA does, and the first genomic repositories providing worldwide access to genomic and sequencing data (e.g. GenBank® from National Institutes of Health, and databases at  European Molecular Biology Laboratory).
 By a decade later in 1992, these public sequence repositories enabled the development of Basic Local Alignment Search Tool (BLAST) which let researchers search for DNA sequences across ever-growing databases of genomes.
 % (citations from DOI: 10.1093/bioinformatics/btg309)
-% YUNLEI: The story is being built up very well! Here (or in the previous paragraph) you can introduce “bioinformatics” a bit more, since it links the development of sequencing with the clinical impact.
-% You can explain what it is and give some examples of its important applications/roles. 
+% DONE: YUNLEI: The story is being built up very well! Here (or in the previous paragraph) you can introduce “bioinformatics” a bit more, since it links the development of sequencing with the clinical impact.
+% NOT DONE: You can explain what it is and give some examples of its important applications/roles. 
 
-The astronomical\footnote{The sequencing of these initial genomes cost approximately $\text{⅓}^{\text{rd}}$ as much as an average NASA shuttle mission. todo: fix this to a proper citation: \url{https://en.wikipedia.org/wiki/Space_Shuttle_program}} cost of $\approx$450MM USD in the year 2000 to sequence the first human genomes---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD.
+The astronomical\footnote{The sequencing of these initial genomes cost approximately $\text{⅓}^{\text{rd}}$ as much as an \emph{average} NASA shuttle mission. todo: fix this to a proper citation: \url{https://en.wikipedia.org/wiki/Space_Shuttle_program}} cost of $\approx$450MM USD in the year 2000 to sequence the first human genomes---in connection with new cheaper technologies---led to the \$1,000 genome project, a dream of sequencing a full human genome for \$1,000 USD.
 Thus began the era of \emph{next-generation-} or \emph{high-throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs.
 It would not be until 2019 that the cost would be consistently below this threshold.
-
-% These advancements and availability enabled both computational methods and bioinformatics, to become prevalent in clinical research.
-% The adoption of computational methods in the clinic started with Medical Informatics (MI), a field which grew out of the increased availability of the computer in the clinic. 
-% This began with electronic health records (EHRs), an early adopter of which was the Veterans Administration (VA) in the US in the 1970s.
-% The VA would then push forward Open Source medical software with the release of their EHR database ``MUMPS'' in the 1980s, which they renamed ``VistA'' at the time.%https://pubmed.ncbi.nlm.nih.gov/12810119/
-% The adoption of EHR databases like VistA enabled researchers to analyse human health in bulk. %, reaching over 1700 active analysis projects by 2014. % PMC10071958
-% https://www.ncbi.nlm.nih.gov/pmc/articles/PMC264428/
-
-% This dovetails with the adoption of Bioinformatics whereby computational analyses on genomic information joined MI in clinical research.
-% MI and Bioinformatics often as a result work together, MI research generating interesting targets, and BI complementing that by deep studies of those genes.
-% By the mid 1990s sequence analysis within Bioinformatics had entered basic clinical research, collecting databases of p53 mutations in tumour cell lines based on sequencing analyses dating back to 1989, which the authors hoped could provide markers of relapse as well as a potential tool for patient diagnosis [PMC146396].
-% % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC264428/
-% In more recent years clinical bioinformatics has moved towards precision medicine, whereby bioinformatics is used to tailor treatments to a specific patient, based on their genetics.
-% https://www.nature.com/articles/gim200290
 
 By the mid-1990s sequence analysis within Bioinformatics had entered basic clinical research, such as a database of \emph{TP53} mutations in tumour cell lines based on sequencing analyses, which the authors hoped could provide predictive markers of disease relapse as well as a potential tool for patient diagnosis [PMC146396].
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC264428/
 This was followed during the 2000s by the growth of Single Nucleotide Polymorphism (SNP) databases [PMC2789466], data that was only able to be unlocked with the existence of the full human reference genome.
-Now researchers could sequence small portions of their patients' genomes, and compare them against the reference to look for interesting mutations which might have given rise to the disease phenotypes.
-By the 2010s we were regularly using the genetics of individual tumour cell lines to discover new cancer treatment drugs, thanks to more affordable sequencing and the existence of a sequenced reference human genome. %https://hdsr.mitpress.mit.edu/pub/y7r65r4k/release/4 https://web.stanford.edu/class/gene210/files/readings/hamburg_collins.pdf
+Researchers could begin to sequence small portions of their patients' genomes more regularly, and compare them against the reference to look for interesting mutations which might have given rise to the disease phenotypes.
+By the 2010s the genetics of individual tumour cell lines was regularly used to discover new cancer treatment drugs, thanks to more affordable sequencing and the existence of a sequenced and annotated reference human genome. %https://hdsr.mitpress.mit.edu/pub/y7r65r4k/release/4 https://web.stanford.edu/class/gene210/files/readings/hamburg_collins.pdf
 % [and the human genome] YL: What do you mean here? The increasing amount of sequenced human genomes? Or the knowledge about human genome (i.e. annotations)
-In more recent years clinical bioinformatics has been investigating precision medicine, whereby bioinformatic methods are used to tailor treatments to a specific patient, based on their genetics.
-These practices open up interesting new avenues for research but come with significant associated challenges; with the influx of individual patient genomes sequenced, we must investigate a wide variety of issues surrounding these dataset such as the long term storage of this data, necessary development of new software to analyse the data, as well as non-informatics concerns such as the legalities of sharing this data with other researchers.
+In more recent years clinical bioinformatics has been working towards precision medicine, whereby bioinformatic methods are used to tailor treatments to a specific patient, based on their genetics.
+These practices open up interesting new avenues for research but come with associated challenges. 
+With the influx of individual patient genomes sequenced a wide variety of issues surrounding these datasets becomes necessary to investigate such as the long term storage of this data, the necessary development of new software to analyse the data, and non-informatics concerns such as the legalities and ethicalities of data use, storage, and sharing with other researchers.
 % https://www.sciencedirect.com/science/article/abs/pii/B978012809523200011X
 
 % NOT MINE: The NIH, for example, launched its All of Us research program in May 2018 (following similar efforts such as the UK Biobank and the China Kadoorie Biobank) with an aim to understand “the relationships between circulating biomarkers or genetic variation as they relate to disease prevention.” The crucial component was developing a data set large and diverse enough that “patterns will emerge that wouldn’t be visible at a smaller scale,” enabling researchers to have the “statistical power to make fine-grained predictions about how a given treatment will affect a given individual.”3 (The emphasis on diversity is not just for statistical reasons; it is also explicitly an effort to correct for decades of bias in medical research [Manolio, 2019]
