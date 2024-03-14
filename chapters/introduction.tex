@@ -81,13 +81,16 @@ In the pathway to synthesise clinical solutions from reactants such as sequencin
 
 With the data availability solved by eliminating the economic barrier, the first limit on system throughput was removed.
 Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\footnote{\url{https://www.ncbi.nlm.nih.gov/sra/docs/sragrowth/}}, which represents only a fraction of the total sequencing completed, and has been growing 15\% year-over-year. This amount is equivalent to the full genome sequence of 4M individuals, added each year.
+%https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4494865/ https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4494865/
 
 % While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate
 
 % TLMtH: Same here. In full and explained. If you could put numbers in perspective and relate to total numbers or numbers in coming years the message becomes more relevant and interesting.
-WHile Compute resources have similarly grown over time, three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time and cost efficient manner.
-Universities have continually competed for the top supercomputer spot, the total computation power available growing exponentially.
-It is easier and cheaper than ever before to access massive computational resources.
+While their data center sizes and information is not public, compute resources have similarly grown over time. 
+The three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time and cost efficient manner, enabling researchers to access large amounts of compute quickly.
+On the non-commercial side, universities have continually competed for the top supercomputer spot, the total computation power available growing exponentially.
+Between clouds and local high performance compute (HPC) resources, a researcher can take advantage of terrabytes of memory and days of computation time, with minimal delay. 
+Accessing this sort of compute resources in earlier years would require submitting a grant application justifying the ongoing need for it, ordering the infrastructure, and waiting for delivery and installation, can now be completed in minutes.
 % TLMtH: How? Combining alone doesn’t, you know. Rather the opposite. What was done here?
 
 % TLMtH: You may here introduce a first hint, cliffhanger, if you want. Make colleagues bioinformatics. 
@@ -96,16 +99,12 @@ These have decidedly not scaled at a similar rate to the data; recent studies in
 % In light of advancing genomics research, a BBSRC review suggested a need to increase bioinformatics staff by 60% in academia and by 45% in pharmaceutical companies https://academic.oup.com/bib/article/20/2/398/4096809
 This is further confirmed in a 2017 study of NSF-BIO[cite] funded investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis.
  % A survey of 704 NSF-BIO-funded investigators revealed that training topics were the top 3 of 13 most unmet data analysis needs, above HPC/cloud facilities, workflows/pipelines analysis or storage facilities needs \cite{Barone2017}.
-The storage, the compute, the data availability is all comparatively solved, unlike the human problem.
+The storage, the compute, the data availability is all comparatively solved, unlike the human resource problem.
 
 % - Bioinformatics is driving clinical, translational research
 % - Large amounts of data are generated, at low cost
 % - Ever more data
 % - graph, line goes up, cost line goes down
-
-%>>>
-% \subsection{Clinical Impacts} %<<<
-
 
 % - Patients come in, and expect to have their genomes sequenced, a cure tailored for them
 % - turning 1s and 0s and ACTGs into clinical outcomes, that is where the challenge lies.
@@ -125,15 +124,12 @@ The storage, the compute, the data availability is all comparatively solved, unl
 
 This human gap increasingly matters for clinical impacts: there need to be enough individuals both skilled in bioinformatics, and well integrated with biologists and clinicians, to analyse the clinical data.
 % TLMtH: Don’t you need better (more intergrated) teams? Bioinf., clin., biol., ?
-Precision medicine, especially in oncology, presents us with ever more opportunities to improve clinical impacts, if the person-power is available.
+Precision medicine, especially in oncology, presents us with ever more opportunities to improve clinical impacts for individuals, if the person-power is available.
 However that requires researchers to design and establish the pipelines, optimise, and validate them, in collaboration with teams of clinicians, biologists, and other field specific experts.
 Those creating these clinical impacts tend to come from the medical side and often, unfortunately, lack necessary computer and analytics education.
 This demands either the incorporation of more dedicated bioinformatician roles, sufficient time spent re-training non-bioinformaticians to reach a productive level, or making existing bioinformaticians more efficient and productive.
 
-
-
 % One does not need to be a bioinformatician to start with as approaches exist which enable staff with diverse backgrounds to develop competencies in bioinformatics. That said, individuals with expertise in bioinformatics as a discipline are incredibly valuable.
-
 % TLMtH: Do you think so? If you are a wizard maybe. Isn’t the solution that you want layers where you can start by yourself and need an expanding team when you dig deeper?
 
 %>>>
@@ -143,18 +139,23 @@ This demands either the incorporation of more dedicated bioinformatician roles, 
 % When bioinformaticians develop workflows, they need to run somewhere, either locally in the hospital, or in the cloud.
 % The skills gaps for leveraging the already available \textbf{infrastructure} resources must be investigated, and solutions identified for how best to ensure workflows can easily be run across these highly parallel distributed resource managers (DRMs), while minimising the amount of software engineering skills that are required to execute them.
 
-Software accessibility is a key component in making bioinformatics itself both more accessible and more efficient overall.
+Software accessibility is a key component in making bioinformatics itself both more accessible and more efficient overall. [cite missing]
+% https://www.tandfonline.com/doi/full/10.2144/btn-2021-0060
 Computers themselves are notoriously user unfriendly themselves, so much so that an entire field of research exists, dedicated to user experience and human computer interaction.
 All of the infrastructure, tools, and data put in front of a busy doctor, or a researcher, needs to be clear, accessible, and user-friendly.
+% https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002213
 This requires an investment of time and space in the development cycle to ensure all sharp edges are polished, and the software and research products are optimised for their clinical settings.
 The gaps in software interface accessibility must be analysed and simplifications investigated to reduce barriers for both existing bioinformaticians and newcomers.
-
+% https://www.nature.com/articles/s41592-021-01254-9
 
 The European Union's General Data Protection Regular (GDPR)'s passage has increased infrastructure access challenges, requiring organisations and researchers to be more careful about data locality, access control, and developing an understanding of the legalities of processing clinical data in different situations, leading to questions about how to easily access data without compromising security.
-Many hospitals mandate use of a prescribed platform for data analysis which often comes with additional barriers or costs to access.
-Researchers may need to be physically within the hospital to access their data, or forbidden from analysing it on large external clusters to which they might have access, out of legal concerns.
-If they cannot analyse their data on their own machines, they potentially need to find additional budget to pay for access to their employer's in-house secure compute environment.
-The gap between researchers and their data analysis needs to be explored, the technical issues separated from the skill issues, and both addressed.
+Hospitals tend to be very conservative in response to potential leaks of patient data, and will take onerous security measures to decrease risks, to avoid repeating situations such as the Deadelus Biologie breach of 500k patient records.
+% https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10485705/
+% pdf:ENISA THREAT  LANDSCAPE: HEALTH SECTOR
+%  asdfhttps://www.ncbi.nlm.nih.gov/pmc/articles/PMC6466053/
+Some hospitals mandate use of a prescribed in-house platform for data analysis which often comes with additional barriers or costs to access, such as turning off compute resources outside of office hours\footnote{Anecdote from a colleague of the author.}.
+Researchers often need to be physically within the hospital to access and analyse their data, eliminating large external clusters to which they might have access, out of legal concerns.
+This gap between researchers and their data analysis needs to be explored, the technical issues separated from the skill issues, and both addressed.
 
 % A nearby secure compute environment, for instance, turns off computers in the secure enclave after work hours, impeding researcher's long-running computations.
 % {\color{blue}TLMtH: Give examples or make applicable. Talk for instance about patient data and hackers or breaches. Explain issues of accessibility from hard ware site (cables, capacity, PC power), legal (restrictions, fire walls), cost (software, access codes).}
