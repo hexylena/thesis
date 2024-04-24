@@ -182,22 +182,22 @@ Accessibility issues abound and must be catalogued, examined, and appropriate re
 
 On the data side similar challenges are experienced relating to insufficient time and resources allocated to their solution. Notably while there exists a wealth of primary data products (e.g. DNA, RNA sequencing), the secondary, downstream data products are a potential future limit. Unfortunately their root cause is often again lack of human bioinformaticians.
 
-Clinical pipelines are exceptional in their data requirements: in the clinical world accurate genome annotation is of paramount importance.
-This can be seen especially looking towards reviving old practices such as bacteriophages to fight infections, those phages must have correctly annotated and fully known genomes before they are exposed to humans.
+Clinical pipelines are exceptional in their data requirements: in the clinical world accurate genome annotation is of paramount importance\cite{Roy_2018}.
+This can be seen especially looking towards reviving old practices such as bacteriophages to fight infections, those phages must have correctly annotated and fully known genomes before they are exposed to humans\cite{Nilsson_2014,Phillips_2018}.
 Unlike e.g. small mRNA-based vaccines where the entire sequence is known, bacteriophages are significantly larger with more unknowns, both due to difficulties in sequencing and time required for human annotators to investigate every coding region.
-Many healthcare providers are cautious about introducing organisms with unknown genes into a patient; one wants to ensure annotations are human-reviewed for accuracy.
-Finally, looking to the long term maintenance and update of this high quality curation, it is apparent that sustainability of these efforts and their funding is difficult. Any solutions which decrease barriers to entry and maintenance must be investigated to work towards sustainable practices.
+Many healthcare providers are cautious about introducing organisms with unknown genes into a patient; one wants to ensure annotations are human-reviewed for accuracy\cite{Pirnay_2015}.
+Finally, looking to the long term maintenance and update of this high quality curation, it is apparent that sustainability of these efforts and their funding is difficult\cite{Vaught_2011,Berardini_2015}. Any solutions which decrease barriers to entry and maintenance must be investigated to work towards sustainable practices.
 
-The same applies to human data as well: before the genetic underpinnings of a disease or condition are fully understood, an annotated genome must be available, the sequencing alone is of course insufficient.
-In the precision medicine use case this means increasingly working with sensitive human annotation datasets, the challenge becomes how to handle these datasets safely and securely and in GDPR compliant manners.
-Long term data storage additionally becomes an important question to answer to ensure documented traceable clinical analysis.
+The same applies to human data as well: before the genetic underpinnings of a disease or condition are fully understood, an annotated genome must be available, the sequencing alone is of course insufficient\cite{Steward_2017}.
+In the precision medicine use case this means increasingly working with sensitive human annotation datasets, the challenge becomes how to handle these datasets safely and securely and in GDPR compliant manners\cite{Minssen_2020}.
+Long term data storage and reproducibility additionally becomes an important question to answer to ensure documented traceable clinical analysis\cite{Huang_2012}.
 What does it mean for patient care if an analysis isn't reproducible?
 % sensitive data: bench lab scientists need fool-proof ways to access sensitive, secure data to reduce potential for negative outcomes.
 % federated data: these researchers also want to look at cohorts from other institutions, other countries in a GDPR safe manner, so we need to enable that.
 
-For population level studies common in oncological research, these datasets are also often no longer in-house, and instead must be obtained from federated sensitive data repositories.
+For population level studies common in oncological research, these datasets are also often no longer in-house, and instead must be obtained from federated sensitive data repositories\cite{Rambla_2022}.
 Given the context of the technical and legal problems, these problems become significantly more difficult when looking at transferring human data across national boundaries.
-For the bioinformatician wishing to analyse those datasets, it might additionally mean using federated compute resources to bring their computations directly to the data.
+For the bioinformatician wishing to analyse those datasets, it might additionally mean using federated compute resources to bring their computations directly to the data\cite{De_Brouwer_2021}.
 Infrastructure to support safe and secure cross-national exploration of medical datasets must be investigated and solutions devised which enable federated data access whilst protecting privacy and ensuring security.
 
 % And all of these data analysis and generation pipelines, naturally, \emph{should} be \textbf{reproducible}.
