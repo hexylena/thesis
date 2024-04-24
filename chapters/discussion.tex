@@ -78,11 +78,11 @@
 \setcounter{section}{-1}
 
 System administrators who are responsible for large amounts of infrastructure,
-are often informed by systems theory and systems safety.
+such as hospital systems, are often informed by systems theory and systems safety.
 
-In infrastructure management this view is useful as
-it gives one new ways to solve problems. Is a system overloaded? One \emph{could} provide 
-more expensive resources to the problem and scale horizontally or vertically, but one could also look at other changes like
+In ICT and infrastructure management this view is useful as
+it gives one new ways to solve problems. Is a system overloaded? One \emph{could} provide
+more servers, more storage, and resources to the problem; but one could also look at other changes like
 queueing, rate-limiting requests, changing how the software interacts with the
 system, or changing the software itself! All of these, \emph{and more}, are valid
 approaches that may produce the desired result and possibly more efficiently.
@@ -90,25 +90,24 @@ Being responsible for critical systems\footnote{The definition of criticality is
 that people depend on
 also forces one to consider systems safety; \emph{when}, not if, a system will
 fail, how can it be ensured that it does so with the least amount of collateral
-damage? The least amount of fallout for users? 
+damage? How can we reduce the amount of fallout for clinicians, researchers, and patients, while simultaneously keeping patient data secure?
 
 In the context of bioinformatics, this provides a new lens through which to analyse the sum total of what is produced, and how it is produced.
-Within this complex, interdependent, networked system known as research, there are many human interdependencies; colleagues are producing data, some analysing it, and others implementing changes based on the results. 
+Within this complex, interdependent, networked system known as research, there are many human interdependencies; colleagues are producing data, some analysing it, and others implementing changes based on the results.
 Additionally there are the relationships between humans and software, software and hardware, all interconnected and interdependent.
 In this system there are many opportunities for making changes which have downstream effects; flow rates that can be adjusted to change the overall process or efficiency.
 But the correct ones must be identified, the small changes that will have outsized results, to most efficiently improve the system.
-Simultaneously systems safety cannot be forgotten. 
+Simultaneously systems safety cannot be forgotten.
 When steps in a process inevitably fail, such as pipelines or tools, can they fail safely and in ways that minimise negative effects?
 
 Looking to bioinformatics in a hospital, one finds a system incredibly focused on
 producing new clinical applications, occasionally to the exclusion of everything else.
 The incremental progress made towards better clinical impacts benefits humanity,
 but maintaining the current focus is potentially globally suboptimal;
-the same results could benefit a far larger group, if only the core mission was expanded to include elevating ancillary aspects of the process.
-%, as
-% aspects \emph{surrounding} our core mission were included in that mission.
-``The purpose of a system is what it does''; a hospital heals patients, it doesn't develop software.
+the same results could benefit a far larger group, if only a broader interpretation of the hospital's mission was used, one which places value on ancillary aspects such as software development, software safety, training, and dissemination.
+However, ``the purpose of a system is what it does''; a hospital heals patients, it doesn't develop software.
 
+Perhaps in the future that can change.
 % In the system of bioinformatics, we have far too little focus on the machinery
 % of this progress; how do these resources get created in the first place, and
 % what happens after they are created?
@@ -120,11 +119,20 @@ the same results could benefit a far larger group, if only the core mission was 
 
 This thesis explored pairs of scientific and technical application papers; we developed new methods or conducted an investigation, and, in a related piece of work, we make part of that process more findable, accessible, interoperable, reusable, and reproducible.
 
-This process was repeated across two major themes---the genome of a single organism, and a more complex and clinically relevant cell types---before finally reflecting on dissemination and sustainability of this knowledge.
+This process was repeated across two major themes---the genome of a single organism (\cref{chapter:annotation}), and a more complex and clinically relevant case (\cref{chapter:cancer})---before finally reflecting on dissemination and sustainability of this knowledge (\cref{chapter:training}).
 
 Throughout this thesis topics of ensuring accessibility, reducing barriers, ensuring FAIRness, improving user-friendliness, mandating reproducibility, and increasing efficiencies through both automation and process changes have been explored.
 
-\subsection{In the Cell}
+\subsection{In the Cell: Genome Annotation}
+
+{
+\color{red}
+\begin{enumerate}
+\item genome annotation is needed more, especially phage annotation (see intro cites)
+\item there are other pipelines for bacteriophage annotation (rast, ncbi, etc)
+\item but they're all automated, and good annotation requires human curation which is only possible in ours.
+\end{enumerate}
+}
 
 In the first theme of genome annotation (\cref{chapter:annotation}), a scalable, real-time collaborative, FAIR platform for annotation was presented that meets the needs of both educational and research contexts.
 This work leveraged existing, open source, community maintained software components (Apollo, Galaxy) both of which exist under the Generic Model Organism Database (GMOD) umbrella, in order to deliver a series of tools and workflows which enhance their integration and interoperability.
@@ -132,10 +140,27 @@ This framework was examined through the lens of phage annotation and education; 
 This unified interface to annotation enabled the publication of over 160 %\footnote{\url{https://scholar.google.com/scholar?start=40&q=\%7Bhttps://cpt.tamu.edu/galaxy-pub/+complete+genome+sequence}}
 complete, annotated genome sequences of phages since going into operation, supporting all steps of the process from sequencing to GenBank submission preparation.
 
+{
+\color{red}
+\begin{enumerate}
+\item during the viz phase we discovered lack of configurable plotters
+\item or plotters require writing code
+\item or cannot be used in workflow engines.
+\end{enumerate}
+}
+
 Subsequently the process of making the production of publication quality plots, such as one would make for an annotated genome, more accessible was investigated via the development of the Galactic Circos wrapper which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
 Circos presented a significant accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
 
-\subsection{In the Hospital}
+\subsection{In the Hospital: Applications}
+
+{
+\color{red}
+\begin{enumerate}
+\item todo some ecpc stuff
+\item sensitive data work in Galaxy i guess.
+\end{enumerate}
+}
 
 Moving from less complicated organisms like bacteriophages and prokaryotes, to an RNA-Seq analysis of two experiments with Endothelial cells and Pericytes in \cref{chapter:cancer},
 the interactions of these two cells with Tumor Necrosis Factor was investigated. Significant upregulation of both CXCL and CCL family of cytokines were observed under the experimentatl condition of TNF. This was likewise reflected in the upregulation of Interferon signaling and other inflammatory pathways which was observed in both cells treated with TNF as well as endothelial cells under pericyte conditioned medium suggesting an important role for pericytes in the inflammatory response process.
@@ -145,15 +170,32 @@ In order to simplify the analysis of sensitive human data, allowing researchers 
 % \include{chapters/EC-PC}
 % \include{chapters/htsget}
 
-\subsection{Out in the World}
+\subsection{Out in the World: Training}
 
 Finally \cref{chapter:training} investigates how to disseminate the previously completed work, and how can all of the aforementioned improvements and discoveries be made sustainable.
+
+{
+\color{red}
+\begin{enumerate}
+\item training platforms are an excellent way to disseminate and help others make use of our tools and data
+\item other platforms exist such as the carpentries but they're not as fair as us
+\item EBI has an approach closer to ours
+\end{enumerate}
+}
 
 The first paper shows the multi-year set of improvements to the Galaxy Training Network, a well used FAIR training platform. % to ensure that it meets accessibility best practices to ensure content distributed via this channel is accessible to those with visual or hearing impairments, that provides a framework for educators to collaboratively manage peer-reviewed learning materials.
 During this development cycle the platform added coding interactive tutorials available as automatically generated Jupyter notebooks, automatic video generation, a comprehensive linting framework, and explored the potential for future automatic generation of videos from learning materials.
 All of the implemented features which aim to reduce the burden of maintenance on educators and those wishing to disseminate their results, while increasing the FAIRness of the results.
 Simultaneously this framework explored improvements the accessibility of the content, in all senses, for learners by providing a freely accessible, learning platform that integrates well with Galaxy, and is accessible for those using a screenreader, e.g. due to a visual impairment.
 These explorations showed that it is not only possible but even easy to implement a FAIR and truly accessible platform for learning materials.
+
+{
+\color{red}
+\begin{enumerate}
+\item in the training world there is essentially nothing in the way of free resources for training
+\item nih has a similar cloud training initiative, but it's not provisioned infra, you still need to set everything up
+\end{enumerate}
+}
 
 The application thereof was explored via the implementation of an open source training infrastructure sharing platform, Training Infrastructure as a Service (TIaaS), which provided a method for system administrators to more easily offer training infrastructure for educators. This saw 24k learners use the platform over its 5 years of existence, approximately 75\% of which used materials hosted on the aforementioned GTN. The reduction of barriers in educators providing courses was deeply felt based on the feedback received, the complexity of managing infrastructure was previously one of the most painful points of organising an event, completely removed leveraging the combination of Galaxy and TIaaS and the GTN.
 
@@ -168,12 +210,12 @@ FAIR data has been a wonderful achievement, where it has been achieved. FAIR non
 
 Instead stronger standards are necessary for both data and computational methods that requires not just metadata preservation, but \emph{data} preservation. Likewise the software executed in order to determine some result must be likewise preserved. Given the current Reproducibility Crisis in the scientific world, the best defense against this is sunlight; placing our results in the open, and making them easier to reproduce. This also means they will be easier to re-analyse and re-review, ensuring that inconsistencies can be rooted out, and incorrect calculations corrected.
 
-% Ensuring that software is reproducible 
+% Ensuring that software is reproducible
 % Of my informally surveyed colleagues only a handful are able to reproduce methods that were run 5 much less 20 years ago. A few have tools which have survived that long, but those reports were only single tools, not entire pipelines. We need to explore containerisation technologies like Singularity and Docker containers to preserve historic operating systems, we need to ensure the software we use is open source, and optimally hosted on an archival site like via the Software Heritage program. We need to campaign with software developers to ensure their tools can be seeded, if any random number generation is used.
 
-Many of these practices are completely feasible today, but due to a lack of software development education for researchers, coupled with the capitalistic ``Publish or Perish'' ecosystem focused only on publishable results, and the funding ecosystem which actively harms long term maintenance of projects, leaves only voluntary compliance to ensure that we hold ourselves to a sufficient standard. 
+Many of these practices are completely feasible today, but due to a lack of software development education for researchers, coupled with the capitalistic ``Publish or Perish'' ecosystem focused only on publishable results, and the funding ecosystem which actively harms long term maintenance of projects, leaves only voluntary compliance to ensure that we hold ourselves to a sufficient standard.
 ``[T]he problem with voluntary programs is that not everybody volunteers''
-% \footnote{ CSB Chairperson Carolyn Merritt stated} 
+% \footnote{ CSB Chairperson Carolyn Merritt stated}
 % U.S. House of Representatives, 110th Congress, Committee on Education and Labor, "Hearing on the BP Texas
 % City Disaster and Worker Safety," 22 March 2007. [Online]. Available:
 % https://www.govinfo.gov/content/pkg/CHRG-110hhrg33902/html/CHRG-110hhrg33902.htm. [Accessed 30
@@ -192,9 +234,9 @@ An additional part of the onus should be on journals and funding agencies, to pl
 Software isn't made in isolation, even the simplest scripts very often have complex dependency trees.
 The developer must consider the reproducibility guarantees; perfect reproducibility required demands vendoring of dependencies, if requirements are less strict then perhaps pinning and hashing is sufficient.
 Many software dependency systems are vulnerable to so called ``left-pad incidents'', where a single dependency, when revoked, has significant ramifications throughout the dependency tree, and software will fail to execute because that dependency no longer exists on the internet.
-% There is a balance to be struck with GDPR and the right to be forgotten, it should be permitted for software developers to remove their code from the internet, but 
+% There is a balance to be struck with GDPR and the right to be forgotten, it should be permitted for software developers to remove their code from the internet, but
 
-It might seem strange to argue for the intentional placement of barriers, after spending so much effort to reduce them. 
+It might seem strange to argue for the intentional placement of barriers, after spending so much effort to reduce them.
 This is in fact completely coherent; barriers that inhibit quality science should be removed, barriers that ensure that level of quality should be reinforced.
 A plausible result is that these barriers will decrease scientific software availability, more data is required but it is certainly no worse of a situation than ``code available upon request'' emails sent to the graduate student that left a decade ago.
 
@@ -230,7 +272,7 @@ If it is the best pipeline positively impacting healthcare, there is a moral imp
 
 In this thesis multiple themes in the world of Bioinformatics were explored, from the annotation of a single organism, through their exploration in the clinic, and finally to the dissemination of the knowledge obtained throughout the first two arcs. FAIR and Open Source Software and Open Science principles were applied throughout the development process to ensure the quality and interoperability and accessibility of our results.
 
-This work has already impacted an incredibly large number of individuals around the world, multiple orders of magnitude more than the typical bioinformatics software release. 
+This work has already impacted an incredibly large number of individuals around the world, multiple orders of magnitude more than the typical bioinformatics software release.
 More focus should be given to these surrounding aspects of the bioinformatics process, rather than simply tool development, as they can provide a force multiplier for the tool development and developers they work with collaboratively.
 Building a dissemination and training platform, and providing training infrastructure, has ensured that tools and software that would be otherwise unknown, are not only findable, but also accessible, (re)usable, and reproducible for a global audience.
 Ensuring that the work that was done, was accessible for all, has guaranteed that a diverse community can make use of what was produced for years to come.
