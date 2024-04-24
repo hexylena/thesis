@@ -123,16 +123,29 @@ This process was repeated across two major themes---the genome of a single organ
 
 Throughout this thesis topics of ensuring accessibility, reducing barriers, ensuring FAIRness, improving user-friendliness, mandating reproducibility, and increasing efficiencies through both automation and process changes have been explored.
 
-\subsection{In the Cell: Genome Annotation}
+\subsection{In the Cell}
 
-{
-\color{red}
-\begin{enumerate}
-\item genome annotation is needed more, especially phage annotation (see intro cites)
-\item there are other pipelines for bacteriophage annotation (rast, ncbi, etc)
-\item but they're all automated, and good annotation requires human curation which is only possible in ours.
-\end{enumerate}
-}
+As discussed in \cref{introduction} and \cref{chapter:annotation}, high quality genome annotation is of particular importance as a foundational building block for downstream analyses.
+In the case of bacteriophages, with consideration to their applications in the clinic, we need well annotated genomes\cite{Nilsson_2014,Phillips_2018}.
+In the world of bacteriophage annotation there are a number of options such as RAST\cite{10.1093/nar/gkt1226}, or DNAMaster\cite{10.1007/978-1-4939-7343-9_16}, or the NCBI PGAP\cite{10.1093/nar/gkw569}.
+However each of these pipelines have drawbacks which must be considered before their application.
+Both RAST and PGAP offer very hands-off pipelines, while DNAMaster takes the opposite approach and requires hands-on annotation with little opportunity for automation.
+In many disciplines this hands-off approach where a workflow can complete an analysis end-to-end is appropriate and good, but in genome annotation it begets a significant array of problems\cite{10.1111/1751-7915.13284}.
+This is often called the ``garbage in garbage out'' problem in annotation, limited by the lack of financial ability and time to produce knockouts of every gene individually, we must rely on homology and domains for inferring our annotations from related organisms.
+But who annotated that organism? Did they have the same standards as us?
+The Evidence Code Ontology\cite{10.1093/database/bau075} is one attempt to fix that, by enabling annotation of data sources.
+This can enable researchers to eliminate data sources they feel do not have sufficiently stringent evidence, and perhaps enable more automation of annotation.
+However, the gold standard for genome annotation remains \emph{human-curated genome annotation}, which means we must have a human-in-the-loop step where they analyse and interpret the results available to them.
+This is where a combined system like Galaxy and Apollo (\cref{chapter:phages}) shine, together the portions which can be safely automated can be, and the portions which require human review can be done in a collaborative evidence based fashion.
+
+% {
+% \color{red}
+% \begin{enumerate}
+% \item genome annotation is needed more, especially phage annotation (see intro cites)
+% \item there are other pipelines for bacteriophage annotation (rast, ncbi, etc)
+% \item but they're all automated, and good annotation requires human curation which is only possible in ours.
+% \end{enumerate}
+% }
 
 In the first theme of genome annotation (\cref{chapter:annotation}), a scalable, real-time collaborative, FAIR platform for annotation was presented that meets the needs of both educational and research contexts.
 This work leveraged existing, open source, community maintained software components (Apollo, Galaxy) both of which exist under the Generic Model Organism Database (GMOD) umbrella, in order to deliver a series of tools and workflows which enhance their integration and interoperability.
@@ -152,7 +165,7 @@ complete, annotated genome sequences of phages since going into operation, suppo
 Subsequently the process of making the production of publication quality plots, such as one would make for an annotated genome, more accessible was investigated via the development of the Galactic Circos wrapper which significantly simplified the user experience of leveraging Circos for complex multi-dimensional data visualisation.
 Circos presented a significant accessibility barrier in terms of the time required to become proficient in its operation due the complex interface it supports, the simplified interface removes that barrier allowing more genome annotators and genome visualisers to build complex plots as a part of their genome annotation workflows.
 
-\subsection{In the Hospital: Applications}
+\subsection{In the Clinic}
 
 {
 \color{red}
@@ -170,7 +183,7 @@ In order to simplify the analysis of sensitive human data, allowing researchers 
 % \include{chapters/EC-PC}
 % \include{chapters/htsget}
 
-\subsection{Out in the World: Training}
+\subsection{In the World}
 
 Finally \cref{chapter:training} investigates how to disseminate the previously completed work, and how can all of the aforementioned improvements and discoveries be made sustainable.
 
