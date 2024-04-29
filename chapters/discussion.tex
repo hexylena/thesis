@@ -127,11 +127,11 @@ Throughout this thesis topics of ensuring accessibility, reducing barriers, ensu
 \subsection{In the Cell}
 
 As discussed in \cref{introduction} and \cref{chapter:annotation}, high quality genome annotation is of particular importance as a foundational building block for downstream analyses.
-In the case of bacteriophages, with consideration to their applications in the clinic, we need well annotated genomes\cite{Nilsson_2014,Phillips_2018}.
-In the world of bacteriophage annotation there are a number of options such as RAST\cite{Overbeek_2013}, or DNAMaster\cite{10.1007/978-1-4939-7343-9_16}, or the NCBI PGAP\cite{Tatusova_2016}.
+In the case of bacteriophages, with consideration to their applications in the clinic, we need well annotated genomes\cite{Nilsson_2014,Phillipson_2018}.
+In the world of bacteriophage annotation there are a number of options such as RAST\cite{Overbeek_2013}, or DNAMaster\cite{Pope_2017}, or the NCBI PGAP\cite{Tatusova_2016}.
 However each of these pipelines have drawbacks which must be considered before their application.
 Both RAST and PGAP offer very hands-off pipelines, while tools like DNAMaster takes the opposite approach and requires hands-on annotation with little opportunity for automation.
-In many disciplines this hands-off approach where a workflow can complete an analysis end-to-end is appropriate and good, but in genome annotation it begets a significant array of problems\cite{10.1111/1751-7915.13284}.
+In many disciplines this hands-off approach where a workflow can complete an analysis end-to-end is appropriate and good, but in genome annotation it begets a significant array of problems\cite{Danchin_2018}.
 This is often called the ``garbage in garbage out'' problem in annotation; limited by the lack of financial ability and time to produce knockouts of every gene individually, we must rely on homology and domains for inferring our annotations from related organisms.
 Annotators often rely on related organisms and annotations of highly conserved genes in other records, to inform annotation within their own organism, when they assign putative names or functions to each gene.
 But who annotated that other organism? Did they have the same standards?
@@ -195,7 +195,7 @@ the interactions of these two cells with Tumor Necrosis Factor was investigated.
 With clinically relevant data one often encounters issues of sensitive data, data that cannot be shared outside of the hospital.
 While this was not the case for the data analysed in the TNF study, it is the case for a number of other ongoing projects.
 These require access to sensitive clinical variants from services like the Beacon Network, or human genome data from places like the European Genome Archive (EGA).
-Currently solutions to these problems often look like hospital IT policies heavily restricting computational access to data, rewriting software to attempt implementation of homomorphic encryption or differential privacy\cite{Mohammed_Yakubu_2019}, negotiating data access agreements with specific vendors promising secure data analysis and encrypted environments\cite{10.1016/j.jmoldx.2018.07.009,10.1186/s12920-016-0224-3}, or international collaborations to develop new frameworks which then have to be (re)implemented in enough places to gain critical mass\cite{Rehm_2021}. Others are exploring highly controlled and integrated platforms which provide a secure environment and pre-configured resources at the cost of flexibility\cite{Schatz_2022}.
+Currently solutions to these problems often look like hospital IT policies heavily restricting computational access to data, rewriting software to attempt implementation of homomorphic encryption or differential privacy\cite{Mohammed_Yakubu_2019}, negotiating data access agreements with specific vendors promising secure data analysis and encrypted environments\cite{Carter_2019,Tang_2016}, or international collaborations to develop new frameworks which then have to be (re)implemented in enough places to gain critical mass\cite{Rehm_2021}. Others are exploring highly controlled and integrated platforms which provide a secure environment and pre-configured resources at the cost of flexibility\cite{Schatz_2022}.
 
 In order to simplify the analysis of sensitive human data, allowing researchers to focus on the analysis rather than the detailed legalities of data storage and analysis, a transparent and simplified manner was developed which enables federated access to data stored in the EGA via a GA4GH compliant method. This new method significantly reduces barriers for researchers when working with such sensitive data, by answering the GDPR question for a number of relevant facets for the researcher, enabling them spend less time focused on ensuring compliance and more on their analysis.
 This work does not attempt to solve the global issues of data privacy, nor can it. Instead GA4GH compliant access to EGA attempts to work together with others and implement one portion of a secure data framework and work towards a common solution.
@@ -221,7 +221,7 @@ During this development cycle the platform added coding interactive tutorials av
 All of the implemented features which aim to reduce the burden of maintenance on educators and those wishing to disseminate their results, while increasing the FAIRness of the results.
 Simultaneously this framework explored improvements the accessibility of the content, in all senses, for learners by providing a freely accessible, learning platform that integrates well with Galaxy, and is accessible for those using a screenreader, e.g. due to a visual impairment.
 These explorations showed that it is not only possible but even easy to implement a FAIR and truly accessible platform for learning materials.
-Unlike other platforms, GTN learning resources obtain a perfect score of FAIRness via FAIR-Checker\cite{10.1186/s13326-023-00289-5}.
+Unlike other platforms, GTN learning resources obtain a perfect score of FAIRness via FAIR-Checker\cite{Gaignard_2023}.
 
 % {
 % \color{red}
