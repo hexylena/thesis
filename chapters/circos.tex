@@ -96,7 +96,7 @@ These 2 examples showcase a variety of different track types (histograms, scatte
 Visualizations in the Galaxy framework are usually implemented as interactive JavaScript components, but these plots cannot be created automatically in workflows.
 Individual plotting tools exist as Galaxy tools; however, these are less common and generally less flexible because tool authors must make a trade-off between development time and feature support.
 We put significant time into the development in order to make an extremely generic tool, enabling researchers to use the Galactic Circos tool in their workflows, based on previous experiences building single-purpose Circos plotting tools (e.g., as in Figure~\ref{figure:vcap}).
-This enables creation of human-readable summaries of large analysis workflows, similar to the non-genomics–focused iReport~\cite{hiltemann2014ireport}. Galactic Circos was born from precisely this use-case and therefore aims to enable reducing complex analysis pipeline outputs, such as the workflows required in cancer genomics, allowing bioinformaticians to produce a single image summarizing all of their relevant outputs in an easily digestible manner.
+This enables creation of human-readable summaries of large analysis workflows, similar to the non-genomics–focused iReport~\cite{Hiltemann_2014}. Galactic Circos was born from precisely this use-case and therefore aims to enable reducing complex analysis pipeline outputs, such as the workflows required in cancer genomics, allowing bioinformaticians to produce a single image summarizing all of their relevant outputs in an easily digestible manner.
 
 \begin{figure}[h!]
 \centering
@@ -115,7 +115,7 @@ Once data have been reformatted for Circos, they can either be used immediately 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=\linewidth]{chapters/images/circos/binning-bundling.png}
-\caption{These 2 plots show the link-binning and bundling scripts used with different thresholds. The inner link track was generated directly from a MAF file output by LastZ~\cite{rahmani2011lastz}. This file was processed by Circos's bundling tool in Galaxy to decrease the number of links, a process usually done to decrease visual noise and increase efficiency. The outer track demonstrates the link-binning script, which generates a histogram, in this case from the number of links to that position in the genomic region.}
+\caption{These 2 plots show the link-binning and bundling scripts used with different thresholds. The inner link track was generated directly from a MAF file output by LastZ~\cite{lastz}. This file was processed by Circos's bundling tool in Galaxy to decrease the number of links, a process usually done to decrease visual noise and increase efficiency. The outer track demonstrates the link-binning script, which generates a histogram, in this case from the number of links to that position in the genomic region.}
 \label{figure:binning-bundling}
 \end{figure}
 
