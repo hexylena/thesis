@@ -11,7 +11,7 @@
 \vspace{-4cm}
 
 \begin{changemargin}{0cm}{2cm}
-\articletitle{Training Infrastructure as a Service (DRAFT)}
+\articletitle{Training Infrastructure as a Service}
 \end{changemargin}
 
 Helena~Rasche\textsuperscript{\ref{tiaas-affil:1},\ref{tiaas-affil:2}},
@@ -81,6 +81,7 @@ While the instructor could potentially deploy their own private infrastructure, 
 Lastly, with the recent increase of remote and hybrid training--where an instructor is streamed live to multiple locations--due to the COVID-19 pandemic, tracking student progress in a remote learning setting has became a significant issue. During one of the initial Gallantries project's \cite{gallantries} hybrid training events, with three classrooms spread across Europe, we discovered that staying updated on student progress was one of the most significant pain points. Normally instructors of hands-on lessons tend to wander around the classroom to check that students are not encountering difficulties, or use the Carpentries-style \cite{thecarpentries,Wilson2016} method of red and green sticky notes to let students communicate whether things are going well or poorly. In hybrid events this progress tracking is more difficult as on-site staff need to survey the room and report back centrally to the instructor, and is near impossible in fully remote training events such as have been more prevalent during the last 3 years of the pandemic \cite{Serrano_Solano_2021}.
 
 \subsection*{Results}
+
 We initially developed Training Infrastructure as a Service for the European Galaxy server \cite{usegalaxyeu}, to solve the challenge of ensuring we could quickly setup a private queue for a single course or workshop. We achieved this by segregating student jobs onto a separate and dedicated group of compute nodes, based on their membership in a specific group in Galaxy.
 
 We subsequently made TIaaS available for any training organizers to request free of charge. By re-using an existing public Galaxy server such as Galaxy Europe, which is backed by significant compute resources, the barriers for course organizers around infrastructure setup and maintenance costs of hosting a training event are removed. This centralisation also reduced the infrastructure requirements, as training events are not highly concurrent and can share the same hardware when not running simultaneously.
@@ -109,6 +110,10 @@ A typical request timeline looks like an instructor submitting a request with on
 
 If resources are available and any other site-specific criteria are met (e.g. any legal restrictions on what sort of trainings can be provided on grant funded infrastructure), then the training can be approved. Next, administrators (optionally) deploy additional private compute resources, or re-allocate existing resources to course usage. Administrators can then provide instructors with a URL such as \texttt{/join-training/test}\cite{usegalaxyeu:join-training-test}, which the instructor can share with learners.
 
+Training participants access this URL at the start of the event, after which they are automatically registered in the TIaaS system without further user interaction and without instructors needing to manually manage group membership. This aids in user privacy as the instructor does not need to collect user emails to manage their group, and learners can opt-in to joining the training group.
+
+The job scheduler, once aware of the training group, will place any job run by someone in that training onto the private training nodes (Figure~\ref{figure:queue}).
+
 \begin{figure}[bt!]
 \centering
 \includegraphics[width=\linewidth]{chapters/images/tiaas/rules.png}
@@ -120,6 +125,7 @@ During the course, instructors have access to the course dashboard, visualising 
 The most similar system the authors could find, that could be used for the same goal of monitoring student progress, is currently implemented in Nextflow. ``Nextflow Tower''\cite{nf-tower}, which permits launching and subsequently monitoring pipelines, and could be used to cover a similar case of making sure students meet certain progress markers. However, given that it works at the workflow level and not the individual step level, it may be less suited to the sort of \textit{ad hoc} analysis skills that are commonly taught using Galaxy, and more suited to either advanced students or those trainings which involve running pre-defined workflows. Snakemake has a similar, albeit single-user project called Panoptes that provides similar workflow tracking\cite{panoptes}, with the same downsides as Nextflow Tower, relative to TIaaS.
 
 \subsubsection*{Usage}
+
 \begin{figure}[bt!]
 \centering
 	\includegraphics[width=\linewidth]{chapters/images/tiaas/map.png}
@@ -205,7 +211,7 @@ As the Galaxy community has largely settled on Ansible for deployment of Galaxy,
 \section*{Availability of source code and requirements}
 
 \begin{itemize}
-\item Project name: ~Training Infrastructure as a Service
+\item Project name:~Training Infrastructure as a Service
 \item RRID:~\texttt{SCR\_023200}
 \item bio.tools ID:~\texttt{tiaas}
 \item Project home:~\url{https://github.com/galaxyproject/tiaas2/}

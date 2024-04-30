@@ -102,7 +102,6 @@ Overall, gene.iobio provides an interactive and visual overview of causative var
 In addition, we further validated the gene.iobio tool by identifying the causative variants in all the families available. A comparison of the results reported by gene.iobio and GEMINI is shown in table \ref{tab:comparison}. It shows the number of variants reported by GEMINI and gene.iobio using the default parameters. The table shows that GEMINI does not report any variants for some cases. When GEMINI does report variants it reports the correct variants. However, it also reports many false positive, since each family has only one or two spiked-in causative variants. In contrast, gene.iobio does report causative variants for each family and only the correct ones. This shows that gene.iobio is not only interpretable but also accurate.
 
 \begin{table}[bt!]
-    \caption{Overview of existing Galaxy trio analysis tools and the number of variants they report.}\label{tab:comparison}
     \begin{tabular}{c c c}
         \toprule
         Family & GEMINI & gene.iobio \\
@@ -115,6 +114,7 @@ In addition, we further validated the gene.iobio tool by identifying the causati
         Case6 & 0 & 1 \\ % 146   89
         \bottomrule
     \end{tabular}
+    \caption{Overview of existing Galaxy trio analysis tools and the number of variants they report.}\label{tab:comparison}
     % \begin{tablenotes}
         % \item \textsuperscript{*} For these cases the gene of interest was not present in the gene list based on phenotypes in gene.iobio.
         % \item \textsuperscript{+} For these cases more possible causative variants were reported than expected.

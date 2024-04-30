@@ -123,13 +123,12 @@
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
 \setmonofont[Scale=MatchLowercase]{Iosevka Slab} % Font substitution for Source Code Pro
 
-\RequirePackage[labelfont={bf,sf,footnotesize,singlespacing},
-								textfont={sf,footnotesize,singlespacing},
-								justification={RaggedRight},
-								singlelinecheck=false,
-								margin=0pt,
-								figurewithin=chapter,
-								tablewithin=chapter]{caption}
+\RequirePackage[labelfont={bf,footnotesize,singlespacing},
+	textfont={footnotesize,singlespacing},
+	singlelinecheck=false,
+	margin=0pt,
+	figurewithin=chapter,
+	tablewithin=chapter]{caption}
 
 % \renewcommand{\thefootnote}{\fnsymbol{footnote}}
 
