@@ -18,7 +18,7 @@ references.bib: $(BIBS) $(BIBS2)
 		echo "%%%% $$bib" >> references.bib; \
 		cat $$bib >> references.bib; \
 	done;
-	~/bin/bibtex-tidy --merge references.bib
+	~/bin/bibtex-tidy references.bib
 
 view:
 	okular dissertation.pdf &
