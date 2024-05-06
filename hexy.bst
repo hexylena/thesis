@@ -23,6 +23,7 @@ ENTRY
     edition
     editor
     howpublished
+    doi
     institution
     journal
     key
@@ -401,6 +402,13 @@ FUNCTION {format.pages}
   if$
 }
 
+FUNCTION {format.doi}
+{ doi empty$
+    { "" }
+    { "{\color{chaptergrey}doi:" doi * "}" *}
+  if$
+}
+
 FUNCTION {format.volume}
 { volume empty$
     { "" }
@@ -589,6 +597,7 @@ FUNCTION {article}
       if$
       format.pages output
       format.date "year" output.check
+      format.doi output
     }
     { format.article.crossref output.nonnull
       format.pages output
