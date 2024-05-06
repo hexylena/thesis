@@ -9,7 +9,7 @@ with open(input_file, "r") as f:
     content = f.read()
 
 # Find all DOI references within \cite{}
-dois = re.findall(r"\\cite\{(10[\w./]+)\}", content)
+dois = re.findall(r"\\cite\{(10[\w./()-]+)\}", content)
 
 bibs = ""
 
