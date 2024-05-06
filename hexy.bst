@@ -24,6 +24,7 @@ ENTRY
     editor
     howpublished
     doi
+    isbn
     institution
     journal
     key
@@ -405,7 +406,14 @@ FUNCTION {format.pages}
 FUNCTION {format.doi}
 { doi empty$
     { "" }
-    { "{\color{chaptergrey}doi:" doi * "}" *}
+    { "{\color{chaptergrey}doi:" doi * "}" * }
+  if$
+}
+
+FUNCTION {format.isbn}
+{ isbn empty$
+    { "" }
+    { "{\color{chaptergrey}ISBN:" isbn * "}" * }
   if$
 }
 
@@ -632,6 +640,7 @@ FUNCTION {book}
   if$
   format.edition output
   format.date "year" output.check
+  format.isbn output
   new.block
   note output
   fin.entry
