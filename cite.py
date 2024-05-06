@@ -38,3 +38,5 @@ with open(input_file, 'w') as f:
 
 with open(output_file, "a") as f:
     f.write(bibs)
+
+subprocess.check_call(['bash', 'bibtex-tidy', output_file])
