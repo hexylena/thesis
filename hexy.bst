@@ -406,14 +406,14 @@ FUNCTION {format.pages}
 FUNCTION {format.doi}
 { doi empty$
     { "" }
-    { "{\color{chaptergrey}doi:" doi * "}" * }
+    { "\href{https://doi.org/" doi * "}{doi:" * doi * "}" * }
   if$
 }
 
 FUNCTION {format.isbn}
 { isbn empty$
     { "" }
-    { "{\color{chaptergrey}ISBN:" isbn * "}" * }
+    { "\href{https://en.m.wikipedia.org/wiki/Special:BookSources?isbn=" isbn * "}{ISBN:" * isbn * "}" * }
   if$
 }
 
@@ -640,7 +640,13 @@ FUNCTION {book}
   if$
   format.edition output
   format.date "year" output.check
-  format.isbn output
+  isbn empty$
+    { doi empty$
+        { }
+        { format.doi output }
+        if$ }
+    { format.isbn output }
+  if$
   new.block
   note output
   fin.entry
@@ -696,6 +702,13 @@ FUNCTION {inbook}
   if$
   format.edition output
   format.date "year" output.check
+  isbn empty$
+    { doi empty$
+        { }
+        { format.doi output }
+        if$ }
+    { format.isbn output }
+  if$
   new.block
   note output
   fin.entry
