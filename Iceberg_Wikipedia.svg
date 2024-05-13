@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.0"
+   width="419.14206"
+   height="490.91006"
+   id="iceburg illustration"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   sodipodi:docname="Iceberg_Wikipedia.svg"
+   inkscape:export-filename="Iceberg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <metadata
+     id="metadata3053">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3051">
+    <linearGradient
+       id="linearGradient4044">
+      <stop
+         style="stop-color:#4db7f9;stop-opacity:0.50196081;"
+         offset="0"
+         id="stop4046" />
+      <stop
+         style="stop-color:#4d7bf9;stop-opacity:0.50196081;"
+         offset="1"
+         id="stop4048" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4044"
+       id="linearGradient4050"
+       x1="440.5"
+       y1="314.05127"
+       x2="440.5"
+       y2="336.142"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.71871373,0,0,0.80937935,8.331188,-117.26847)" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1912"
+     inkscape:window-height="1024"
+     id="namedview3049"
+     showgrid="false"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="199.75767"
+     inkscape:cy="222.73864"
+     inkscape:window-x="4"
+     inkscape:window-y="52"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="iceburg illustration"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <path
+     style="fill:#daf0fd;stroke:#787878;stroke-width:3"
+     d="M 171.78852,2.1336047 V 29.433605 l -12.1,21.2 -22.2,11.1 -12.1,27.3 -9.1,4 -20.200004,4.1 -18.2,15.099995 -6.1,15.2 v 12.1 l -26.2,12.1 -15.2,10.1 -7.1,13.2 -4,13.1 -1,26.3 9.1,28.3 9.1,13.1 16.1,1 2.1,14.1 v 16.2 l 32.3,4 2,23.3 20.200004,17.1 10.1,11.2 -5,17.1 8,14.2 11.1,19.2 9.1,20.2 25.3,4 5,21.2 v 26.3 l 9.1,14.1 h 15.2 l 13.1,-16.1 29.3,-30.3 16.2,-33.4 v -32.3 l 16.1,-17.2 4.1,-21.2 12.1,-18.2 13.1,-13.1 11.1,-25.3 1.1,-17.1 21.2,-9.1 v -20.2 l 2,-17.2 8.1,-9.1 12.1,-7.1 15.1,-5 4.1,-19.2 -2,-22.2 -16.2,-15.2 -29.3,-23.2 -22.2,-18.199995 -5.1,-15.1 -16.1,-8.1 -13.2,-1 -28.2,-17.2 -14.2,-14.9 -19.2,-11.4 -13.1,-10.1 z"
+     id="iceburg"
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc" />
+  <path
+     style="fill:#afdde9;stroke:none"
+     d="M 171.80102,2.1211047 V 29.433605 l -12.125,21.1875 -22.1875,11.125 -12.09375,27.28125 -9.09375,4 -20.218754,4.09375 -18.1875,15.124995 -6.09375,15.1875 v 12.09375 l -26.21875,12.09375 -15.1875,10.125 -7.09375,13.1875 -4,13.09375 -1,26.3125 9.09375,28.28125 9.09375,13.125 16.09375,1 2.09375,14.09375 v 16.1875 l 32.3125,4 2,23.3125 20.187504,17.09375 10.125,11.1875 -5,17.125 8,14.1875 11.09375,19.1875 9.09375,20.21875 25.3125,4 5,21.1875 v 26.3125 l 9.09375,14.09375 h 15.1875 l 13.09375,-16.09375 29.3125,-30.3125 16.1875,-33.40625 v -32.28125 l 16.125,-17.21875 4.09375,-21.1875 12.09375,-18.1875 13.09375,-13.125 11.09375,-25.28125 1.125,-17.09375 21.1875,-9.125 v -20.1875 l 2,-17.1875 8.09375,-9.125 12.09375,-7.09375 15.125,-5 4.09375,-19.1875 -2,-22.21875 -16.21875,-15.1875 -29.28125,-23.1875 -22.21875,-18.218745 -5.09375,-15.09375 -16.09375,-8.09375 -13.1875,-1 -28.21875,-17.21875 -14.1875,-14.875 -19.21875,-11.40625 -13.09375,-10.09375 z"
+     id="rect3068" />
+  <path
+     style="fill:#d7eef4;stroke:none"
+     d="M 171.80102,2.1432247 V 29.433605 l -12.125,21.1875 -22.1875,11.125 -12.09375,27.28125 -9.09375,4 -20.218754,4.09375 -18.1875,15.124995 -6.09375,15.1875 v 12.09375 l -26.21875,12.09375 -15.1875,10.125 -7.09375,13.1875 -4,13.09375 -1,26.3125 9.09375,28.28125 9.09375,13.125 16.09375,1 2.09375,14.09375 v 16.1875 l 32.3125,4 0.0312,0.5 18.562504,-16.9375 v -60.625 l 12.125,-53.4375 27.83292,-15.90235 -0.99624,-19.2814 21.34858,-22.88597 32.70741,-2.709335 -3.20085,-18.33009 3.60985,-33.05793 z"
+     id="path3055"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cccccccccccccccccccccccccccccccc" />
+  <path
+     style="fill:#87cdde;stroke:none"
+     d="m 171.81393,2.1132747 43.47311,49.8234603 44.06842,25.90888 -16.72985,49.992315 16.24708,26.51782 -23.19667,66.7966 -31.96875,77.15625 -19.28125,61.71875 -17.09375,4.40625 -0.5625,19.3125 6.0625,14.3125 -4.71875,20.625 4.6875,19.84375 v 26.3125 l 9.09375,14.09375 h 15.1875 l 13.09375,-16.09375 29.3125,-30.3125 16.1875,-33.40625 v -32.28125 l 16.125,-17.21875 4.09375,-21.1875 12.09375,-18.1875 13.09375,-13.125 11.09375,-25.28125 1.125,-17.09375 21.1875,-9.125 v -20.1875 l 2,-17.1875 8.09375,-9.125 12.09375,-7.09375 15.125,-5 4.09375,-19.1875 -2,-22.21875 -16.21875,-15.1875 -29.28125,-23.1875 -22.21875,-18.218745 -5.09375,-15.09375 -16.09375,-8.09375 -13.1875,-1 -28.21875,-17.21875 -14.1875,-14.875 -19.21875,-11.40625 -13.09375,-10.09375 z"
+     id="path3057"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccc" />
+  <path
+     style="fill:url(#linearGradient4050);fill-opacity:1;stroke:#27aaea;stroke-width:2.28811"
+     d="m 417.99802,104.50147 c -15.81171,8.49847 -57.20961,6.15128 -99.03875,-1.45689 -30.04224,-5.503775 -43.33844,23.14825 -72.87757,16.51134 -35.21697,-7.93193 -58.43143,-27.599835 -95.6608,-11.81694 -22.85509,9.71255 -43.48218,16.83509 -63.534304,8.01285 C 54.903836,101.74958 55.622556,85.723875 25.005356,97.136115 14.727746,100.9402 6.534408,104.09678 1.144055,106.9296 V 489.76602 H 417.99802 Z"
+     id="path7276" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 153.02615,437.61201 h 13.43502 l 13.25826,-13.25825"
+     id="path4164"
+     inkscape:connector-curvature="0" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path4166"
+     d="m 101.02615,369.61201 h 13.43502 l 13.25826,-13.25825"
+     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+  <path
+     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     d="m 37.026146,276.61201 h 13.43502 l 13.25826,-13.25825"
+     id="path4170"
+     inkscape:connector-curvature="0" />
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#893333;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="199.00887"
+     y="48.360271"
+     id="text1"><tspan
+       sodipodi:role="line"
+       id="tspan1"
+       x="199.00887"
+       y="48.360271"
+       style="fill:#36296f;fill-opacity:0.99569">Healing </tspan><tspan
+       sodipodi:role="line"
+       x="198.50887"
+       y="62.760265"
+       style="fill:#36296f;fill-opacity:0.99569"
+       id="tspan6">Patients</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#893333;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="153.84007"
+     y="88.616371"
+     id="text1-3"><tspan
+       sodipodi:role="line"
+       id="tspan1-6"
+       x="153.34007"
+       y="88.616371"
+       style="fill:#36296f;fill-opacity:0.99569">Doctors</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="237.17183"
+     y="88.546059"
+     id="text2"><tspan
+       sodipodi:role="line"
+       id="tspan2"
+       x="236.67183"
+       y="88.546059">Nurses</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="259.09216"
+     y="94.518532"
+     id="text3"><tspan
+       sodipodi:role="line"
+       id="tspan3"
+       x="259.09216"
+       y="94.518532"></tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="100.52604"
+     y="132.53108"
+     id="text4"><tspan
+       sodipodi:role="line"
+       id="tspan4"
+       x="100.02604"
+       y="132.53108">Teaching</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="233.47975"
+     y="137.34059"
+     id="text5"><tspan
+       sodipodi:role="line"
+       id="tspan5"
+       x="232.97975"
+       y="137.34059">Research</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="310.88306"
+     y="134.66524"
+     id="text7"><tspan
+       sodipodi:role="line"
+       id="tspan7"
+       x="310.38306"
+       y="134.66524">Infrastructure</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="247.42079"
+     y="192.74397"
+     id="text8"><tspan
+       sodipodi:role="line"
+       id="tspan8"
+       x="246.92079"
+       y="192.74397">Data Sharing</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="176.18547"
+     y="174.5331"
+     id="text9"><tspan
+       sodipodi:role="line"
+       id="tspan9"
+       x="175.68547"
+       y="174.5331">GDPR</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="264.54507"
+     y="254.32704"
+     id="text10"><tspan
+       sodipodi:role="line"
+       id="tspan10"
+       x="264.04507"
+       y="254.32704">Reproducibility</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="163.51729"
+     y="376.36353"
+     id="text11"><tspan
+       sodipodi:role="line"
+       x="164.26338"
+       y="376.36353"
+       id="tspan12">Accessibility </tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="130.58617"
+     y="305.98438"
+     id="text13"><tspan
+       sodipodi:role="line"
+       id="tspan13"
+       x="130.08617"
+       y="305.98438">Genomics</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="157.22289"
+     y="339.42706"
+     id="text14"><tspan
+       sodipodi:role="line"
+       id="tspan14"
+       x="157.22289"
+       y="339.42706">Genome</tspan><tspan
+       sodipodi:role="line"
+       x="156.72289"
+       y="353.82709"
+       id="tspan15">Annotation</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="212.92455"
+     y="397.06909"
+     id="text16"><tspan
+       sodipodi:role="line"
+       id="tspan16"
+       x="212.92455"
+       y="397.06909">Sequencing</tspan><tspan
+       sodipodi:role="line"
+       x="212.42455"
+       y="411.46912"
+       id="tspan17">Techniques</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="202.15834"
+     y="446.27234"
+     id="text18"><tspan
+       sodipodi:role="line"
+       id="tspan18"
+       x="201.65834"
+       y="446.27234">Metadata</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="213.25853"
+     y="287.97925"
+     id="text19"><tspan
+       sodipodi:role="line"
+       id="tspan19"
+       x="212.75853"
+       y="287.97925">Interoperability</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="256.3226"
+     y="312.65787"
+     id="text20"><tspan
+       sodipodi:role="line"
+       id="tspan20"
+       x="255.82259"
+       y="312.65787">Findability</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="229.84975"
+     y="337.07086"
+     id="text21"><tspan
+       sodipodi:role="line"
+       id="tspan21"
+       x="229.84975"
+       y="337.07086">Software </tspan><tspan
+       sodipodi:role="line"
+       x="229.34975"
+       y="351.47089"
+       id="tspan22">Preservation</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="301.8942"
+     y="164.6172"
+     id="text23"><tspan
+       sodipodi:role="line"
+       id="tspan23"
+       x="301.3942"
+       y="164.6172">Secure Compute</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="299.29321"
+     y="225.42613"
+     id="text24"><tspan
+       sodipodi:role="line"
+       id="tspan24"
+       x="298.79321"
+       y="225.42613">DRMAA</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="90.951118"
+     y="261.84885"
+     id="text25"><tspan
+       sodipodi:role="line"
+       id="tspan25"
+       x="90.451118"
+       y="261.84885">Visualisation</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="95.227867"
+     y="160.41512"
+     id="text26"><tspan
+       sodipodi:role="line"
+       id="tspan26"
+       x="94.727867"
+       y="160.41512">Didactics</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="63.975319"
+     y="192.43791"
+     id="text27"><tspan
+       sodipodi:role="line"
+       id="tspan27"
+       x="63.975319"
+       y="192.43791">Bloom's </tspan><tspan
+       sodipodi:role="line"
+       x="63.475319"
+       y="206.83791"
+       id="tspan28">Taxonomy</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="144.58783"
+     y="199.56371"
+     id="text29"><tspan
+       sodipodi:role="line"
+       id="tspan29"
+       x="144.08783"
+       y="199.56371">Ontologies</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="140.61208"
+     y="277.75079"
+     id="text30"><tspan
+       sodipodi:role="line"
+       id="tspan30"
+       x="140.11208"
+       y="277.75079">QC</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="230.80788"
+     y="216.24956"
+     id="text31"><tspan
+       sodipodi:role="line"
+       id="tspan31"
+       x="230.80788"
+       y="216.24956">Operating</tspan><tspan
+       sodipodi:role="line"
+       x="230.30788"
+       y="230.64955"
+       id="tspan32">Systems</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="176.66203"
+     y="255.64574"
+     id="text33"><tspan
+       sodipodi:role="line"
+       id="tspan33"
+       x="176.16203"
+       y="255.64574">RDM</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="88.67942"
+     y="236.25642"
+     id="text34"><tspan
+       sodipodi:role="line"
+       id="tspan34"
+       x="88.17942"
+       y="236.25642">Learning Objectives</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#36296f;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
+     x="167.44945"
+     y="129.29353"
+     id="text35"><tspan
+       sodipodi:role="line"
+       id="tspan35"
+       x="166.94945"
+       y="129.29353">Publishing</tspan></text>
+</svg>
