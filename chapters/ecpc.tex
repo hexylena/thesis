@@ -120,7 +120,7 @@ Examining the PCA plot of the HTSeq counts, 80\% of the variance is explained by
 
 \begin{figure}[bt!]
 \centering
-\includegraphics[width=\linewidth]{chapters/images/ecpc-004.png}
+\includegraphics[width=\linewidth]{chapters/images/ecpc/4-pca.png}
 \caption{Principal Component Analysis (PCA) of sequencing data obtained from the first experiment, indicating strong separation based on cell type and secondarily on treatment condition.}\label{figure:pca1}
 \end{figure}
 % Fig 4. 
@@ -141,7 +141,7 @@ Of these 1057 were differentially expressed in pericytes and 617 in endothelial 
 
 \begin{figure}[bt!]
 \centering
-\includegraphics[width=\linewidth]{chapters/images/ecpc-007.png}
+\includegraphics[width=\linewidth]{chapters/images/ecpc/deg_upset.png}
 \caption{Pericytes experience the strongest change with many uniquely up and down regulated genes, Endothelial Cells showing about half as many uniquely differentially expressed genes. Nevertheless there are a significant number of genes which are either up-, or down-regulated in both cell types.}\label{figure:ggupset}
 \end{figure}
 
@@ -223,7 +223,7 @@ A similar observation can be made for the CCL family of chemokines, CCL 2,3,5,7,
 
 \begin{figure}[bt!]
 \centering
-\includegraphics[width=\linewidth]{chapters/images/ecpc-009.png}
+\includegraphics[width=\linewidth]{chapters/images/ecpc/chemokines-4.png}
 \caption{Fold change upregulation of CXCL family chemokines in both Pericytes and Endothelial cells when exposed to TNF versus control treated pericytes and endothelial cells. In most cases TNF is responsible for a 32-64 times higher upregulation in pericytes compared to endothelial cells. The grey stripe indicates the region where the absolute Log₂ Fold Change is \textless1.5. Upregulation of CCL chemokines follows a similar pattern as CXCL. Interleukins produce a similar response pattern, however the upregulation is less pronounced in ECs. TNF Super Family proteins only show significant (padj\textless0.05, abs(L2FC)≥1.5) primarily in Pericytes.}\label{figure:foldchange}
 \end{figure}
 
@@ -300,13 +300,13 @@ In comparison to TNF treated ECs, TNF-PCCM treated ECs respond very similarly, a
 
 \begin{figure}[bt!]
 \centering
-\includegraphics[width=\linewidth]{chapters/images/ecpc-012.png}
+\includegraphics[width=\linewidth]{chapters/images/ecpc/chemokines-7.png}
 \caption{CXCL, CCL, IL, and TNSF genes exhibit similar regulation patterns to their TNF exposed counterparts.}\label{figure:foldchange2}
 \end{figure}
 
 \begin{figure}[bt!]
 \centering
-\includegraphics[width=\linewidth]{chapters/images/ecpc-014.png}
+\includegraphics[width=\linewidth]{chapters/images/ecpc/chemokines-4v7.png}
 \caption{Direct comparison of TNF-PCCM treated ECs versus TNF exposed ECs shows a much weaker trend, with upregulation of CXCL10 and CXCL11, and mild downregulation of IL6. However, in all cases, these genes were upregulated when compared to their controls.}\label{figure:foldchange3}
 \end{figure}
 
@@ -336,15 +336,15 @@ Sequencing data is available on SRA (ID TBA). The R script and associated Conda 
 
 \begin{figure}[bt!]
 \centering
-\includegraphics[width=\linewidth]{chapters/images/ecpc-016.png}
-\includegraphics[width=\linewidth]{chapters/images/ecpc-017.png}
-\includegraphics[width=\linewidth]{chapters/images/ecpc-018.png}
+\includegraphics[width=0.7\linewidth]{chapters/images/ecpc-016.png}
+\includegraphics[width=0.7\linewidth]{chapters/images/ecpc-017.png}
+\includegraphics[width=0.7\linewidth]{chapters/images/ecpc-018.png}
 \caption{Density plots of VST adjust HTSeq counts for several key indicator genes, visualised via breakdowns across multiple axes. Across all axes the distribution is generally not normal but often bimodal or without a defined distribution pattern.}\label{figure:sup1}
 \end{figure}
 
 \begin{figure}[bt!]
 \centering
-\includegraphics[width=\linewidth]{chapters/images/ecpc-020.png}
+\includegraphics[width=\linewidth]{chapters/images/ecpc/7-pca.png}
 \caption{Essentially all variance observed (97\%) is due to the treatment axis.}\label{figure:sup2}
 \end{figure}
 
