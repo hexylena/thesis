@@ -23,7 +23,7 @@ The first organism sequenced was bacteriophage $\phi$X174 (5386 nucleotides long
 The Human Genome Project (HGP) was launched in 1990\cite{HGP}, resulting in an over 90\% complete genome reference sequence being made available by the HGP and Celera Genomics by 2003.
 These scientific and technological developments paved the way for the era of bioinformatics, and for its subsequent application to translational research and clinical diagnostics.
 
-A new field combining informatics\footnote{For non-European audiences, informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability.
+A new field combining informatics\footnote{Informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability.
 This new interdisciplinary field was built upon biology, computer science, chemistry, statistics, and more, leveraging knowledge from all of those fields to analyse (non-)human data.
 Computers and algorithms were essential to the field by the 1980s, which resulted in a period of rapid developments\cite{Ouzounis_2003}.
 These computational methods included comparative genomics to enable multi-sequence and multi-genome analysis\cite{Gibbs_1970,Wagner_1974,Higgins_1988}, phylogenetics to identify the history of organisms\cite{Neyman_1971,Felsenstein_1981}, prediction of gene locations\cite{Gribskov_1984,Guig__1992}, and genome annotation methods to determine their functionality\cite{Gribskov_1987,Del_age_1988}. Additionally, the first genomic repositories providing worldwide access to genomic and sequencing data (e.g. GenBank® from National Institutes of Health\cite{Bilofsky_1988} and the data library at European Molecular Biology Laboratory\cite{Rice_1993,Attwood_2011}) were established.
@@ -35,7 +35,7 @@ By a decade later in 1992, these public sequence repositories enabled the develo
 
 The astronomical\footnote{The sequencing of these initial genomes cost approximately $\text{⅓}^{\text{rd}}$ as much as an \emph{average} NASA shuttle mission\cite{Pielke_2011}} cost of sequencing of the first human genome ($\approx$450 million USD), released by the Human Genome Project in 2003, led to the aim of developing cheaper technologies. This was perhaps best exemplified by the \$1,000 genome project\cite{Mardis_2006,Service_2006,Check_Hayden_2014} established only 3 years later, which had the ambitious goal of sequencing a full human genome for a mere \$1,000 USD.
 Thus began the era of \emph{next-generation-} or \emph{high-throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs, anticipating a future of personalised genomics\cite{Voelkerding_2009,Mardis_2008}.
-In 2019, the goal of the \$1,000 genome was achieved, and the average cost of sequencing a human genome first fell below this threshold\cite{genome-cost}.
+In 2019, the goal of the \$1,000 genome was achieved, as the average cost of sequencing a human genome finally fell consistently below this threshold\cite{genome-cost}.
 
 By the mid-1990s, sequence analysis within Bioinformatics had entered basic clinical research\cite{Maojo_2003}, such as a database of \emph{TP53} mutations in tumour cell lines based on sequencing analyses, which the authors hoped could provide predictive markers of disease relapse as well as a potential tool for patient diagnosis\cite{Hainaut_1997}
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC264428/
@@ -66,18 +66,18 @@ While bioinformatics continues to be increasingly available as a technique withi
 %>>>
 \section{Limiting Reagents}  %<<<
 
-In the pathway to synthesise clinical solutions from reactants such as sequencing data and bioinformaticians, there are a number of key limiting reagents:
+In the pathway to brew clinical solutions from reactants such as sequencing data and bioinformaticians, there are a number of key limiting reagents:
 
 \begin{itemize}
 	\itemsep0em
-	\item Data Availability %  originally just 'data', YUNLEI: Data generation? Data quality? Data availability? Data storage? Data…?
+	\item Data Generation % originally just 'data', YUNLEI: Data generation? Data quality? Data availability? Data storage? Data…?
 	\item Compute Availability\footnote{E.g. Memory, CPU cores, Storage, etc. that are all required for data analysis.}
 	\item Bioinformaticians
 \end{itemize}
 
 With the data availability solved\cite{Stephens_2015} by eliminating the economic barrier, the first limit on system throughput was removed.
 %https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4494865/
-Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\cite{sra-growth}, which represents only a fraction of the total sequencing completed, and has been growing 15\% year-over-year. This amount is equivalent to the full genome sequence of 4 million individuals, added each year.
+Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs or 31 Petabytes of data\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\cite{sra-growth}, which represents only a fraction of the total sequencing completed, and has been growing 15\% year-over-year. This amount is equivalent to the full genome sequence of 4 million individuals, added each year.
 
 % While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate
 
@@ -89,10 +89,10 @@ Between clouds and local high-performance compute (HPC) resources, a researcher 
 Before the advent of these compute solutions, accessing this amount of computational power required submitting a grant application justifying the usage, ordering of the infrastructure, and waiting for delivery and installation, all of which can now be completed in minutes.
 
 % TLMtH: You may here introduce a first hint, cliffhanger, if you want. Make colleagues bioinformatics.
-Unfortunately that leaves us with the final resource bottleneck: the human bioinformaticians.
+Unfortunately that leaves us with the final resource bottleneck, the human ingredient: bioinformaticians.
 These have decidedly not scaled at a similar rate to the data; recent studies indicate a need to increase bioinformatics staff by half, both in academia and the pharmaceutical industry\cite{Attwood_2017}. %
 % In light of advancing genomics research, a BBSRC review suggested a need to increase bioinformatics staff by 60% in academia and by 45% in pharmaceutical companies https://academic.oup.com/bib/article/20/2/398/4096809
-This is further confirmed in a 2017 study of NSF-BIO[cite] funded investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis\cite{Barone2017}.
+This is further confirmed in a 2017 survey among NSF-BIO[cite] funded investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis\cite{Barone2017}.
  % A survey of 704 NSF-BIO-funded investigators revealed that training topics were the top 3 of 13 most unmet data analysis needs, above HPC/cloud facilities, workflows/pipelines analysis or storage facilities needs
 The storage, the compute, and the data availability challenges are all comparatively solved, but the human resource problem remains.
 
@@ -141,7 +141,7 @@ Computers themselves are notoriously user-unfriendly themselves, so much so that
 All of the infrastructure, tools, and data put in front of a busy doctor, or a researcher, needs to be clear, accessible, and user-friendly\cite{Crisan_2018,Tornheim_2019,Valenstein_2008,Hettinger_2017}.
 % https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002213
 This requires an investment of time and space in the development cycle to ensure all sharp edges are polished, and the software and research products are optimised for a clinical settings.
-The gaps in software interface accessibility must be analysed and simplifications investigated to reduce barriers for both existing bioinformaticians and newcomers, e.g. through simplified interfaces\cite{Wratten_2021}.
+The accessibilty of software interfaces must be assessed and simplifications investigated to reduce barriers for both existing bioinformaticians and newcomers, e.g. through simplified interfaces\cite{Wratten_2021}.
 % https://www.nature.com/articles/s41592-021-01254-9
 
 The European Union's General Data Protection Regular (GDPR)'s passage has further increased infrastructure access challenges, requiring organisations and researchers to be more careful about data locality and access control. Additionally it requires an understanding of the legalities of processing clinical data in different situations, leading to questions about how to easily access data without compromising security\cite{van_Kessel_2023}.
@@ -151,7 +151,7 @@ Hospitals tend to be very conservative in response to potential leaks of patient
 %  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6466053/
 Some hospitals mandate the use of a prescribed in-house platform for data analysis which often comes with additional barriers or costs, such as turning off compute resources outside of office hours\footnote{Anecdote from a colleague of the author.}.
 Researchers often need to be physically within the hospital to access and analyse their data, eliminating large external clusters to which they might have access, out of legal concerns.
-This gap between researchers and their data analysis needs to be explored, the technical issues separated from the skill issues, and both addressed.
+This gap between researchers and their data analysis needs to be explored, the technical issues separated from the competency mismatches, and both addressed.
 
 % A nearby secure compute environment, for instance, turns off computers in the secure enclave after work hours, impeding researcher's long-running computations.
 % {\color{blue}TLMtH: Give examples or make applicable. Talk for instance about patient data and hackers or breaches. Explain issues of accessibility from hard ware site (cables, capacity, PC power), legal (restrictions, fire walls), cost (software, access codes).}
