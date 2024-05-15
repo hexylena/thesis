@@ -14,40 +14,38 @@
 
 \setlength\parindent{0pt}
 
-% "too technical", "not enough biology"
-
 \section{A Brief History} %<<<
 
-The ``source code of life'' could finally begin to be unravelled for organisms, with the advent of DNA sequencing in the 1970s.
+\lettrine[lines=3,lraise=-0.1,lhang=0.3,findent=0.5em,nindent=0em]{\textcolor{hexy-red}{\fontEBGaramondInitials{}T}}{he ``source code of life''} could finally begin to be unravelled for organisms, with the advent of DNA sequencing in the 1970s.
 The first organism sequenced was bacteriophage $\phi$X174 (5386 nucleotides long) in 1976\cite{Sanger_1977}, which marked the start of the sequencing race.
-The Human Genome Project (HGP) was launched in 1990\cite{HGP}, resulting in an over 90\% complete genome sequence being made available by the HGP and Celera Genomics by 2003.
+The Human Genome Project (HGP) was launched in 1990\cite{HGP}, resulting in an over 90\% complete genome reference sequence being made available by the HGP and Celera Genomics by 2003.
 These scientific and technological developments paved the way for the era of bioinformatics, and for its subsequent application to translational research and clinical diagnostics.
 
-A new field combining informatics\footnote{For non-European audiences, informatics traces its lineage from \textit{Informatica}, i.e. computer science and computational informatics, rather than simply a meaning like ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability.
-This new interdisciplinary field would be built upon biology, computer science, chemistry, statistics, and more, leveraging knowledge from all of those fields to analyse (non-)human data.
+A new field combining informatics\footnote{Informatics traces its etymology from \textit{Informatik}, i.e. computer science and computational informatics, rather than simply ``data'' or ``information''.} with biological research, Bioinformatics, evolved with genomic data availability.
+This new interdisciplinary field was built upon biology, computer science, chemistry, statistics, and more, leveraging knowledge from all of those fields to analyse (non-)human data.
 Computers and algorithms were essential to the field by the 1980s, which resulted in a period of rapid developments\cite{Ouzounis_2003}.
-These included comparative genomics to enable multi-sequence and multi-genome analysis\cite{Gibbs_1970,Wagner_1974,Higgins_1988}, phylogenetics to identify the history of organisms\cite{Neyman_1971,Felsenstein_1981}, predicting gene locations\cite{Gribskov_1984,Guig__1992}, genome annotation methods to determine their functionality\cite{Gribskov_1987,Del_age_1988}, and the first genomic repositories providing worldwide access to genomic and sequencing data (e.g. GenBank® from National Institutes of Health\cite{Bilofsky_1988}, and the data library at European Molecular Biology Laboratory\cite{Rice_1993,Attwood_2011}).
+These computational methods included comparative genomics to enable multi-sequence and multi-genome analysis\cite{Gibbs_1970,Wagner_1974,Higgins_1988}, phylogenetics to identify the history of organisms\cite{Neyman_1971,Felsenstein_1981}, prediction of gene locations\cite{Gribskov_1984,Guig__1992}, and genome annotation methods to determine their functionality\cite{Gribskov_1987,Del_age_1988}. Additionally, the first genomic repositories providing worldwide access to genomic and sequencing data (e.g. GenBank® from National Institutes of Health\cite{Bilofsky_1988} and the data library at European Molecular Biology Laboratory\cite{Rice_1993,Attwood_2011}) were established.
 By a decade later in 1992, these public sequence repositories enabled the development of Basic Local Alignment Search Tool (BLAST)\cite{Altschul_1990} which let researchers search for DNA sequences across ever-growing databases of genomes.
 % (citations from DOI: 10.1093/bioinformatics/btg309)
 % DONE: YUNLEI: The story is being built up very well! Here (or in the previous paragraph) you can introduce “bioinformatics” a bit more, since it links the development of sequencing with the clinical impact.
 % NOT DONE: You can explain what it is and give some examples of its important applications/roles.
 
 
-The astronomical\footnote{The sequencing of these initial genomes cost approximately $\text{⅓}^{\text{rd}}$ as much as an \emph{average} NASA shuttle mission\cite{Pielke_2011}} cost of $\approx$450MM USD in the year 2000 to sequence the first human genomes---in connection with new cheaper technologies---led to the \$1,000 genome project\cite{Mardis_2006,Service_2006,Check_Hayden_2014}, a dream of sequencing a full human genome for \$1,000 USD.
+The astronomical\footnote{The sequencing of these initial genomes cost approximately $\text{⅓}^{\text{rd}}$ as much as an \emph{average} NASA shuttle mission\cite{Pielke_2011}} cost of sequencing of the first human genome ($\approx$450 million USD), released by the Human Genome Project in 2003, led to the aim of developing cheaper technologies. This was perhaps best exemplified by the \$1,000 genome project\cite{Mardis_2006,Service_2006,Check_Hayden_2014} established only 3 years later, which had the ambitious goal of sequencing a full human genome for a mere \$1,000 USD.
 Thus began the era of \emph{next-generation-} or \emph{high-throughput sequencing} and the development of multiple short-read sequencing technologies which rapidly accelerated the sequencing process, and decreased sequencing costs, anticipating a future of personalised genomics\cite{Voelkerding_2009,Mardis_2008}.
-It would not be until 2019 that the cost would be consistently below this threshold\cite{genome-cost}.
+In 2019, the goal of the \$1,000 genome was achieved, as the average cost of sequencing a human genome finally fell consistently below this threshold\cite{genome-cost}.
 
-By the mid-1990s sequence analysis within Bioinformatics had entered basic clinical research\cite{Maojo_2003}, such as a database of \emph{TP53} mutations in tumour cell lines based on sequencing analyses, which the authors hoped could provide predictive markers of disease relapse as well as a potential tool for patient diagnosis\cite{Hainaut_1997}
+By the mid-1990s, sequence analysis within Bioinformatics had entered basic clinical research\cite{Maojo_2003}, such as a database of \emph{TP53} mutations in tumour cell lines based on sequencing analyses, which the authors hoped could provide predictive markers of disease relapse as well as a potential tool for patient diagnosis\cite{Hainaut_1997}
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC264428/
-This was followed during the 2000s by the growth of Single Nucleotide Polymorphism (SNP) databases\cite{Johnson_2009} and Genome Wide Association Study (GWAS) databases\cite{Klein_2005}, data that was only able to be unlocked with the existence of the full, annotated human reference genome.
+This was followed during the 2000s by the advent of Single Nucleotide Polymorphism (SNP) databases\cite{Johnson_2009} and Genome Wide Association Study (GWAS) databases\cite{Klein_2005}; data that was only possible by virtue of the existence of the full, annotated human reference genome.
 Researchers could begin to sequence small portions of their patients' genomes more regularly, and compare them against the reference to look for interesting mutations which might have given rise to the disease phenotypes\cite{Esplin_2014,Prokop_2018}.
-By the 2010 the genetics of individual tumour cell lines was regularly used in the application of cancer treatment via drugs, thanks to more affordable sequencing and development of new genomics based screening methods\cite{Hamburg_2010}.
+By the 2010 the genetics of individual tumour cell lines was regularly used in the application of cancer treatment via drugs, thanks to more affordable sequencing and the development of new genomics based screening methods\cite{Hamburg_2010}.
 % https://hdsr.mitpress.mit.edu/pub/y7r65r4k/release/4
 %https://web.stanford.edu/class/gene210/files/readings/hamburg_collins.pdf
 % [and the human genome] YL: What do you mean here? The increasing amount of sequenced human genomes? Or the knowledge about human genome (i.e. annotations)
-In more recent years clinical bioinformatics has been working towards precision medicine, whereby bioinformatic methods are used to tailor treatments to a specific patient, based on their genetics\cite{Phillips_2020}.
-Bioinformatics becoming prevalent in medicine work opens up interesting new avenues for research, but comes with familiar and new challenges.
-With the influx of individual patient genomes sequenced a wide variety of issues surrounding these datasets becomes necessary to investigate such as the long term storage of this data, the necessary development of new software to analyse the data, and non-informatics concerns such as the legalities and ethicalities of data use, storage, and sharing with other researchers\cite{Manrai_2017}.
+In more recent years, clinical bioinformatics has been working towards precision medicine, whereby bioinformatic methods are used to tailor treatments to an individual patient, based on their genetics\cite{Phillips_2020}.
+Bioinformatics becoming prevalent in medicine opens up interesting new avenues for research, but comes with familiar and novel challenges.
+With the influx of sequenced individual patient genomes, a wide variety of issues surrounding these datasets emerge, such as the long-term storage of this data, the necessary development of new software to analyse the large amounts of data, as well as non-informatics concerns such as the legalities and ethics of data use, storage, and sharing with other researchers\cite{Manrai_2017}.
 
 % NOT MINE: The NIH, for example, launched its All of Us research program in May 2018 (following similar efforts such as the UK Biobank and the China Kadoorie Biobank) with an aim to understand “the relationships between circulating biomarkers or genetic variation as they relate to disease prevention.” The crucial component was developing a data set large and diverse enough that “patterns will emerge that wouldn’t be visible at a smaller scale,” enabling researchers to have the “statistical power to make fine-grained predictions about how a given treatment will affect a given individual.”3 (The emphasis on diversity is not just for statistical reasons; it is also explicitly an effort to correct for decades of bias in medical research [Manolio, 2019]
 
@@ -64,37 +62,38 @@ With the influx of individual patient genomes sequenced a wide variety of issues
 While bioinformatics continues to be increasingly available as a technique within medicine, enabling the hospital to help more patients than ever before, the picture is not entirely optimistic.
 
 %>>>
-\section{Limiting Reagents} %<<<
+\section{Limiting Reagents}  %<<<
 
-In the pathway to synthesise clinical solutions from reactants such as sequencing data and bioinformaticians, there are a number of key limiting reagents:
+In the pathway to brew clinical solutions from reactants such as sequencing data and bioinformaticians, there are a number of key limiting reagents:
 
 \begin{itemize}
 	\itemsep0em
-	\item Data Availability % originally just 'data', YUNLEI: Data generation? Data quality? Data availability? Data storage? Data…?
+	\item Data Generation % originally just 'data', YUNLEI: Data generation? Data quality? Data availability? Data storage? Data…?
 	\item Compute Availability\footnote{E.g. Memory, CPU cores, Storage, etc. that are all required for data analysis.}
 	\item Bioinformaticians
 \end{itemize}
 
 With the data availability solved\cite{Stephens_2015} by eliminating the economic barrier, the first limit on system throughput was removed.
 %https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4494865/
-Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\cite{sra-growth}, which represents only a fraction of the total sequencing completed, and has been growing 15\% year-over-year. This amount is equivalent to the full genome sequence of 4M individuals, added each year.
+Currently the Sequence Read Archive (SRA) maintained by the National Center for Biotechnology Information (NCBI) stores nearly 0.75 Exabasepairs or 31 Petabytes of data\footnote{this number equates to around 300,000,000 full human genomes, however SRA is of course full of non-\textit{homo sapiens} sequencing data.} of sequencing data alone\cite{sra-growth}, which represents only a fraction of the total sequencing completed, and has been growing 15\% year-over-year. This amount is equivalent to the full genome sequence of 4 million individuals, added each year.
+% TODO: Saskia: DOUBLE DOUBLE TOIL AND TROUBLE: data size increasing y-o-y
 
 % While it is not trivial to comparatively measure the total available compute capacity in the world as cloud providers generally do not release the sizes of their data centers, we can instead look at proxy indicators, all of which indicate
 
 % TLMtH: Same here. In full and explained. If you could put numbers in perspective and relate to total numbers or numbers in coming years the message becomes more relevant and interesting.
-While their data center sizes and information is not public, compute resources have similarly grown over time.
-The three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time and cost efficient manner, enabling researchers to access large amounts of compute quickly\cite{Dudley_2010}.
+While it is difficult to obtain accurate numbers regarding the compute availability within commercial data centers, compute resources have similarly grown over time.
+The three major cloud providers (Amazon's AWS, Google's GCP, and Microsoft's Azure) offer compute resources in a time- and cost-efficient manner, enabling researchers to access large amounts of compute quickly\cite{Dudley_2010}.
 On the non-commercial side, universities have continually competed for the top supercomputer spot, the total computation power available growing exponentially\cite{Dallaire_1984,Meuer_2013}.
-Between clouds and local high performance compute (HPC) resources, a researcher can take advantage of terrabytes of memory and days of computation time, with minimal delay.
-Accessing this sort of compute resources in earlier years would require submitting a grant application justifying the ongoing need for it, ordering the infrastructure, and waiting for delivery and installation, can now be completed in minutes.
+Between clouds and local high-performance compute (HPC) resources, a researcher can take advantage of terabytes of memory and days of computation time, with minimal delay.
+Before the advent of these compute solutions, accessing this amount of computational power required submitting a grant application justifying the usage, ordering of the infrastructure, and waiting for delivery and installation, all of which can now be completed in minutes.
 
 % TLMtH: You may here introduce a first hint, cliffhanger, if you want. Make colleagues bioinformatics.
-Unfortunately that leaves us with the final resource bottleneck: the human bioinformaticians.
-These have decidedly not scaled at a similar rate to the data; recent studies indicate a need to increase bioinformatics staff by half, both in academia and the pharmaceutical industry\cite{Attwood_2017}.
+Unfortunately that leaves us with the final resource bottleneck, the human ingredient: bioinformaticians.
+These have decidedly not scaled at a similar rate to the data; recent studies indicate a need to increase bioinformatics staff by half, both in academia and the pharmaceutical industry\cite{Attwood_2017}. %
 % In light of advancing genomics research, a BBSRC review suggested a need to increase bioinformatics staff by 60% in academia and by 45% in pharmaceutical companies https://academic.oup.com/bib/article/20/2/398/4096809
-This is further confirmed in a 2017 study of NSF-BIO[cite] funded investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis\cite{Barone2017}.
+This is further confirmed in a 2017 survey among NSF-BIO funded investigators who named training topics as the top 3 of 13 most unmet needs in their data analysis\cite{Barone2017}.
  % A survey of 704 NSF-BIO-funded investigators revealed that training topics were the top 3 of 13 most unmet data analysis needs, above HPC/cloud facilities, workflows/pipelines analysis or storage facilities needs
-The storage, the compute, the data availability is all comparatively solved, unlike the human resource problem.
+The storage, the compute, and the data availability challenges are all comparatively solved, but the human resource problem remains.
 
 % - Bioinformatics is driving clinical, translational research
 % - Large amounts of data are generated, at low cost
@@ -117,41 +116,41 @@ The storage, the compute, the data availability is all comparatively solved, unl
 % The problem of insufficient bioinformaticians can be approached via up-skilling existing staff,
 % Simultaneously, the impacts of making existing bioinformaticians more efficient by removing barriers to solve complex problems should be explored.
 
-This human gap increasingly matters for clinical impacts: there need to be enough individuals both skilled in bioinformatics and well integrated with biologists and clinicians, in order to analyse the clinical data.
+This scarcity of the human component in genome analysis increasingly matters for clinical impacts; there need to be enough individuals both skilled in bioinformatics and closely aligned with biologists and clinicians, in order to effectively analyse and interpret the clinical data.
 % TODO: stick this somewhere 10.1186/gm205, 10.1093/bioinformatics/17.9.761
 % TLMtH: Don’t you need better (more intergrated) teams? Bioinf., clin., biol., ?
-Precision medicine, especially in oncology, presents us with ever more opportunities to improve clinical impacts for individuals, if the person-power and resources are available\cite{Wang_2011,Doble_2016}.
-However that requires researchers to design and establish the pipelines, optimise, and validate them, in collaboration with teams of clinicians, biologists, and other field specific experts\cite{Mardis_2010}.
-Those creating these clinical impacts tend to come from the medical side and often, unfortunately, lack necessary computer and analytics education\cite{Ammenwerth_2010}.
-This demands either the incorporation of more dedicated bioinformatician roles, sufficient time spent re-training non-bioinformaticians to reach a productive level, or making existing bioinformaticians more efficient and productive\cite{G_mez_L_pez_2017}.
+Precision medicine, especially in oncology, presents us with ever more opportunities to improve clinical impacts for individuals, provided the person-power and other required resources are available\cite{Wang_2011,Doble_2016}.
+Moreover, this requires researchers to design and establish the pipelines, optimise and validate them, in collaboration with teams of clinicians, biologists, and other domain experts\cite{Mardis_2010}.
+Those creating these clinical impacts tend to come from the medical side and often, unfortunately, lack necessary computer and analytics education to perform these essential tasks \cite{Ammenwerth_2010}.
+This demands either the incorporation of more dedicated bioinformatician roles, sufficient time spent re-training non-bioinformaticians to reach a minimal level of competency, or improving the efficiency and productivity of existing bioinformaticians \cite{G_mez_L_pez_2017}.
 
 % One does not need to be a bioinformatician to start with as approaches exist which enable staff with diverse backgrounds to develop competencies in bioinformatics. That said, individuals with expertise in bioinformatics as a discipline are incredibly valuable.
 % TLMtH: Do you think so? If you are a wizard maybe. Isn’t the solution that you want layers where you can start by yourself and need an expanding team when you dig deeper?
 
 %>>>
-\subsection{Bioinformatics Gaps} %<<<
+\subsection{Bioinformatics Gaps}  %<<<
 
 % Workflows are a key product for a lot of bioinformaticians, where a scientist has combined a set of programs and their parameters into a reproducible and re-runnable unit of work.
 % When bioinformaticians develop workflows, they need to run somewhere, either locally in the hospital, or in the cloud.
 % The skills gaps for leveraging the already available \textbf{infrastructure} resources must be investigated, and solutions identified for how best to ensure workflows can easily be run across these highly parallel distributed resource managers (DRMs), while minimising the amount of software engineering skills that are required to execute them.
 
-Software accessibility is a key component in making bioinformatics itself both more accessible and more efficient overall\cite{Krampis_2022}.
+Software accessibility---the ability of those, with and without impairments, to obtain, interact with comprehend, and correctly execute software---is a key component in making bioinformatics itself both more accessible and more efficient overall\cite{Krampis_2022}.
 % https://www.tandfonline.com/doi/full/10.2144/btn-2021-0060
-Computers themselves are notoriously user unfriendly themselves, so much so that an entire field of research exists, dedicated to user experience and human computer interaction\cite{lazar2017research}.
-All of the infrastructure, tools, and data put in front of a busy doctor, or a researcher, needs to be clear, accessible, and user-friendly\cite{Crisan_2018,Valenstein_2008,Hettinger_2017}.
+Computers themselves are notoriously user-unfriendly themselves, so much so that an entire field of research exists, dedicated to user experience and human computer interaction\cite{lazar2017research}.
+All of the infrastructure, tools, and data put in front of a busy doctor, or a researcher, needs to be clear, accessible, and user-friendly\cite{Crisan_2018,Tornheim_2019,Valenstein_2008,Hettinger_2017}.
 % https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3002213
-This requires an investment of time and space in the development cycle to ensure all sharp edges are polished, and the software and research products are optimised for their clinical settings.
-The gaps in software interface accessibility must be analysed and simplifications investigated to reduce barriers for both existing bioinformaticians and newcomers, e.g. through simplified interfaces\cite{Wratten_2021}.
+This requires an investment of time and space in the development cycle to ensure all sharp edges are polished, and the software and research products are optimised for a clinical settings.
+The accessibility of software interfaces must be assessed and simplifications investigated to reduce barriers for both existing bioinformaticians and newcomers, e.g. through simplified interfaces\cite{Wratten_2021}.
 % https://www.nature.com/articles/s41592-021-01254-9
 
-The European Union's General Data Protection Regular (GDPR)'s passage has increased infrastructure access challenges, requiring organisations and researchers to be more careful about data locality, access control, and developing an understanding of the legalities of processing clinical data in different situations, leading to questions about how to easily access data without compromising security\cite{van_Kessel_2023}.
+The European Union's General Data Protection Regular (GDPR)'s passage has further increased infrastructure access challenges, requiring organisations and researchers to be more careful about data locality and access control. Additionally it requires an understanding of the legalities of processing clinical data in different situations, leading to questions about how to easily access data without compromising security\cite{van_Kessel_2023}.
 Hospitals tend to be very conservative in response to potential leaks of patient data, and will take onerous and expensive security measures to decrease risks, to avoid repeating situations such as the Deadelus Biologie breach of 500k patient records\cite{enisa-threat-landscape,Yuan_2019,health-data-breach}.
 % https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10485705/
 % pdf:ENISA THREAT  LANDSCAPE: HEALTH SECTOR
 %  https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6466053/
-Some hospitals mandate use of a prescribed in-house platform for data analysis which often comes with additional barriers or costs to access, such as turning off compute resources outside of office hours\footnote{Anecdote from a colleague of the author.}.
+Some hospitals mandate the use of a prescribed in-house platform for data analysis which often comes with additional barriers or costs, such as turning off compute resources outside of office hours\footnote{Anecdote from a colleague of the author.}.
 Researchers often need to be physically within the hospital to access and analyse their data, eliminating large external clusters to which they might have access, out of legal concerns.
-This gap between researchers and their data analysis needs to be explored, the technical issues separated from the skill issues, and both addressed.
+This gap between researchers and their data analysis needs to be examined in depth, the technical issues separated from the competency mismatches, and both addressed.
 
 % A nearby secure compute environment, for instance, turns off computers in the secure enclave after work hours, impeding researcher's long-running computations.
 % {\color{blue}TLMtH: Give examples or make applicable. Talk for instance about patient data and hackers or breaches. Explain issues of accessibility from hard ware site (cables, capacity, PC power), legal (restrictions, fire walls), cost (software, access codes).}
@@ -161,15 +160,14 @@ This gap between researchers and their data analysis needs to be explored, the t
 % Can access be provided to very heterogeneous groups of tools without requiring researchers to deeply understand multiple software languages and ecosystems?
 %Occasionally the researcher will want to modify the tool to add a new feature, or support for a new organism, which requires the ability to write code in any of those various languages that might be employed. Using pipelines which includes software written multiple languages is not uncommon, requiring the researcher to know how to build and install and configure software from all of those ecosystems.
 
-
-Both of the above challenges are compounded by the need to provide training materials covering the topics.
-No matter how user friendly the systems are, they must still be documented in a variety of ways that everyone interacting with the system will require: documentation for developers, training for clinicians, reference manuals for failure modes.
+The above challenges (ensuring analyses are secure and GDPR compliant, running on secure infrastructure, and ensuring all processes and outputs are accessible) are compounded by the need to provide training materials covering the topics.
+No matter how user friendly the systems are, they must still be documented in a variety of ways that everyone interacting with the system will require: documentation for developers, training for clinicians, reference manuals for failure modes. %#
 It must be possible to ensure that busy biologists or technicians can run and share the results with clinicians who must interpret the results in an efficient manner\cite{Kawamoto_2005}.
-The end users must be trained on system operation, and barriers eliminated in service of clinical impacts.
-In the same vein, the short and long courses required to up-skill the aforementioned bioinformaticians must be investigated, developed, taught, and maintained\cite{Attwood_2017,Pearson_2001}.
-Ensuring the longevity of these materials likely requires adherence Findable, Accessible, Interoperable, and Reusable (FAIR) principles, but this will need to be see as learning materials gain FAIRness over time.
+The end users (e.g. clinician and researchers) must be trained on system operation, and barriers eliminated in service of clinical impacts.
+In the same vein, the short and long courses required to up-skill the aforementioned clinicians, researchers, and bioinformaticians must be investigated, developed, taught, and maintained\cite{Attwood_2017,Pearson_2001}.
+Ensuring the longevity of these materials likely requires adherence Findable, Accessible, Interoperable, and Reusable (FAIR) principles\cite{Wilkinson_2016}, but this will need to be see as learning materials gain FAIRness over time.
 
-An underlying theme in the above, while remaining a separate issue, is the accessibility of the solutions that can be developed to the aforementioned issues.
+Any solutions that are developed to address the aforementioned issues must involve a component of accessibility.
 The learning materials\cite{Crane_2023,journals/corr/abs-2105-00076}, the data\cite{Tenopir_2011}, the tooling, the legal knowledge; all of this must be \emph{accessible} to bioinformaticians.
 There are multiple forms of ``accessibility'' barriers that can be experienced, often conflated under the same word; inaccessibility due to lack of effort to make content and resources accessible to those with disabilities, inaccessibility due to access restrictions like firewalls or paywalls, inaccessibility due to missing (meta)data or (meta)data not following standards\cite{Roche_2015}.
 Accessibility issues abound and must be catalogued, examined, and appropriate remedies explored.
@@ -180,25 +178,25 @@ Accessibility issues abound and must be catalogued, examined, and appropriate re
 %>>>
 \subsection{Data Gaps} %<<<
 
-On the data side similar challenges are experienced relating to insufficient time and resources allocated to their solution. Notably while there exists a wealth of primary data products (e.g. DNA, RNA sequencing), the secondary, downstream data products are a potential future limit. Unfortunately their root cause is often again lack of human bioinformaticians.
+On the data side similar challenges are experienced, which often require significant amounts of time and resources to solve. Notably while there exists a wealth of primary data products (e.g. DNA, RNA sequencing), the effective capture, annotation and availability of secondary, downstream data products (e.g. analysis results) are a potential future limit. Unfortunately the solution to this challenge again requires that scarce commodity: bioinformaticians.
 
 Clinical pipelines are exceptional in their data requirements: in the clinical world accurate genome annotation is of paramount importance\cite{Roy_2018}.
 This can be seen especially looking towards reviving old practices such as bacteriophages to fight infections, those phages must have correctly annotated and fully known genomes before they are exposed to humans\cite{Nilsson_2014,Philipson_2018}.
 Unlike e.g. small mRNA-based vaccines where the entire sequence is known, bacteriophages are significantly larger with more unknowns, both due to difficulties in sequencing and time required for human annotators to investigate every coding region.
 Many healthcare providers are cautious about introducing organisms with unknown genes into a patient; one wants to ensure annotations are human-reviewed for accuracy\cite{Pirnay_2015}.
-Finally, looking to the long term maintenance and update of this high quality curation, it is apparent that sustainability of these efforts and their funding is difficult\cite{Vaught_2011,Berardini_2015}. Any solutions which decrease barriers to entry and maintenance must be investigated to work towards sustainable practices.
+Finally, looking to the long-term maintenance and update of this high quality curation, it is apparent that sustainability of these efforts and their funding is difficult\cite{Vaught_2011,Berardini_2015}. Any solutions which decrease barriers to entry and maintenance must be investigated to work towards sustainable practices.
 
-The same applies to human data as well: before the genetic underpinnings of a disease or condition are fully understood, an annotated genome must be available, the sequencing alone is of course insufficient\cite{Steward_2017}.
-In the precision medicine use case this means increasingly working with sensitive human annotation datasets, the challenge becomes how to handle these datasets safely and securely and in GDPR compliant manners\cite{Minssen_2020}.
-Long term data storage and reproducibility additionally becomes an important question to answer to ensure documented traceable clinical analysis\cite{Huang_2012}.
-What does it mean for patient care if an analysis isn't reproducible?
+The same applies to human data as well: before the genetic underpinnings of a disease or condition are fully understood, an annotated genome must be available, the sequencing alone is insufficient\cite{Steward_2017}.
+In the precision medicine use case this means increasingly working with sensitive human annotation datasets; the challenge becomes how to handle these datasets safely and securely and in a GDPR-compliant manner \cite{Minssen_2020}.
+Long-term data storage and reproducibility additionally becomes an important question to answer to ensure documented traceable clinical analysis\cite{Huang_2012}.
+%What does it mean for patient care if an analysis isn't reproducible?
 % sensitive data: bench lab scientists need fool-proof ways to access sensitive, secure data to reduce potential for negative outcomes.
 % federated data: these researchers also want to look at cohorts from other institutions, other countries in a GDPR safe manner, so we need to enable that.
 
-For population level studies common in oncological research, these datasets are also often no longer in-house, and instead must be obtained from federated sensitive data repositories\cite{Rambla_2022}.
-Given the context of the technical and legal problems, these problems become significantly more difficult when looking at transferring human data across national boundaries.
-For the bioinformatician wishing to analyse those datasets, it might additionally mean using federated compute resources to bring their computations directly to the data\cite{De_Brouwer_2021}.
-Infrastructure to support safe and secure cross-national exploration of medical datasets must be investigated and solutions devised which enable federated data access whilst protecting privacy and ensuring security.
+For population-level studies common in oncology research, the datasets are also often no longer in-house, but instead must be obtained and combined from federated sensitive data repositories\cite{Rambla_2022}.
+Given the context of the technical and legal challenges, data federation become significantly more difficult when looking at transferring human data across national boundaries.
+For the bioinformatician wishing to analyse such datasets, it might additionally mean using federated compute resources to bring their computations directly to the data\cite{De_Brouwer_2021}, so that the data itself can remain in one location.
+Infrastructure to support safe and secure cross-national exploration of medical datasets must be investigated and solutions devised which enable federated data access whilst protecting privacy and ensuring security of these sensitive datasets.
 
 % And all of these data analysis and generation pipelines, naturally, \emph{should} be \textbf{reproducible}.
 % Other researchers must be able to reproduce results over time to ensure defensible and accurate scientific research.
@@ -209,18 +207,18 @@ Infrastructure to support safe and secure cross-national exploration of medical 
 %>>>
 \section{Scope of this Thesis} %<<<
 In \cref{chapter:annotation} we examine the question of bacteriophages; for education they present an interesting opportunity to improve bioinformatics and genome annotation education, for healthcare they offer an interesting target for phage therapy.
-We present a suite of tooling which builds on open source software from the Generic Model Organism Database (GMOD) community to develop a comprehensive platform supporting genome annotation of bacteriophages from education through to production, and consider its utility as a platform for annotation curation and maintenance.
-Additionally we explore visualisation of genomic annotation data leveraging Circos for complex multi-dimensional data visualisation, and explore a simplified user interface to a complicated tool that is more accessible for researchers.
-All of the produced results are made available on the Findable, Accessible, Interoperable, and Reusable (FAIR) data analysis platform that is Galaxy, exploring heterogeneous computational resources and software in a transparent manner.
+We present a suite of tooling which builds on open-source software from the Generic Model Organism Database (GMOD)\cite{Stein_2002} community to develop a comprehensive platform supporting genome annotation of bacteriophages from education through to production, and consider its utility as a platform for annotation curation and maintenance.
+Additionally we explore visualisation of genomic annotation data leveraging Circos\cite{Circos} for complex multi-dimensional data visualisation, and develop a simplified user interface to this complex tool that is more accessible for researchers.
+All of the produced results are made available on the FAIR data analysis platform that is Galaxy\cite{Afgan2018,Jalili2020}, exploring heterogeneous computational resources and software in a transparent manner. %
 
-Next in \cref{chapter:cancer} we investigate clinical applications of sequencing data collected from Endothelial cells and Pericytes to investigate their response to Tumour Necrosis Factor (TNF), paving the way to future implications for treating cancers involving those two cell types.
+Next in \cref{chapter:clinic} we investigate clinical applications of sequencing data collected from Endothelial cells and Pericytes to determine their response to Tumour Necrosis Factor (TNF) as well as their interactions post-exposure. This work provides valuable data for the application of TNF as part of drug delivery mechanisms to the tumour microenvironment.
 This work is complemented by the development of a FAIR data retrieval pipeline enabling researchers to more seamlessly access sensitive data for their research projects and analyses, decreasing access barriers while simultaneously maintaining data security for seamless access of federated clinical data.
 
 Finally, with a lot of interesting results in the first two themes, we explore potential solutions for dissemination, ensuring the longevity and sustainability of our work by sharing our techniques through training.
 As we benefit at every step from the existing learning materials produced by educators around the world, we give back by building a scalable and FAIR training platform which has seen significant developments over the last two years in \cref{chapter:training}.
 We examine potential improvements to the underlying platform, including increasing accessibility of training materials for all tools on the platform, acting as a force multiplier.
 This is paired with a significant problem facing trainers: obtaining and configuring infrastructure for training events or courses.
-Solutions and methods by which we can decrease barriers and enable re-usability are explored through the implementation of a platform which enables easier access to training infrastructure.
+Solutions and methods by which we can decrease barriers and enable re-usability are investigated through the implementation of a platform which enables easier access to training infrastructure. %
 
 
 \footnotesize

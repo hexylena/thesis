@@ -10,7 +10,3 @@
 *.fls
 *.fdb_latexmk
 *.xdv
-cronout.txt
-vars.tex
-mermaid/
-*.docx

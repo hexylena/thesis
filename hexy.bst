@@ -757,6 +757,7 @@ FUNCTION {inproceedings}
     }
   if$
   new.block
+  howpublished output
   note output
   fin.entry
 }

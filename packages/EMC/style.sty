@@ -3,7 +3,7 @@
 % School name and location
 \university{Erasmus Medical Center}
 \universitycity{Rotterdam}
-\defensedate{27-10-2023}
+\defensedate{27-10-2025}
 \defensedatedutch{27}
 \defensetime{10:30}
 \geboorteplaats{Bærum}
@@ -15,14 +15,11 @@
 
 \definecolor{emc-light-blue}{rgb}{0.525,0.808,0.959} % EMC light blue
 %\definecolor{emc-dark-blue}{rgb}{0.125,0.192,0.498} % EMC dark blue
-%\definecolor{emc-dark-blue}{cmyk}{0.97, 0.57, 0, 0.36}
-\definecolor{emc-dark-blue}{cmyk}{0, 0.97, 0.97, 0.36} % Not actually blue
-
+\definecolor{hexy-red}{cmyk}{0, 0.97, 0.97, 0.36} % Not actually blue
 \definecolor{SchoolColor}{rgb}{0.525,0.808,0.959} % EMC light blue
 
 %\definecolor{chaptergrey}{rgb}{0,0.19608,0.3843} % chapter numbers
 %\definecolor{chaptergrey}{rgb}{0.125,0.192,0.498} % EMC dark blue
-%\definecolor{chaptergrey}{cmyk}{0.97, 0.57, 0, 0.36}
 \definecolor{chaptergrey}{cmyk}{0, 0.97, 0.97, 0.36} % Not actually blue
 
 \definecolor{midgrey}{rgb}{0.4, 0.4, 0.4}
@@ -30,14 +27,10 @@
 
 \hypersetup{
     colorlinks,
-    citecolor=emc-dark-blue,
+    citecolor=hexy-red,
     filecolor=black,
-    linkcolor=emc-dark-blue,
-    urlcolor=emc-dark-blue,
-    pdfinfo={
-        Title={Bioinformagic},
-        Author={hexylena}
-    }
+    linkcolor=hexy-red,
+    urlcolor=hexy-red,
 }
 
 \setlength\parindent{0pt}
@@ -58,7 +51,7 @@
 
 % article titles
 \newcommand{\articletitle}[1]{
-\section*{\huge\color{chaptergrey}{#1}}
+\section*{\huge\color{chaptergrey}{\raggedright{}#1}}
 }
 
 %\titleformat{\articletitle}{\large\sc\color{midgrey}}{\thearticletitle}{1em}{}
@@ -110,7 +103,7 @@
 }
 
 \renewcommand{\maketitle}{
-	\thispagestyle{empty}
+	\pagestyle{empty}
 	%\ \\
     %\vspace{10pt}
 	\begin{center}
@@ -150,13 +143,18 @@
     \newpage
     \textbf{Doctoral Committee:} \\
     \ \\
-    \textbf{Promotors:} \\
-    prof. dr. T.M. ten Hagen \\
+    \textbf{Promotor:} \\
+    Prof.~dr.~T.L.M.~ten~Hagen \\
     \ \\
     \textbf{Other members:} \\
+    Prof.~dr.~D.R.~Dimitris~Rizopoulos \\
+    Prof.~dr.~M.S.~Swertz \\
+    Dr.~M.~Magdalena~Harakalova \\
+
     \ \\
-    \textbf{Copromotor:} \\
-    dr. A.P. Stubbs \\
+    \textbf{Copromotors:} \\
+    Dr.~A.P.~Stubbs \\
+    Dr.~Y.~Li\\
 
     \vspace*{\fill}
     \includegraphics[]{frontmatter/images/titelpage-logo2.png}
@@ -168,7 +166,7 @@
 }
 
 \newcommand{\maketitledutch}{
-	\thispagestyle{empty}
+	\pagestyle{empty}
 	\vspace*{\fill}
 	\vspace{10pt}
 	\begin{center}
@@ -211,7 +209,7 @@
 
 \newcommand{\copyrightpage}{
 	\newpage
-	\thispagestyle{empty}
+	\pagestyle{empty}
 	\vspace*{25pt}
 	\begin{center}
 	\scshape \noindent \small \copyright \  \small  \theauthor \\
@@ -223,7 +221,7 @@
 
 \newcommand{\frontispiece}{
 	\newpage
-	\thispagestyle{empty}
+	\pagestyle{empty}
 	\vspace*{\fill}
 	\begin{center}
   \includegraphics[width=45pt]{packages/images/NYUlogo.eps}

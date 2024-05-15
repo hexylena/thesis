@@ -2,14 +2,12 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[School=EMC]{Dissertate}
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, positioning}
-\tikzset{%
-    block/.style = {draw=red,rectangle,thick,
-        minimum height=2em, text width=5em, align=center},
-    line/.style = {draw=black, line width=2pt, 
-        -{Triangle[length=5pt, width=5pt]}, shorten >=2pt, shorten <=2pt},
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[EL,OR]{\thepage}
 }
+
+\usepackage{tikz}
 \usepackage[sectionbib]{chapterbib}
 \usepackage{tabularx}
 \usepackage{enumitem}
@@ -18,9 +16,10 @@
 \usepackage{graphicx}
 \usepackage{wrapfig}
 \usepackage[hyphens]{xurl} % fixes url splitting over lines
-\usepackage[overlap, CJK]{ruby}
 \usepackage{nth}
+\usepackage{metalogo}
 \usepackage{cleveref}
+\usepackage{paracol}
 
 
 % Book size: 17 x 24 cm
@@ -30,22 +29,10 @@
 
 
 % place page number on outside of page (left for even pages, right for odd)
-\usepackage{fancyhdr}
-\usepackage{ifdraft}
-\pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
 \fancyhf{}
 \input{vars}
-\fancyhead[LE]{}
-\fancyhead[RO]{}
-\fancyhead[CO,CE]{DRAFT:\texttt{\gitRev}}
-\fancyfoot[CO,CE]{DRAFT:\texttt{\gitRev}}
-\fancyfoot[LE,RO]{\thepage}
-% \input{frontmatter/cistercian.tex}
-% \fancyfoot[RE,LO]{\cistercian{\thepage}}
-
-
 
 %\usepackage[width=6.75in, letterpaper, bottom=3cm, top=3cm]{geometry}
 %\newcommand\bookepigraph[4]{
@@ -146,7 +133,7 @@
   hshift=\thechapter*\LabelSize,
   contents={%
   \tikz\node[fill=gray!35,anchor=west,text width=\LabelSize,
-    align=center,text height=30pt,text depth=10pt,font=\large\sffamily] {\thechapter};
+    align=center,text height=30pt,text depth=10pt,font=\large\rmfamily] {\thechapter};
   }%
  }
  \else
@@ -157,7 +144,7 @@
   hshift=-\thechapter*\LabelSize,
   contents={%
   \tikz\node[fill=gray!35,anchor=west,text width=\LabelSize,
-    align=center,text height=30pt,text depth=10pt,font=\large\sffamily] {\thechapter};
+    align=center,text height=30pt,text depth=10pt,font=\large\rmfamily] {\thechapter};
   }%
  }
  \fi
@@ -174,15 +161,16 @@
 \newcommand\doi[1]{\href{https://doi.org/#1}{doi:#1}}
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codegray20}{rgb}{0.2,0.2,0.2}
 \definecolor{codepurple}{rgb}{0.58,0,0.82}
-\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\definecolor{backcolour}{rgb}{1,1,1}
 
 \lstdefinestyle{mystyle}{
     backgroundcolor=\color{backcolour},
-    commentstyle=\color{codegreen},
-    keywordstyle=\color{magenta},
-    numberstyle=\tiny\color{codegray},
-    stringstyle=\color{codepurple},
+    commentstyle=\color{codegray20},
+    keywordstyle=\color{hexy-red},
+    numberstyle=\tiny\color{codegray20},
+    stringstyle=\color{hexy-red},
     basicstyle=\ttfamily\footnotesize,
     breakatwhitespace=false,
     breaklines=true,
@@ -193,7 +181,8 @@
     showspaces=false,
     showstringspaces=false,
     showtabs=false,
-    tabsize=2
+    tabsize=2,
+    frame=bt
 }
 
 \newcommand\interstitial[1]{%
@@ -217,7 +206,7 @@
 {\thispagestyle{empty}%
 \begin{tikzpicture}[remember picture,overlay]
 \node[inner sep=0pt] at (current page.center){%
-    \includegraphics[width=\paperwidth,height=\paperheight]{chapters/blank.png}%
+    \includegraphics[width=\paperwidth,height=\paperheight]{chapters/blank2.png}%
 };
 \end{tikzpicture}
 }\clearpage
@@ -232,23 +221,32 @@
 \end{tikzpicture}
 }\clearpage
 }
-
-
-% \input{frontmatter/glossary.tex}
-
-
 \lstset{style=mystyle}
 %% Custom
 
 \begin{document}
+\pagestyle{empty}
 
 % the front matter
 %\newpage \thispagestyle{empty} This page was intentionally left blank (inside cover).\newpage
+
 \include{frontmatter/cover}
+
 \setcounter{page}{1}
 \input{frontmatter/personalize}
+
 \maketitle
 %\maketitledutch
+\pagestyle{fancy}
+
+% \fancyhead[C]{\iffloatpage{}{\texttt{\gitRev}}}
+% \fancyhead[C]{\iffloatpage{}{\texttt{\gitRevSimple}}}
+% \fancyfoot[ER,OL]{\includegraphics[width=1.5em]{barcode/a\thepage.png}}
+% \fancyhead[EL]{\leftmark}
+% \fancyhead[OR]{\rightmark}
+
+% \fancyhead[EL,OR]{\iffloatpage{}{\includegraphics[width=0.5em]{aesthetics/cis/\thepage.png}}}
+\fancyfoot[EL,OR]{\iffloatpage{}{\thepage}}
 
 
 
@@ -258,8 +256,6 @@
 
 
 %\include{frontmatter/stellingen}
-
-%\setcounter{page}{1}
 
 \cleartorightpage
 % \intentionallyBlank\clearpage
@@ -273,25 +269,15 @@
 \setcounter{tocdepth}{1}
 \cleartorightpage
 \tableofcontents
-\newpage
-\cleartorightpage
 %\phantomsection
 %\addcontentsline{toc}{chapter}{Table of Contents}
 
+% \listoffigures
 
-%\authorlist
-%\listoffigures
+\cleartorightpage
 
-%\abstractpage
-%\doublespacing
-
-
-% start chapter and page numbering at 0 because (computer) science
-%\setcounter{chapter}{-1}
-
-
-% include each chapter...
 \AddLabels % start using thumb index
+
 % start chapter and page numbering at 0 because (computer) science
 \setcounter{chapter}{-1}
 \include{chapters/introduction}
@@ -312,32 +298,41 @@
 
 \include{chapters/discussion}
 \RemoveLabels %stop thumb index
-%\include{chapters/summaries}
 
 \begin{appendices}
   % \include{endmatter/glossary}
-  \include{endmatter/summary}
-  \include{endmatter/samenvatting}
-  \include{endmatter/publications}
-  \include{endmatter/cv}
-  \include{endmatter/portfolio}
-\end{appendices}
-\cleartorightpage
-\acknowledgments
 
-\begin{appendices}
-  \include{endmatter/code}
+  \include{endmatter/ss} % DONE
+
+  \include{endmatter/publications} % DONE
+  \include{endmatter/cv}           % DONE
+  \include{endmatter/portfolio}    % DONE
+  \include{endmatter/acknowledgments}    % DONE
 \end{appendices}
+
+
+% \begin{appendices}
+%   \include{endmatter/code}
+% \end{appendices}
+
+% UNCOMMENT FOR FINAL
+% \cleartorightpage
+
+% \acknowledgments
+
+% \intentionallyBlank
+% \intentionallyBlank
 
 \cleartoleftpage
-% \include{endmatter/colophon}
-\singlespacing
-% the back matter
+\include{endmatter/colophon}
 \clearpage
+
+
 %\bibliography{references}
 %\addcontentsline{toc}{chapter}{References}
 %\bibliographystyle{apalike2}
 \bibliographystyle{hexy.bst}
+
 \include{frontmatter/cover-back}
 
 \end{document}

@@ -1,15 +1,36 @@
-thesis: clean references.bib vars.tex
+NOW := $$(date '+%Y-%m-%dT%H%M%S')
+thesis: references.bib vars.tex stellingen.pdf dissertation.pdf
+
+dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics cover/cover-back-hexy.png cover/cover-front-hexy.png aesthetics/summon.png
+	rm -f dissertation.pdf
 	bash vars.sh
-	latexmk -xelatex -f dissertation.tex
+	latexmk -xelatex -f dissertation.tex || cp dissertation.pdf dissertation-$(NOW).pdf
+
+stellingen.pdf: stellingen.tex Dissertate.cls ./packages/EMC/style.sty
+	bash vars.sh
+	latexmk -xelatex -f stellingen.tex
+	cp stellingen.pdf stellingen-$(NOW).pdf
+
+aesthetics/summon.png: aesthetics/summon.svg
+	inkscape --export-type=png --export-area-page --export-dpi=300 aesthetics/summon.svg
+
+cover/cover-back-hexy.png: cover/cover-back-hexy.svg
+	inkscape --export-type=png --export-area-page --export-dpi=300 cover/cover-back-hexy.svg
+
+cover/cover-front-hexy.png: cover/cover-front-hexy.svg
+	inkscape --export-type=png --export-area-page --export-dpi=300 cover/cover-front-hexy.svg
+
+frontmatter/images/cover-front.50.png: frontmatter/images/cover-front.png
+	magick frontmatter/images/cover-front.png -resize 50% frontmatter/images/cover-front.50.png
 
 thesis-auto: clean references.bib vars.tex
-	find . -name '*.tex' | entr bash -c "bash vars.sh && latexmk -xelatex -f dissertation.tex"
+	find . -name '*.tex' | entr bash -c "make dissertation.pdf"
 
 BIBS := $(wildcard chapters/*/*.bib)
 BIBS2 := $(wildcard chapters/*.bib)
 
 references.bib: $(BIBS) $(BIBS2)
-	echo "" > references.bib
+	rm -f references.bib
 	for bib in ${BIBS}; do \
 		echo "%%%% $$bib" >> references.bib; \
 		cat $$bib >> references.bib; \
@@ -19,6 +40,12 @@ references.bib: $(BIBS) $(BIBS2)
 		cat $$bib >> references.bib; \
 	done;
 	~/bin/bibtex-tidy references.bib
+
+# interstitial pages
+aesthetics:
+	$(MAKE) -C $@
+
+.PHONY: aesthetics
 
 view:
 	okular dissertation.pdf &
@@ -44,7 +71,3 @@ reallyclean:
 	find . -name '*.aux' -exec rm '{}' +
 	find . -name '*.blg' -exec rm '{}' +
 	@#rm **/*.aux **/*.blg **/*.bbl *.aux *.log *.out *.toc
-
-
-mermaid/diag.mmd.png: mermaid/diag.mmd
-	TEMP=~/tmp/ TMPDIR=~/tmp/ TMP=~/tmp/ apptainer run --mount type=bind,source=`pwd`/mermaid/,destination=/data docker://ghcr.io/mermaid-js/mermaid-cli/mermaid-cli -i /data/diag.mmd -e png -s 4

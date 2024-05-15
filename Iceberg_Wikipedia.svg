@@ -4,7 +4,7 @@
    width="419.14206"
    height="490.91006"
    id="iceburg illustration"
-   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    sodipodi:docname="Iceberg_Wikipedia.svg"
    inkscape:export-filename="Iceberg.png"
    inkscape:export-xdpi="300"
@@ -65,9 +65,9 @@
      inkscape:window-height="1024"
      id="namedview3049"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="200.11121"
-     inkscape:cy="222.73863"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="198.697"
+     inkscape:cy="89.979336"
      inkscape:window-x="4"
      inkscape:window-y="52"
      inkscape:window-maximized="0"
@@ -102,35 +102,15 @@
      style="fill:url(#linearGradient4050);fill-opacity:1;stroke:#27aaea;stroke-width:2.28811"
      d="m 417.99802,104.50147 c -15.81171,8.49847 -57.20961,6.15128 -99.03875,-1.45689 -30.04224,-5.503775 -43.33844,23.14825 -72.87757,16.51134 -35.21697,-7.93193 -58.43143,-27.599835 -95.6608,-11.81694 -22.85509,9.71255 -43.48218,16.83509 -63.534304,8.01285 C 54.903836,101.74958 55.622556,85.723875 25.005356,97.136115 14.727746,100.9402 6.534408,104.09678 1.144055,106.9296 V 489.76602 H 417.99802 Z"
      id="path7276" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 153.02615,437.61201 h 13.43502 l 13.25826,-13.25825"
-     id="path4164"
-     inkscape:connector-curvature="0" />
-  <path
-     inkscape:connector-curvature="0"
-     id="path4166"
-     d="m 101.02615,369.61201 h 13.43502 l 13.25826,-13.25825"
-     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-     d="m 37.026146,276.61201 h 13.43502 l 13.25826,-13.25825"
-     id="path4170"
-     inkscape:connector-curvature="0" />
   <text
      xml:space="preserve"
      style="font-size:16px;line-height:0.9;font-family:'IM FELL English';-inkscape-font-specification:'IM FELL English';text-align:center;letter-spacing:-1px;text-anchor:middle;fill:#893333;fill-opacity:0.99569;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:bevel"
-     x="199.00887"
-     y="48.360271"
+     x="199.5089"
+     y="48.360275"
      id="text1"><tspan
        sodipodi:role="line"
-       id="tspan1"
-       x="199.00887"
-       y="48.360271"
-       style="fill:#36296f;fill-opacity:0.99569">Healing </tspan><tspan
-       sodipodi:role="line"
-       x="198.50887"
-       y="62.760265"
+       x="199.0089"
+       y="48.360275"
        style="fill:#36296f;fill-opacity:0.99569"
        id="tspan6">Patients</tspan></text>
   <text

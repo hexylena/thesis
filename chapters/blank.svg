@@ -7,7 +7,7 @@
    viewBox="0 0 200 300"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
    sodipodi:docname="blank.svg"
    inkscape:export-filename="blank.png"
    inkscape:export-xdpi="300"
@@ -27,13 +27,13 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.79909512"
-     inkscape:cx="189.58944"
-     inkscape:cy="453.63811"
+     inkscape:zoom="3.1963805"
+     inkscape:cx="359.78195"
+     inkscape:cy="555.15919"
      inkscape:window-width="1912"
-     inkscape:window-height="1032"
+     inkscape:window-height="1024"
      inkscape:window-x="4"
-     inkscape:window-y="44"
+     inkscape:window-y="52"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer3" />
   <defs
@@ -58,62 +58,12 @@
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:1.58318"
          x="116.45764"
-         y="130.69064"
+         y="130.69066"
          id="tspan456">INTENTIONALLY</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:1.58318"
          x="116.45764"
-         y="137.07838"
-         id="tspan458">LEFT BLANK.</tspan><tspan
-         sodipodi:role="line"
-         style="stroke-width:1.58318"
-         x="116.45764"
-         y="142.39787"
-         id="tspan460" /></text>
-    <g
-       id="g567"
-       transform="matrix(0.41131406,0,0,0.34707073,57.035866,94.355108)">
-      <text
-         xml:space="preserve"
-         style="font-size:81.6172px;font-family:Silver;-inkscape-font-specification:Silver;text-align:center;text-anchor:middle;display:inline;fill:#000000;stroke-width:17.0036;stroke-linejoin:bevel"
-         x="95.402054"
-         y="91.595787"
-         id="text396-3"><tspan
-           sodipodi:role="line"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;stroke-width:17.0036"
-           x="95.402054"
-           y="91.595787"
-           id="tspan460-2">零</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.8735px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;text-anchor:middle;fill:#000000;stroke-width:11.6403;stroke-linejoin:bevel"
-         x="78.322609"
-         y="77.205284"
-         id="text551"
-         transform="scale(0.87162141,1.1472871)"><tspan
-           sodipodi:role="line"
-           id="tspan549"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:11.6403"
-           x="78.322609"
-           y="77.205284">{</tspan></text>
-      <text
-         xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:55.8735px;font-family:QIJIFALLBACK;-inkscape-font-specification:QIJIFALLBACK;text-align:center;text-anchor:middle;fill:#000000;stroke-width:11.6403;stroke-linejoin:bevel"
-         x="-161.3589"
-         y="-43.122452"
-         id="text559"
-         transform="scale(-0.87162141,-1.1472871)"><tspan
-           sodipodi:role="line"
-           id="tspan557"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'DIN 1451 Std';-inkscape-font-specification:'DIN 1451 Std';stroke-width:11.6403"
-           x="-161.3589"
-           y="-43.122452">{</tspan></text>
-    </g>
-    <circle
-       style="fill:none;stroke:#000000;stroke-width:0.172961;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1"
-       id="path1176"
-       cx="99.999992"
-       cy="94.918457"
-       r="2.8061328" />
+         y="137.0784"
+         id="tspan460">LEFT BLANK</tspan></text>
   </g>
 </svg>

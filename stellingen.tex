@@ -1,0 +1,108 @@
+\documentclass[School=EMC]{Dissertate}
+\input{vars}
+\usepackage[paperwidth=17.4cm, paperheight=24.4cm, inner=2.1cm, outer=2.1cm,bottom=2.4cm,top=2.2cm]{geometry}
+\usepackage{ruby}
+
+% \newcommand{\zz}[1]{{\color{hexy-red}\footnotesize #1}}
+\newcommand{\zz}[1]{{\footnotesize\ttfamily \href{https://doi.org/#1}{#1}}}
+\newcommand{\zy}[1]{{\footnotesize\ttfamily \href{https://en.m.wikipedia.org/wiki/Special:BookSources?isbn=#1}{#1}}}
+\newcommand{\zx}[1]{{\footnotesize\ttfamily \href{https://#1}{#1}}}
+
+
+\begin{document}
+\pagenumbering{gobble}
+\begin{center}
+Propositions accompanying the thesis
+
+\textbf{\large Bioinformagic}\\
+\textit{Towards a book of spells to make every analysis magical}
+
+by Helena Rasche
+\end{center}
+
+
+
+\begin{enumerate}
+% ch1
+\item The Generic Model Organism Database suite of software increases the reproducibility of genome annotation and improves accessibility for annotators (this thesis).
+\item Providing user-friendly and simplified access to complex tools can enable new use cases and increase accessibility of software (this thesis).
+
+% ch2
+\item Data security is the responsibility of everyone involved in clinical research, and as informaticians we can do more to enable secure-by-default analyses. (this thesis).
+% \item Ensuring the security of data and analyses is should not be the priority of the scientist, but the infrastructure itself; software and tooling should enforce secure-by-default stances, so researchers can focus on analyses. (this thesis).
+% Original: Ensuring the security of data and analyses is a complicated and time consuming task which scientists should not need to be aware of (this thesis).
+% TLMTH: 3 you dig a hole there. The opposite is true. You can keep this one and prepare for maybe some stiff discussion. Which I like by the way.
+% ✅ Resolved
+
+% ch3
+\item Ensuring that high-quality bioinformatics training infrastructure is Findable, Accessible, Interoperable, and Reusable (FAIR) is a key solution in working to reducing the bioinformatician gap (this thesis).
+\item Training materials and teachers alone are not enough, bioinformatics is a computational discipline that requires computational infrastructure for teaching (this thesis).
+
+% \item iFUSE and Circos visualizations were instrumental in identifying fusion genes and chromothripsis in the VCaP cell line (this thesis).
+% \item A large, representative virtual normal set is equally valuable as an associated normal sample for germline correction of tumour samples (this thesis).
+% \item The MYcrobiota platform improves standardization and reproducibility across experiments, studies, and laboratories for microbiota profiling in diagnostics (this thesis).
+
+% \item Systems safety in science
+\item Systems safety must be considered in development of clinical workflows; the THERAC-25 story \emph{should} be mandatory reading for bioinformaticians (\zy{9780201119725}, \zz{10.1109/MC.2017.4041349}).
+	% 9780201119725
+	% 10.1109/MC.2017.4041349
+
+\item Research Data Management (RDM) and ensuring FAIRness is a burden on scientists that must be decreased (\zz{10.1197/jamia.M2114}, \zz{10.21428/5676bf2d.32042b9c}, \zz{10.1080/12460125.2022.2074653}).
+% Original: \item Change starts with funders; code and data won't be made FAIR and Open unless it is required, hampering reproducibility and collaboration.
+
+
+\item Open Databases, Infrastructure, and Tools benefit the entire scientific community and their long-term maintenance should be funded and rewarded to reduce churn and waste\ \\(\zz{10.5281/zenodo.8325436}, \zx{adore.software}).
+	% 10.1093/database/baw018 | some databases go to a pay-to-acccess model which are challenging to fund, and significantly decrease accessibility of publicly paid for knowledge
+	% https://www.genomeweb.com/informatics/kegg-moves-subscription-model-appeals-support-funding-dries | kegg went subscribption
+	%    He continued, “unfortunately you are not going to get a paper or grant for chasing down a subtle problem with a record, or for writing and documenting new interfaces to query the data; but these types of tasks make a huge difference in the usefulness and correctness of the data repositories we rely on to do good science.”
+	% 10.1186/1471-2164-9-472 | countries (esp the US) spend *so much*, maybe part of the solution involves centralising infra with groups like NIH. Maybe it involves federation, allowing groups to manage subsets of global databases.
+	% "A recent survey showed that 84 percent of researchers view developing software as "important or very important for their own research."" https://files.software-carpentry.org/training-course/2012/08/hannay-survey-2009.pdf
+	% https://arxiv.org/html/2404.06484v5 | alternative funding models can be explored.
+	% infrastructure dies and must be re-written from scratch to meet novel criteria.
+	% https://adore.software/declaration/
+	% 10.1371/journal.pcbi.1010627
+
+\item Lack of accessibility continues to exclude a range of scientists (\zz{10.1016/S0140-6736(23)02348-6}, {\small``Women, minorities, and persons with disabilities in science and engineering: 2021. Special report NSF 21–321''}).
+	% Science benefits from Diversity (\zz{10.1038/d41586-018-05326-3}, \zz{10.1080/02691720903364134}).
+	% 10.1038/d41586-018-05326-3
+	% 10.1080/02691720903364134
+% TLMTH: 9 is too cryptic. It's a wide net you cast. Can you make this a bit more specific and attractive.
+
+% 
+
+
+\item Competition---as demanded by funding agencies---is detrimental to science; coöperation and collaboration are not as rewarded, and open science is harmed in the process. (\zz{10.1128/IAI.02939-14}, \zz{10.1073/pnas.2407644121}).
+	% The successful demonstration of the Higgs boson by research teams at CERN involving thousands of scientists working over a period of decades is an example of successful scientific teamwork.
+	% Unselfish scientific acts such as mentoring and making useful reagents and information available to the community should be recognized, along with more effective policing of scientists who behave selfishly
+
+% TLMTH: 10 is a discussion. Your statement is here colored. Is competition capitalistic, or are the funders? I like for sure the long and intense discussion on several individual parts of the proposition. Be prepared.
+% ✅ Resolved
+
+% \item Accessibility in science
+% \item open science?
+
+% \item Software is a direct threat to every job. Workers the market doesn`t value will die, poor and starving, without a UBI: Automation waits for no one. - @jado (lobste.rs/s/tlo2s1/#c_q573y6)
+
+\item {\fontQiji{}借尸还魂} --- ``Borrow a corpse to resurrect the soul'': we can and should (re)use and leverage what already exists, looking into the past for strategies and tools that are still viable or salvageable.
+
+
+% \item {\Large%
+% 	{\large\fontNotoCjk{「}}%
+% 	\ruby{\fontQiji{}借}{jiè}%
+% 	\ruby{\fontQiji{}屍}{shī}%
+% 	\ruby{\fontQiji{}還}{huán}%
+% 	\ruby{\fontQiji{}魂}{hún}\ %
+% 	% \fontNotoCjk{借}%
+% 	% \fontNotoCjk{屍}%
+% 	% \fontNotoCjk{還}%
+% 	% \fontNotoCjk{魂}%
+% 	{\large\fontNotoCjk{}」}} Borrow a corpse to resurrect the soul
+
+% \item The sanctioned action is to Cut.
+% % \item Reach Heaven Through Violence.
+\end{enumerate}
+
+% \begin{center}
+% \tiny DRAFT:\gitRev
+% \end{center}
+\end{document}

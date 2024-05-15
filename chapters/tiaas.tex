@@ -30,9 +30,7 @@ Bj\"orn~Gr\"uning\textsuperscript{\ref{tiaas-affil:12}§},
 Andrew~Stubbs\textsuperscript{\ref{tiaas-affil:1}§},
 
 
-\textbf{Published in:} \emph{GigaScience}, Volume 12, July 2023,  \\
-
-\doi{10.1093/gigascience/giad048}
+\textbf{Published in:} \emph{GigaScience}, Volume 12, July 2023.\\\doi{10.1093/gigascience/giad048}
 
 \small
 
@@ -55,6 +53,7 @@ Andrew~Stubbs\textsuperscript{\ref{tiaas-affil:1}§},
 
 § These authors contributed equally to this work.
 \dag Deceased
+\normalsize
 
 \section*{Abstract}
 %The Abstract (250 words maximum) should be structured to include the following details: \textbf{Background}, the context and purpose of the study; \textbf{Results}, the main findings; \textbf{Conclusions}, brief summary and potential implications. Please minimize the use of abbreviations and do not cite references in the abstract.
@@ -158,13 +157,13 @@ Information over the status of the TIaaS system is provided via the interface. T
 \subsubsection*{Scheduling}
 When a job is submitted by a user in a training group, the Galaxy instance's job scheduling system reads the user's groups and roles, and if any of these include something prefixed with \texttt{training-}, then this is converted to a job scheduler specific requirement string (Figure~\ref{code:scheduler}, \ref{code:tpv}). Ideally these are scheduled to prefer training nodes, and spill over to the main queue if training nodes are full, but this feature is dependent on specific scheduler capabilities.
 
-In HTCondor this can be accomplished by preventing regular jobs from running on training nodes (e.g. a Node's configuration including \texttt{Requirements=(GalaxyGroup == training-nld) || (GalaxyGroup == training-aus)}), and then allowing training jobs to run on training nodes, and preferring those nodes via configuration (e.g. a submit description including \texttt{+Group="training-aus, training-nld"})
+In HTCondor this can be accomplished by preventing regular jobs from running on training nodes (e.g. a Node's configuration including \texttt{Requirements=(GalaxyGroup == training-nld) || (GalaxyGroup == training-aus)}), and then allowing training jobs to run on training nodes, and preferring those nodes via configuration (e.g. a submit description including \texttt{+Group=\textquotedbl{}training-aus, training-nld\textquotedbl})
 
 Slurm, in contrast, requires either using TPV's notion of machine tags to separate jobs into those specific groups of machines, or simply manually selecting a reservation in which to run the training jobs, with \texttt{--partition=training-nld}.
 
 \begin{figure}[!ht]
 \centering
-\begin{lstlisting}[frame=single,language=Python]
+\begin{lstlisting}[language=Python]
 def queue_job(job, user):
     job.cluster = 'main'
 
@@ -181,7 +180,7 @@ Or, rewritten for the modern Total Perspective Vortex (TPV)\cite{TPV} scheduler 
 
 \begin{figure}[!ht]
 \centering
-\begin{lstlisting}[frame=single,language=bash]
+\begin{lstlisting}[language=bash]
 roles:
   training.*:
     scheduling:
