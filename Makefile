@@ -1,6 +1,6 @@
 thesis: clean references.bib vars.tex
 	bash vars.sh
-	latexmk -xelatex -f dissertation.tex
+	latexmk -xelatex -shell-escape -f dissertation.tex
 
 thesis-auto: clean references.bib vars.tex
 	find . -name '*.tex' | entr bash -c "bash vars.sh && latexmk -xelatex -f dissertation.tex"
