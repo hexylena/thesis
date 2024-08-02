@@ -1,6 +1,6 @@
 thesis: references.bib vars.tex dissertation.pdf stellingen.pdf
 
-dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex)
+dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics
 	bash vars.sh
 	latexmk -xelatex -f dissertation.tex
 
@@ -24,6 +24,12 @@ references.bib: $(BIBS) $(BIBS2)
 		cat $$bib >> references.bib; \
 	done;
 	~/bin/bibtex-tidy references.bib
+
+# interstitial pages
+aesthetics:
+	$(MAKE) -C $@
+
+.PHONY: aesthetics
 
 view:
 	okular dissertation.pdf &
