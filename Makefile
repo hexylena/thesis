@@ -1,10 +1,11 @@
-thesis: references.bib vars.tex dissertation.pdf stellingen.pdf
+thesis: references.bib vars.tex stellingen.pdf dissertation.pdf
 
 dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics
 	bash vars.sh
 	latexmk -xelatex -f dissertation.tex
 
 stellingen.pdf: stellingen.tex Dissertate.cls ./packages/EMC/style.sty
+	bash vars.sh
 	latexmk -xelatex -f stellingen.tex
 
 thesis-auto: clean references.bib vars.tex
