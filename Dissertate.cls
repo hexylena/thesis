@@ -116,7 +116,7 @@
 \newfontfamily{\fontVE}{Evergarden}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontLWA}{lwafontcustom}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontRedacted}{Redacted-Regular}[Path=./fonts/Aesthetic/,UprightFont=*]
-\newfontfamily{\fontCistercian}{FRBCistercian}[Path=./fonts/Aesthetic/,UprightFont=*]
+% \newfontfamily{\fontCistercian}{FRBCistercian}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontQiji}{qiji}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontNotoCjk}{NotoSerifCJK-Regular}[Path=./fonts/,UprightFont=*]
 \newfontfamily{\fontEBGaramondInitials}{EBGaramond-Initials}[Path=./fonts/Aesthetic/,UprightFont=*]
