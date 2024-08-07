@@ -1,12 +1,15 @@
 thesis: references.bib vars.tex stellingen.pdf dissertation.pdf
 
-dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics
+dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics frontmatter/images/cover-front.50.png
 	bash vars.sh
 	latexmk -xelatex -f dissertation.tex
 
 stellingen.pdf: stellingen.tex Dissertate.cls ./packages/EMC/style.sty
 	bash vars.sh
 	latexmk -xelatex -f stellingen.tex
+
+frontmatter/images/cover-front.50.png: frontmatter/images/cover-front.png
+	magick frontmatter/images/cover-front.png -resize 50% frontmatter/images/cover-front.50.png
 
 thesis-auto: clean references.bib vars.tex
 	find . -name '*.tex' | entr bash -c "make dissertation.pdf"
