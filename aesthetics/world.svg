@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="1.6820163"
-     inkscape:cx="1227.6932"
-     inkscape:cy="819.25484"
+     inkscape:zoom="3.3640326"
+     inkscape:cx="1065.8339"
+     inkscape:cy="107.90621"
      inkscape:window-width="1912"
      inkscape:window-height="1024"
      inkscape:window-x="4"
@@ -93,40 +93,6 @@
        width="34.452768"
        height="129.53585"
        id="rect18" />
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#shading16"
-       preserveAspectRatio="xMidYMid"
-       id="pattern3511"
-       patternTransform="matrix(0.1,0,0,0.1,254.69023,625.73977)"
-       x="0"
-       y="0" />
-    <pattern
-       patternUnits="userSpaceOnUse"
-       width="555.3105"
-       height="40.101"
-       patternTransform="translate(254.69023,625.73977)"
-       preserveAspectRatio="xMidYMid"
-       id="shading16"
-       style="fill:#000000"
-       inkscape:label="Triangles shading 2"
-       inkscape:collect="always"
-       inkscape:isstock="true">
-      <g
-         id="use15"
-         transform="translate(-253.54616,-595.99401)">
-        <path
-           id="path45"
-           style="stroke-width:0.4872;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
-           d="m 795.23576,636.09501 h -0.641 l 0.3205,-20.4114 z m -27.0193,0 h -2.0979 l 1.0489,-20.3512 z m -27.0194,0 h -3.5547 l 1.7773,-20.2911 z m -27.0194,0 h -5.0116 l 2.5058,-20.2309 z m -27.0193,0 h -6.4685 l 3.2342,-20.1708 z m -27.0194,0 h -7.9254 l 3.9627,-20.1107 z m -27.0194,0 h -9.3822 l 4.6911,-20.0505 z m -27.0194,0 h -10.8391 l 5.4196,-19.9904 z m -27.0193,0 h -12.296 l 6.148,-19.9302 z m -27.0194,0 h -13.7529 l 6.8765,-19.8701 z m -27.0194,0 h -15.2097 l 7.6049,-19.8099 z m -27.0194,0 h -16.6666 l 8.3333,-19.7498 z m -27.0193,0 h -18.1235 l 9.0617,-19.6897 z m -27.0194,0 h -19.5803 l 9.7901,-19.6295 z m -27.0194,0 h -21.0372 l 10.5186,-19.5694 z m -27.0194,0 h -22.494 l 11.247,-19.5092 z m -27.0193,0 h -23.951 l 11.9755,-19.4491 z m -27.0194,0 h -25.4078 l 12.7039,-19.3889 z m -27.0194,0 h -26.8647 l 13.4324,-19.3288 z m -27.0193,0 h -28.3216 l 14.1608,-19.2686 z"
-           sodipodi:nodetypes="cccccccc" />
-        <path
-           id="path47"
-           style="stroke-width:0.4872;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
-           d="m 808.85666,616.40541 h -0.641 l 0.3205,-20.4114 z m -27.0193,0 h -2.0979 l 1.0489,-20.3512 z m -27.0194,0 h -3.5547 l 1.7773,-20.2911 z m -27.0194,0 h -5.0116 l 2.5058,-20.2309 z m -27.0193,0 h -6.4685 l 3.2342,-20.1708 z m -27.0194,0 h -7.9254 l 3.9627,-20.1107 z m -27.0194,0 h -9.3822 l 4.6911,-20.0505 z m -27.0194,0 h -10.8391 l 5.4196,-19.9904 z m -27.0193,0 h -12.296 l 6.148,-19.9302 z m -27.0194,0 h -13.7529 l 6.8765,-19.8701 z m -27.0194,0 h -15.2097 l 7.6049,-19.8099 z m -27.0194,0 h -16.6666 l 8.3333,-19.7498 z m -27.0193,0 h -18.1235 l 9.0617,-19.6897 z m -27.0194,0 h -19.5803 l 9.7901,-19.6295 z m -27.0194,0 h -21.0372 l 10.5186,-19.5694 z m -27.0194,0 h -22.494 l 11.247,-19.5092 z m -27.0193,0 h -23.951 l 11.9755,-19.4491 z m -27.0194,0 h -25.4078 l 12.7039,-19.3889 z m -27.0194,0 h -26.8647 l 13.4324,-19.3288 z m -27.0193,0 h -28.3216 l 14.1608,-19.2686 z"
-           sodipodi:nodetypes="cccccccc" />
-      </g>
-    </pattern>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3506">
@@ -974,40 +940,6 @@
          d="M 0,4 V -4"
          id="path23-5" />
     </marker>
-    <pattern
-       inkscape:collect="always"
-       xlink:href="#shading16-3"
-       preserveAspectRatio="xMidYMid"
-       id="pattern3511-3"
-       patternTransform="matrix(0.1,0,0,0.1,278.5317,633.30472)"
-       x="0"
-       y="0" />
-    <pattern
-       patternUnits="userSpaceOnUse"
-       width="555.3105"
-       height="40.101"
-       patternTransform="translate(254.69023,625.73977)"
-       preserveAspectRatio="xMidYMid"
-       id="shading16-3"
-       style="fill:#000000"
-       inkscape:label="Triangles shading 2"
-       inkscape:collect="always"
-       inkscape:isstock="true">
-      <g
-         id="use15-8"
-         transform="translate(-253.54616,-595.99401)">
-        <path
-           id="path45-0"
-           style="stroke-width:0.4872;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
-           d="m 795.23576,636.09501 h -0.641 l 0.3205,-20.4114 z m -27.0193,0 h -2.0979 l 1.0489,-20.3512 z m -27.0194,0 h -3.5547 l 1.7773,-20.2911 z m -27.0194,0 h -5.0116 l 2.5058,-20.2309 z m -27.0193,0 h -6.4685 l 3.2342,-20.1708 z m -27.0194,0 h -7.9254 l 3.9627,-20.1107 z m -27.0194,0 h -9.3822 l 4.6911,-20.0505 z m -27.0194,0 h -10.8391 l 5.4196,-19.9904 z m -27.0193,0 h -12.296 l 6.148,-19.9302 z m -27.0194,0 h -13.7529 l 6.8765,-19.8701 z m -27.0194,0 h -15.2097 l 7.6049,-19.8099 z m -27.0194,0 h -16.6666 l 8.3333,-19.7498 z m -27.0193,0 h -18.1235 l 9.0617,-19.6897 z m -27.0194,0 h -19.5803 l 9.7901,-19.6295 z m -27.0194,0 h -21.0372 l 10.5186,-19.5694 z m -27.0194,0 h -22.494 l 11.247,-19.5092 z m -27.0193,0 h -23.951 l 11.9755,-19.4491 z m -27.0194,0 h -25.4078 l 12.7039,-19.3889 z m -27.0194,0 h -26.8647 l 13.4324,-19.3288 z m -27.0193,0 h -28.3216 l 14.1608,-19.2686 z"
-           sodipodi:nodetypes="cccccccc" />
-        <path
-           id="path47-4"
-           style="stroke-width:0.4872;stroke-linecap:square;paint-order:markers fill stroke;stop-color:#000000"
-           d="m 808.85666,616.40541 h -0.641 l 0.3205,-20.4114 z m -27.0193,0 h -2.0979 l 1.0489,-20.3512 z m -27.0194,0 h -3.5547 l 1.7773,-20.2911 z m -27.0194,0 h -5.0116 l 2.5058,-20.2309 z m -27.0193,0 h -6.4685 l 3.2342,-20.1708 z m -27.0194,0 h -7.9254 l 3.9627,-20.1107 z m -27.0194,0 h -9.3822 l 4.6911,-20.0505 z m -27.0194,0 h -10.8391 l 5.4196,-19.9904 z m -27.0193,0 h -12.296 l 6.148,-19.9302 z m -27.0194,0 h -13.7529 l 6.8765,-19.8701 z m -27.0194,0 h -15.2097 l 7.6049,-19.8099 z m -27.0194,0 h -16.6666 l 8.3333,-19.7498 z m -27.0193,0 h -18.1235 l 9.0617,-19.6897 z m -27.0194,0 h -19.5803 l 9.7901,-19.6295 z m -27.0194,0 h -21.0372 l 10.5186,-19.5694 z m -27.0194,0 h -22.494 l 11.247,-19.5092 z m -27.0193,0 h -23.951 l 11.9755,-19.4491 z m -27.0194,0 h -25.4078 l 12.7039,-19.3889 z m -27.0194,0 h -26.8647 l 13.4324,-19.3288 z m -27.0193,0 h -28.3216 l 14.1608,-19.2686 z"
-           sodipodi:nodetypes="cccccccc" />
-      </g>
-    </pattern>
   </defs>
   <g
      inkscape:groupmode="layer"
@@ -1519,43 +1451,43 @@
        sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,0.43472901,-2.3733213)"
+       transform="matrix(0.26458333,0,0,0.26458333,-1.152771,-2.3733213)"
        id="text187"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.1;font-family:'TT2020 Style D';-inkscape-font-specification:'TT2020 Style D';letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect187);display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.755906;stroke-linecap:square;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
        x="0"
        y="0"><tspan
          x="739.04883"
          y="772.08592"
-         id="tspan12">Development of sub-</tspan><tspan
+         id="tspan18">Development of sub-</tspan><tspan
          x="739.04883"
          y="786.75255"
-         id="tspan13">terranean long-term </tspan><tspan
+         id="tspan21">terranean long-term </tspan><tspan
          x="739.04883"
          y="801.41917"
-         id="tspan14">storage for used </tspan><tspan
+         id="tspan22">storage for used </tspan><tspan
          x="739.04883"
          y="816.17357"
-         id="tspan15">🮘🮘🮘🮘🮘🮘🮘🮘, 🮘🮘🮘🮘🮘🮘🮘🮘 and </tspan><tspan
+         id="tspan23">🮘🮘🮘🮘🮘🮘🮘🮘, 🮘🮘🮘🮘🮘🮘🮘🮘 and </tspan><tspan
          x="739.04883"
          y="830.92796"
-         id="tspan16">associated waste by-</tspan><tspan
+         id="tspan24">associated waste by-</tspan><tspan
          x="739.04883"
          y="845.59459"
-         id="tspan17">products.
+         id="tspan25">products.
 </tspan><tspan
          x="739.04883"
          y="860.26121"
-         id="tspan20">
+         id="tspan26">
 </tspan><tspan
          x="739.04883"
          y="874.92784"
-         id="tspan32">Significant cognitohazards </tspan><tspan
+         id="tspan27">Significant cognitohazards </tspan><tspan
          x="739.04883"
          y="889.59447"
-         id="tspan33">present on site, PPE and </tspan><tspan
+         id="tspan28">present on site, PPE and </tspan><tspan
          x="739.04883"
          y="904.26109"
-         id="tspan34">regular testing mandatory.</tspan></text>
+         id="tspan29">regular testing mandatory.</tspan></text>
     <g
        id="g193"
        transform="matrix(0.87062147,0,0,0.87062147,10.839089,23.122693)">
@@ -3218,14 +3150,14 @@
          d="m 346.52356,215.21356 c -3.90973,5.0117 -3.82293,11.97016 0,16.95086 1.91147,-2.49034 2.88823,-5.47483 2.89909,-8.46368 0.0104,-2.98884 -0.94422,-5.98131 -2.89909,-8.48718 z m 0,6.15616 a 2.3197032,2.3197032 0 0 1 2.31927,2.31996 2.3197032,2.3197032 0 0 1 -2.31927,2.31927 2.3197032,2.3197032 0 0 1 -2.31996,-2.31927 2.3197032,2.3197032 0 0 1 2.31996,-2.31996 z" />
     </g>
     <rect
-       style="fill:url(#pattern3511);fill-opacity:1;stroke:#000000;stroke-width:1.43545;stroke-linecap:square"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.43545;stroke-linecap:square"
        id="rect15-7-1-3"
        width="13.200102"
        height="7.1440167"
        x="259.68134"
        y="23.894463" />
     <rect
-       style="fill:url(#pattern3511-3);fill-opacity:1;stroke:#000000;stroke-width:1.43545;stroke-linecap:square"
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.43545;stroke-linecap:square"
        id="rect15-7-1-3-8"
        width="13.200102"
        height="7.1440167"
@@ -3246,12 +3178,12 @@
        xml:space="preserve"
        transform="scale(0.26458333)"
        id="text18"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect18);fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.151181;stroke-linecap:square"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect18);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.151181;stroke-linecap:square"><tspan
          x="1255.918"
          y="588.89673"
-         id="tspan36"><tspan
+         id="tspan31"><tspan
            dx="0 6.9856596 7.1614408 7.1093559 7.1093578 7.4478989 5.9960785 7.8710709 5.3841019 7.1614418 7.7538872 4.0104065 6.5103989 5.4361877 4.0104065 5.3840942 6.5104065 6.9856567 7.4478989 7.4478989"
-           id="tspan35">mayyoureach the moon</tspan></tspan></text>
+           id="tspan30">mayyoureach the moon</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.04;stroke-linecap:square"
@@ -3267,25 +3199,25 @@
        xml:space="preserve"
        transform="matrix(0.36358437,0,0,0.36358437,-126.39373,-47.99477)"
        id="text21"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect21);shape-padding:0.635021;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.151181;stroke-linecap:square"><tspan
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect21);shape-padding:0.635021;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.151181;stroke-linecap:square"><tspan
          x="1261.8125"
          y="489.97095"
-         id="tspan37">reach
+         id="tspan32">reach
 </tspan><tspan
          x="1261.8125"
          y="501.70432"
-         id="tspan38">heaven
+         id="tspan33">heaven
 </tspan><tspan
          x="1261.8125"
          y="513.43769"
-         id="tspan39">throu
+         id="tspan34">throu
 </tspan><tspan
          x="1261.8125"
          y="525.17108"
-         id="tspan40">ghviol
+         id="tspan35">ghviol
 </tspan><tspan
          x="1261.8125"
          y="536.90448"
-         id="tspan41">ence</tspan></text>
+         id="tspan36">ence</tspan></text>
   </g>
 </svg>
