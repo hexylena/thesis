@@ -25,9 +25,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="3.3640326"
-     inkscape:cx="1065.8339"
-     inkscape:cy="107.90621"
+     inkscape:zoom="0.59468255"
+     inkscape:cx="2032.1767"
+     inkscape:cy="529.69437"
      inkscape:window-width="1912"
      inkscape:window-height="1024"
      inkscape:window-x="4"
@@ -1230,86 +1230,87 @@
        y="114.37746" />
     <g
        id="g177"
-       transform="translate(-1.0330758,-42.680875)">
+       transform="translate(-1.0330758,-42.680875)"
+       style="stroke-width:0.8;stroke-dasharray:none">
       <rect
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:none"
          id="rect131"
          width="94.380768"
          height="74.246208"
          x="231.54749"
          y="85.571899" />
       <rect
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:none"
          id="rect132"
          width="84.14772"
          height="66.196213"
          x="236.664"
          y="89.596893" />
       <rect
-         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:none"
          id="rect133"
          width="68.679985"
          height="54.028271"
          x="244.39787"
          y="96.739197" />
       <rect
-         style="fill:url(#pattern119-7-6-6-2);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern119-7-6-6-2);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect15-43-3-5-5"
          width="4.0042372"
          height="4.0042372"
          x="246.51451"
          y="98.855865" />
       <rect
-         style="fill:url(#pattern119-7-6-6-2-1);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern119-7-6-6-2-1);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect15-43-3-5-5-3"
          width="4.0042372"
          height="4.0042372"
          x="306.95691"
          y="98.855865" />
       <rect
-         style="fill:url(#pattern119-7-6-6-2-0);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern119-7-6-6-2-0);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect15-43-3-5-5-1"
          width="4.0042372"
          height="4.0042372"
          x="306.95691"
          y="144.64659" />
       <rect
-         style="fill:url(#pattern119-7-6-6-2-8);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern119-7-6-6-2-8);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect15-43-3-5-5-6"
          width="4.0042372"
          height="4.0042372"
          x="246.51451"
          y="144.64659" />
       <rect
-         style="fill:url(#pattern167);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern167);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect15-43-3-5-5-2"
          width="2.8919539"
          height="37.261646"
          x="259.71109"
          y="105.12251" />
       <rect
-         style="fill:url(#pattern169);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern169);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect140"
          width="2.8919539"
          height="37.261646"
          x="269.55981"
          y="105.12251" />
       <rect
-         style="fill:url(#pattern175);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern175);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect141"
          width="2.8919539"
          height="37.261646"
          x="299.10602"
          y="105.12251" />
       <rect
-         style="fill:url(#pattern173);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern173);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect142"
          width="2.8919539"
          height="37.261646"
          x="289.25729"
          y="105.12251" />
       <rect
-         style="fill:url(#pattern171);fill-opacity:1;stroke:#000000;stroke-width:0.799999;stroke-linecap:square"
+         style="fill:url(#pattern171);fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:none"
          id="rect144"
          width="2.8919539"
          height="37.261646"
@@ -1458,36 +1459,36 @@
        y="0"><tspan
          x="739.04883"
          y="772.08592"
-         id="tspan18">Development of sub-</tspan><tspan
+         id="tspan21">Development of sub-</tspan><tspan
          x="739.04883"
          y="786.75255"
-         id="tspan21">terranean long-term </tspan><tspan
+         id="tspan22">terranean long-term </tspan><tspan
          x="739.04883"
          y="801.41917"
-         id="tspan22">storage for used </tspan><tspan
+         id="tspan23">storage for used </tspan><tspan
          x="739.04883"
          y="816.17357"
-         id="tspan23">🮘🮘🮘🮘🮘🮘🮘🮘, 🮘🮘🮘🮘🮘🮘🮘🮘 and </tspan><tspan
+         id="tspan24">🮘🮘🮘🮘🮘🮘🮘🮘, 🮘🮘🮘🮘🮘🮘🮘🮘 and </tspan><tspan
          x="739.04883"
          y="830.92796"
-         id="tspan24">associated waste by-</tspan><tspan
+         id="tspan25">associated waste by-</tspan><tspan
          x="739.04883"
          y="845.59459"
-         id="tspan25">products.
+         id="tspan26">products.
 </tspan><tspan
          x="739.04883"
          y="860.26121"
-         id="tspan26">
+         id="tspan27">
 </tspan><tspan
          x="739.04883"
          y="874.92784"
-         id="tspan27">Significant cognitohazards </tspan><tspan
+         id="tspan28">Significant cognitohazards </tspan><tspan
          x="739.04883"
          y="889.59447"
-         id="tspan28">present on site, PPE and </tspan><tspan
+         id="tspan29">present on site, PPE and </tspan><tspan
          x="739.04883"
          y="904.26109"
-         id="tspan29">regular testing mandatory.</tspan></text>
+         id="tspan30">regular testing mandatory.</tspan></text>
     <g
        id="g193"
        transform="matrix(0.87062147,0,0,0.87062147,10.839089,23.122693)">
@@ -1613,7 +1614,7 @@
       </g>
     </g>
     <path
-       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-dasharray:6.4, 1.6, 0.8, 1.6;stroke-dashoffset:0"
+       style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:square;stroke-dasharray:4,1,0.5,1;stroke-dashoffset:0"
        d="m 292.51091,245.51962 v -87.87076 l 31.43481,-14.12233 0.11935,-20.65542 23.58147,-12.18326 35.87607,0.009 -0.37977,134.15516 z"
        id="path175"
        sodipodi:nodetypes="cccccccc" />
@@ -3181,9 +3182,9 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.3333px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect18);display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.151181;stroke-linecap:square"><tspan
          x="1255.918"
          y="588.89673"
-         id="tspan31"><tspan
+         id="tspan32"><tspan
            dx="0 6.9856596 7.1614408 7.1093559 7.1093578 7.4478989 5.9960785 7.8710709 5.3841019 7.1614418 7.7538872 4.0104065 6.5103989 5.4361877 4.0104065 5.3840942 6.5104065 6.9856567 7.4478989 7.4478989"
-           id="tspan30">mayyoureach the moon</tspan></tspan></text>
+           id="tspan31">mayyoureach the moon</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82223px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.04;stroke-linecap:square"
@@ -3202,22 +3203,33 @@
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;line-height:1.1;font-family:Kargi;-inkscape-font-specification:Kargi;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect21);shape-padding:0.635021;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.151181;stroke-linecap:square"><tspan
          x="1261.8125"
          y="489.97095"
-         id="tspan32">reach
+         id="tspan33">reach
 </tspan><tspan
          x="1261.8125"
          y="501.70432"
-         id="tspan33">heaven
+         id="tspan34">heaven
 </tspan><tspan
          x="1261.8125"
          y="513.43769"
-         id="tspan34">throu
+         id="tspan35">throu
 </tspan><tspan
          x="1261.8125"
          y="525.17108"
-         id="tspan35">ghviol
+         id="tspan36">ghviol
 </tspan><tspan
          x="1261.8125"
          y="536.90448"
-         id="tspan36">ence</tspan></text>
+         id="tspan37">ence</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:7.05556px;line-height:1.05;font-family:Recursive;-inkscape-font-specification:'Recursive @CRSV=1,MONO=1,wght=300';font-variation-settings:'CRSV' 1, 'MONO' 1, 'wght' 300;letter-spacing:0px;word-spacing:0px;fill:#ff9977;stroke:#ffffff;stroke-width:0.499999;stroke-linecap:square"
+       x="282.52118"
+       y="265.61441"
+       id="text19"><tspan
+         sodipodi:role="line"
+         id="tspan18"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Atomic Age';-inkscape-font-specification:'Atomic Age';fill:#ff9977;fill-opacity:1;stroke:none;stroke-width:0.5"
+         x="282.52118"
+         y="265.61441">Kein Operationsplan reicht mit einiger Sicherheit über das erste Zusammentreffen mit der feindlichen Hauptmacht hinaus</tspan></text>
   </g>
 </svg>
