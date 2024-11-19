@@ -1,4 +1,4 @@
-NOW := $$(date '+%Y-%m-%dT%H:%M')
+NOW := $$(date '+%Y-%m-%dT%H%M%S')
 thesis: references.bib vars.tex stellingen.pdf dissertation.pdf
 
 dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics frontmatter/images/cover-front.50.png
