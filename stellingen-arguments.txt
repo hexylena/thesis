@@ -1,0 +1,128 @@
+
+## 1
+
+> The Generic Model Organism Database suite of software increases the reproducibility of genome annotation and improves accessibility for annotators (this thesis).
+
+Q: how could it improve accessibility?
+A: GMOD is as close a standard as we have in the genome annotation space, their database schema, Chado, is a 22 year old project which has been one of the primary way for small and medium sized groups to store genomic data at scale. A standardised database means a wider variety of tools that can talk the relevant protocols and access the data, nothing is locked away in proprietary formats. 
+
+Q: a database alone does not improve reproducibility
+A: No, but it provides a necessary ingredient for reproducibility, a standardised platform on which to compute the annotations. Genome annotation is inherently a non-reproducible activity, humans making decisions about the true purpose of a sequence of letters based off of amorphous evidence presented to them. However we still need to strive for reproducibility, and that starts by reproducibility computing that evidence, reproducibly storing that evidence in standardised formats which allow us to easily check that we have computed the same results again.
+
+Q: surely other solutions are better, perhaps paid software?
+A: There is very little commercial competition in the genome annotation space, at least not for this target audience of groups focused on improving annotation of a few species. In general, given the current funding model, I think some of this would be better served by national organisations providing this annotation infrastructure, and permitting groups to contribute to it in something more akin to an open source model, but that is a different conversation.
+
+## 2
+
+> Providing user-friendly and simplified access to complex tools can enable new use cases and increase accessibility of software (this thesis).
+
+Q: Some tools cannot be simplified like (commenter's favourite tool)
+A: I think we've shown that the upper bound on simplifying complex interfaces while retaining access to advanced features is perhaps higher than previously thought. The Circos tool we've wrapped includes essentially all of the power of the Perl programming language to make plots, and we've exposed nearly the entire surface of the tool without permitting arbitrary code execution as that would be a security risk. The tool permits producing very complex plots with dozens of datasets plotted together with different plotting settings. Similarly the JBrowse wrapper in Galaxy permits production of very complex genome browsers, all from within Galaxy's very limited UI. Some of this is accomplished by identifying common access and use patterns, and coding those as pre-configured options the user can use, but it remains possible to strike a better balance than previously.
+
+Q: tools are complex for a reason, users must understand that complexity, it cannot be cut away
+A: I cannot agree with this statement more! There is so much essential complexity in the work we all do, that simply cannot be abstracted away. This thesis is primarily about abstracting away complexity but the choice of *which* complexity is the crux of the issue. Infrastructure is a speciality of mine, and an area most users struggle. It's an area where most users actively do not want to know what's involved in delivering services and tooling to them, they just want it to work and work fast. For me this is essential complexity, the intricacies of the infrastructure, but for users, we can abstract this away with tools like Galaxy. For users we can abstract the complexity of setting up conda environments or installing perl dependencies, without negatively impacting the execution of the tool, nor the scientific complexity involved in executing that tool. The users need to understand the scientific details, but if we can provide a platform that guarantees reproducibility (within some definition), we can let them focus on what they need to know.
+
+Q: This work sounds complicated (and thus expensive)
+A: Yes, doing this for every tool would not be cost effective, we need to pick high impact tools that a) bring users into an ecosystem that provides other benefits, and b) are unnecessarily complex to run where we can abstract the infrastructure, the deployment and installation, and just get the tool to the user as efficiently as possible.
+
+
+## 3
+
+> Data security is the responsibility of everyone involved in clinical research, and as informaticians we can do more to enable secure-by-default analyses. (this thesis).
+
+Q: It is not possible for analysis to be secure by default
+A: There's a constant tension between security and usability, some security provides benefits, some doesn't, some is security theatre. For the analysis we need to do, exploratory research with patient data, and complex computer setups, a significant amount of security by default can be achieved by simply limiting public network access and still enabling researchers to analyse their data within the university network.
+
+Q: More security imposes more burdens on research (cf. GDPR)
+A: I'd argue that this isn't strictly true, GDPR's requirements don't impose the burdens on us researchers, it is overly cautious lawyers, where someone doesn't want to pay for the legal time to fully understand the implications of a system that would enable researchers to do their research. That and a lack of trust, maybe founded, maybe not, of staff to be responsible with their data. Personally I wonder if we couldn't decrease the security incidents by having a more useful system, I can imagine there's a number of us who wouldn't have to resort to a portable hard drive or USB stick, if systems enable secure online computation and moving data to where it needs to be analysed.
+
+
+## 4
+
+> Ensuring that high-quality bioinformatics training infrastructure is Findable, Accessible, Interoperable, and Reusable (FAIR) is a key solution in working to reducing the bioinformatician gap (this thesis).
+
+Q: more training does not close the gap, we need more (people, funding, etc)
+A: Yep, we do, but this is one prong of a multi-prong solution. To start with, bringing existing and new materials directly to the researchers that need them, in the formats that work for them, and providing a platform, an infrastructure on which to ensure future materials are FAIR by default, without requiring extra work on behalf of the researcher.
+
+Q: What other solutions do you envision to fixing this bioinformatician gap
+A: Asking for more funding is out of scope, but I would say more short courses to skill up researchers in specific areas and make them more diverse. Improved platforms for reproducibility and workflow sharing so existing bioinformaticians can be more efficient and re-use validated community workflows saving time and energy.
+
+
+## 5
+
+> Training materials and teachers alone are not enough, bioinformatics is a computational discipline that requires computational infrastructure for teaching (this thesis).
+
+Q: bioinformatics can be done on my laptop, it doesn't require serious infrastructure
+A: Bioinformatics is such a broad word, everything from statistics in Excel to large workflows that require terabytes of RAM and CPU months of compute time. For many young bioinformaticians part of their job requires scientific workflow development, and to best understand how those workflows work they need real datasets and real infrastructure. E.g RNA STAR is the classic example of a tool that requires 120 GB of RAM even for small datasets.
+
+Q: anyone can learn to do an analysis in a week, cross training would be more fiscally efficient. (misunderstood the point)
+A: 
+
+Q: do we need serious infrastructure? Can't we make do with less?
+A: In many places we can, many workflows can be run with small datasets, but unfortunately some tools have strict requirements and will fail with smaller computers due to poor implementations that don't scale down. For human-sized datasets that's fine and we're used to it, but for teaching and training we may not want to allocate those resources and we can only do so much.
+
+## 6
+
+> Systems safety must be considered in development of clinical workflows; the THERAC-25 story \emph{should} be mandatory reading for bioinformaticians (\zy{9780201119725}, \zz{10.1109/MC.2017.4041349}).
+
+Q: most bioinformaticians in the clinic do not work on things that will be used in the clinic.
+A: We need to bring a level of professionalism and precision in all of our results, even early in the pipelines. There's no room for significant mistakes, lest they go forward and the errors multiply. When work is re-evaluated, it should be reproduced to check that earlier results were valid. This is the ethos and ethics we should bring to our work.
+
+Q: scientific workflows don't fail in subtly wrong ways, they fail in obvious ones so of course it won't impact patient outcomes.
+A: scientific workflows fail in so many ways, it requires us to test them thoroughly with heterogeneous data to ensure that our conclusions are valid across a wide range of input scenarios. We need to regularly be testing workflows with samples of known quality to ensure the results are as expected and nothing could have changed in the environment in which it was run.
+
+## 7
+
+> Research Data Management (RDM) and ensuring FAIRness is a burden on scientists that must be decreased (\zz{10.1197/jamia.M2114}, \zz{10.21428/5676bf2d.32042b9c}, \zz{10.1080/12460125.2022.2074653}).
+
+Q: RDM isn't that much work, it's just writing down where we store data
+A: To do it correctly, currently, it is a surprising amount of documentation and paperwork. Some systems like Galaxy significantly help this by tracking a significant amount of data provenance for you.
+
+Q: RDM is too important, we cannot decrease this (if they miss the 'burden' in the sentence)
+A: Yes, RDM must be kept, we need to make the process of doing it more efficient. Automated systems like Galaxy and Nextflow and other workflow engines are a step in the right direction to do more of this automatically.
+
+## 8
+
+> Open Databases, Infrastructure, and Tools benefit the entire scientific community and their long-term maintenance should be funded and rewarded to reduce churn and waste (\zz{10.5281/zenodo.8325436}, \zx{adore.software}).
+
+Q: This simply isn't possible in our current funding system, it isn't realistic.
+A: No, but, we all like to dream, right? It would be a more sustainable system if we did, we wouldn't spend as much time re-inventing the same tooling that others work on as well. Perhaps that means reducing competition and focusing on collaboration.
+
+Q: all of the commercial variants of the above are more cost effective
+A: Are they as responsive to user needs? In commercial ecosystems the focus on return on investment is even stronger, unlike science where we can fund research on niche issues for which the results can benefit everyone.
+
+Q: government agencies are better long term stewards of databases and infrastructure than open source groups
+A: It was especially a problem in the phage world where while we were happy to share our data, maintaining the infrastructure and reaching community consensus was difficult. If the infrastructure for annotation had been hosted directly by NCBI (or EBI), and our annotations were done in public view, it would be more financially efficient. If there was a better system setup for open source scientific software, where the funding for maintenance runs out, could be transferred to the stewardship of a national or international organisation, I think it would be significantly better. Perhaps that means meeting additional standards (e.g. packaging your software to run in a secure system like galaxy).
+
+## 9
+
+> Lack of accessibility, e.g. sufficient alt-text on images, continues to exclude a range of scientists (\zz{10.1016/S0140-6736(23)02348-6}, ``Women, minorities, and persons with disabilities in science and engineering: 2021. Special report NSF 21–321'').
+
+Q: don't we do enough already?
+A: No. The number of inaccessible learning materials, the number of publications which do nothing to make their results accessible to anyone with even mild visual impairment is terrible. I have friends in science with severe visual impairments, I have a visual impairment myself which necessitate zoom and high contrast modes and I have a colourblindness. I encounter so many graphs that aren't colour blind accessible.
+
+Q: who will pay for this, allocate time and funding to support this?
+A: Funding agencies need to consider accessibility just like they need to consider RDM costs and FAIR costs as a part of producing results that are meant to consumed by others. The work we produce is intended to be consumed and reused, so, it needs to start meeting some basic standards.
+
+Q: If they are not physically able to read an image, how can they contribute in a graph and plot heavy field?
+A: even in a plot heavy field visually impaired folks can contribute in so many ways, some of this depends on us making our materials accessible, some of this is dependent on them contributing in the ways they can. I experience migraines and have light sensitivity, this only partially impacts my work as I learnt to use a screenreader so I could continue reading when need be.
+
+## 10
+
+> Competition---as demanded by funding agencies---is detrimental to science; coöperation and collaboration are not as rewarded, and open science is harmed in the process. (\zz{10.1073/pnas.2407644121}, \zz{10.1128/IAI.02939-14}).
+
+Q: what systems would be better?
+A: The referenced PNAS article proposes some interesting alternatives such as a first pass and subsequent random select that are shown to increase diversity in results. Competition across universities with a focus on collaboration within universities could be an interesting approach as well, where we form more heterogeneous units that place less focus on individual success and more on overall group success.
+
+Q: Life and evolution, born from competition, worked out so well
+A: Competition is useful to a point, different ideas being discussed and implemented and tested is interesting, but why do they have to happen at the expense of other group's funding? Or why do we have to fund two separate groups to work on the same problem, they could surely make more progress if they worked together with the same amount of funding. Wouldn't it be interesting to hash out ideas together, run tests together to validate or refute conclusions, it would be a more efficient system than waiting months for a publication and beginning work to refute it if you disagree with their ideas and implementations.
+
+## 11
+
+> {\fontQiji{}借尸还魂} --- ``Borrow a corpse to resurrect the soul'': we can and should (re)use and leverage what already exists before inventing anew, looking into the past for strategies and tools that are still viable.
+
+Q: We need new solutions for new problems
+A: Especially in the world of computer science I regularly see old ideas brought out again and again. We started with thick clients and moved to thin. Then back to thick. We moved things to the cloud because it was cheaper and then back because it was more expensive. We had CGI and replaced it with servers and now functions as a service are popular which are CGI but slightly fancier again. All of these tools have reasons and pros and cons and benefits but so much is driven by what is fancier or sexy or pads ones resume. As a sysadmin, I prefer to choose boring stable technologies because they're easiest to maintain long term, and when I pass those resources on to someone else, they're optimally easy to maintain as well.
+
+Q: What is the significance of this quote
+A: Personally, I feel this deeply in my soul, when I first read the thirty six stratagems, some are very classic and obvious advice but this always stood out to me. It's something I've needed to do for myself, to resurrect the useful bits from the corpse. It's something I've done regularly with code as an "archaeologist" expected to resurrect old software and get utility out of it.
