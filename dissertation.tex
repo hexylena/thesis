@@ -148,8 +148,8 @@
   position={current page.east|-current page text area.north east},
   vshift=-15pt,
   hshift=\thechapter*\LabelSize,
-  contents={%
-  \tikz\node[fill=gray!35,anchor=west,text width=\LabelSize,
+  contents={%   ,draw=hexy-red, line width=0.2mm,
+  \tikz\node[fill=gray!35anchor=west,text width=\LabelSize,
     align=center,text height=30pt,text depth=10pt,font=\large\rmfamily] {\thechapter};
   }%
  }
@@ -347,10 +347,9 @@
 % UNCOMMENT FOR FINAL
 % \cleartorightpage
 % \acknowledgments
-% \cleartoleftpage
-% \include{endmatter/colophon}
-% \singlespacing
-% \clearpage
+\cleartoleftpage
+\include{endmatter/colophon}
+\clearpage
 
 
 
