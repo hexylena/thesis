@@ -1,7 +1,7 @@
 NOW := $$(date '+%Y-%m-%dT%H%M%S')
 thesis: references.bib vars.tex stellingen.pdf dissertation.pdf
 
-dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics frontmatter/images/cover-front.50.png
+dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics cover/cover-back-hexy.png cover/cover-front-hexy.png
 	rm -f dissertation.pdf
 	bash vars.sh
 	latexmk -xelatex -f dissertation.tex
@@ -11,6 +11,13 @@ stellingen.pdf: stellingen.tex Dissertate.cls ./packages/EMC/style.sty
 	bash vars.sh
 	latexmk -xelatex -f stellingen.tex
 	cp stellingen.pdf stellingen-$(NOW).pdf
+
+
+cover/cover-back-hexy.png: cover/cover-back-hexy.svg
+	inkscape --export-type=png --export-area-page --export-dpi=200 cover/cover-back-hexy.svg
+
+cover/cover-front-hexy.png: cover/cover-front-hexy.svg
+	inkscape --export-type=png --export-area-page --export-dpi=200 cover/cover-front-hexy.svg
 
 frontmatter/images/cover-front.50.png: frontmatter/images/cover-front.png
 	magick frontmatter/images/cover-front.png -resize 50% frontmatter/images/cover-front.50.png
