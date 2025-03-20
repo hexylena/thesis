@@ -8,3 +8,4 @@ else
 fi
 
 echo "\\newcommand{\\gitRev}{$gitrev@$gitrevdate$state}" > vars.tex
+echo "\\newcommand{\\gitRevSimple}{$gitrev}" >> vars.tex

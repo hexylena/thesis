@@ -256,7 +256,13 @@
 \maketitle
 %\maketitledutch
 \pagestyle{fancy}
-\fancyhead[C]{\iffloatpage{}{\texttt{\gitRev}}}
+
+% \fancyhead[C]{\iffloatpage{}{\texttt{\gitRev}}}
+% \fancyhead[C]{\iffloatpage{}{\texttt{\gitRevSimple}}}
+% \fancyfoot[ER,OL]{\includegraphics[width=1.5em]{barcode/a\thepage.png}}
+% \fancyhead[EL]{\leftmark}
+% \fancyhead[OR]{\rightmark}
+
 \fancyfoot[EL,OR]{\iffloatpage{}{\thepage}}
 
 
@@ -321,15 +327,11 @@
 
 \include{chapters/discussion}
 \RemoveLabels %stop thumb index
-%\include{chapters/summaries}
 
 \begin{appendices}
   % \include{endmatter/glossary}
 
-  % \include{endmatter/summary}
-  % \include{endmatter/samenvatting}
-
-  \include{endmatter/ss}
+  \include{endmatter/ss} % DONE
 
   \include{endmatter/publications} % DONE
   \include{endmatter/cv}           % DONE
@@ -337,12 +339,9 @@
 \end{appendices}
 
 
-%
 % \begin{appendices}
 %   \include{endmatter/code}
 % \end{appendices}
-
-
 
 % UNCOMMENT FOR FINAL
 % \cleartorightpage
