@@ -249,7 +249,9 @@
 
 % the front matter
 %\newpage \thispagestyle{empty} This page was intentionally left blank (inside cover).\newpage
-\include{frontmatter/cover}
+
+% \include{frontmatter/cover}
+
 \setcounter{page}{1}
 \input{frontmatter/personalize}
 
@@ -345,19 +347,18 @@
 
 % UNCOMMENT FOR FINAL
 % \cleartorightpage
-% \acknowledgments
+\acknowledgments
 \cleartoleftpage
 \include{endmatter/colophon}
 \clearpage
-
-
 
 
 %\bibliography{references}
 %\addcontentsline{toc}{chapter}{References}
 %\bibliographystyle{apalike2}
 \bibliographystyle{hexy.bst}
-\include{frontmatter/cover-back}
+
+% \include{frontmatter/cover-back}
 
 \end{document}
 %!TEX TS-program = xelatex

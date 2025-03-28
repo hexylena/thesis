@@ -4,8 +4,7 @@ thesis: references.bib vars.tex stellingen.pdf dissertation.pdf
 dissertation.pdf: dissertation.tex Dissertate.cls ./packages/EMC/style.sty $(wildcard */*.tex) aesthetics cover/cover-back-hexy.png cover/cover-front-hexy.png aesthetics/summon.png
 	rm -f dissertation.pdf
 	bash vars.sh
-	latexmk -xelatex -f dissertation.tex
-	cp dissertation.pdf dissertation-$(NOW).pdf
+	latexmk -xelatex -f dissertation.tex || cp dissertation.pdf dissertation-$(NOW).pdf
 
 stellingen.pdf: stellingen.tex Dissertate.cls ./packages/EMC/style.sty
 	bash vars.sh

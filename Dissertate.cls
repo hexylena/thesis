@@ -120,6 +120,7 @@
 \newfontfamily{\fontQiji}{qiji}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontNotoCjk}{NotoSerifCJK-Regular}[Path=./fonts/,UprightFont=*]
 \newfontfamily{\fontEBGaramondInitials}{EBGaramond-Initials}[Path=./fonts/Aesthetic/,UprightFont=*]
+% \newfontfamily\fontNotoColorEmoji[Renderer=Harfbuzz]{NotoColorEmoji.ttf}
 
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
 \setmonofont[Scale=MatchLowercase]{Iosevka Slab} % Font substitution for Source Code Pro
