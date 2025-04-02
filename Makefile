@@ -12,7 +12,7 @@ stellingen.pdf: stellingen.tex Dissertate.cls ./packages/EMC/style.sty
 	cp stellingen.pdf stellingen-$(NOW).pdf
 
 aesthetics/summon.png: aesthetics/summon.svg
-	inkscape --export-type=png --export-area-page --export-dpi=200 aesthetics/summon.svg
+	inkscape --export-type=png --export-area-page --export-dpi=300 aesthetics/summon.svg
 
 cover/cover-back-hexy.png: cover/cover-back-hexy.svg
 	inkscape --export-type=png --export-area-page --export-dpi=300 cover/cover-back-hexy.svg
