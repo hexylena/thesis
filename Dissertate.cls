@@ -115,6 +115,7 @@
 \setmathsfont(Digits,Latin,Greek)[Path=./fonts/Garamond/, Numbers={Proportional},SizeFeatures={{Size=-8, OpticalSize=8},{Size= 8-, OpticalSize=12}},]{EBGaramond12-Regular.ttf}
 \setmathrm[Path=./fonts/Garamond/,]{EBGaramond12-Regular.ttf}
 
+\newfontfamily{\fontIMFell}{IMFellEnglish-Regular}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontVE}{Evergarden}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontLWA}{lwafontcustom}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontRedacted}{Redacted-Regular}[Path=./fonts/Aesthetic/,UprightFont=*]
@@ -126,6 +127,17 @@
 
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}
 \setmonofont[Scale=MatchLowercase]{Iosevka Slab} % Font substitution for Source Code Pro
+
+
+% https://tex.stackexchange.com/questions/25946/quotchap-changing-formatting-and-number-size
+\makeatletter
+\renewcommand*{\chapnumfont}{
+  \fontIMFell\fontsize{120}{150}\selectfont% Default: 100/130
+  \color{hexy-red}%
+}
+\makeatother
+
+
 
 \RequirePackage[labelfont={bf,footnotesize,singlespacing},
 	textfont={footnotesize,singlespacing},
