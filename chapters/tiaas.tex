@@ -163,7 +163,7 @@ Slurm, in contrast, requires either using TPV's notion of machine tags to separa
 
 \begin{figure}[!ht]
 \centering
-\begin{lstlisting}[frame=single,language=Python]
+\begin{lstlisting}[language=Python]
 def queue_job(job, user):
     job.cluster = 'main'
 
@@ -180,7 +180,7 @@ Or, rewritten for the modern Total Perspective Vortex (TPV)\cite{TPV} scheduler 
 
 \begin{figure}[!ht]
 \centering
-\begin{lstlisting}[frame=single,language=bash]
+\begin{lstlisting}[language=bash]
 roles:
   training.*:
     scheduling:
