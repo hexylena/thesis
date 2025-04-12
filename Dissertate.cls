@@ -44,6 +44,8 @@
 \usepackage{hyperref}
 \RequirePackage[tiny, md, sc]{titlesec}
 \setlength{\headheight}{15pt}
+
+\RequirePackage{fancyhdr}
 \pagestyle{plain}
 \RequirePackage{titling}
 \RequirePackage[palatino]{quotchap}

@@ -2,6 +2,11 @@
 %!TEX encoding = UTF-8 Unicode
 
 \documentclass[School=EMC]{Dissertate}
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[EL,OR]{\thepage}
+}
+
 \usepackage{tikz}
 
 % xelatex -shell-escape -output-driver="xdvipdfmx -z 0" <filename>.tex
@@ -35,21 +40,10 @@
 
 
 % place page number on outside of page (left for even pages, right for odd)
-\usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead{}
 \fancyhf{}
 \input{vars}
-
-% \fancyhead[LE]{}
-% \fancyhead[RO]{}
-% \fancyfoot[CO,CE]{}
-
-
-% \input{frontmatter/cistercian.tex}
-% \fancyfoot[RE,LO]{\cistercian{\thepage}}
-
-
 
 %\usepackage[width=6.75in, letterpaper, bottom=3cm, top=3cm]{geometry}
 %\newcommand\bookepigraph[4]{
