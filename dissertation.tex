@@ -271,8 +271,6 @@
 
 %\include{frontmatter/stellingen}
 
-%\setcounter{page}{1}
-
 \cleartorightpage
 % \intentionallyBlank\clearpage
 \include{frontmatter/foreword}
@@ -285,25 +283,15 @@
 \setcounter{tocdepth}{1}
 \cleartorightpage
 \tableofcontents
-\newpage
-\cleartorightpage
 %\phantomsection
 %\addcontentsline{toc}{chapter}{Table of Contents}
 
+% \listoffigures
 
-%\authorlist
-%\listoffigures
+\cleartorightpage
 
-%\abstractpage
-%\doublespacing
-
-
-% start chapter and page numbering at 0 because (computer) science
-%\setcounter{chapter}{-1}
-
-
-% include each chapter...
 \AddLabels % start using thumb index
+
 % start chapter and page numbering at 0 because (computer) science
 \setcounter{chapter}{-1}
 \include{chapters/introduction}
