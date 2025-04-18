@@ -122,7 +122,7 @@
 % \newfontfamily{\fontCistercian}{FRBCistercian}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontQiji}{qiji}[Path=./fonts/Aesthetic/,UprightFont=*]
 \newfontfamily{\fontNotoCjk}{NotoSerifCJK-Regular}[Path=./fonts/,UprightFont=*]
-\newfontfamily{\fontEBGaramondInitials}{EBGaramond-Initials}[Path=./fonts/Aesthetic/,UprightFont=*]
+\newfontfamily{\fontEBGaramondInitials}{EBGaramond-Initials}[Path=./aesthetics/EB-Garamond-Initials/build/,UprightFont=*]
 % \newfontfamily\fontNotoColorEmoji[Renderer=Harfbuzz]{NotoColorEmoji.ttf}
 
 \setsansfont[Scale=MatchLowercase, BoldFont={Lato Bold}]{Lato Regular}

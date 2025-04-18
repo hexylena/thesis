@@ -18,7 +18,7 @@ def guide(mm):
        inkscape:color="rgb(0,134,229)" />
    """
 
-width = [0, 172, y_mm(176), 172, 64]
+width = [0, 172, y_mm(181), 172, 64]
 guides = []
 
 s = 0
