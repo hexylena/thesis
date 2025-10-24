@@ -1,6 +1,6 @@
 # PhD Thesis
 
-My PhD Thesis created in LaTeX
+You may read the [final published version at EUR.](https://pure.eur.nl/en/publications/bioinformagic-towards-a-book-of-spells-to-make-every-analysis-mag/)
 
 ![](cover/cover-front-hexy.png)
 
